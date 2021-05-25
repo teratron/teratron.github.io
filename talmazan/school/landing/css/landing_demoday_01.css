@@ -1,12 +1,14 @@
 /**********************************************************
  Start Facebook
  **********************************************************/
+
 #start-facebook {
-    background: #000513 url(/landing/images/bg_start_facebook.jpg) fixed no-repeat center top;
+    background: #000513 url(../images/bg_start_facebook.jpg) fixed no-repeat center top;
     background-size: cover;
     font-size: 2rem;
     line-height: 2.8rem;
 }
+
 #start-facebook:before {
     background: #000513;
     display: block;
@@ -18,32 +20,40 @@
     right: 0;
     opacity: .75;
 }
+
 #start-facebook #header {
     background-color: transparent;
 }
+
 #start-facebook .content-slide {
     padding: 20vh 4.8vw 0 20.8vw;
 }
-#start-facebook .content-slide > .body {
+
+#start-facebook .content-slide>.body {
     padding-bottom: 0;
 }
-#start-facebook .content-slide > .foot > .button {
+
+#start-facebook .content-slide>.foot>.button {
     margin-left: 0;
     margin-right: 0;
 }
+
 #start-facebook .button:hover {
     background-color: white;
     border-color: white;
     color: #000513;
 }
+
 #start-facebook .button {
     border-radius: 0;
 }
+
 #start-facebook .btn-big:hover {
     background-color: white;
     border-color: white;
     color: #007157;
 }
+
 #start-facebook .btn-big {
     background-color: #007157;
     border-color: #007157;
@@ -52,7 +62,8 @@
     height: 9rem;
     padding: 0 9rem;
 }
-#start-facebook .head > h1 {
+
+#start-facebook .head>h1 {
     font-size: 5.7rem;
     font-weight: 800;
     display: block;
@@ -61,6 +72,7 @@
     letter-spacing: -.1rem;
     line-height: 5.5rem;
 }
+
 #start-facebook h3 {
     font-size: 2.8rem;
     font-weight: 600;
@@ -68,36 +80,44 @@
     line-height: 2.8rem;
     margin-bottom: 2rem;
 }
-#start-facebook .list-dash > li:before {
+
+#start-facebook .list-dash>li:before {
     top: 1.4rem;
 }
+
 #demoday,
 #practice,
-#practice > .body {
+#practice>.body {
     display: grid;
 }
+
 #demoday,
 #practice {
     height: auto;
     min-height: 100%;
 }
 
+
 /*** Demoday ***/
+
 #demoday {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
     grid-column-gap: 8rem;
     grid-row-gap: 10rem;
 }
-#demoday > .foot {
+
+#demoday>.foot {
     grid-column: span 2;
     text-align: left;
 }
-#demoday > .body {
+
+#demoday>.body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
 }
+
 #demoday h1 {
     font-size: 7rem;
     font-weight: 800;
@@ -110,6 +130,7 @@
     margin-bottom: 0;
     margin-left: -.5rem;
 }
+
 #demoday h2 {
     font-size: 24rem;
     font-weight: 800;
@@ -122,6 +143,7 @@
     padding: 3rem 3rem 3rem 2.2rem;
     border: .4rem solid white;
 }
+
 #demoday .author {
     font-family: 'Roboto', Arial, 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #000513;
@@ -137,6 +159,7 @@
     letter-spacing: normal;
     padding: 0 1rem;
 }
+
 #demoday .date {
     background-color: white;
     font-family: "Anton", "bebas", sans-serif;
@@ -150,6 +173,7 @@
     margin-bottom: 6.8rem;
     padding: 2.85rem 0.2rem;
 }
+
 #demoday time {
     font-size: 6.4rem;
     color: white;
@@ -158,79 +182,100 @@
     left: 0;
     right: 0;
 }
+
 #demoday .month {
     white-space: nowrap;
 }
+
 #demoday .year {
     font-size: 6.8rem;
 }
 
+
 /*** Practice ***/
+
 #practice {
     grid-template-rows: auto auto 1fr;
     grid-row-gap: 8rem;
 }
-#practice > .body {
+
+#practice>.body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 4.4vw;
     grid-row-gap: 6rem;
     padding-bottom: 0;
 }
-#practice > .foot {
+
+#practice>.foot {
     padding-top: 2rem;
     text-align: left;
 }
+
 #practice h3 {
     font-weight: 800;
     color: var(--color-secondary);
     text-transform: uppercase;
 }
-#practice > .foot h3 {
+
+#practice>.foot h3 {
     color: #189478;
 }
 
+
 /*** About Speaker ***/
+
 #start-facebook #speaker {
     margin-bottom: 4rem;
 }
+
 #start-facebook #speaker .photo {
     line-height: 0;
     border-left: 0 none;
     padding-left: 0;
 }
+
 #start-facebook #speaker .photo img {
     border: .4rem solid white;
 }
+
 #start-facebook #speaker h3 {
     font-size: 2.2rem;
 }
 
+
 /*** Prices ***/
+
 #start-facebook #modal-price {
-    background-color: rgba(0,113,87,.98);
+    background-color: rgba(0, 113, 87, .98);
 }
-#start-facebook #modal-price > .modal-view {
+
+#start-facebook #modal-price>.modal-view {
     padding: 12vh 0 0;
 }
-#start-facebook #modal-price > .modal-view > .head {
+
+#start-facebook #modal-price>.modal-view>.head {
     height: auto;
     max-height: inherit;
     width: 55rem;
     margin: 0 auto;
 }
-#start-facebook #modal-price > .modal-view > .body {
+
+#start-facebook #modal-price>.modal-view>.body {
     background-color: rgba(22, 16, 47, 0.5);
     grid-template-columns: 50rem;
     padding-right: 5rem;
     margin: 0 auto;
 }
-#start-facebook #modal-price > .modal-view > .body > aside {
+
+#start-facebook #modal-price>.modal-view>.body>aside {
     padding-left: 5rem;
 }
+
 #start-facebook .paid-method {
     background-color: #11172d;
 }
+
 #start-facebook .paid-method .btn-big {
     background-color: transparent;
     border: 2px solid white;
@@ -239,20 +284,24 @@
     height: 8rem;
     padding-left: 0;
 }
-#start-facebook .paid-method input:checked + .btn-big {
+
+#start-facebook .paid-method input:checked+.btn-big {
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
     color: #000513;
 }
-#start-facebook .paid-info > .paid-data > input:not([type="checkbox"]) {
+
+#start-facebook .paid-info>.paid-data>input:not([type="checkbox"]) {
     border: 0 none;
 }
-#start-facebook .paid-access > input {
+
+#start-facebook .paid-access>input {
     margin: 0;
     top: .3rem;
 }
-.paid-button > button:disabled:after {
-    background: rgba(255,255,255,.85) url(/landing/images/loading_spinner.gif) no-repeat center;
+
+.paid-button>button:disabled:after {
+    background: rgba(255, 255, 255, .85) url(../images/loading_spinner.gif) no-repeat center;
     background-size: 25%;
     display: block;
     content: "";
@@ -263,7 +312,9 @@
     right: -1px;
 }
 
+
 /*** Form inline ***/
+
 .paid-inline {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
@@ -271,32 +322,40 @@
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
 }
+
 .paid-inline .foot {
     grid-column: span 4;
 }
+
 #start-facebook .paid-inline .button,
 #start-facebook .paid-inline input:not([type="checkbox"]) {
     height: 8rem;
 }
+
 #start-facebook .paid-inline .button {
     font-size: 2.6rem;
     padding: 0 4rem;
 }
+
 #start-facebook .paid-inline input:not([type="checkbox"]) {
     /*background-color: rgba(0,5,19,.6);*/
-    background-color: rgba(255,255,255,.15);
+    background-color: rgba(255, 255, 255, .15);
     color: white;
     font-size: 2.2rem;
     padding: 0 0 0 2.2rem;
     border: .4rem solid white;
 }
 
+
 /*** Thanks ***/
+
 #start-facebook #thanks {
     padding: 20vh 4.8vw 0;
 }
 
+
 /*** Final ***/
+
 #start-facebook #final {
     padding: 0 4.8vw 4vh 20.8vw;
     justify-content: center;
@@ -304,11 +363,14 @@
     height: auto;
 }
 
+
 /**********************************************************
  Responsive
  **********************************************************/
 
+
 /*** Width ***/
+
 @media only screen and (max-width: 1400px) {
     html {
         font-size: 9px;
@@ -317,16 +379,18 @@
         padding-left: 18.8vw;
     }
 }
+
 @media only screen and (max-width: 1300px) {
     #start-facebook .content-slide {
         padding-left: 16.8vw;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     #start-facebook .content-slide {
         padding-left: 4.8vw !important;
     }
-    #practice > .body {
+    #practice>.body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-column-gap: 4.4vw;
@@ -334,25 +398,26 @@
         padding-bottom: 0;
     }
 }
+
 @media only screen and (max-width: 1100px) {
     #speaker {
         grid-template-columns: 1fr auto;
         grid-template-rows: 1fr auto;
         grid-column-gap: 4vw;
     }
-    #speaker > :first-child {
+    #speaker> :first-child {
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    #speaker > :not(:first-child):not(:last-child) {
+    #speaker> :not(:first-child):not(:last-child) {
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    #speaker > :last-child {
+    #speaker> :last-child {
         grid-row: span 2;
         grid-row-start: 1;
         grid-row-end: 3;
@@ -364,6 +429,7 @@
         height: auto;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     #header .logo {
         display: block;
@@ -379,6 +445,7 @@
         grid-column: span 2;
     }
 }
+
 @media only screen and (max-width: 900px) {
     #start-facebook .content-slide {
         height: auto;
@@ -390,16 +457,16 @@
         grid-column-gap: 0;
         grid-row-gap: 8rem;
     }
-    #demoday > .head {
+    #demoday>.head {
         grid-column: span 2;
     }
-    #demoday > .body {
+    #demoday>.body {
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 2;
         grid-column-end: 3;
     }
-    #demoday > .foot {
+    #demoday>.foot {
         grid-column: span 1;
         grid-row-start: 2;
         grid-row-end: 3;
@@ -414,33 +481,34 @@
         margin-top: 0;
     }
 }
+
 @media only screen and (max-width: 800px) {
     #speaker {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
     }
-    #speaker > :first-child {
+    #speaker> :first-child {
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    #speaker > :not(:first-child):not(:last-child) {
+    #speaker> :not(:first-child):not(:last-child) {
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    #speaker > :last-child {
+    #speaker> :last-child {
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    #speaker > :last-child > .photo {
+    #speaker> :last-child>.photo {
         display: none;
     }
-    #speaker > :first-child > .photo {
+    #speaker> :first-child>.photo {
         display: block;
         float: right;
         width: 36%;
@@ -455,18 +523,22 @@
         height: auto;
     }
 }
+
 @media only screen and (max-width: 700px) {
     #demoday h2 {
         font-size: 18rem;
     }
 }
 
+
 /*** Height ***/
+
 @media only screen and (max-height: 900px) and (orientation: landscape) {
     html {
         font-size: 8.8px;
     }
 }
+
 @media only screen and (max-height: 800px) and (orientation: landscape) {
     html {
         font-size: 8px;
@@ -478,6 +550,7 @@
         grid-row-gap: 8rem;
     }
 }
+
 @media only screen and (max-height: 700px) and (orientation: landscape) {
     html {
         font-size: 7.8px;
@@ -491,13 +564,14 @@
     #practice {
         grid-row-gap: 6rem;
     }
-    #practice > .body {
+    #practice>.body {
         grid-row-gap: 5rem;
     }
-    #practice > .foot {
+    #practice>.foot {
         padding-top: 1rem;
     }
 }
+
 @media only screen and (max-height: 650px) and (orientation: landscape) {
     html {
         font-size: 7.6px;
@@ -511,10 +585,11 @@
     #practice {
         grid-row-gap: 5rem;
     }
-    #practice > .body {
+    #practice>.body {
         grid-row-gap: 4rem;
     }
 }
+
 @media only screen and (max-height: 600px) and (orientation: landscape) {
     html {
         font-size: 7.4px;
@@ -524,12 +599,16 @@
     }
 }
 
+
 /*** Mobile ***/
-@media only screen and (max-width: 600px) and (orientation: portrait)  {
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     html {
         font-size: 7.4px;
     }
-    p, li, label {
+    p,
+    li,
+    label {
         font-size: 130%;
         line-height: 130%;
     }
@@ -544,19 +623,20 @@
     #practice {
         grid-row-gap: 6rem;
     }
-    #practice > .body {
+    #practice>.body {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         grid-column-gap: 0;
         grid-row-gap: 4rem;
     }
-    #start-facebook #modal-price > .modal-view {
+    #start-facebook #modal-price>.modal-view {
         padding: 4vh 0;
     }
-    #start-facebook #modal-price > .modal-view > .body {
+    #start-facebook #modal-price>.modal-view>.body {
         grid-template-columns: 1fr;
     }
 }
+
 @media only screen and (max-width: 500px) {
     #demoday h2 {
         font-size: 14rem;
@@ -572,6 +652,7 @@
         grid-column: 1;
     }
 }
+
 @media only screen and (max-width: 400px) {
     html {
         font-size: 5.2px;

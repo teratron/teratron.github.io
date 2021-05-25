@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <base href="./">
     <meta charset="UTF-8">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="css/landing_demoday.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
+
 <body id="start-facebook">
 
     <!-- Content -->
@@ -37,7 +39,7 @@
                     <button class="button btn-big" data-modal-id="modal-price">Participă</button>
                 </aside>
             </div>
-            
+
             <!-- Practice -->
             <div class="swiper-slide content-slide" data-hash="practice" id="practice">
                 <div class="head">
@@ -119,7 +121,8 @@
                     <h1>Dumitru Talmazan</h1>
                     <h3 class="allcaps">antreprenor digital, speaker internațional și expert în social media marketing</h3>
                     <p>Îmi place să ajut oamenii să îmbrățișeze o nouă profesie, o profesie a viitorului, și să atingă un alt nivel de înțelegere a activității digitale și a rezultativității acesteia în raport cu propria afacere.</p>
-                    <p>În prezent, sunt autor și speaker în cadrul cursurilor de instruire în Facebook și Instagram de nivel internațional în cadrul companiilor: Business Molodost, Synergy, Talmazan School, Sidorin LAB cu impact pe piețile din România, Ucraina, Federația Rusă, și alte țări din spațiul post-sovietic.</p>
+                    <p>În prezent, sunt autor și speaker în cadrul cursurilor de instruire în Facebook și Instagram de nivel internațional în cadrul companiilor: Business Molodost, Synergy, Talmazan School, Sidorin LAB cu impact pe piețile din România, Ucraina,
+                        Federația Rusă, și alte țări din spațiul post-sovietic.</p>
                     <p>Pentru că îmi place să cunosc oameni noi și să știu că le pot fi util, administrez un blog cu ajutorul căruia împărtășesc experiența mea în domeniul digital, obținută din multitudinea de activități și proiecte în care sunt implicat.</p>
                 </div>
                 <div>
@@ -180,13 +183,14 @@
                         <label for="pay-cash" class="button btn-big"><i class="fas fa-wallet"></i>Cash</label>
                         <input id="pay-transfer" type="radio" name="method" value="transfer" />
                         <label for="pay-transfer" class="button btn-big"><i class="fas fa-money-check-alt"></i>Transfer</label>
-                        <input id="pay-card" type="radio" name="method"  value="card"/>
+                        <input id="pay-card" type="radio" name="method" value="card" />
                         <label for="pay-card" class="button btn-big"><i class="fas fa-credit-card"></i>Card Online</label>
                         <h3>Investiție</h3>
                         <ul class="list-dash">
                             <li><span class="price">99</span> <i class="fas fa-euro-sign"></i> până la 20 aprilie inclusiv</li>
                             <li><span class="price">149</span> <i class="fas fa-euro-sign"></i> după 21 aprilie</li>
-                        </ul><div class="footnote" style="padding-left: 6rem;">* suma fără TVA</div>
+                        </ul>
+                        <div class="footnote" style="padding-left: 6rem;">* suma fără TVA</div>
                     </div>
                 </aside>
                 <aside>
@@ -223,7 +227,7 @@
         </div>
     </aside>
 
-    <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>-->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>-->
     <script>
         $(document).ready(function() {
 
@@ -233,16 +237,19 @@
             //-------------------------------------------------
             $(this).on('click', '[data-modal-id]', function() {
                 let id = $('#' + $(this).data('modal-id'));
-                let i = 0, j = 0;
+                let i = 0,
+                    j = 0;
 
                 id.attr('class').split(/\s+/).map(function(cls) {
                     i++;
-                    switch(cls) {
+                    switch (cls) {
                         case 'show':
                             id.removeClass('show');
                             body.removeClass('no-scroll');
                             break;
-                        default: j++; break;
+                        default:
+                            j++;
+                            break;
                     }
                 });
                 if (i === j) {
@@ -253,4 +260,5 @@
         });
     </script>
 </body>
+
 </html>
