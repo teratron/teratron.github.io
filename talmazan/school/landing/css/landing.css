@@ -1316,10 +1316,11 @@ a[data-fancybox]:after {
     left: 0;*/
 }
 
-.coverflow-swiper,
+
+/*.coverflow-swiper,
 .coverflow-slide {
-    /*max-height: 52vh;*/
-}
+    max-height: 52vh;
+}*/
 
 .coverflow-slide {
     opacity: .3;
