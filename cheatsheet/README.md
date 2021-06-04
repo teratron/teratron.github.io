@@ -1,13 +1,13 @@
-## Шпаргалки:
+# Шпаргалки:
 
-[java script](https://teratron.github.io/cheatsheet/js/)
+### [java script](https://teratron.github.io/cheatsheet/js/)
 
-[react](https://teratron.github.io/cheatsheet/react/)
+### [react](https://teratron.github.io/cheatsheet/react/)
 
-[go](https://teratron.github.io/cheatsheet/go/)
+### [go](https://teratron.github.io/cheatsheet/go/)
 
-[git](https://teratron.github.io/cheatsheet/git/)
+### [git](https://teratron.github.io/cheatsheet/git/)
 
-[npm](https://teratron.github.io/cheatsheet/npm/)
+### [npm](https://teratron.github.io/cheatsheet/npm/)
 
 
