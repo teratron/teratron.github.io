@@ -1,4 +1,4 @@
-# Шпаргалки:
+## Шпаргалки:
 
 [java script](https://teratron.github.io/cheatsheet/js/)
 
@@ -8,6 +8,6 @@
 
 [git](https://teratron.github.io/cheatsheet/git/)
 
-[npm](https://teratron.github.io/cheatsheet/[npm]/)
+[npm](https://teratron.github.io/cheatsheet/npm/)
 
 
