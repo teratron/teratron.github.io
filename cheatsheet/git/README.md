@@ -3,6 +3,7 @@
 [Источник](https://github.com/cyberspacedk/Git-commands)
 
 ### Создать новый репозиторий
+
 ```shell script
 git init             # создать новый проект в текущей директории
 git init folder-name # создать новый проект в указанной директории
