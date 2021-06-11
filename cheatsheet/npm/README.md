@@ -1,4 +1,5 @@
 # NPM
+### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
 
 ### Установка / обновление npm
 
@@ -86,3 +87,5 @@
     npm owner add marak http-server
     npm owner rm marak http-server
     npm owner ls http-server
+
+### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)

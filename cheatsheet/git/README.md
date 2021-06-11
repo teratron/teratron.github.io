@@ -1,4 +1,5 @@
 # Git
+### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
 
 [Источник](https://github.com/cyberspacedk/Git-commands)
 
@@ -368,3 +369,5 @@ git commit -am "Navigation fixs"   # сделать коммит
 *.css  diff=css
 *.scss diff=css
 ```
+
+### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)

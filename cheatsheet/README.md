@@ -1,6 +1,6 @@
 # Шпаргалки:
 
-### [java script](https://teratron.github.io/cheatsheet/js/)
+### [javascript](https://teratron.github.io/cheatsheet/js/)
 
 ### [react](https://teratron.github.io/cheatsheet/react/)
 
