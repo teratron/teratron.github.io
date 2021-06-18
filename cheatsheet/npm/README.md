@@ -2,11 +2,10 @@
 ### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
 
 ### Установка / обновление npm
-
     npm install npm -g
+    npm install npm@latest -g
 
 ### Поиск пакетов в npm
-
     npm search hook.io
 
 ### Просмотр информации о пакете
@@ -14,7 +13,6 @@
     npm view hook.io
 
 ### Локальная установка пакетов
-
     npm install http-server
 
 ### Глобальная установка пакетов
@@ -22,15 +20,12 @@
     npm install http-server -g
 
 ### Удаление локально установленного пакета
-
     npm uninstall http-server
 
 ### Удаление глобально установленного пакета
-
     npm uninstall http-server -g
 
 ### Установка определённой версии пакета
-
     npm install http-server@0.3.0
 
 ### Установка модуля с Github
@@ -47,13 +42,11 @@
     npm link
 
 ### Связи локальных пакетов для нескольких приложений
-
     mkdir newapp/
     cd newapp/
     npm link http-server
 
 ### Отмена связи между пакетами приложения
-
     cd newapp/
     npm unlink http-server
 
@@ -63,22 +56,18 @@
     npm unlink
 
 ### Создание нового пакета
-
     mkdir mypackage/
     cd mypackage/
     npm init
 
 ### Добавление нового пользователя
-
     npm adduser
 
 ### Публикация пакета в репозиторий npm
-
     cd mypackage/
     npm publish
 
 ### Удаление пакета из репозитория npm
-
     npm unpublish http-server
 
 ### Управление правами доступа к пакетам в репозитории npm
@@ -87,5 +76,13 @@
     npm owner add marak http-server
     npm owner rm marak http-server
     npm owner ls http-server
+
+### Чистит кэш
+    npm cache rm
+    npm cache clean
+    npm cache clean --force
+
+### Проверяет кэш
+    npm cache verify
 
 ### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
