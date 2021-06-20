@@ -6,6 +6,4 @@
 При вызове он должен проверять this.props и this.state.
 render() не будет вызываться, если shouldComponentUpdate() возвращает false.
 
-
-
 [Назад](https://teratron.github.io/cheatsheet/react/)
