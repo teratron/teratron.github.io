@@ -1,5 +1,5 @@
 # NPM
-### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
+[Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
 
 ### Установка / обновление npm
     npm install npm -g
@@ -85,4 +85,4 @@
 ### Проверяет кэш
     npm cache verify
 
-### [Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
+[Назад к перечню шпаргалок](https://teratron.github.io/cheatsheet/)
