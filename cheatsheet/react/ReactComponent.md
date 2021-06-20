@@ -1,5 +1,5 @@
 # React.Component
-### [Назад](https://teratron.github.io/cheatsheet/react/)
+[Назад](https://teratron.github.io/cheatsheet/react/)
 
 ## render()
 Метод render() — единственный обязательный методов в классовом компоненте.
@@ -8,4 +8,4 @@ render () не будет вызываться, если shouldComponentUpdate()
 
 
 
-### [Назад](https://teratron.github.io/cheatsheet/react/)
+[Назад](https://teratron.github.io/cheatsheet/react/)
