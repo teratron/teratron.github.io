@@ -2406,7 +2406,7 @@ a[data-fancybox]:after {
 }
 
 
-/*** Desctop ***/
+/*** Desktop ***/
 
 @media only screen and (max-height: 700px) and (orientation: landscape) {
     html {
