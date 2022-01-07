@@ -1,0 +1,15 @@
+*
+!*/
+!.gitignore
+!.gitattributes
+!.gitmodules
+
+!*.md
+!**/*.md
+
+#!/git/
+#!/go/
+#!/graphql/
+#!/js/
+#!/npm/
+#!/react/
