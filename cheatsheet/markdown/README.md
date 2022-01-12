@@ -19,18 +19,14 @@
 ###### H6
 
 H1
-===
+==
+
 H2
----
+--
 
 ### Heading ID
 
-##### My Great Heading {#heading-id}
-
-```html
-<!-- The HTML looks like this: -->
-<h5 id="heading-id">My Great Heading</h5>
-```
+###### My Heading {#heading-id}
 
 ### Bold
 
@@ -186,21 +182,14 @@ See the section on [`code`](#code).
 
 ### Reference-style Links
 
-[hobbit-hole][1]\
-[hobbit-hole] [1]
+[hobbit-hole][1]
 
 [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
-
 [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
-
 [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'
-
 [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)
-
 [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
-
 [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'
-
 [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
 
 **An Example Putting the Parts Together:**
@@ -213,8 +202,22 @@ means comfort.
 
 ### Linking to Heading ID
 
-[Heading ID](#heading-id)\
-[Heading ID](https://teratron.github.io/cheatsheet/markdown/#heading-id)
+[My Heading](#heading-id)\
+[My Heading](https://teratron.github.io/cheatsheet/markdown/#heading-id)
+
+### Footnote
+
+Here's a simple footnote,[^1] and here's a longer one.[^note]
+
+[^1]: This is the first footnote.
+
+[^note]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
 
 ### Image
 
@@ -247,8 +250,8 @@ means comfort.
 
 ### Emoji
 
-Gone camping! [:tent:] Be back soon.\
-That is so funny! [:joy:]
+Gone camping! :tent: Be back soon.\
+That is so funny! :joy:
 
 *See also [Emojipedia](https://https://emojipedia.org/.org)*
 
@@ -276,19 +279,3 @@ That is so funny! [:joy:]
 [Назад к перечню шпаргалок][back]
 
 [back]: <https://teratron.github.io/cheatsheet/> "Назад к перечню шпаргалок"
-
-### Footnote
-
-Here's a simple footnote,[^1] and here's a longer one.[^note]
-
----
-
-[^1]: This is the first footnote.
-
-[^note]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
