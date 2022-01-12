@@ -91,16 +91,9 @@ This is really***very***important text.
 1. First item
 2. Second item
 3. Third item
-
-
 1. First item
 1. Second item
 8. Third item
-1. Fourth item
-
-
-1. First item
-2. Second item
 3. Third item
     1. Indented item
     2. Indented item
@@ -111,24 +104,16 @@ This is really***very***important text.
 - First item
 - Second item
 - Third item
-
-* First item
-* Second item
-* Third item
-* Fourth item
-
-+ First item
-+ Second item
-+ Third item
-+ Fourth item
-
-- First item
-- Second item
-- Third item
     - Indented item
     - Indented item
 - Fourth item
 
+* First item
+* Second item
+* Third item
++ First item
++ Second item
++ Third item
 
 - 1968\. A great year!
 - I think 1969 was second best.
@@ -144,9 +129,9 @@ Second Term
 
 ### Task List
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+-[x] Write the press release
+-[ ] Update the website
+-[ ] Contact the media
 
 ### Code
 
@@ -276,8 +261,8 @@ Here's a simple footnote,[^1] and here's a longer one.[^note]
 
 ### Emoji
 
-Gone camping! :tent: Be back soon.\
-That is so funny! :joy:
+Gone camping! [:tent:] Be back soon.\
+That is so funny! [:joy:]
 
 (See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
 
