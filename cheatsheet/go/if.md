@@ -1,6 +1,7 @@
 # if
-[Назад к перечню](https://teratron.github.io/cheatsheet/go/)
 
+[Назад][back]
 
+[Назад][back]
 
-[Назад к перечню](https://teratron.github.io/cheatsheet/go/)
+[back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"
