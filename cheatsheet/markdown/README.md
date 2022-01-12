@@ -19,17 +19,17 @@
 ###### H6
 
 H1
-==
+===
 H2
---
+---
 
 ### Heading ID
 
-##### My Great Heading {#custom-id}
+##### My Great Heading {#heading-id}
 
 ```html
 <!-- The HTML looks like this: -->
-<h5 id="custom-id">My Great Heading</h5>
+<h5 id="heading-id">My Great Heading</h5>
 ```
 
 ### Bold
@@ -107,7 +107,6 @@ This is really***very***important text.
     - Indented item
     - Indented item
 - Fourth item
-
 * First item
 * Second item
 * Third item
@@ -129,9 +128,9 @@ Second Term
 
 ### Task List
 
--[x] Write the press release
--[ ] Update the website
--[ ] Contact the media
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
 ### Code
 
@@ -212,10 +211,10 @@ means comfort.
 
 [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
 
-### Linking to Heading IDs
+### Linking to Heading ID
 
 [Heading ID](#heading-id)\
-[Heading ID](https://www.markdownguide.org/extended-syntax#heading-id)
+[Heading ID](https://teratron.github.io/cheatsheet/markdown/#heading-id)
 
 ### Image
 
@@ -274,6 +273,10 @@ That is so funny! [:joy:]
 | ! | exclamation mark |
 | &#124; | pipe |
 
+[Назад к перечню шпаргалок][back]
+
+[back]: <https://teratron.github.io/cheatsheet/> "Назад к перечню шпаргалок"
+
 ### Footnote
 
 Here's a simple footnote,[^1] and here's a longer one.[^note]
@@ -289,7 +292,3 @@ Here's a simple footnote,[^1] and here's a longer one.[^note]
     `{ my code }`
 
     Add as many paragraphs as you like.
-
-[Назад к перечню шпаргалок][back]
-
-[back]: <https://teratron.github.io/cheatsheet/> "Назад к перечню шпаргалок"
