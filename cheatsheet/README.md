@@ -1,13 +1,17 @@
 # Шпаргалки:
 
-### [javascript](https://teratron.github.io/cheatsheet/js/)
+### [JavaScript](https://teratron.github.io/cheatsheet/javascript/)
 
-### [react](https://teratron.github.io/cheatsheet/react/)
+### [React](https://teratron.github.io/cheatsheet/react/)
 
-### [graphql](https://teratron.github.io/cheatsheet/graphql/)
+### [GraphQL](https://teratron.github.io/cheatsheet/graphql/)
 
-### [go](https://teratron.github.io/cheatsheet/go/)
+### [Go](https://teratron.github.io/cheatsheet/go/)
 
-### [git](https://teratron.github.io/cheatsheet/git/)
+### [Godot](https://teratron.github.io/cheatsheet/godot/)
 
-### [npm](https://teratron.github.io/cheatsheet/npm/)
+### [Git](https://teratron.github.io/cheatsheet/git/)
+
+### [NPM](https://teratron.github.io/cheatsheet/npm/)
+
+### [Markdown](https://teratron.github.io/cheatsheet/markdown/)
