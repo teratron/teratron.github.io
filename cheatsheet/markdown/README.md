@@ -26,7 +26,7 @@ H2
 
 ### Heading ID
 
-###### My Heading {#heading-id}
+### My Heading {#heading-id}
 
 ### Bold
 
