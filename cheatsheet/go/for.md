@@ -56,14 +56,6 @@
     }
 ```
 
-```go
-    ch := make(chan int, 1)
-    i := 0
-    for ch <- 1; i < 5; i++ {
-        fmt.Println(i)
-    }
-```
-
 ### Range
 
 ```go
@@ -146,12 +138,70 @@
 ```
 
 ```go
+    // nil map
+    var m map[string]int
+    for range m {
+        fmt.Println("foo")
+    }
+```
+
+### Channel
+
+```go
+    ch := make(chan int, 1)
+    i := 0
+    for ch <- 1; i < 5; i++ {
+        fmt.Println(i)
+    }
+```
+
+```go
+    ch := make(chan int)
+    go func() {
+        time.Sleep(3 * time.Second)
+        ch <- 1
+        time.Sleep(2 * time.Second)
+        ch <- 2
+        time.Sleep(time.Second)
+        close(ch)
+    }()
+    fmt.Printf("before:\t\t%s\n", time.Now())
+
+    for v := range ch {
+        fmt.Printf("tick #%d:\t%s\n", v, time.Now())
+    }
+    fmt.Printf("after:\t\t%s\n", time.Now())
+    
+    // before:		2009-11-10 23:00:00 +0000 UTC m=+0.000000001
+    // tick #1:	2009-11-10 23:00:03 +0000 UTC m=+3.000000001
+    // tick #2:	2009-11-10 23:00:05 +0000 UTC m=+5.000000001
+    // after:		2009-11-10 23:00:06 +0000 UTC m=+6.000000001
+```
+
+```go
 
 ```
 
 ```go
 
 ```
+
+```go
+
+```
+
+```go
+
+```
+
+```go
+
+```
+
+```go
+
+```
+
 [Назад][back]
 
 [back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"
