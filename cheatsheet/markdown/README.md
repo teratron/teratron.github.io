@@ -246,25 +246,12 @@ means comfort.
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
 
-### Footnote
-
-Here's a simple footnote,[^1] and here's a longer one.[^note]
-
-[^1]: This is the first footnote.\
-[^note]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
-
 ### Emoji
 
 Gone camping! [:tent:] Be back soon.\
 That is so funny! [:joy:]
 
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
+*See also [Emojipedia](https://https://emojipedia.org/.org)*
 
 ### Escaping Characters
 
@@ -286,6 +273,22 @@ That is so funny! [:joy:]
 | . | dot |
 | ! | exclamation mark |
 | &#124; | pipe |
+
+### Footnote
+
+Here's a simple footnote,[^1] and here's a longer one.[^note]
+
+---
+
+[^1]: This is the first footnote.
+
+[^note]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
 
 [Назад к перечню шпаргалок][back]
 
