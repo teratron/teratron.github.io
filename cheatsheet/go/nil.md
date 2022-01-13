@@ -1,6 +1,6 @@
 # nil
 
-[Назад][back]
+[РќР°Р·Р°Рґ][back]
 
 ### nil Can Represent Zero Values of Many Types
 
@@ -238,6 +238,6 @@ func main() {
 	fmt.Println(*new(interface{}) == nil)  // true
 ```
 
-[Назад][back]
+[РќР°Р·Р°Рґ][back]
 
-[back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"
+[back]: <https://teratron.github.io/cheatsheet/go/> "РќР°Р·Р°Рґ Рє РѕРіР»Р°РІР»РµРЅРёСЋ"
