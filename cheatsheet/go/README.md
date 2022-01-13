@@ -12,10 +12,10 @@
 
 [back]: <../.> "Назад к перечню шпаргалок"
 
-[for]: <for.md> "Циклы"
+[for]: <for> "Циклы"
 
-[if]: <if.md> "Условия"
+[if]: <if> "Условия"
 
-[nil]: <nil.md> "nil"
+[nil]: <nil> "nil"
 
-[layout]: <project-layout.md> "Стандартная версия проекта Go"
+[layout]: <project-layout> "Стандартная версия проекта Go"
