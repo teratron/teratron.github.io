@@ -3,44 +3,57 @@
 [Назад][back]
 
 ```go
-    for i := 1; i < 10; i++ {
+    for i := 1; i < 5; i++ {
         fmt.Println(i)
     }
 ```
 
 ```go
     var i = 1
-    for ; i < 10; i++ {
+    for ; i < 5; i++ {
         fmt.Println(i)
     }
 ```
 
 ```go
-    // Аналог "while"
-    var i = 1
-    for i < 10 {
+    ch := make(chan int, 1)
+    i := 0
+    for ch <- 1; i < 3; i++ {
         fmt.Println(i)
-        i++
-    }
-```
-
-```go
-    // Бесконечный цикл
-    for {
     }
 ```
 
 ```go
     i := 0
-    for fmt.Println("start"); i < 5; i++ {
+    for fmt.Println("start"); i < 3; i++ {
         fmt.Println(i)
     }
+    // start
+    // 0
+    // 1
+    // 2
 ```
 
 ```go
-    for i := 0; i < 5; fmt.Println("after") {
+    for i := 0; i < 3; fmt.Println("after") {
         i++
         continue
+    }
+    // 0
+    // after
+    // 1
+    // after
+    // 2
+    // after
+```
+
+### While
+
+```go
+    var i = 1
+    for i < 10 {
+        fmt.Println(i)
+        i++
     }
 ```
 
@@ -54,6 +67,18 @@
              v /= 2
          }
     }
+    // 39
+    // 9
+    // 4
+    // 2
+    // 1
+```
+
+### Бесконечный цикл
+
+```go
+    for {
+    }
 ```
 
 ### Range
@@ -62,6 +87,17 @@
     for range "ticks" {
         fmt.Println("tick") // Print 5 time "tick"
     }
+```
+
+```go
+    for i, c := range "ticks" {
+        fmt.Printf("%d: %q\n", i, c)
+    }
+    // 0: 't'
+    // 1: 'i'
+    // 2: 'c'
+    // 3: 'k'
+    // 4: 's'
 ```
 
 ```go
@@ -82,7 +118,6 @@
 
 ```go
     a := [...]string{"one", "two", "three", "four", "five"}
-
     for i := range a {
         a[4] = "six"
         fmt.Printf("%d: %s\n", i, a[i])
@@ -148,14 +183,6 @@
 ### Channel
 
 ```go
-    ch := make(chan int, 1)
-    i := 0
-    for ch <- 1; i < 5; i++ {
-        fmt.Println(i)
-    }
-```
-
-```go
     ch := make(chan int)
     go func() {
         time.Sleep(3 * time.Second)
@@ -171,19 +198,35 @@
         fmt.Printf("tick #%d:\t%s\n", v, time.Now())
     }
     fmt.Printf("after:\t\t%s\n", time.Now())
+
+    // before:       2009-11-10 23:00:00 +0000 UTC m=+0.000000001
+    // tick #1:      2009-11-10 23:00:03 +0000 UTC m=+3.000000001
+    // tick #2:      2009-11-10 23:00:05 +0000 UTC m=+5.000000001
+    // after:        2009-11-10 23:00:06 +0000 UTC m=+6.000000001
+```
+
+```go
+    ch := make(chan int)
+    close(ch)
+    for range ch {
+        fmt.Println("tick")
+    }
+    fmt.Println("done!")
+
+    // It prints done! to stdout.
+```
+
+```go
+    // nil channel
+    ch := make(chan int)
+    for range ch {
+    }
     
-    // before:		2009-11-10 23:00:00 +0000 UTC m=+0.000000001
-    // tick #1:	2009-11-10 23:00:03 +0000 UTC m=+3.000000001
-    // tick #2:	2009-11-10 23:00:05 +0000 UTC m=+5.000000001
-    // after:		2009-11-10 23:00:06 +0000 UTC m=+6.000000001
-```
-
-```go
-
-```
-
-```go
-
+    var ch chan int
+    for range ch {
+    }
+    
+    // fatal error: all goroutines are asleep - deadlock!
 ```
 
 ```go
