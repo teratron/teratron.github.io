@@ -413,8 +413,8 @@ git commit -am "Navigation fix"   # сделать коммит
 *.scss diff=css
 ```
 
+[*Источник*](https://github.com/cyberspacedk/Git-commands)
+
 [Назад к перечню шпаргалок][back]
 
 [back]: <https://teratron.github.io/cheatsheet/> "Назад к перечню шпаргалок"
-
-[Источник](https://github.com/cyberspacedk/Git-commands)

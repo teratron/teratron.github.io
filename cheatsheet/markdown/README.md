@@ -1,7 +1,5 @@
 # Markdown
 
-[The Markdown Guide](https://www.markdownguide.org)
-
 [Назад к перечню шпаргалок][back]
 
 ### Heading
@@ -275,6 +273,8 @@ That is so funny! :joy:
 | . | dot |
 | ! | exclamation mark |
 | &#124; | pipe |
+
+[*Источник*](https://www.markdownguide.org)
 
 [Назад к перечню шпаргалок][back]
 

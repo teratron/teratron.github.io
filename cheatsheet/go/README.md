@@ -16,6 +16,6 @@
 
 [if]: <https://teratron.github.io/cheatsheet/go/if> "Условия"
 
-[nil]: <nil> "nil"
+[nil]: <nil.md> "nil"
 
-[layout]: <project-layout> "Стандартная версия проекта Go"
+[layout]: <project-layout.md> "Стандартная версия проекта Go"
