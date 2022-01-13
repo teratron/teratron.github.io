@@ -1,10 +1,10 @@
 # Шпаргалки:
 
-### [JavaScript](https://teratron.github.io/cheatsheet/javascript/)
+### [JavaScript](javascript)
 
-### [React](https://teratron.github.io/cheatsheet/react/)
+### [React](./react)
 
-### [GraphQL](https://teratron.github.io/cheatsheet/graphql/)
+### [GraphQL](graphql/.)
 
 ### [Go](https://teratron.github.io/cheatsheet/go/)
 
