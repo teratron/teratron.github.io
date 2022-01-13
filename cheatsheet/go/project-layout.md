@@ -1,5 +1,7 @@
 # Стандартная версия проекта Go
 
+[Назад][back]
+
 ## Go Каталоги
 
 ### /cmd
@@ -181,3 +183,7 @@ Git крючки.
  -- go.sum
  -- // everything else
 ```
+
+[Назад][back]
+
+[back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"

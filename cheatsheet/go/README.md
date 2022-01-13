@@ -2,11 +2,11 @@
 
 [Назад к перечню шпаргалок][back]
 
-|||
-|:---|:---|
-| [for] | [if] |
-| [if] | [project][layout] |
-|||
+||||
+|:---|:---|:---|
+| [for] | [if] | [nil] |
+| [if] | [project][layout] |  |
+||||
 
 [Назад к перечню шпаргалок][back]
 
@@ -16,4 +16,6 @@
 
 [if]: <https://teratron.github.io/cheatsheet/go/if> "Условия"
 
-[layout]: <https://teratron.github.io/cheatsheet/go/project-layout> "Стандартная версия проекта Go"
+[nil]: <nil> "nil"
+
+[layout]: <project-layout> "Стандартная версия проекта Go"

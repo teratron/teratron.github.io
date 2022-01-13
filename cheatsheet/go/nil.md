@@ -1,5 +1,7 @@
 # nil
 
+[Назад][back]
+
 ### nil Can Represent Zero Values of Many Types
 
 In Go, nil can represent zero values of the following kinds of types:
@@ -235,3 +237,7 @@ func main() {
 	fmt.Println(*new(func()) == nil)       // true
 	fmt.Println(*new(interface{}) == nil)  // true
 ```
+
+[Назад][back]
+
+[back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"

@@ -198,7 +198,6 @@
         fmt.Printf("tick #%d:\t%s\n", v, time.Now())
     }
     fmt.Printf("after:\t\t%s\n", time.Now())
-
     // before:       2009-11-10 23:00:00 +0000 UTC m=+0.000000001
     // tick #1:      2009-11-10 23:00:03 +0000 UTC m=+3.000000001
     // tick #2:      2009-11-10 23:00:05 +0000 UTC m=+5.000000001
@@ -212,7 +211,6 @@
         fmt.Println("tick")
     }
     fmt.Println("done!")
-
     // It prints done! to stdout.
 ```
 
@@ -225,7 +223,6 @@
     var ch chan int
     for range ch {
     }
-    
     // fatal error: all goroutines are asleep - deadlock!
 ```
 
