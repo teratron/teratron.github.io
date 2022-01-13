@@ -2,7 +2,7 @@
 
 [Назад к перечню шпаргалок][back]
 
-- ### [React.Component](https://teratron.github.io/cheatsheet/react/react-component)
+- ### [React.Component](react-component.md)
 
 [Назад к перечню шпаргалок][back]
 
