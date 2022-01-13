@@ -1,5 +1,5 @@
 --------------------------------------------------
-Пример
+РџСЂРёРјРµСЂ
 --------------------------------------------------
 package main
 
@@ -16,7 +16,7 @@ goto election } else { fmt.Print("You are eligible to vote.")
 
 
 --------------------------------------------------
-Пример
+РџСЂРёРјРµСЂ
 --------------------------------------------------
 package main
 
@@ -28,6 +28,6 @@ func main() { var a int = 10 // local variable definition
 , a)
 a++ } }
 
-Результат:
+Р РµР·СѓР»СЊС‚Р°С‚:
 value of a: 10 value of a: 11 value of a: 12 value of a: 13 value of a: 14 value of a: 16 value of a: 17 value of a: 18
 value of a: 19

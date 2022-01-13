@@ -1,14 +1,14 @@
-var users []string // или var users []string = []string{"Tom", "Alice", "Kate"} // или var users = []string{"Tom", "
-Alice", "Kate"} // или users := []string{"Tom", "Alice", "Kate"}
+var users []string // РёР»Рё var users []string = []string{"Tom", "Alice", "Kate"} // РёР»Рё var users = []string{"Tom", "
+Alice", "Kate"} // РёР»Рё users := []string{"Tom", "Alice", "Kate"}
 
 --------------------------------------------------
-Создание среза
+РЎРѕР·РґР°РЅРёРµ СЃСЂРµР·Р°
 --------------------------------------------------
-var users []string = make([]string, 3, 5) // 3 - len, 5 - cap // или users := make([]string, 3, 5)
+var users []string = make([]string, 3, 5) // 3 - len, 5 - cap // РёР»Рё users := make([]string, 3, 5)
 
 --------------------------------------------------
-Добавление в срез / Оператор среза / Удаление элемента
+Р”РѕР±Р°РІР»РµРЅРёРµ РІ СЃСЂРµР· / РћРїРµСЂР°С‚РѕСЂ СЃСЂРµР·Р° / РЈРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
 --------------------------------------------------
 users := []string{"Bob", "Alice", "Kate", "Sam", "Tom", "Paul", "Mike", "Robert"} users = append(users[:3], users[4:]
-...)   // удаляем 4-й элемент fmt.Println(users)
+...)   // СѓРґР°Р»СЏРµРј 4-Р№ СЌР»РµРјРµРЅС‚ fmt.Println(users)
 // ["Bob", "Alice", "Kate", "Tom", "Paul", "Mike", "Robert"]

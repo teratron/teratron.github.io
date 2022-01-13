@@ -1,5 +1,5 @@
 --------------------------------------------------
-Создание и инициализация структуры
+РЎРѕР·РґР°РЅРёРµ Рё РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹
 --------------------------------------------------
 type person struct { name string age int }
 
@@ -7,10 +7,10 @@ var tom person var tom person = person{"Tom", 23} var alice person = person{age:
 
 var tom = person{name: "Tom", age: 24} bob := person{name: "Bob", age: 31}
 
-undefined := person{} // name - пустая строка, age - 0
+undefined := person{} // name - РїСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР°, age - 0
 
 --------------------------------------------------
-Обращение к полям структуры
+РћР±СЂР°С‰РµРЅРёРµ Рє РїРѕР»СЏРј СЃС‚СЂСѓРєС‚СѓСЂС‹
 --------------------------------------------------
 package main
 
@@ -21,13 +21,13 @@ type person struct { name string age int }
 func main() { var tom = person{name: "Tom", age: 24} fmt.Println(tom.name)       // Tom fmt.Println(tom.age)        //
 24
 
-    tom.age = 38                   // изменяем значение
+    tom.age = 38                   // РёР·РјРµРЅСЏРµРј Р·РЅР°С‡РµРЅРёРµ
     fmt.Println(tom.name, tom.age) // Tom 38
 
 }
 
 --------------------------------------------------
-Указатели на структуры
+РЈРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‚СЂСѓРєС‚СѓСЂС‹
 --------------------------------------------------
 package main
 
@@ -45,14 +45,14 @@ func main() { tom := person{name: "Tom", age: 22} var tomPointer *person = &tom
 
 }
 
-также:
+С‚Р°РєР¶Рµ:
 var tom *person = &person{name:"Tom", age:23} var bob *person = new(person)
 
-tom := person{name: "Tom", age: 22} var agePointer *int = &tom.age // указатель на поле tom.age
-*agePointer = 35 // изменяем значение поля fmt.Println(tom.age)            // 35
+tom := person{name: "Tom", age: 22} var agePointer *int = &tom.age // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РїРѕР»Рµ tom.age
+*agePointer = 35 // РёР·РјРµРЅСЏРµРј Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ fmt.Println(tom.age)            // 35
 
 --------------------------------------------------
-Вложенные структуры
+Р’Р»РѕР¶РµРЅРЅС‹Рµ СЃС‚СЂСѓРєС‚СѓСЂС‹
 --------------------------------------------------
 package main
 
@@ -71,16 +71,16 @@ func main() { var tom = person{ name: "Tom", age: 24, contactInfo: contact{ emai
 }
 
 --------------------------------------------------
-Хранения ссылки на структуру того же типа
+РҐСЂР°РЅРµРЅРёСЏ СЃСЃС‹Р»РєРё РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ С‚РѕРіРѕ Р¶Рµ С‚РёРїР°
 --------------------------------------------------
 package main
 
 import "fmt"
 
-type node struct { value int next *node // next node - ! ошибка структура не может иметь поле, которое представляет тип
-этой же структуры }
+type node struct { value int next *node // next node - ! РѕС€РёР±РєР° СЃС‚СЂСѓРєС‚СѓСЂР° РЅРµ РјРѕР¶РµС‚ РёРјРµС‚СЊ РїРѕР»Рµ, РєРѕС‚РѕСЂРѕРµ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ С‚РёРї
+СЌС‚РѕР№ Р¶Рµ СЃС‚СЂСѓРєС‚СѓСЂС‹ }
 
-// рекурсивный вывод списка func printNodeValue(n *node) { fmt.Println(n.value)
+// СЂРµРєСѓСЂСЃРёРІРЅС‹Р№ РІС‹РІРѕРґ СЃРїРёСЃРєР° func printNodeValue(n *node) { fmt.Println(n.value)
 if n.next != nil { printNodeValue(n.next)
 } }
 
