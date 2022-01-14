@@ -6,10 +6,3 @@
 
 !*.md
 !**/*.md
-
-#!/git/
-#!/go/
-#!/graphql/
-#!/js/
-#!/npm/
-#!/react/

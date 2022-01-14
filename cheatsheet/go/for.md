@@ -6,6 +6,14 @@
     for i := 1; i < 5; i++ {
         fmt.Println(i)
     }
+
+    for i := 0; i < 15; i += 3 {
+        fmt.Println(i)
+    }
+
+    for i := 100; i > 0; i -= 10 {
+        fmt.Println(i)
+    }
 ```
 
 ```go
@@ -175,7 +183,7 @@
 ```go
     // nil map
     var m map[string]int
-    for range m {
+    for range m { // цикл не будет выполнятся
         fmt.Println("foo")
     }
 ```
@@ -219,7 +227,7 @@
     ch := make(chan int)
     for range ch {
     }
-    
+    // или
     var ch chan int
     for range ch {
     }

@@ -2,8 +2,8 @@
 
 [Назад к перечню шпаргалок][back]
 
-- ### [React.Component](react-component.md)
+- ### [React.Component](react-component)
 
 [Назад к перечню шпаргалок][back]
 
-[back]: <https://teratron.github.io/cheatsheet/> "Назад к перечню шпаргалок"
+[back]: <../.> "Назад к перечню шпаргалок"

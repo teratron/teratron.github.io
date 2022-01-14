@@ -2,16 +2,16 @@
 
 ### [JavaScript](javascript)
 
-### [React](./react)
+### [React](react)
 
-### [GraphQL](graphql/.)
+### [GraphQL](graphql)
 
-### [Go](https://teratron.github.io/cheatsheet/go/)
+### [Go](go)
 
-### [Godot](https://teratron.github.io/cheatsheet/godot/)
+### [Godot](godot)
 
-### [Git](https://teratron.github.io/cheatsheet/git/)
+### [Git](git)
 
-### [NPM](https://teratron.github.io/cheatsheet/npm/)
+### [NPM](npm)
 
-### [Markdown](https://teratron.github.io/cheatsheet/markdown/)
+### [Markdown](markdown)

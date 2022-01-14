@@ -103,10 +103,8 @@ This is really***very***important text.
 - Fourth item
 * First item
 * Second item
-* Third item
 + First item
 + Second item
-+ Third item
 
 - 1968\. A great year!
 - I think 1969 was second best.
@@ -278,4 +276,4 @@ That is so funny! :joy:
 
 [Назад к перечню шпаргалок][back]
 
-[back]: <https://teratron.github.io/cheatsheet/> "Назад к перечню шпаргалок"
+[back]: <../.> "Назад к перечню шпаргалок"

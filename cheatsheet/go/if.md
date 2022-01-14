@@ -28,4 +28,4 @@
 
 [Назад][back]
 
-[back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"
+[back]: <../.> "Назад к оглавлению"

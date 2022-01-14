@@ -227,7 +227,7 @@ func main() {
 }
 ```
 
-### *new(T) Results a Nil T Value if the Zero Value of Type T Is Represented With the Predeclared nil Identifier
+### *new(T) приводит к значению nil T, если нулевое значение типа T Представлено с предварительно заданным идентификатором nil
 
 ```go
 	fmt.Println(*new(*int) == nil)         // true
@@ -240,4 +240,4 @@ func main() {
 
 [Назад][back]
 
-[back]: <https://teratron.github.io/cheatsheet/go/> "Назад к оглавлению"
+[back]: <../.> "Назад к оглавлению"
