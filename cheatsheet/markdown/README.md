@@ -1,5 +1,7 @@
 # Markdown
 
+*[Источник](https://www.markdownguide.org)*
+
 [Назад к перечню шпаргалок][back]
 
 ### Heading
@@ -172,6 +174,12 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best sea
 
 ### Formatting Links
 
+```markdown
+I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).
+```
+
 I love supporting the **[EFF](https://eff.org)**.\
 This is the *[Markdown Guide](https://www.markdownguide.org)*.\
 See the section on [`code`](#code).
@@ -271,8 +279,6 @@ That is so funny! :joy:
 | . | dot |
 | ! | exclamation mark |
 | &#124; | pipe |
-
-[*Источник*](https://www.markdownguide.org)
 
 [Назад к перечню шпаргалок][back]
 

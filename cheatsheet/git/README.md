@@ -413,7 +413,7 @@ git commit -am "Navigation fix"   # сделать коммит
 *.scss diff=css
 ```
 
-[*Источник*](https://github.com/cyberspacedk/Git-commands)
+*[Источник](https://github.com/cyberspacedk/Git-commands)*
 
 [Назад к перечню шпаргалок][back]
 

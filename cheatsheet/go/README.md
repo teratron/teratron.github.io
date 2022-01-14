@@ -2,17 +2,13 @@
 
 [Назад к перечню шпаргалок][back]
 
-[**for**][for]
+[**for**](for.md "Циклы")
 
-[for][for]
-
-[for](for.md)
-
-[for](for)
+**[for](for.md "Циклы")**
 
 ||||
 |:---|:---|:---|
-| [**for**][for] | [for]  | **[nil]** |
+| [**for**][for] | [for](for.md "Циклы") | **[nil]** |
 | **[if]** | [**project**][layout] | [if] |
 ||||
 
