@@ -4,8 +4,8 @@
 
 ||||
 |:---|:---|:---|
-| **[for](for.md)** | **[nil](nil.md)** |  |
-| **[if](if.md)** | **[Project Layout](project-layout.md)** |  |
+| **[for](for.md)** | **[map](map.md)** | **[nil](nil.md)** |
+| **[if](if.md)** |  | **[Project Layout](project-layout.md)** |
 ||||
 
 [Назад к перечню шпаргалок][back]
