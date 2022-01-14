@@ -60,4 +60,4 @@ function componentDidUpdate(prevProps) {
 
 [Назад][back]
 
-[back]: <https://teratron.github.io/cheatsheet/react/> "Назад к оглавлению"
+[back]: <../.> "Назад к оглавлению"

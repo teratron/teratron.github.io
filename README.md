@@ -1,5 +1,5 @@
 # Карта:
 
-### [Шпаргалки](https://teratron.github.io/cheatsheet/)
+### [Шпаргалки](cheatsheet)
 
-### [Talmazan](https://teratron.github.io/talmazan/)
+### [Talmazan](talmazan)
