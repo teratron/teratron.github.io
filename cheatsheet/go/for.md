@@ -234,12 +234,35 @@
     // fatal error: all goroutines are asleep - deadlock!
 ```
 
-```go
+### Break
 
+```go
+    outside:                       // declare the label
+    for i := 0; i<2; i++ {
+        for j := 0; j<2; j++ {
+            if i < j {
+                break outside      // break to that label
+            }
+            fmt.Println(i, j)
+        } 
+    }
+    // prints 0 0
 ```
 
-```go
+### Continue
 
+```go
+    for i := 0; i<2; i++ {
+        for j := 0; j<2; j++ {
+            if i < j {
+                continue
+            }
+            fmt.Println(i, j)
+        } 
+    }
+    // 0 0
+    // 1 0
+    // 1 1
 ```
 
 ```go
@@ -252,4 +275,4 @@
 
 [Назад][back]
 
-[back]: </> "Назад к оглавлению"
+[back]: <.> "Назад к оглавлению"
