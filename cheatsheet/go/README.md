@@ -2,24 +2,12 @@
 
 [Назад к перечню шпаргалок][back]
 
-[**for**](for.md "Циклы")
-
-**[for](for.md)**
-
 ||||
 |:---|:---|:---|
-| [**for**][for] | [for](for.md) | **[nil]** |
-| **[if]** | [**project**][layout] | [if] |
+| **[for](for.md)** | **[nil](nil.md)** |  |
+| **[if](if.md)** | **[Project Layout](project-layout.md)** |  |
 ||||
 
 [Назад к перечню шпаргалок][back]
 
 [back]: <../.> "Назад к перечню шпаргалок"
-
-[for]: <for> "Циклы"
-
-[if]: <if.md> "Условия"
-
-[nil]: <nil> "nil"
-
-[layout]: <project-layout> "Стандартная версия проекта Go"
