@@ -4,11 +4,11 @@
 
 [**for**](for.md "Циклы")
 
-**[for](for.md "Циклы")**
+**[for](for.md)**
 
 ||||
 |:---|:---|:---|
-| [**for**][for] | [for](for.md "Циклы") | **[nil]** |
+| [**for**][for] | [for](for.md) | **[nil]** |
 | **[if]** | [**project**][layout] | [if] |
 ||||
 
