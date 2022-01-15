@@ -24,14 +24,6 @@
 ```
 
 ```go
-    ch := make(chan int, 1)
-    i := 0
-    for ch <- 1; i < 3; i++ {
-        fmt.Println(i)
-    }
-```
-
-```go
     i := 0
     for fmt.Println("start"); i < 3; i++ {
         fmt.Println(i)

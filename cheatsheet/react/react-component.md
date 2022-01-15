@@ -60,4 +60,4 @@ function componentDidUpdate(prevProps) {
 
 [Назад][back]
 
-[back]: <../.> "Назад к оглавлению"
+[back]: <.> "Назад к оглавлению"
