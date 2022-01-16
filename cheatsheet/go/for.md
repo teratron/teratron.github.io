@@ -236,7 +236,7 @@
                 break outside      // break to that label
             }
             fmt.Println(i, j)
-        } 
+        }
     }
     // prints 0 0
 ```
@@ -250,19 +250,11 @@
                 continue
             }
             fmt.Println(i, j)
-        } 
+        }
     }
     // 0 0
     // 1 0
     // 1 1
-```
-
-```go
-
-```
-
-```go
-
 ```
 
 [Назад][back]
