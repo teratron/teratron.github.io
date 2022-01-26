@@ -2,6 +2,32 @@
 
 [Назад к перечню шпаргалок][back]
 
+### Версия git
+
+```sh
+git --version
+```
+
+### Конфигурация
+
+```sh
+git config --list --show-origin                                # посмотреть все установленные настройки и узнать где именно они заданы
+git config --list                                              # проверка настроек
+git config user.name                                           # можно проверить значение конкретного ключа, выполнив git config <key>
+git config --global user.name "Oleg Alexandrov"                # имя пользователя
+git config --global user.email "alexandrovoleg.ru@gmail.com"
+git config --global core.editor emacs                          # выбор редактора
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --global init.defaultBranch master                  # настройка ветки по умолчанию
+git config --global core.autocrlf true                         # включить преобразование окончаний строк из CRLF в LF
+```
+
+### Макрос
+
+```sh
+alias autocommit=git add . && git commit -m "`git status`"
+```
+
 ### Создать новый репозиторий
 
 ```sh
