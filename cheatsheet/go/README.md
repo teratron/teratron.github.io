@@ -2,16 +2,21 @@
 
 [Назад к перечню шпаргалок][back]
 
-| Операторы               ||||||
-|:------------------------|:-----------------------|:-------|:-----|:------------------|:----------------------------------------|
-| **[for](for.md)**       | **[map](map.md)**      | append | init | **[nil](nil.md)** | **[Project Layout](project-layout.md)** |
-| **[if](if.md)**         | **[chan*](channel.md)**| make   | main |
-| **[switch](switch.md)** | **[array*](array.md)**  | new    |
-| **[select](select.md)** |                        | len    |
+||||||
+|:------------------------|:-----------------------|:-------|:-----|:------------------|
+| **[for](for.md)**       | **[map](map.md)**      | append | init | **[nil](nil.md)** |
+| **[if*](if.md)**        | **[chan*](channel.md)**| make   | main |
+| **[switch](switch.md)** | **[array*](array.md)** | new    |
+| **[select](select.md)** | **[slice*](slice.md)** | len    |
 | **[func](func.md)**     |                        | cap    |
 | **[go](go.md)**         |                        | copy   |
-| **[goto](goto.md)**     |
-| **[defer](defer.md)**   |
+| **[goto](goto.md)**     |||||
+| **[defer*](defer.md)**  |||||
+||||||
+
+**[Defer, Panic, Recover](defer-panic-recover.md)**
+
+**[Project Layout](project-layout.md)**
 
 [Назад к перечню шпаргалок][back]
 

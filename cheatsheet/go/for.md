@@ -28,7 +28,6 @@ i := 0
 for fmt.Println("start"); i < 3; i++ {
     fmt.Println(i)
 }
-
 // start
 // 0
 // 1
@@ -40,7 +39,6 @@ for i := 0; i < 3; fmt.Println("after") {
     i++
     continue
 }
-
 // 0
 // after
 // 1
@@ -69,7 +67,6 @@ for v != 0 {
          v /= 2
      }
 }
-
 // 39
 // 9
 // 4
@@ -96,7 +93,6 @@ for range "ticks" {
 for i, c := range "ticks" {
     fmt.Printf("%d: %q\n", i, c)
 }
-
 // 0: 't'
 // 1: 'i'
 // 2: 'c'
@@ -134,7 +130,6 @@ nums := &[...]string{"one", "two", "three"}
 for idx, num := range *nums {
     fmt.Printf("%d: %s\n", idx, num)
 }
-
 // 0: one
 // 1: two
 // 2: three
@@ -142,7 +137,6 @@ for idx, num := range *nums {
 for idx, num := range nums {
     fmt.Printf("%d: %s\n", idx, num)
 }
-
 // 0: one
 // 1: two
 // 2: three
@@ -248,7 +242,6 @@ for i := 0; i<2; i++ {
         fmt.Println(i, j)
     }
 }
-
 // prints 0 0
 ```
 
@@ -263,7 +256,6 @@ for i := 0; i<2; i++ {
         fmt.Println(i, j)
     }
 }
-
 // 0 0
 // 1 0
 // 1 1
