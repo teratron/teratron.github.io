@@ -24,7 +24,6 @@ func main() {
     fmt.Scanln()        // ждем ввода пользователя
     fmt.Println("The End")
 }
-
 // 2 - 2
 // 1 - 1
 // 4 - 24
@@ -78,7 +77,6 @@ func main() {
     time.Sleep(time.Second)
     fmt.Println("done")
 }
-
 // direct : 0
 // direct : 1
 // direct : 2

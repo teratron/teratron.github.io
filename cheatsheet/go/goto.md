@@ -28,7 +28,6 @@ LOOP: for a < 20 {
     fmt.Printf("value of a: %d\n", a)
     a++
 }
-
 // value of a: 10
 // value of a: 11
 // value of a: 12
