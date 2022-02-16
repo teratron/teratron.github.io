@@ -2,20 +2,20 @@
 
 [Назад][back]
 
-### nil Can Represent Zero Values of Many Types
+### `nil` может представлять нулевые значения многих типов
 
-In Go, nil can represent zero values of the following kinds of types:
+В Go `nil` может представлять нулевые значения следующих типов:
 
-- pointer types (including type-unsafe ones).
-- map types.
-- slice types.
-- function types.
-- channel types.
-- interface types.
+- pointer types (в том числе небезопасные по типу).
+- `map` types.
+- `slice` types.
+- `function` types.
+- `channel` types.
+- `interface` types.
 
-### Predeclared nil Has Not a Default Type
+### Предварительно объявленный `nil` не имеет типа по умолчанию
 
-There must be sufficient information for compiler to deduce the type of nil value.
+Для компилятора должно быть достаточно информации, чтобы определить тип `nil` значения.
 
 ```go
 _ = (*struct{})(nil)
@@ -26,7 +26,7 @@ _ = (func())(nil)
 _ = interface{}(nil)
 ```
 
-These lines are equivalent to the above lines.
+Эти строки эквивалентны приведенным выше строкам.
 
 ```go
 var _ *struct{} = nil
@@ -37,13 +37,13 @@ var _ func() = nil
 var _ interface{} = nil
 ```
 
-This following line doesn't compile.
+Эта следующая строка не компилируется.
 
 ```go
 var _ = nil
 ```
 
-### Predeclared nil Is Not a Keyword in Go
+### Предварительно объявленный `nil` не является ключевым словом в Go
 
 ```go
 nil := 123
