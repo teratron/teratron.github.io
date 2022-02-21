@@ -18,7 +18,7 @@
 
 ### useState
 
-```javascript
+```react
 // Такой синтаксис в JavaScript называется «деструктуризацией массивов (array destructuring)».
 // Он означает, что мы создаём две новые переменные, fruit и setFruit.
 const [fruit, setFruit] = useState('банан');
@@ -26,13 +26,13 @@ const [fruit, setFruit] = useState('банан');
 
 Во fruit будет записано первое значение, вернувшееся из useState, а в setFruit — второе, что равносильно такому коду:
 
-```javascript
+```react
 let fruitStateVariable = useState('банан'); // Возвращает пару значений
 let fruit = fruitStateVariable[0];          // Извлекаем первое значение
 let setFruit = fruitStateVariable[1];       // Извлекаем второе значение
 ```
 
-```javascript
+```react
 const [state, setState] = useState(initialState);
 
 // Функция setState используется для обновления состояния.
@@ -52,7 +52,7 @@ function Counter({initialCount}) {
 }
 ```
 
-```javascript
+```react
 // Ленивая инициализация состояния
 const [state, setState] = useState(() => {
   const initialState = someExpensiveComputation(props);
@@ -65,7 +65,7 @@ const [state, setState] = useState(() => {
 Принимает функцию, которая содержит императивный код, возможно, с эффектами. По умолчанию эффекты запускаются после
 каждого завершённого рендеринга, но вы можете решить запускать их только при изменении определённых значений.
 
-```javascript
+```react
 useEffect(didUpdate);
 
 // Очистка эффекта
@@ -82,7 +82,7 @@ useEffect(() => {
 // предыдущий эффект очищается перед выполнением следующего эффекта.
 ```
 
-```javascript
+```react
 useEffect(
   () => {
     const subscription = props.source.subscribe();
@@ -103,7 +103,7 @@ useEffect(
 Принимает объект контекста (значение, возвращённое из `React.createContext`) и возвращает текущее значение контекста для
 этого контекста.
 
-```javascript
+```react
 const value = useContext(MyContext);
 
 const themes = {
@@ -150,14 +150,14 @@ function ThemedButton() {
 Альтернатива для `useState`.\
 Принимает редюсер типа `(state, action) => newState` и возвращает текущее состояние в паре с методом dispatch.
 
-```javascript
+```react
 const [state, dispatch] = useReducer(reducer, initialArg, init);
 ```
 
 Хук `useReducer` обычно предпочтительнее `useState`, когда у вас сложная логика состояния, которая включает в себя
 несколько значений, или когда следующее состояние зависит от предыдущего.
 
-```javascript
+```react
 const initialState = {count: 0};
 
 function reducer(state, action) {
@@ -223,7 +223,7 @@ function Counter({initialCount}) {
 
 Вернёт мемоизированную версию колбэка, который изменяется только, если изменяются значения одной из зависимостей.
 
-```javascript
+```react
 const memoizedCallback = useCallback(
   () => { doSomething(a, b); },
   [a, b],
@@ -237,7 +237,7 @@ const memoizedCallback = useCallback(
 Возвращает мемоизированное значение.\
 функция, переданная useMemo, запускается во время рендеринга.
 
-```javascript
+```react
 const memoizedValue = useMemo(
     () => computeExpensiveValue(a, b),
     [a, b]
