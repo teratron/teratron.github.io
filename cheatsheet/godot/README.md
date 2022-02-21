@@ -5,6 +5,7 @@
 - [**for**](for.md)
 - [**if**](if.md)
 - [**signal**](signal.md)
+- [**coroutines**](coroutines.md)
 
 [Назад к перечню шпаргалок][back]
 

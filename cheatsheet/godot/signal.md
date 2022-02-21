@@ -54,6 +54,10 @@ func doSomething():
 	print('Game is Over Do Something ')
 ```
 
+We changed value of health to: 0
+
+Game is Over Do Something
+
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
