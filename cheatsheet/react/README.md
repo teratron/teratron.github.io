@@ -2,7 +2,11 @@
 
 [Назад к перечню шпаргалок][back]
 
-- ### [React.Component](react-component.md)
+- #### [React](react.md)
+- #### [React.Component](react-component.md)
+- #### [Hooks](hooks.md)
+- #### [Context](context.md)
+- #### [Boundary](boundary.md)
 
 [Назад к перечню шпаргалок][back]
 

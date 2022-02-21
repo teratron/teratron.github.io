@@ -2,34 +2,30 @@
 
 [Назад][back]
 
----
-
 ### render()
 
 Единственный из обязательных методов в классовом компоненте. При вызове он должен проверять `this.props` и `this.state`.
 `render()` не будет вызываться, если `shouldComponentUpdate()` возвращает false.
 
----
-
 ### constructor()
 
-    constructor(props)
+```javascript
+constructor(props)
+```
 
 Конструктор для компонента React вызывается до того, как будет примонтирован.
-
----
 
 ### componentDidMount()
 
 Вызывается сразу после монтирования компонента (вставлено в DOM-дерево).
 
----
-
 ### componentDidUpdate()
 
-    componentDidUpdate(prevProps, prevState, snapshot)
+```javascript
+componentDidUpdate(prevProps, prevState, snapshot)
+```
 
-Вызывается сразу после обновления. Этот метод не вызывается при первоначальной отрисовке.
+Вызывается сразу после обновления. Этот метод не вызывается при первоначальной отрисовки.
 
 ```javascript
 function componentDidUpdate(prevProps) {
@@ -42,17 +38,15 @@ function componentDidUpdate(prevProps) {
 
 `componentDidUpdate()` не будет вызываться, если `shouldComponentUpdate()` возвращает false.
 
----
-
 ### componentWillUnmount()
 
 Вызывается непосредственно перед размонтированием и уничтожением компонента.
 
----
-
 ### shouldComponentUpdate()
 
-    shouldComponentUpdate(nextProps, nextState)
+```javascript
+shouldComponentUpdate(nextProps, nextState)
+```
 
 Используйте `shouldComponentUpdate()`, чтобы позволить React знать, не влияет ли на результат компонента текущее
 изменение состояния или свойства.
