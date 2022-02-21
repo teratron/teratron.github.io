@@ -138,7 +138,7 @@ function Toolbar(props) {
 function ThemedButton() {
   const theme = useContext(ThemeContext);
   return (
-    <button style={{ background: theme.background, color: theme.foreground }}>
+    <button style={{background: theme.background, color: theme.foreground}}>
       Я стилизован темой из контекста!
     </button>
   );
