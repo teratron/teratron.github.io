@@ -36,18 +36,18 @@
 #### Хуки:
 
 - **Основные хуки**
-  - useState
-  - useEffect
-  - useContext
+    - useState
+    - useEffect
+    - useContext
 
 - **Дополнительные хуки**
-  - useReducer
-  - useCallback
-  - useMemo
-  - useRef
-  - useImperativeHandle
-  - useLayoutEffect
-  - useDebugValue
+    - useReducer
+    - useCallback
+    - useMemo
+    - useRef
+    - useImperativeHandle
+    - useLayoutEffect
+    - useDebugValue
 
 ### React.Component
 
