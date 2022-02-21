@@ -4,18 +4,21 @@
 
 ### Пользовательские сигналы
 
-_Node2D.gd_
+_Health.gd_
 
 ```gdscript
 extends Node2D
 
-onready var PlayerNode = get_owner()
+signal gameOver
+onready var PlayerNode = get_node('Player')
 
 func _ready():
-	PlayerNode.connect("gameOver", self, "doSomething")
+	PlayerNode.connect("healthChanged", self, "doSomething")
 
-func doSomething():
-	print('Game is Over Do Something ')
+func doSomething(playerHealth):
+	print('We changed value of health to: ', playerHealth)
+	PlayerNode.disconnect("healthChanged", self, "doSomething")
+	emit_signal("gameOver")
 ```
 
 _Player.gd_
@@ -37,21 +40,18 @@ func changeHealth(value):
 	emit_signal("healthChanged", playerHealth)
 ```
 
-_Health.gd_
+_GameOver.gd_
 
 ```gdscript
 extends Node2D
 
-signal gameOver
-onready var PlayerNode = get_node('Player') 
+onready var PlayerNode = get_owner()
 
 func _ready():
-	PlayerNode.connect("healthChanged", self, "doSomething")
+	PlayerNode.connect("gameOver", self, "doSomething")
 
-func doSomething(playerHealth):
-	print('We changed value of health to: ', playerHealth)
-	PlayerNode.disconnect("healthChanged", self, "doSomething")
-	emit_signal("gameOver")
+func doSomething():
+	print('Game is Over Do Something ')
 ```
 
 [Назад][back]
