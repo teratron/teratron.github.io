@@ -45,10 +45,10 @@ _GameOver.gd_
 ```gdscript
 extends Node2D
 
-onready var PlayerNode = get_owner()
+onready var HealthNode = get_owner()
 
 func _ready():
-	PlayerNode.connect("gameOver", self, "doSomething")
+	HealthNode.connect("gameOver", self, "doSomething")
 
 func doSomething():
 	print('Game is Over Do Something ')
