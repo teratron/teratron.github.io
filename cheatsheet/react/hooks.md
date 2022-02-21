@@ -1,5 +1,23 @@
 # Hooks
 
+#### Основные хуки:
+
+- useState
+- useEffect
+- useContext
+
+#### Дополнительные хуки:
+
+- useReducer
+- useCallback
+- useMemo
+- useRef
+- useImperativeHandle
+- useLayoutEffect
+- useDebugValue
+
+### useState
+
 ```javascript
 // Такой синтаксис в JavaScript называется «деструктуризацией массивов (array destructuring)».
 // Он означает, что мы создаём две новые переменные, fruit и setFruit.
@@ -13,24 +31,6 @@ let fruitStateVariable = useState('банан'); // Возвращает пар�
 let fruit = fruitStateVariable[0];          // Извлекаем первое значение
 let setFruit = fruitStateVariable[1];       // Извлекаем второе значение
 ```
-
-#### Основные хуки
-
-- useState
-- useEffect
-- useContext
-
-#### Дополнительные хуки
-
-- useReducer
-- useCallback
-- useMemo
-- useRef
-- useImperativeHandle
-- useLayoutEffect
-- useDebugValue
-
-### useState
 
 ```javascript
 const [state, setState] = useState(initialState);
@@ -234,17 +234,22 @@ const memoizedCallback = useCallback(
 
 ### useMemo
 
-// Возвращает мемоизированное значение. // функция, переданная useMemo, запускается во время рендеринга. const
-memoizedValue = useMemo(
-() => computeExpensiveValue(a, b),
-[a, b]
+Возвращает мемоизированное значение.\
+функция, переданная useMemo, запускается во время рендеринга.
+
+```javascript
+const memoizedValue = useMemo(
+    () => computeExpensiveValue(a, b),
+    [a, b]
 );
+```
 
 ### useRef
 
-// возвращает изменяемый ref-объект, свойство .current которого инициализируется переданным аргументом (initialValue).
-// Возвращённый объект будет сохраняться в течение всего времени жизни компонента. const refContainer = useRef(
-initialValue);
+Возвращает изменяемый ref-объект, свойство `.current` которого инициализируется переданным аргументом (initialValue).
+Возвращённый объект будет сохраняться в течение всего времени жизни компонента.
+
+const refContainer = useRef(initialValue);
 
 function TextInputWithFocusButton() { const inputEl = useRef(null); const onButtonClick = () => { // `current` указывает
 на смонтированный элемент `input`
