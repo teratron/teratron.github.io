@@ -10,13 +10,13 @@ _Health.gd_
 extends Node2D
 
 signal gameOver
-onready var PlayerNode = get_node('Player')
+onready var PlayerNode = get_node("Player")
 
 func _ready():
 	PlayerNode.connect("healthChanged", self, "doSomething")
 
 func doSomething(playerHealth):
-	print('We changed value of health to: ', playerHealth)
+	print("We changed value of health to: ", playerHealth)
 	PlayerNode.disconnect("healthChanged", self, "doSomething")
 	emit_signal("gameOver")
 ```
@@ -51,12 +51,8 @@ func _ready():
 	HealthNode.connect("gameOver", self, "doSomething")
 
 func doSomething():
-	print('Game is Over Do Something ')
+	print("Game is Over Do Something ")
 ```
-
-We changed value of health to: 0
-
-Game is Over Do Something
 
 [Назад][back]
 

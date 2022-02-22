@@ -1,4 +1,4 @@
-# coroutines
+# coroutine
 
 [Назад][back]
 
@@ -14,7 +14,7 @@ func _ready():
 	currentState = STATE.IDLE
 
 func _process(delta):
-	# We run this line of code as long as we are in idle state
+	# Мы запускаем эту строку кода до тех пор, пока находимся в состоянии ожидания
 	if(currentState == STATE.IDLE):
 		var z = coroutine()
 		print("Function In Memory: ", z) # A function State
@@ -22,7 +22,7 @@ func _process(delta):
 		a.resume("hi passed from _ready function")
 
 func coroutine():
-	# ENTER DAMAGE STATE, can't run coroutine() inside of _process(delta)
+	# ENTER DAMAGE STATE, не удается запустить coroutine() внутри _process(delta)
 	currentState = STATE.DAMAGE
 
 	var stop = yield()
@@ -36,7 +36,7 @@ func coroutine():
 	print("signal was recieved in coroutine function")
 	print("Value Passed from signal: ", signalValue)
 
-	#ENTER IDLE STATE, able to run coroutine() inside _process(delta)
+	#ENTER IDLE STATE, возможность запуска coroutine() внутри _process(delta)
 	currentState = STATE.IDLE
 ```
 
@@ -48,7 +48,7 @@ extends Node
 signal health
 var timer = Timer.new()
 
-# Called when the node enters the scene tree for the first time.
+# Вызывается, когда узел впервые входит в дерево сцены.
 func _ready():
 	add_child(timer)
 	timer.set_autostart(true)

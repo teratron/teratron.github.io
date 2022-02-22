@@ -17,7 +17,8 @@ console.log(people[7]); // undefined
 ```
 
 ```javascript
-let objects = ["Tom", 12, true, 3.14, false]; // массив не являются строго типизированным
+// массив не являются строго типизированным
+let objects = ["Tom", 12, true, 3.14, false];
 ```
 
 ### Spread-оператор
