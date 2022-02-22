@@ -228,14 +228,13 @@ const memoizedCallback = useCallback(
   () => { doSomething(a, b); },
   [a, b],
 );
+// useCallback(fn, deps) — это эквивалент useMemo(() => fn, deps).
 ```
-
-`useCallback(fn, deps)` — это эквивалент `useMemo(() => fn, deps)`.
 
 ### useMemo
 
 Возвращает мемоизированное значение.\
-функция, переданная useMemo, запускается во время рендеринга.
+Функция, переданная useMemo, запускается во время рендеринга.
 
 ```react
 const memoizedValue = useMemo(
@@ -246,34 +245,51 @@ const memoizedValue = useMemo(
 
 ### useRef
 
-Возвращает изменяемый ref-объект, свойство `.current` которого инициализируется переданным аргументом (initialValue).
+Возвращает изменяемый ref-объект, свойство `.current` которого инициализируется переданным аргументом (`initialValue`).
 Возвращённый объект будет сохраняться в течение всего времени жизни компонента.
 
+```react
 const refContainer = useRef(initialValue);
 
-function TextInputWithFocusButton() { const inputEl = useRef(null); const onButtonClick = () => { // `current` указывает
-на смонтированный элемент `input`
-inputEl.current.focus(); };
+function TextInputWithFocusButton() {
+    const inputEl = useRef(null);
+    const onButtonClick = () => {
+        // `current` указывает на смонтированный элемент `input`
+        inputEl.current.focus();
+    };
 
-return (
-<>
-<input ref={inputEl} type="text" />
-<button onClick={onButtonClick}>Установить фокус на поле ввода</button>
-</>
-); }
+    return (
+        <>
+            <input ref={inputEl} type="text" />
+            <button onClick={onButtonClick}>Установить фокус на поле ввода</button>
+        </>
+    );
+}
+```
 
 ### useImperativeHandle
 
-// настраивает значение экземпляра, которое предоставляется родительским компонентам при использовании ref. // Как
-всегда, в большинстве случаев следует избегать императивного кода, использующего ссылки. // useImperativeHandle должен
-использоваться с forwardRef:
+Настраивает значение экземпляра, которое предоставляется родительским компонентам при использовании `ref`. Как всегда, в
+большинстве случаев следует избегать императивного кода, использующего ссылки.
+`useImperativeHandle` должен использоваться с `forwardRef`:
+
+```react
 useImperativeHandle(ref, createHandle, [deps])
 
-function FancyInput(props, ref) { const inputRef = useRef(); useImperativeHandle(ref, () => ({ focus: () => {
-inputRef.current.focus(); } })); return <input ref={inputRef} ... />; }
+function FancyInput(props, ref) {
+    const inputRef = useRef();
+    useImperativeHandle(ref, () => ({
+        focus: () => {
+            inputRef.current.focus();
+        }
+    }));
+    return <input ref={inputRef} ... />;
+}
 
-FancyInput = forwardRef(FancyInput); // В этом примере родительский компонент, который
-отображает <FancyInput ref={inputRef} />, // сможет вызывать inputRef.current.focus().
+FancyInput = forwardRef(FancyInput);
+// В этом примере родительский компонент, который отображает <FancyInput ref={inputRef} />,
+// сможет вызывать inputRef.current.focus().
+```
 
 ### useLayoutEffect
 
@@ -282,18 +298,21 @@ FancyInput = forwardRef(FancyInput); // В этом примере родите�
 
 ### useDebugValue
 
-// может использоваться для отображения метки для пользовательских хуков в React DevTools. useDebugValue(value)
+Может использоваться для отображения метки для пользовательских хуков в React DevTools.
 
-function useFriendStatus(friendID) { const [isOnline, setIsOnline] = useState(null);
+```react
+useDebugValue(value)
 
-// ...
+function useFriendStatus(friendID) {
+    const [isOnline, setIsOnline] = useState(null);
 
-// Показывать ярлык в DevTools рядом с этим хуком // например, «Статус друга: В сети» useDebugValue(isOnline ? 'В
-сети' : 'Не в сети');
+    // ...
 
-return isOnline; }
+    // Показывать ярлык в DevTools рядом с этим хуком
+    // например, «Статус друга: В сети»
 
+    useDebugValue(isOnline ? 'В сети' : 'Не в сети');
 
-
-
-
+    return isOnline;
+}
+```
