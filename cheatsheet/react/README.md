@@ -7,6 +7,9 @@
 - #### [Hooks](hooks.md)
 - #### [Context](context.md)
 - #### [Boundary](boundary.md)
+- #### [Import](import.md)
+- #### [Portal](portal.md)
+- #### [Profiler](profiler.md)
 
 [Назад к перечню шпаргалок][back]
 

@@ -1,5 +1,7 @@
 # Hooks
 
+[Назад][back]
+
 #### Основные хуки:
 
 - useState
@@ -316,3 +318,7 @@ function useFriendStatus(friendID) {
     return isOnline;
 }
 ```
+
+[Назад][back]
+
+[back]: <.> "Назад к оглавлению"
