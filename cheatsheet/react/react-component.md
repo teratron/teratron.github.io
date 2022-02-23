@@ -5,11 +5,11 @@
 ### render()
 
 Единственный из обязательных методов в классовом компоненте. При вызове он должен проверять `this.props` и `this.state`.
-`render()` не будет вызываться, если `shouldComponentUpdate()` возвращает false.
+`render()` не будет вызываться, если `shouldComponentUpdate()` возвращает `false`.
 
 ### constructor()
 
-```javascript
+```react
 constructor(props)
 ```
 
@@ -21,13 +21,13 @@ constructor(props)
 
 ### componentDidUpdate()
 
-```javascript
+```react
 componentDidUpdate(prevProps, prevState, snapshot)
 ```
 
 Вызывается сразу после обновления. Этот метод не вызывается при первоначальной отрисовки.
 
-```javascript
+```react
 function componentDidUpdate(prevProps) {
     // Обычное использование (не забудьте сравнить свойства):
     if (this.props.userID !== prevProps.userID) {
@@ -36,7 +36,7 @@ function componentDidUpdate(prevProps) {
 }
 ```
 
-`componentDidUpdate()` не будет вызываться, если `shouldComponentUpdate()` возвращает false.
+`componentDidUpdate()` не будет вызываться, если `shouldComponentUpdate()` возвращает `false`.
 
 ### componentWillUnmount()
 
@@ -44,7 +44,7 @@ function componentDidUpdate(prevProps) {
 
 ### shouldComponentUpdate()
 
-```javascript
+```react
 shouldComponentUpdate(nextProps, nextState)
 ```
 

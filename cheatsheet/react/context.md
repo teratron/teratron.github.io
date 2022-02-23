@@ -8,7 +8,7 @@
 Когда React рендерит компонент, который подписан на этот объект, React получит текущее значение контекста из ближайшего
 подходящего Provider выше в дереве компонентов.
 
-```javascript
+```react
 const MyContext = React.createContext(defaultValue);
 ```
 
@@ -17,7 +17,7 @@ const MyContext = React.createContext(defaultValue);
 Каждый объект Context используется вместе с Provider компонентом, который позволяет дочерним компонентам, использующим
 этот контекст, подписаться на его изменения.
 
-```javascript
+```react
 <MyContext.Provider value={/* некоторое значение */}>
 ```
 
@@ -25,7 +25,7 @@ const MyContext = React.createContext(defaultValue);
 
 В свойство класса contextType может быть назначен объект контекста, созданный с помощью `React.createContext()`.
 
-```javascript
+```react
 class MyClass extends React.Component {
     componentDidMount() {
         let value = this.context;
@@ -46,7 +46,7 @@ class MyClass extends React.Component {
 }
 ```
 
-```javascript
+```react
 MyClass.contextType = MyContext;
 // С помощью этого свойства вы можете использовать ближайшее и актуальное значение указанного контекста при помощи this.context.
 
@@ -64,7 +64,7 @@ class MyClass extends React.Component {
 Consumer — это React-компонент, который подписывается на изменения контекста.\
 В свою очередь, использование этого компонента позволяет вам подписаться на контекст в функциональном компоненте.
 
-```javascript
+```react
 <MyContext.Consumer>
     {value => /* отрендерить что-то, используя значение контекста */}
 </MyContext.Consumer>
@@ -75,7 +75,7 @@ Consumer — это React-компонент, который подписыва�
 Объекту Context можно задать строковое свойство `displayName`. React DevTools использует это свойство при отображении
 контекста.
 
-```javascript
+```react
 const MyContext = React.createContext(/* некоторое значение */);
 MyContext.displayName = 'MyDisplayName';
 
@@ -85,7 +85,7 @@ MyContext.displayName = 'MyDisplayName';
 
 ### Динамический контекст
 
-```javascript
+```react
 // theme-context.js
 export const themes = {
     light: {
@@ -101,7 +101,7 @@ export const themes = {
 export const ThemeContext = React.createContext(themes.dark); // значение по умолчанию
 ```
 
-```javascript
+```react
 // themed-button.js
 import {ThemeContext} from './theme-context';
 
@@ -122,7 +122,7 @@ ThemedButton.contextType = ThemeContext;
 export default ThemedButton;
 ```
 
-```javascript
+```react
 // app.js
 import {ThemeContext, themes} from './theme-context';
 import ThemedButton from './themed-button';
@@ -174,7 +174,7 @@ ReactDOM.render(<App />, document.root);
 
 ### Изменение контекста из вложенного компонента
 
-```javascript
+```react
 // theme-context.js
 // Убедитесь, что форма значения по умолчанию,
 // передаваемого в createContext, совпадает с формой объекта,
@@ -185,7 +185,7 @@ export const ThemeContext = React.createContext({
 });
 ```
 
-```javascript
+```react
 // theme-toggler-button.js
 import {ThemeContext} from './theme-context';
 
@@ -208,7 +208,7 @@ function ThemeTogglerButton() {
 export default ThemeTogglerButton;
 ```
 
-```javascript
+```react
 // app.js
 import {ThemeContext, themes} from './theme-context';
 import ThemeTogglerButton from './theme-toggler-button';
@@ -257,7 +257,7 @@ ReactDOM.render(<App />, document.root);
 
 ### Использование нескольких контекстов
 
-```javascript
+```react
 // Контекст UI-темы, со светлым значением по умолчанию
 const ThemeContext = React.createContext('light');
 
@@ -308,7 +308,7 @@ function Content() {
 
 ### Когда использовать контекст
 
-```javascript
+```react
 // Ниже мы вручную передаём props theme
 class App extends React.Component {
     render() {
@@ -336,7 +336,7 @@ class ThemedButton extends React.Component {
 }
 ```
 
-```javascript
+```react
 // Контекст позволяет передавать значение глубоко
 // в дерево компонентов без явной передачи пропсов
 // на каждом уровне. Создадим контекст для текущей

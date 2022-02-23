@@ -7,7 +7,7 @@
 Если какой-то модуль не загружается (например, из-за сбоя сети), это вызовет ошибку. Вы можете обрабатывать эти ошибки
 для улучшения пользовательского опыта с помощью Предохранителей.
 
-```javascript
+```react
 // my-component.js
 import React, { Suspense } from 'react';
 import ErrorBoundary from './ErrorBoundary';
@@ -29,7 +29,7 @@ const MyComponent = () => (
 );
 ```
 
-```javascript
+```react
 // error-boundary.js
 // Код для журналирования информации об отловленной ошибке:
 class ErrorBoundary extends React.Component {
@@ -64,7 +64,7 @@ class ErrorBoundary extends React.Component {
 
 ### Живой пример
 
-```javascript
+```react
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -166,7 +166,7 @@ ReactDOM.render(
 
 Чтобы отловить ошибку в обработчике событий, пользуйтесь обычной JavaScript-конструкцией `try` / `catch`:
 
-```javascript
+```react
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
