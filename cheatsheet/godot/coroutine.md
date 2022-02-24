@@ -4,6 +4,10 @@
 
 ### yield() и resume()
 
+```
+GDScriptFunctionState yield ( Object object=null, String signal="" )
+```
+
 Вызов `yield()` немедленно произведет возврат из текущей функции с текущим замороженным состоянием этой же функции как
 возвращаемое значение. При вызове `resume()` на данном результате объект продолжит выполнение и вернет все, что
 возвращает функция. После возобновления состояние объекта становится недействительным.
@@ -65,13 +69,13 @@ func _ready():
 `yield` может принимать два аргумента, объект и сигнал. Когда сигнал будет получен, выполнение будет возобновлено.
 
 ```gdscript
-# Возобновите выполнение в следующем кадре.
+# Возобновляет выполнение в следующем кадре.
 yield(get_tree(), "idle_frame")
 
-# Возобновите выполнение, когда анимация будет воспроизведена.
+# Возобновляет выполнение, когда анимация будет воспроизведена.
 yield(get_node("AnimationPlayer"), "animation_finished")
 
-# Подождите 5 секунд, затем возобновите выполнение.
+# Ожидает 5 секунд, затем возобновите выполнение.
 yield(get_tree().create_timer(5.0), "timeout")
 ```
 
@@ -91,7 +95,7 @@ func button_func():
 Вы также можете получить аргумент сигнала, когда он передается объектом:
 
 ```gdscript
-# Дождитесь, когда какой-либо узел будет добавлен в дерево сцены.
+# Ожидает, когда какой-либо узел будет добавлен в дерево сцены.
 var node = yield(get_tree(), "node_added")
 ```
 
@@ -129,6 +133,29 @@ func make():
     if result is GDScriptFunctionState: # Still working.
         result = yield(result, "completed")
     return result
+```
+
+```gdscript
+func _ready():
+    # Ожидание завершения функции countdown()
+    yield(countdown(), "completed")
+    print('Ready')
+
+func countdown():
+    # Возвращает объект GDScriptFunctionState в _ready()
+    yield(get_tree(), "idle_frame")
+    print(3)
+    yield(get_tree().create_timer(1.0), "timeout")
+    print(2)
+    yield(get_tree().create_timer(1.0), "timeout")
+    print(1)
+    yield(get_tree().create_timer(1.0), "timeout")
+
+# Результат:
+# 3
+# 2
+# 1
+# Ready
 ```
 
 ### Пример
