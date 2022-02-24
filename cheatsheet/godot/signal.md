@@ -4,6 +4,31 @@
 
 ### Пользовательские сигналы
 
+```gdscript
+extends Node2D
+
+signal health_depleted
+var health = 10
+
+func take_damage(amount):
+    health -= amount
+    if health <= 0:
+        emit_signal("health_depleted")
+```
+
+```gdscript
+extends Node
+
+signal health_changed(old_value, new_value)
+
+func take_damage(amount):
+    var old_health = health
+    health -= amount
+    emit_signal("health_changed", old_health, health)
+```
+
+### Пример
+
 _Health.gd_
 
 ```gdscript
