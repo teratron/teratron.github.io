@@ -4,22 +4,22 @@
 
 ```go
 for i := 1; i < 5; i++ {
-fmt.Println(i)
+    fmt.Println(i)
 }
 
 for i := 0; i < 15; i += 3 {
-fmt.Println(i)
+    fmt.Println(i)
 }
 
 for i := 100; i > 0; i -= 10 {
-fmt.Println(i)
+    fmt.Println(i)
 }
 ```
 
 ```go
 var i = 1
 for ; i < 5; i++ {
-fmt.Println(i)
+    fmt.Println(i)
 }
 ```
 
