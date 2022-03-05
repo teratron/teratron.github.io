@@ -14,7 +14,12 @@
 можете применить к нему силы (гравитацию, импульсы и т. д.), а физическое моделирование рассчитает результирующее
 движение, столкновение, отскок, вращение и т. д.
 
-Жесткое тело имеет 4 [режима поведения](#property-mode): жесткий, статический, характерный и кинематический.
+RigidBody имеет 4 [mode](#property-mode):
+
+- Rigid (жесткий)
+- Static (статический)
+- Character (характерный)
+- Kinematic (кинематический)
 
 **Примечание:** Не меняйте положение RigidBody каждый кадр или очень часто. Спорадические изменения работают нормально,
 но физика работает с другой степенью детализации (фиксированная Гц), чем обычный рендеринг (обратный вызов процесса) и,
@@ -26,7 +31,7 @@
 силы. См. [custom_integrator](#property-custom-integrator).
 
 С Bullet physics (по умолчанию) центром масс является центр RigidBody3D. В GodotPhysics центр масс - это
-среднее [значение](collisionshape.md) центров формы столкновения.
+среднее [CollisionShape](collisionshape.md) центров формы столкновения.
 
 ## Свойства
 
@@ -94,17 +99,17 @@
 [GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [Shape](shape.md) столкновения.
 
 `body` [Node](node.md), если он существует в дереве, другого [PhysicsBody](physicsbody.md) или [GridMap](gridmap.md).
-
+s
 ***
 
 **body\_shape\_entered** **(** [RID](rid.md) body_rid, [Node](node.md) body, [int](int.md)
 body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
-Испускается, когда одна из [фигур](shape.md) этого твердого тела сталкивается с другой [](physicsbody.md[](gridmap.md)
-фигурой s physicsBody или GridMap[](shape.md). Требуется[,](#property-contact-monitor) чтобы contact_monitor был
-установлен в `true`значение и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы
+Испускается, когда одна из [Shapes](shape.md) этого твердого тела сталкивается с другой [PhysicsBody](physicsbody.md[](gridmap.md)
+фигурой s physicsBody или GridMap[](shape.md). Требуется, чтобы [contact_monitor](#property-contact-monitor) был
+установлен в `true` значение и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы
 обнаружить все столкновения.
-[GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [форму](shape.md) столкновения.
+[GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [Shape](shape.md) столкновения.
 
 `body_rid` [избавление](rid.md) от другого [объекта](physicsbody.md physicsBody
 или [MeshLibrary CollisionObject](meshlibrary.md)[,](collisionobject.md#collisionobject)
@@ -277,9 +282,8 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 | _Setter_ | set_bounce(значение) |
 | _Getter_ | get_bounce() |
 
-Упругость тела. Значения варьируются от `0` (no bounce) до `1` (full bounciness). Устарело,
-используйте [PhysicsMaterial.bounce](physicsmaterial.md) вместо этого
-через [physics\_material\_override](#property-physics-material-override).
+Упругость тела. Значения варьируются от `0` (no bounce) до `1` (full bounciness).
+Устарело, используйте [PhysicsMaterial.bounce](physicsmaterial.md) вместо этого через [physics\_material\_override](#property-physics-material-override).
 
 ***
 
@@ -290,11 +294,11 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 | _Setter_ | set\_can\_sleep(значение) |
 | _Getter_ | is\_able\_to_sleep() |
 
-Если `true`тело может войти в спящий режим , когда нет движения. См. [sleeping](#property-sleeping).
+Если `true`тело может войти в спящий режим , когда нет движения.
+См. [sleeping](#property-sleeping).
 
-**Примечание:** RigidBody3D никогда не войдет в спящий режим автоматически, если
-его [mode](#property-mode) [MODE_CHARACTER](#constant-mode-character). Его все еще можно перевести в спящий режим
-вручную, установив его [mode](#property-mode) свойство на `true`.
+**Примечание:** RigidBody3D никогда не войдет в спящий режим автоматически, если его [mode](#property-mode) [MODE_CHARACTER](#constant-mode-character).
+Его все еще можно перевести в спящий режим вручную, установив его [mode](#property-mode) свойство на `true`.
 
 ***
 
@@ -305,8 +309,8 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 | _Setter_ | set\_contact\_monitor(значение) |
 | _Getter_ | is\_contact\_monitor_enabled() |
 
-Если `true`, то RigidBody будет излучать сигналы при столкновении с другим RigidBody. См.
-Также [contacts_reported](#property-contacts-reported).
+Если `true`, то RigidBody будет излучать сигналы при столкновении с другим RigidBody.
+См. также [contacts_reported](#property-contacts-reported).
 
 ***
 
@@ -317,8 +321,8 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 | _Setter_ | set\_max\_contacts_reported(значение) |
 | _Getter_ | get\_max\_contacts_reported() |
 
-Максимальное количество контактов, которые будут записаны. Требуется, чтобы [contact_monitor](#property-contact-monitor)
-был установлен в `true`.
+Максимальное количество контактов, которые будут записаны.
+Требуется, чтобы [contact_monitor](#property-contact-monitor) был установлен в `true`.
 
 **Примечание:** Количество контактов отличается от количества столкновений. Столкновения между параллельными ребрами
 приведут к двум контактам (по одному на каждом конце), а столкновения между параллельными гранями приведут к четырем
