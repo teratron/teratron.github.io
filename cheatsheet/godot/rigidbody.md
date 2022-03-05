@@ -1,6 +1,7 @@
 # RigidBody
 
-**Наследует:** [physicsBody](physicsbody.md) **<** [CollisionObject](collisionobject.md) **<** [Пространственное](spatial.md) **<** [Узел](node.md) **<** [Объект](object.md)
+**
+Наследует:** [physicsBody](physicsbody.md) **<** [CollisionObject](collisionobject.md) **<** [Spatial](spatial.md) **<** [Node](node.md) **<** [Object](object.md)
 
 **Унаследовано:** [VehicleBody](vehiclebody.md)
 
@@ -21,107 +22,106 @@
 позволяет вам напрямую получить доступ к физическому состоянию.
 
 Если вам нужно переопределить поведение физики по умолчанию, вы можете написать пользовательскую функцию интеграции
-силы. См[. custom_integrator](#property-custom-integrator).
+силы. См. [custom_integrator](#property-custom-integrator).
 
 С Bullet physics (по умолчанию) центром масс является центр RigidBody3D. В GodotPhysics центр масс - это
 среднее [значение](collisionshape.md) центров формы столкновения.
 
 ## Свойства
 
-|     |     |     |
+| Тип | Свойство | По умолчанию |
 | --- | --- | --- |
-| [float](float.md) | [angular_damp](#property-angular-damp) | `-1.0` |
-| [Vector3](vector3.md) | [angular_velocity](#property-angular-velocity) | `Vector3( 0, 0, 0 )` |
-| [bool](bool.md) | [axis\_lock\_angular_x](#property-axis-lock-angular-x) | `false` |
-| [bool](bool.md) | [axis\_lock\_angular_y](#property-axis-lock-angular-y) | `false` |
-| [bool](bool.md) | [axis\_lock\_angular_z](#property-axis-lock-angular-z) | `false` |
-| [bool](bool.md) | [axis\_lock\_linear_x](#property-axis-lock-linear-x) | `false` |
-| [bool](bool.md) | [axis\_lock\_linear_y](#property-axis-lock-linear-y) | `false` |
-| [bool](bool.md) | [axis\_lock\_linear_z](#property-axis-lock-linear-z) | `false` |
-| [float](float.md) | [bounce](#property-bounce) |
-| [bool](bool.md) | [can_sleep](#property-can-sleep) | `true` |
-| [bool](bool.md) | [contact_monitor](#property-contact-monitor) | `false` |
-| [int](int.md) | [contacts_reported](#property-contacts-reported) | `0` |
-| [bool](bool.md) | [continuous_cd](#property-continuous-cd) | `false` |
-| [bool](bool.md) | [custom_integrator](#property-custom-integrator) | `false` |
-| [float](float.md) | [трение](#property-friction) |     |
-| [float](float.md) | [gravity_scale](#property-gravity-scale) | `1.0` |
-| [float](float.md) | [linear_damp](#property-linear-damp) | `-1.0` |
-| [Vector3](vector3.md) | [linear_velocity](#property-linear-velocity) | `Vector3( 0, 0, 0 )` |
-| [float](float.md) | [масса](#property-mass) | `1.0` |
-| [Mode](#enum-rigidbody-mode) | [mode](#property-mode.md) | `0` |
-| [PhysicsMaterial](physicsmaterial.md) | [physics\_material\_override](#property-physics-material-override) |     |
-| [bool](bool.md) | [Спящие](#property-sleeping.md) | `false` |
-| [float](float.md) | [вес](#property-weight.md) | `9.8` |
+| [float](float.md#float) | [angular_damp](#property-angular-damp) | `-1.0` |
+| [Vector3](vector3.md#vector3) | [angular_velocity](#property-angular-velocity) | `Vector3( 0, 0, 0 )` |
+| [bool](bool.md#bool) | [axis\_lock\_angular_x](#property-axis-lock-angular-x) | `false` |
+| [bool](bool.md#bool) | [axis\_lock\_angular_y](#property-axis-lock-angular-y) | `false` |
+| [bool](bool.md#bool) | [axis\_lock\_angular_z](#property-axis-lock-angular-z) | `false` |
+| [bool](bool.md#bool) | [axis\_lock\_linear_x](#property-axis-lock-linear-x) | `false` |
+| [bool](bool.md#bool) | [axis\_lock\_linear_y](#property-axis-lock-linear-y) | `false` |
+| [bool](bool.md#bool) | [axis\_lock\_linear_z](#property-axis-lock-linear-z) | `false` |
+| [float](float.md#float) | [bounce](#property-bounce) |     |
+| [bool](bool.md#bool) | [can_sleep](#property-can-sleep) | `true` |
+| [bool](bool.md#bool) | [contact_monitor](#property-contact-monitor) | `false` |
+| [int](int.md#int) | [contacts_reported](#property-contacts-reported) | `0` |
+| [bool](bool.md#bool) | [continuous_cd](#property-continuous-cd) | `false` |
+| [bool](bool.md#bool) | [custom_integrator](#property-custom-integrator) | `false` |
+| [float](float.md#float) | [friction](#property-friction) |     |
+| [float](float.md#float) | [gravity_scale](#property-gravity-scale) | `1.0` |
+| [float](float.md#float) | [linear_damp](#property-linear-damp) | `-1.0` |
+| [Vector3](vector3.md#vector3) | [linear_velocity](#property-linear-velocity) | `Vector3( 0, 0, 0 )` |
+| [float](float.md#float) | [mass](#property-mass) | `1.0` |
+| [Mode](#enum-rigidbody-mode) | [mode](#property-mode) | `0` |
+| [PhysicsMaterial](physicsmaterial.md#physicsmaterial) | [physics\_material\_override](#property-physics-material-override) |     |
+| [bool](bool.md#bool) | [sleeping](#property-sleeping) | `false` |
+| [float](float.md#float) | [weight](#property-weight) | `9.8` |
 
 ## Методы
 
-|     |     |
+| Тип | Метод |
 | --- | --- |
-| void | [\_integrate\_forces](#method-integrate-forces) **(** [PhysicsDirectBodyState](physicsdirectbodystate.md) state **)** virtual |
-| void | [add\_central\_force](#method-add-central-force) **(** [Vector3](vector3.md) force **)** |
-| void | [add_force](#method-add-force) **(** [Vector3](vector3.md) force, [Vector3](vector3.md) position **)** |
-| void | [add_torque](#method-add-torque) **(** [Vector3](vector3.md) torque **)** |
-| void | [apply\_central\_impulse](#method-apply-central-impulse) **(** [Vector3](vector3.md) impulse **)** |
-| void | [apply_impulse](#method-apply-impulse) **(** [Vector3](vector3.md) position, [Vector3](vector3.md) impulse **)** |
-| void | [apply\_torque\_impulse](#method-apply-torque-impulse) **(** [Vector3](vector3.md) impulse **)** |
-| [bool](bool.md) | [get\_axis\_lock](#method-get-axis-lock) **(** [ось](physicsserver.md) оси тела **)** const |
-| [Array](array.md) | [get\_colliding\_bodies](#method-get-colliding-bodies) **(** **)** const |
-| [Basis](basis.md) | [get\_inverse\_inertia_tensor](#method-get-inverse-inertia-tensor) **(** **)** |
-| void | [set\_axis\_lock](#method-set-axis-lock) **(** [ось](physicsserver.md) оси тела, [bool](bool.md) lock **)** |
-| void | [set\_axis\_velocity](#method-set-axis-velocity) **(** [Vector3](vector3.md) axis_velocity **)** |
+| void | [\_integrate\_forces](#method-integrate-forces) **(** [PhysicsDirectBodyState](physicsdirectbodystate.md#physicsdirectbodystate) state **)** virtual |
+| void | [add\_central\_force](#method-add-central-force) **(** [Vector3](vector3.md#vector3) force **)** |
+| void | [add_force](#method-add-force) **(** [Vector3](vector3.md#vector3) force, [Vector3](vector3.md#vector3) position **)** |
+| void | [add_torque](#method-add-torque) **(** [Vector3](vector3.md#vector3) torque **)** |
+| void | [apply\_central\_impulse](#method-apply-central-impulse) **(** [Vector3](vector3.md#vector3) impulse **)** |
+| void | [apply_impulse](#method-apply-impulse) **(** [Vector3](vector3.md#vector3) position, [Vector3](vector3.md#vector3) impulse **)** |
+| void | [apply\_torque\_impulse](#method-apply-torque-impulse) **(** [Vector3](vector3.md#vector3) impulse **)** |
+| [bool](bool.md#bool) | [get\_axis\_lock](#method-get-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis **)** const |
+| [Array](array.md#array) | [get\_colliding\_bodies](#method-get-colliding-bodies) **(** **)** const |
+| [Basis](basis.md#basis) | [get\_inverse\_inertia_tensor](#method-get-inverse-inertia-tensor) **(** **)** |
+| void | [set\_axis\_lock](#method-set-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis, [bool](bool.md#bool) lock **)** |
+| void | [set\_axis\_velocity](#method-set-axis-velocity) **(** [Vector3](vector3.md#vector3) axis_velocity **)** |
 
 ## Сигналы
 
-**body_entered** **(** [](node.md)тело узла **)**
+**body_entered** **(** [Node](node.md) body **)**
 
-Излучается при столкновении с другим [физическим телом](physicsbody.md) или [GridMap](gridmap.md). Требуется,
+Излучается при столкновении с другим [PhysicsBody](physicsbody.md) или [GridMap](gridmap.md). Требуется,
 чтобы [contact_monitor](#property-contact-monitor) был установлен в `true`значение
 и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы обнаружить все столкновения.
-[GridMap](gridmap.md)s обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [форму](shape.md)s столкновения.
+[GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [Shape](shape.md) столкновения.
 
-`body`  [узел](node.md), если он существует в дереве, другого [physicsBody](physicsbody.md или [GridMap](gridmap.md).
+`body` [Node](node.md), если он существует в дереве, другого [PhysicsBody](physicsbody.md) или [GridMap](gridmap.md).
 
 ***
 
 **body_exited** **(** [Node](node.md) body **)**
 
-Испускается, когда заканчивается столкновение с другим [физическим телом](physicsbody.md или [GridMap](gridmap.md).
+Испускается, когда заканчивается столкновение с другим [PhysicsBody](physicsbody.md) или [GridMap](gridmap.md).
 Требуется, чтобы [contact_monitor](#property-contact-monitor) был установлен в `true`значение
-и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы обнаружить все
-столкновения. [GridMap](gridmap.md)s обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [форму](shape.md)s
-столкновения.
+и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы обнаружить все столкновения.
+[GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [Shape](shape.md) столкновения.
 
-`body`  [узел](node.md), если он существует в дереве, другого [physicsBody](physicsbody.md) или [GridMap](gridmap.md).
+`body` [Node](node.md), если он существует в дереве, другого [PhysicsBody](physicsbody.md) или [GridMap](gridmap.md).
 
 ***
 
 **body\_shape\_entered** **(** [RID](rid.md) body_rid, [Node](node.md) body, [int](int.md)
 body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
-Испускается, когда одна из [фигур](shape.md)s этого твердого тела сталкивается с другой [](physicsbody.md[](gridmap.md)
+Испускается, когда одна из [фигур](shape.md) этого твердого тела сталкивается с другой [](physicsbody.md[](gridmap.md)
 фигурой s physicsBody или GridMap[](shape.md). Требуется[,](#property-contact-monitor) чтобы contact_monitor был
 установлен в `true`значение и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы
-обнаружить все столкновения. [GridMap](gridmap.md)s обнаруживаются, если [MeshLibrary](meshlibrary.md)
-имеет [форму](shape.md)s столкновения.
+обнаружить все столкновения.
+[GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [форму](shape.md) столкновения.
 
-`body_rid`  [избавление](rid.md#rid) от другого [объекта](physicsbody.md physicsBody
+`body_rid` [избавление](rid.md) от другого [объекта](physicsbody.md physicsBody
 или [MeshLibrary CollisionObject](meshlibrary.md)[,](collisionobject.md#collisionobject)
 используемого [PhysicsServer](physicsserver.md).
 
-`body`  [узел](node.md), если он существует в дереве, другого [physicsBody](physicsbody.md или [GridMap](gridmap.md).
+`body` [Node](node.md), если он существует в дереве, другого [PhysicsBody](physicsbody.md) или [GridMap](gridmap.md).
 
 `body_shape_index` индекс [формы](shape.md) другого [физического](physicsbody.md тела или [GridMap](gridmap.md),
 используемого физическим [сервером](physicsserver.md). Получить [](collisionshape.md)
-узел `body.shape_owner_get_owner(body_shape_index)`CollisionShape с.
+узел `body.shape_owner_get_owner(body_shape_index)` CollisionShape.
 
 `local_shape_index` индекс [формы](shape.md) этого твердого тела, используемый
 сервером [PhysicsServer](physicsserver.md). Получить [](collisionshape.md)
-узел `self.shape_owner_get_owner(local_shape_index)`CollisionShape с.
+узел `self.shape_owner_get_owner(local_shape_index)` CollisionShape.
 
 **Примечание:** Физика пули не может определить индекс формы при
 использовании [ConcavePolygonShape](concavepolygonshape.md). Не используйте
-несколько [CollisionShape](collisionshape.md)s при использовании [ConcavePolygonShape](concavepolygonshape.md) с физикой
+несколько [CollisionShape](collisionshape.md) при использовании [ConcavePolygonShape](concavepolygonshape.md) с физикой
 пули, если вам нужны индексы формы.
 
 ***
@@ -129,29 +129,31 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 **body\_shape\_exited** **(** [RID](rid.md) body_rid, [Node](node.md) body, [int](int.md)
 body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
-Испускается, когда заканчивается столкновение между одной из форм s этого твердого[тела](shape.md) и другой [](
-physicsbody.md[](gridmap.md)формой s physicsBody или GridMap[](shape.md). Требуется[,](#property-contact-monitor) чтобы
-contact_monitor был установлен в `true`значение и [contacts_reported](#property-contacts-reported) был установлен
-достаточно высоко, чтобы обнаружить все столкновения.
-[GridMap](gridmap.md)s обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [форму](shape.md)s столкновения.
+Испускается, когда заканчивается столкновение между одной из форм s этого твердого[тела](shape.md) и
+другой [](physicsbody.md) [](gridmap.md) формой s physicsBody или GridMap[](shape.md).
+Требуется [,](#property-contact-monitor) чтобы contact_monitor был установлен в `true`значение
+и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы обнаружить все столкновения.
+[GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [форму](shape.md) столкновения.
 
-`body_rid`  [избавление](rid.md#rid) от другого [объекта](physicsbody.md physicsBody
-или [MeshLibrary CollisionObject](meshlibrary.md)[,](collisionobject.md#collisionobject)
-используемого [PhysicsServer](physicsserver.md). [GridMap](gridmap.md)s обнаруживаются, если сетки
-имеют [форму](shape.md)s.
+`body_rid` [избавление](rid.md#rid) от другого [объекта](physicsbody.md physicsBody
+или [MeshLibrary CollisionObject](meshlibrary.md) [,](collisionobject.md#collisionobject)
+используемого [PhysicsServer](physicsserver.md).
+[GridMap](gridmap.md)s обнаруживаются, если сетки имеют [форму](shape.md).
 
-`body`  [узел](node.md), если он существует в дереве, другого [physicsBody](physicsbody.md или [GridMap](gridmap.md).
+`body` [узел](node.md), если он существует в дереве, другого [physicsBody](physicsbody.md) или [GridMap](gridmap.md).
 
-`body_shape_index` индекс [формы](shape.md) другого [физического](physicsbody.md тела или [GridMap](gridmap.md),
+`body_shape_index` индекс [формы](shape.md) другого [физического](physicsbody.md) тела или [GridMap](gridmap.md),
 используемого физическим [сервером](physicsserver.md). Получить [](collisionshape.md)
-узел `body.shape_owner_get_owner(body_shape_index)`CollisionShape с.
+узел `body.shape_owner_get_owner(body_shape_index)` CollisionShape.
 
 `local_shape_index` индекс [формы](shape.md) этого твердого тела, используемый
 сервером [PhysicsServer](physicsserver.md). Получить [](collisionshape.md)
-узел `self.shape_owner_get_owner(local_shape_index)`CollisionShape с.
+узел `self.shape_owner_get_owner(local_shape_index)` CollisionShape.
 
-**Примечание:** Физика пули не может определить индекс формы при использовании [ConcavePolygonShape](concavepolygonshape.md).
-Не используйте несколько [CollisionShape](collisionshape.md)s при использовании [ConcavePolygonShape](concavepolygonshape.md) с физикой пули, если вам нужны индексы формы.
+**Примечание:** Физика пули не может определить индекс формы при
+использовании [ConcavePolygonShape](concavepolygonshape.md). Не используйте
+несколько [CollisionShape](collisionshape.md) при использовании [ConcavePolygonShape](concavepolygonshape.md) с физикой
+пули, если вам нужны индексы формы.
 
 ***
 
@@ -159,7 +161,7 @@ contact_monitor был установлен в `true`значение и [contac
 
 Излучается, когда физический движок изменяет состояние сна тела.
 
-**Примечание:** Изменение значения [sleeping](#property-sleeping) не вызовет этот сигнал. Он излучается только в том
+**Примечание:** Изменение значения [Sleeping](#property-sleeping) не вызовет этот сигнал. Он излучается только в том
 случае, если спящее состояние изменяется физическим движком или `emit_signal("sleeping_state_changed")` используется.
 
 ## Перечисления
@@ -178,9 +180,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [float](float.md) **angular_damp**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `-1.0` |
+| --- | --- |
 | _Setter_ | set\_angular\_damp(значение) |
 | _Getter_ | get\_angular\_damp() |
 
@@ -192,9 +193,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [Vector3](vector3.md) **angular_velocity**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `Vector3( 0, 0, 0 )` |
+| --- | --- |
 | _Setter_ | set\_angular\_velocity(значение) |
 | _Getter_ | get\_angular\_velocity() |
 
@@ -205,9 +205,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **axis\_lock\_angular_x**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_axis\_lock(значение) |
 | _Getter_ | get\_axis\_lock() |
 
@@ -217,9 +216,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **axis\_lock\_angular_y**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_axis\_lock(значение) |
 | _Getter_ | get\_axis\_lock() |
 
@@ -229,9 +227,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **axis\_lock\_angular_z**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_axis\_lock(значение) |
 | _Getter_ | get\_axis\_lock() |
 
@@ -241,9 +238,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **axis\_lock\_linear_x**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_axis\_lock(значение) |
 | _Getter_ | get\_axis\_lock() |
 
@@ -253,9 +249,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **axis\_lock\_linear_y**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_axis\_lock(значение) |
 | _Getter_ | get\_axis\_lock() |
 
@@ -265,9 +260,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **axis\_lock\_linear_z**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_axis\_lock(значение) |
 | _Getter_ | get\_axis\_lock() |
 
@@ -277,7 +271,7 @@ contact_monitor был установлен в `true`значение и [contac
 
 [float](float.md) **bounce**
 
-|     |     |
+| _По умолчанию_ | `0.0` |
 | --- | --- |
 | _Setter_ | set_bounce(значение) |
 | _Getter_ | get_bounce() |
@@ -290,9 +284,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **can_sleep**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `true` |
+| --- | --- |
 | _Setter_ | set\_can\_sleep(значение) |
 | _Getter_ | is\_able\_to_sleep() |
 
@@ -306,9 +299,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **contact_monitor**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_contact\_monitor(значение) |
 | _Getter_ | is\_contact\_monitor_enabled() |
 
@@ -319,9 +311,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [int](int.md) **contacts_reported**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `0` |
+| --- | --- |
 | _Setter_ | set\_max\_contacts_reported(значение) |
 | _Getter_ | get\_max\_contacts_reported() |
 
@@ -336,9 +327,8 @@ contact_monitor был установлен в `true`значение и [contac
 
 [bool](bool.md) **continuous_cd**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_use\_continuous\_collision\_detection(значение) |
 | _Getter_ | is\_using\_continuous\_collision\_detection() |
 
@@ -351,9 +341,8 @@ Continuous collision detection пытается предсказать, где �
 
 [bool](bool.md) **custom_integrator**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set\_use\_custom_integrator(значение) |
 | _Getter_ | is\_using\_custom_integrator() |
 
@@ -365,7 +354,7 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **friction**
 
-|     |     |
+| _По умолчанию_ | `1.0` |
 | --- | --- |
 | _Setter_ | set_friction(значение) |
 | _Getter_ | get_friction() |
@@ -379,9 +368,8 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **gravity_scale**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `1.0` |
+| --- | --- |
 | _Setter_ | set\_gravity\_scale(значение) |
 | _Getter_ | get\_gravity\_scale() |
 
@@ -392,9 +380,8 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **linear_damp**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `-1.0` |
+| --- | --- |
 | _Setter_ | set\_linear\_damp(значение) |
 | _Getter_ | get\_linear\_damp() |
 
@@ -407,9 +394,8 @@ Continuous collision detection пытается предсказать, где �
 
 [Vector3](vector3.md) **linear_velocity**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `Vector3( 0, 0, 0 )` |
+| --- | --- |
 | _Setter_ | set\_linear\_velocity(значение) |
 | _Getter_ | get\_linear\_velocity() |
 
@@ -422,9 +408,8 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **mass**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `1.0` |
+| --- | --- |
 | _Setter_ | set_mass(значение) |
 | _Getter_ | get_mass() |
 
@@ -434,9 +419,8 @@ Continuous collision detection пытается предсказать, где �
 
 [Режим](enum-rigidbody-mode.md) **mode**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `0` |
+| --- | --- |
 | _Setter_ | set_mode(значение) |
 | _Getter_ | get_mode() |
 
@@ -444,9 +428,9 @@ Continuous collision detection пытается предсказать, где �
 
 ***
 
-[PhysicsMaterial](physicsmaterial.md) **physics\_material\_override**
+[PhysicsMaterial](physicsmaterial.md#physicsmaterial) **physics\_material\_override**
 
-|     |     |
+| _По умолчанию_ | null |
 | --- | --- |
 | _Setter_ | set\_physics\_material_override(значение) |
 | _Getter_ | get\_physics\_material_override() |
@@ -458,27 +442,25 @@ Continuous collision detection пытается предсказать, где �
 
 [bool](bool.md) **sleeping**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `false` |
+| --- | --- |
 | _Setter_ | set_sleeping(значение) |
 | _Getter_ | is_sleeping() |
 
 Если `true`тело не будет двигаться и не будет вычислять силы, пока его не разбудит другое тело, например, при
-столкновении, или с помощью методов [apply_impulse](#method-apply-impulse)
-или [add_force](#method-add-force).
+столкновении, или с помощью методов [apply_impulse](#method-apply-impulse) или [add_force](#method-add-force).
 
 ***
 
 [float](float.md) **weight**
 
-|     |     |
-| --- | --- |
 | _По умолчанию_ | `9.8` |
+| --- | --- |
 | _Setter_ | set_weight(значение) |
 | _Getter_ | get_weight() |
 
-Вес тела, основанный на его массе и глобальной 3D-гравитации. Глобальные значения задаются в **Project > Project Settings > Physics > 3d**.
+Вес тела, основанный на его массе и глобальной 3D-гравитации. Глобальные значения задаются в **Project > Project
+Settings > Physics > 3d**.
 
 ## Описание метода
 
@@ -493,8 +475,8 @@ void **\_integrate\_forces** **(** [PhysicsDirectBodyState](physicsdirectbodysta
 
 void **add\_central\_force** **(** [Vector3](vector3.md) force **)**
 
-Добавляет постоянную направленную силу (т. Е. Ускорение), не влияя на вращение.
-Это эквивалентно `add_force(force, Vector3(0,0,0))`.
+Добавляет постоянную направленную силу (т. е. Ускорение), не влияя на вращение. Это
+эквивалентно `add_force(force, Vector3(0,0,0))`.
 
 ***
 
@@ -518,29 +500,31 @@ void **apply\_central\_impulse** **(** [Vector3](vector3.md) impulse **)**
 
 ***
 
-* void **apply_impulse** **(** [Vector3](vector3.md) position, [Vector3](vector3.md) impulse **)**
+void **apply_impulse** **(** [Vector3](vector3.md) position, [Vector3](vector3.md) impulse **)**
 
-Прикладывает позиционированный импульс к корпусу.
-Импульс не зависит от времени! Применение импульса к каждому кадру приведет к силе, зависящей от частоты кадров.
-По этой причине его следует использовать только при моделировании одноразовых воздействий. Позиция использует вращение глобальной системы координат, но центрируется в начале координат объекта.
+Прикладывает позиционированный импульс к корпусу. Импульс не зависит от времени!
+Применение импульса к каждому кадру приведет к силе, зависящей от частоты кадров. По этой причине его следует
+использовать только при моделировании одноразовых воздействий. Позиция использует вращение глобальной системы координат,
+но центрируется в начале координат объекта.
 
 ***
 
 void **apply\_torque\_impulse** **(** [Vector3](vector3.md) impulse **)**
 
-Применяет импульс крутящего момента, который будет зависеть от массы и формы тела. Это будет вращать тело вокруг `impulse`переданного вектора.
+Применяет импульс крутящего момента, который будет зависеть от массы и формы тела. Это будет вращать тело
+вокруг `impulse`переданного вектора.
 
 ***
 
-[bool](bool.md) **get\_axis\_lock** **(** [ось](physicsserver.md) оси **тела )** const
+[bool](bool.md) **get\_axis\_lock** **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis **)** const
 
 Возвращает`true`, если заданная линейная или вращательная ось заблокирована.
 
 ***
 
-[Массив](array.md#array) **get\_colliding\_bodies** **(** **)** const
+[Array](array.md) **get\_colliding\_bodies** **(** **)** const
 
-Возвращает список тел, сталкивающихся с этим. Требуется,чтобы [contact_monitor](#property-contact-monitor) был
+Возвращает список тел, сталкивающихся с этим. Требуется, чтобы [contact_monitor](#property-contact-monitor) был
 установлен в `true` значение и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы
 обнаружить все столкновения.
 
@@ -556,7 +540,7 @@ void **apply\_torque\_impulse** **(** [Vector3](vector3.md) impulse **)**
 
 ***
 
-void **set\_axis\_lock** **(** [ось](physicsserver.md) оси тела, [](bool.md)блокировка bool **)**
+void **set\_axis\_lock** **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis, [bool](bool.md) lock **)**
 
 Фиксирует указанную линейную или вращательную ось.
 
