@@ -75,7 +75,7 @@ Methods
 | void | [set\_axis\_lock](#method-set-axis-lock) **(** [BodyAxis](class_physicsserver.html#enum-physicsserver-bodyaxis) axis, [bool](class_bool.html#class-bool) lock **)** |
 | void | [set\_axis\_velocity](#method-set-axis-velocity) **(** [Vector3](class_vector3.html#class-vector3) axis_velocity **)** |
 
-Signals[¶](#signals "Permalink to this headline")
+Signals[Â¶](#signals "Permalink to this headline")
 ---
 
 * **body_entered** **(** [Node](class_node.html#class-node) body **)**
@@ -186,7 +186,7 @@ Emitted when the physics engine changes the body's sleeping state.
 **Note:** Changing the value [sleeping](#property-sleeping) will not trigger this signal. It is only emitted if the
 sleeping state is changed by the physics engine or `emit_signal("sleeping_state_changed")` is used.
 
-Enumerations[¶](#enumerations "Permalink to this headline")
+Enumerations[Â¶](#enumerations "Permalink to this headline")
 -------------
 
 enum **Mode**:
@@ -202,7 +202,7 @@ enum **Mode**:
 * **MODE_KINEMATIC** = **3** \-\-\- Kinematic body mode. The body behaves like
   a [KinematicBody](class_kinematicbody.html#class-kinematicbody), and can only move by user code.
 
-Property Descriptions[¶](#property-descriptions "Permalink to this headline")
+Property Descriptions[Â¶](#property-descriptions "Permalink to this headline")
 -------------------------------
 
 * [float](class_float.html#class-float) **angular_damp**
@@ -516,7 +516,7 @@ collision, or by using the [apply_impulse](#method-apply-impulse) or [add_force]
 The body's weight based on its mass and the global 3D gravity. Global values are set in **Project > Project Settings >
 Physics > 3d**.
 
-Method Descriptions[¶](#method-descriptions "Permalink to this headline")
+Method Descriptions[Â¶](#method-descriptions "Permalink to this headline")
 ---------------------------
 
 * void **
