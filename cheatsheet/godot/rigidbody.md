@@ -3,7 +3,8 @@
 **Наследует:**
 [PhysicsBody](physicsbody.md) **<** [CollisionObject](collisionobject.md) **<** [Spatial](spatial.md) **<** [Node](node.md) **<** [Object](object.md)
 
-**Унаследовано:** [VehicleBody](vehiclebody.md)
+**Унаследовано:**
+[VehicleBody](vehiclebody.md)
 
 Физическое тело, положение которого определяется с помощью физического моделирования в 3D-пространстве.
 
@@ -31,29 +32,29 @@
 
 | Тип | Свойство | По умолчанию |
 | --- | --- | --- |
-| [float](float.md#float) | [angular_damp](#property-angular-damp) | `-1.0` |
+| [float](float.md) | [angular_damp](#property-angular-damp) | `-1.0` |
 | [Vector3](vector3.md#vector3) | [angular_velocity](#property-angular-velocity) | `Vector3( 0, 0, 0 )` |
-| [bool](bool.md#bool) | [axis\_lock\_angular_x](#property-axis-lock-angular-x) | `false` |
-| [bool](bool.md#bool) | [axis\_lock\_angular_y](#property-axis-lock-angular-y) | `false` |
-| [bool](bool.md#bool) | [axis\_lock\_angular_z](#property-axis-lock-angular-z) | `false` |
-| [bool](bool.md#bool) | [axis\_lock\_linear_x](#property-axis-lock-linear-x) | `false` |
-| [bool](bool.md#bool) | [axis\_lock\_linear_y](#property-axis-lock-linear-y) | `false` |
-| [bool](bool.md#bool) | [axis\_lock\_linear_z](#property-axis-lock-linear-z) | `false` |
-| [float](float.md#float) | [bounce](#property-bounce) |     |
-| [bool](bool.md#bool) | [can_sleep](#property-can-sleep) | `true` |
-| [bool](bool.md#bool) | [contact_monitor](#property-contact-monitor) | `false` |
+| [bool](bool.md) | [axis\_lock\_angular_x](#property-axis-lock-angular-x) | `false` |
+| [bool](bool.md) | [axis\_lock\_angular_y](#property-axis-lock-angular-y) | `false` |
+| [bool](bool.md) | [axis\_lock\_angular_z](#property-axis-lock-angular-z) | `false` |
+| [bool](bool.md) | [axis\_lock\_linear_x](#property-axis-lock-linear-x) | `false` |
+| [bool](bool.md) | [axis\_lock\_linear_y](#property-axis-lock-linear-y) | `false` |
+| [bool](bool.md) | [axis\_lock\_linear_z](#property-axis-lock-linear-z) | `false` |
+| [float](float.md) | [bounce](#property-bounce) |     |
+| [bool](bool.md) | [can_sleep](#property-can-sleep) | `true` |
+| [bool](bool.md) | [contact_monitor](#property-contact-monitor) | `false` |
 | [int](int.md#int) | [contacts_reported](#property-contacts-reported) | `0` |
-| [bool](bool.md#bool) | [continuous_cd](#property-continuous-cd) | `false` |
-| [bool](bool.md#bool) | [custom_integrator](#property-custom-integrator) | `false` |
-| [float](float.md#float) | [friction](#property-friction) |     |
-| [float](float.md#float) | [gravity_scale](#property-gravity-scale) | `1.0` |
-| [float](float.md#float) | [linear_damp](#property-linear-damp) | `-1.0` |
+| [bool](bool.md) | [continuous_cd](#property-continuous-cd) | `false` |
+| [bool](bool.md) | [custom_integrator](#property-custom-integrator) | `false` |
+| [float](float.md) | [friction](#property-friction) |     |
+| [float](float.md) | [gravity_scale](#property-gravity-scale) | `1.0` |
+| [float](float.md) | [linear_damp](#property-linear-damp) | `-1.0` |
 | [Vector3](vector3.md#vector3) | [linear_velocity](#property-linear-velocity) | `Vector3( 0, 0, 0 )` |
-| [float](float.md#float) | [mass](#property-mass) | `1.0` |
+| [float](float.md) | [mass](#property-mass) | `1.0` |
 | [Mode](#enum-rigidbody-mode) | [mode](#property-mode) | `0` |
-| [PhysicsMaterial](physicsmaterial.md#physicsmaterial) | [physics\_material\_override](#property-physics-material-override) |     |
-| [bool](bool.md#bool) | [sleeping](#property-sleeping) | `false` |
-| [float](float.md#float) | [weight](#property-weight) | `9.8` |
+| [PhysicsMaterial](physicsmaterial.md) | [physics\_material\_override](#property-physics-material-override) |     |
+| [bool](bool.md) | [sleeping](#property-sleeping) | `false` |
+| [float](float.md) | [weight](#property-weight) | `9.8` |
 
 ## Методы
 
@@ -66,10 +67,10 @@
 | void | [apply\_central\_impulse](#method-apply-central-impulse) **(** [Vector3](vector3.md#vector3) impulse **)** |
 | void | [apply_impulse](#method-apply-impulse) **(** [Vector3](vector3.md#vector3) position, [Vector3](vector3.md#vector3) impulse **)** |
 | void | [apply\_torque\_impulse](#method-apply-torque-impulse) **(** [Vector3](vector3.md#vector3) impulse **)** |
-| [bool](bool.md#bool) | [get\_axis\_lock](#method-get-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis **)** const |
+| [bool](bool.md) | [get\_axis\_lock](#method-get-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis **)** const |
 | [Array](array.md#array) | [get\_colliding\_bodies](#method-get-colliding-bodies) **(** **)** const |
 | [Basis](basis.md#basis) | [get\_inverse\_inertia_tensor](#method-get-inverse-inertia-tensor) **(** **)** |
-| void | [set\_axis\_lock](#method-set-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis, [bool](bool.md#bool) lock **)** |
+| void | [set\_axis\_lock](#method-set-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis, [bool](bool.md) lock **)** |
 | void | [set\_axis\_velocity](#method-set-axis-velocity) **(** [Vector3](vector3.md#vector3) axis_velocity **)** |
 
 ## Сигналы
@@ -361,7 +362,7 @@ Continuous collision detection пытается предсказать, где �
 
 Трение кузова, от 0 (без трения) до 1 (максимальное трение).
 
-Устарело, используйте [PhysicsMaterial.friction](physicsmaterial.md#physicsmaterial-property-friction) вместо этого
+Устарело, используйте [PhysicsMaterial.friction](physicsmaterial.md-property-friction) вместо этого
 через [physics\_material\_override](#property-physics-material-override).
 
 ***
@@ -428,7 +429,7 @@ Continuous collision detection пытается предсказать, где �
 
 ***
 
-[PhysicsMaterial](physicsmaterial.md#physicsmaterial) **physics\_material\_override**
+[PhysicsMaterial](physicsmaterial.md) **physics\_material\_override**
 
 | _По умолчанию_ | null |
 | --- | --- |
