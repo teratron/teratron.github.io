@@ -1,7 +1,7 @@
 # RigidBody
 
-**
-Наследует:** [physicsBody](physicsbody.md) **<** [CollisionObject](collisionobject.md) **<** [Spatial](spatial.md) **<** [Node](node.md) **<** [Object](object.md)
+**Наследует:**
+[PhysicsBody](physicsbody.md) **<** [CollisionObject](collisionobject.md) **<** [Spatial](spatial.md) **<** [Node](node.md) **<** [Object](object.md)
 
 **Унаследовано:** [VehicleBody](vehiclebody.md)
 
