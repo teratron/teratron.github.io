@@ -107,10 +107,10 @@ RigidBody имеет 4 [mode](#property-mode):
 **body\_shape\_entered** **(** [RID](rid.md) body_rid, [Node](node.md) body, [int](int.md)
 body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
-Испускается, когда одна из [Shapes](shape.md) этого твердого тела сталкивается с другой [PhysicsBody](
-physicsbody.md[](gridmap.md) фигурой s physicsBody или GridMap[](shape.md). Требуется,
-чтобы [contact_monitor](#property-contact-monitor) был установлен в `true` значение
-и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы обнаружить все столкновения.
+Испускается, когда одна из [Shapes](shape.md) этого твердого тела сталкивается с другой [PhysicsBody](physicsbody.md)
+или [GridMap](gridmap.md) фигурой. Требуется, чтобы [contact_monitor](#property-contact-monitor) был установлен в `true`
+значение и [contacts_reported](#property-contacts-reported) был установлен достаточно высоко, чтобы обнаружить все
+столкновения.
 [GridMap](gridmap.md) обнаруживаются, если [MeshLibrary](meshlibrary.md) имеет [Shape](shape.md) столкновения.
 
 `body_rid` [избавление](rid.md) от другого [объекта](physicsbody.md physicsBody
@@ -190,7 +190,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `-1.0` |
 | --- | --- |
-| _Setter_ | set\_angular\_damp(значение) |
+| _Setter_ | set\_angular\_damp(value) |
 | _Getter_ | get\_angular\_damp() |
 
 Гасит вращательные силы RigidBody.
@@ -203,7 +203,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `Vector3( 0, 0, 0 )` |
 | --- | --- |
-| _Setter_ | set\_angular\_velocity(значение) |
+| _Setter_ | set\_angular\_velocity(value) |
 | _Getter_ | get\_angular\_velocity() |
 
 Скорость вращения тела в формате axis-angle.
@@ -215,7 +215,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_axis\_lock(значение) |
+| _Setter_ | set\_axis\_lock(value) |
 | _Getter_ | get\_axis\_lock() |
 
 Зафиксируйте вращение корпуса по оси X.
@@ -226,7 +226,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_axis\_lock(значение) |
+| _Setter_ | set\_axis\_lock(value) |
 | _Getter_ | get\_axis\_lock() |
 
 Зафиксируйте вращение корпуса по оси Y.
@@ -237,7 +237,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_axis\_lock(значение) |
+| _Setter_ | set\_axis\_lock(value) |
 | _Getter_ | get\_axis\_lock() |
 
 Зафиксируйте вращение тела по оси Z.
@@ -248,7 +248,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_axis\_lock(значение) |
+| _Setter_ | set\_axis\_lock(value) |
 | _Getter_ | get\_axis\_lock() |
 
 Зафиксируйте движение тела по оси X.
@@ -259,7 +259,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_axis\_lock(значение) |
+| _Setter_ | set\_axis\_lock(value) |
 | _Getter_ | get\_axis\_lock() |
 
 Зафиксируйте движение тела по оси Y.
@@ -270,7 +270,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_axis\_lock(значение) |
+| _Setter_ | set\_axis\_lock(value) |
 | _Getter_ | get\_axis\_lock() |
 
 Зафиксируйте движение тела по оси Z.
@@ -281,7 +281,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `0.0` |
 | --- | --- |
-| _Setter_ | set_bounce(значение) |
+| _Setter_ | set_bounce(value) |
 | _Getter_ | get_bounce() |
 
 Упругость тела. Значения варьируются от `0` (no bounce) до `1` (full bounciness).
@@ -293,7 +293,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `true` |
 | --- | --- |
-| _Setter_ | set\_can\_sleep(значение) |
+| _Setter_ | set\_can\_sleep(value) |
 | _Getter_ | is\_able\_to_sleep() |
 
 Если `true`тело может войти в спящий режим, когда нет движения. См. [sleeping](#property-sleeping).
@@ -308,7 +308,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_contact\_monitor(значение) |
+| _Setter_ | set\_contact\_monitor(value) |
 | _Getter_ | is\_contact\_monitor_enabled() |
 
 Если `true`, то RigidBody будет излучать сигналы при столкновении с другим RigidBody.
@@ -320,7 +320,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `0` |
 | --- | --- |
-| _Setter_ | set\_max\_contacts_reported(значение) |
+| _Setter_ | set\_max\_contacts_reported(value) |
 | _Getter_ | get\_max\_contacts_reported() |
 
 Максимальное количество контактов, которые будут записаны. Требуется, чтобы [contact_monitor](#property-contact-monitor)
@@ -336,7 +336,7 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_use\_continuous\_collision\_detection(значение) |
+| _Setter_ | set\_use\_continuous\_collision\_detection(value) |
 | _Getter_ | is\_using\_continuous\_collision\_detection() |
 
 Если `true`используется непрерывное обнаружение столкновений.
@@ -350,7 +350,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set\_use\_custom_integrator(значение) |
+| _Setter_ | set\_use\_custom_integrator(value) |
 | _Getter_ | is\_using\_custom_integrator() |
 
 Если значение `true`, интеграция внутренних сил будет отключена (например, гравитация или трение воздуха) для этого
@@ -363,7 +363,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `1.0` |
 | --- | --- |
-| _Setter_ | set_friction(значение) |
+| _Setter_ | set_friction(value) |
 | _Getter_ | get_friction() |
 
 Трение кузова, от 0 (без трения) до 1 (максимальное трение).
@@ -377,7 +377,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `1.0` |
 | --- | --- |
-| _Setter_ | set\_gravity\_scale(значение) |
+| _Setter_ | set\_gravity\_scale(value) |
 | _Getter_ | get\_gravity\_scale() |
 
 Это умножается на глобальную настройку 3D gravity, найденную в **Project > Project Settings > Physics > 3d** для создания гравитации RigidBody.
@@ -389,7 +389,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `-1.0` |
 | --- | --- |
-| _Setter_ | set\_linear\_damp(значение) |
+| _Setter_ | set\_linear\_damp(value) |
 | _Getter_ | get\_linear\_damp() |
 
 Линейная влажность тела. Не может быть меньше -1.0.
@@ -403,7 +403,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `Vector3( 0, 0, 0 )` |
 | --- | --- |
-| _Setter_ | set\_linear\_velocity(значение) |
+| _Setter_ | set\_linear\_velocity(value) |
 | _Getter_ | get\_linear\_velocity() |
 
 Линейная скорость тела в единицах в секунду. Может использоваться спорадически, но **не устанавливайте это каждый кадр**
@@ -417,7 +417,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `1.0` |
 | --- | --- |
-| _Setter_ | set_mass(значение) |
+| _Setter_ | set_mass(value) |
 | _Getter_ | get_mass() |
 
 Масса тела.
@@ -428,7 +428,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `0` |
 | --- | --- |
-| _Setter_ | set_mode(значение) |
+| _Setter_ | set_mode(value) |
 | _Getter_ | get_mode() |
 
 Возможные значения см. [Mode](#enum-rigidbody-mode).
@@ -439,7 +439,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | null |
 | --- | --- |
-| _Setter_ | set\_physics\_material_override(значение) |
+| _Setter_ | set\_physics\_material_override(value) |
 | _Getter_ | get\_physics\_material_override() |
 
 Переопределение физического материала для тела.
@@ -451,7 +451,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `false` |
 | --- | --- |
-| _Setter_ | set_sleeping(значение) |
+| _Setter_ | set_sleeping(value) |
 | _Getter_ | is_sleeping() |
 
 Если `true`тело не будет двигаться и не будет вычислять силы, пока его не разбудит другое тело, например, при
@@ -463,7 +463,7 @@ Continuous collision detection пытается предсказать, где �
 
 | _По умолчанию_ | `9.8` |
 | --- | --- |
-| _Setter_ | set_weight(значение) |
+| _Setter_ | set_weight(value) |
 | _Getter_ | get_weight() |
 
 Вес тела, основанный на его массе и глобальной 3D-гравитации. Глобальные значения задаются в **Project > Project
