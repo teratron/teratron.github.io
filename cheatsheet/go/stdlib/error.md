@@ -1,5 +1,7 @@
 # error
 
+[Назад][back]
+
 ```go
 package main
 
@@ -22,12 +24,16 @@ func main() {
 	e2 := fmt.Errorf("err2: %w", e1)
 	e3 := fmt.Errorf("err3: %w", e2)
 
-	fmt.Println(e1, " / ", errors.Unwrap(e1))
-	fmt.Println(e2, " / ", errors.Unwrap(e2))
-	fmt.Println(e3, " / ", errors.Unwrap(e3))
+	fmt.Println(e1, "/", errors.Unwrap(e1))
+	fmt.Println(e2, "/", errors.Unwrap(e2))
+	fmt.Println(e3, "/", errors.Unwrap(e3))
 }
 
-// err1:  /  <nil>
-// err2: err1:  /  err1:
-// err3: err2: err1:  /  err2: err1:
+// err1: / <nil>
+// err2: err1: / err1:
+// err3: err2: err1: / err2: err1:
 ```
+
+[Назад][back]
+
+[back]: <../.> "Назад к оглавлению"
