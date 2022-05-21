@@ -23,8 +23,9 @@ let objects = ["Tom", 12, true, 3.14, false];
 
 ### Spread-оператор
 
+Spread-оператор `...` позволяет взять значения из массива по отдельности:
+
 ```javascript
-// spread-оператор ... позволяет взять значения из массива по отдельности:
 let numbers = [1, 2, 3, 4];
 console.log(...numbers);    // 1 2 3 4
 console.log(numbers);       // [1, 2, 3, 4]

@@ -486,42 +486,42 @@ That is so funny! :joy:
 ```markdown
 \* Without the backslash, this would be a bullet in an unordered list.
 
-| Character    | Name |
-|-----------|------|
-| \ | backslash |
-| ` | backtick |
-| * | asterisk |
-| _ | underscore |
-| { } | curly braces |
-| [ ] | brackets |
-| < > | angle brackets |
-| ( ) | parentheses |
-| # | pound sign |
-| + | plus sign |
-| - | minus sign (hyphen) |
-| . | dot |
-| ! | exclamation mark |
-| &#124; | pipe |
+| Character | Name                |
+|-----------|---------------------|
+| \         | backslash           |
+| `         | backtick            |
+| *         | asterisk            |
+| _         | underscore          |
+| { }       | curly braces        |
+| [ ]       | brackets            |
+| < >       | angle brackets      |
+| ( )       | parentheses         |
+| #         | pound sign          |
+| +         | plus sign           |
+| -         | minus sign (hyphen) |
+| .         | dot                 |
+| !         | exclamation mark    |
+| &#124;         | pipe                |
 ```
 
 \* Without the backslash, this would be a bullet in an unordered list.
 
-| Character    | Name |
-|-----------|------|
-| \ | backslash |
-| ` | backtick |
-| * | asterisk |
-| _ | underscore |
-| { } | curly braces |
-| [ ] | brackets |
-| < > | angle brackets |
-| ( ) | parentheses |
-| # | pound sign |
-| + | plus sign |
-| - | minus sign (hyphen) |
-| . | dot |
-| ! | exclamation mark |
-| &#124; | pipe |
+| Character | Name                |
+|-----------|---------------------|
+| \         | backslash           |
+| `         | backtick            |
+| *         | asterisk            |
+| _         | underscore          |
+| { }       | curly braces        |
+| [ ]       | brackets            |
+| < >       | angle brackets      |
+| ( )       | parentheses         |
+| #         | pound sign          |
+| +         | plus sign           |
+| -         | minus sign (hyphen) |
+| .         | dot                 |
+| !         | exclamation mark    |
+| &#124;    | pipe                |
 
 [Назад к перечню шпаргалок][back]
 
