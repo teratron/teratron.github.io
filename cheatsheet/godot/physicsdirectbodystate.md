@@ -1,314 +1,314 @@
 # PhysicsDirectBodyState
 
-**Наследует:** [Объект](class_object.md#class-object)
+**РќР°СЃР»РµРґСѓРµС‚:** [РћР±СЉРµРєС‚](class_object.md#class-object)
 
-Объект прямого доступа к физическому телу в [PhysicsServer](class_physicsserver.md#class-physicsserver).
+РћР±СЉРµРєС‚ РїСЂСЏРјРѕРіРѕ РґРѕСЃС‚СѓРїР° Рє С„РёР·РёС‡РµСЃРєРѕРјСѓ С‚РµР»Сѓ РІ [PhysicsServer](class_physicsserver.md#class-physicsserver).
 
-## Описание
+## РћРїРёСЃР°РЅРёРµ
 
-Обеспечивает прямой доступ к физическому телу на [физическом сервере](class_physicsserver.md#class-physicsserver),
-позволяя безопасно изменять физические свойства. Этот объект передается через прямой обратный вызов состояния
-жестких/символьных тел и предназначен для изменения прямого состояния этого тела.
-См[. RigidBody.\_integrate_forces](class_rigidbody.md#class-rigidbody-method-integrate-forces).
+РћР±РµСЃРїРµС‡РёРІР°РµС‚ РїСЂСЏРјРѕР№ РґРѕСЃС‚СѓРї Рє С„РёР·РёС‡РµСЃРєРѕРјСѓ С‚РµР»Сѓ РЅР° [С„РёР·РёС‡РµСЃРєРѕРј СЃРµСЂРІРµСЂРµ](class_physicsserver.md#class-physicsserver),
+РїРѕР·РІРѕР»СЏСЏ Р±РµР·РѕРїР°СЃРЅРѕ РёР·РјРµРЅСЏС‚СЊ С„РёР·РёС‡РµСЃРєРёРµ СЃРІРѕР№СЃС‚РІР°. Р­С‚РѕС‚ РѕР±СЉРµРєС‚ РїРµСЂРµРґР°РµС‚СЃСЏ С‡РµСЂРµР· РїСЂСЏРјРѕР№ РѕР±СЂР°С‚РЅС‹Р№ РІС‹Р·РѕРІ СЃРѕСЃС‚РѕСЏРЅРёСЏ
+Р¶РµСЃС‚РєРёС…/СЃРёРјРІРѕР»СЊРЅС‹С… С‚РµР» Рё РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ РїСЂСЏРјРѕРіРѕ СЃРѕСЃС‚РѕСЏРЅРёСЏ СЌС‚РѕРіРѕ С‚РµР»Р°.
+РЎРј[. RigidBody.\_integrate_forces](class_rigidbody.md#class-rigidbody-method-integrate-forces).
 
-## Руководства[¶](#tutorials "Постоянная ссылка на этот заголовок")
+## Р СѓРєРѕРІРѕРґСЃС‚РІР°[В¶](#tutorials "РџРѕСЃС‚РѕСЏРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЌС‚РѕС‚ Р·Р°РіРѕР»РѕРІРѕРє")
 
-[Введение в физику](../tutorials/physics/physics_introduction.md)
+[Р’РІРµРґРµРЅРёРµ РІ С„РёР·РёРєСѓ](../tutorials/physics/physics_introduction.md)
 [Ray-casting](../tutorials/physics/ray-casting.md)
 
-## Свойства[¶](#properties "Постоянная ссылка на этот заголовок")
+## РЎРІРѕР№СЃС‚РІР°[В¶](#properties "РџРѕСЃС‚РѕСЏРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЌС‚РѕС‚ Р·Р°РіРѕР»РѕРІРѕРє")
 
-| | |
-| --- | --- |
-| [Vector3](class_vector3.md)            | [angular_velocity](#class-physicsdirectbodystate-property-angular-velocity)             |
-| [Vector3](class_vector3.md)            | [center_of_mass](#class-physicsdirectbodystate-property-center-of-mass)                 |
-| [Vector3](class_vector3.md)            | [inverse_inertia](#class-physicsdirectbodystate-property-inverse-inertia)               |
-| [float](class_float.md)                  | [inverse_mass](#class-physicsdirectbodystate-property-inverse-mass)                     |
-| [Vector3](class_vector3.md)            | [linear_velocity](#class-physicsdirectbodystate-property-linear-velocity)               |
-| [Основа](class_basis.md)                 | [principal_inertia_axes](#class-physicsdirectbodystate-property-principal-inertia-axes) |
-| [bool](class_bool.md#class-bool)                     | [Спящие](#class-physicsdirectbodystate-property-sleeping)                               |
-| [float](class_float.md)                  | [шаг](#class-physicsdirectbodystate-property-step)                                      |
-| [float](class_float.md)                  | [total_angular_damp](#class-physicsdirectbodystate-property-total-angular-damp)         |
-| [Vector3](class_vector3.md)            | [total_gravity](#class-physicsdirectbodystate-property-total-gravity)                   |
-| [float](class_float.md)                  | [total_linear_damp](#class-physicsdirectbodystate-property-total-linear-damp)           |
-| [Преобразование](class_transform.md) | [преобразование](#class-physicsdirectbodystate-property-transform)                      |
+|                                      |                                                                                         |
+|--------------------------------------|-----------------------------------------------------------------------------------------|
+| [Vector3](class_vector3.md)          | [angular_velocity](#class-physicsdirectbodystate-property-angular-velocity)             |
+| [Vector3](class_vector3.md)          | [center_of_mass](#class-physicsdirectbodystate-property-center-of-mass)                 |
+| [Vector3](class_vector3.md)          | [inverse_inertia](#class-physicsdirectbodystate-property-inverse-inertia)               |
+| [float](class_float.md)              | [inverse_mass](#class-physicsdirectbodystate-property-inverse-mass)                     |
+| [Vector3](class_vector3.md)          | [linear_velocity](#class-physicsdirectbodystate-property-linear-velocity)               |
+| [РћСЃРЅРѕРІР°](class_basis.md)             | [principal_inertia_axes](#class-physicsdirectbodystate-property-principal-inertia-axes) |
+| [bool](class_bool.md#class-bool)     | [РЎРїСЏС‰РёРµ](#class-physicsdirectbodystate-property-sleeping)                               |
+| [float](class_float.md)              | [С€Р°Рі](#class-physicsdirectbodystate-property-step)                                      |
+| [float](class_float.md)              | [total_angular_damp](#class-physicsdirectbodystate-property-total-angular-damp)         |
+| [Vector3](class_vector3.md)          | [total_gravity](#class-physicsdirectbodystate-property-total-gravity)                   |
+| [float](class_float.md)              | [total_linear_damp](#class-physicsdirectbodystate-property-total-linear-damp)           |
+| [РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ](class_transform.md) | [РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ](#class-physicsdirectbodystate-property-transform)                      |
 
-## Методы[¶](#methods "Постоянная ссылка на этот заголовок")
+## РњРµС‚РѕРґС‹[В¶](#methods "РџРѕСЃС‚РѕСЏРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЌС‚РѕС‚ Р·Р°РіРѕР»РѕРІРѕРє")
 
-|                                                                                             |                                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| void                                                                                        | [add_central_force](#class-physicsdirectbodystate-method-add-central-force) **(** [Vector3](class_vector3.md) force **)**                                                 |
-| void                                                                                        | [add_force](#class-physicsdirectbodystate-method-add-force) **(** [Vector3](class_vector3.md) force, [Vector3](class_vector3.md) position **)**           |
-| void                                                                                        | [add_torque](#class-physicsdirectbodystate-method-add-torque) **(** [Vector3](class_vector3.md) torque **)**                                                              |
-| void                                                                                        | [apply_central_impulse](#class-physicsdirectbodystate-method-apply-central-impulse) **(** [Vector3](class_vector3.md) j **)**                                             |
-| void                                                                                        | [apply_impulse](#class-physicsdirectbodystate-method-apply-impulse) **(** [Vector3](class_vector3.md) position, [Vector3](class_vector3.md) j **)**       |
-| void                                                                                        | [apply_torque_impulse](#class-physicsdirectbodystate-method-apply-torque-impulse) **(** [Vector3](class_vector3.md) j **)**                                               |
+|                                                                                           |                                                                                                                                                                                         |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| void                                                                                      | [add_central_force](#class-physicsdirectbodystate-method-add-central-force) **(** [Vector3](class_vector3.md) force **)**                                                               |
+| void                                                                                      | [add_force](#class-physicsdirectbodystate-method-add-force) **(** [Vector3](class_vector3.md) force, [Vector3](class_vector3.md) position **)**                                         |
+| void                                                                                      | [add_torque](#class-physicsdirectbodystate-method-add-torque) **(** [Vector3](class_vector3.md) torque **)**                                                                            |
+| void                                                                                      | [apply_central_impulse](#class-physicsdirectbodystate-method-apply-central-impulse) **(** [Vector3](class_vector3.md) j **)**                                                           |
+| void                                                                                      | [apply_impulse](#class-physicsdirectbodystate-method-apply-impulse) **(** [Vector3](class_vector3.md) position, [Vector3](class_vector3.md) j **)**                                     |
+| void                                                                                      | [apply_torque_impulse](#class-physicsdirectbodystate-method-apply-torque-impulse) **(** [Vector3](class_vector3.md) j **)**                                                             |
 | [RID](class_rid.md#class-rid)                                                             | [get_contact_collider](#class-physicsdirectbodystate-method-get-contact-collider) **(** [int](class_int.md#class-int) contact_idx **)** const                                           |
 | [int](class_int.md#class-int)                                                             | [get_contact_collider_id](#class-physicsdirectbodystate-method-get-contact-collider-id) **(** [int](class_int.md#class-int) contact_idx **)** const                                     |
-| [Объект](class_object.md#class-object)                                                    | [get_contact_collider_object](#class-physicsdirectbodystate-method-get-contact-collider-object) **(** [int](class_int.md#class-int) contact_idx **)** const                             |
-| [Vector3](class_vector3.md)                                                 | [get_contact_collider_position](#class-physicsdirectbodystate-method-get-contact-collider-position) **(** [int](class_int.md#class-int) contact_idx **)** const                         |
+| [РћР±СЉРµРєС‚](class_object.md#class-object)                                                    | [get_contact_collider_object](#class-physicsdirectbodystate-method-get-contact-collider-object) **(** [int](class_int.md#class-int) contact_idx **)** const                             |
+| [Vector3](class_vector3.md)                                                               | [get_contact_collider_position](#class-physicsdirectbodystate-method-get-contact-collider-position) **(** [int](class_int.md#class-int) contact_idx **)** const                         |
 | [int](class_int.md#class-int)                                                             | [get_contact_collider_shape](#class-physicsdirectbodystate-method-get-contact-collider-shape) **(** [int](class_int.md#class-int) contact_idx **)** const                               |
-| [Vector3](class_vector3.md)                                                 | [get_contact_collider_velocity_at_position](#class-physicsdirectbodystate-method-get-contact-collider-velocity-at-position) **(** [int](class_int.md#class-int) contact_idx **)** const |
-| [int](class_int.md#class-int)                                                             | [get_contact_count](#class-physicsdirectbodystate-method-get-contact-count) **(** **)** const                                                                                             |
-| [float](class_float.md)                                                       | [get_contact_impulse](#class-physicsdirectbodystate-method-get-contact-impulse) **(** [int](class_int.md#class-int) contact_idx **)** const                                             |
-| [Vector3](class_vector3.md)                                                 | [get_contact_local_normal](#class-physicsdirectbodystate-method-get-contact-local-normal) **(** [int](class_int.md#class-int) contact_idx **)** const                                   |
-| [Vector3](class_vector3.md)                                                 | [get_contact_local_position](#class-physicsdirectbodystate-method-get-contact-local-position) **(** [int](class_int.md#class-int) contact_idx **)** const                               |
+| [Vector3](class_vector3.md)                                                               | [get_contact_collider_velocity_at_position](#class-physicsdirectbodystate-method-get-contact-collider-velocity-at-position) **(** [int](class_int.md#class-int) contact_idx **)** const |
+| [int](class_int.md#class-int)                                                             | [get_contact_count](#class-physicsdirectbodystate-method-get-contact-count) **(** **)** const                                                                                           |
+| [float](class_float.md)                                                                   | [get_contact_impulse](#class-physicsdirectbodystate-method-get-contact-impulse) **(** [int](class_int.md#class-int) contact_idx **)** const                                             |
+| [Vector3](class_vector3.md)                                                               | [get_contact_local_normal](#class-physicsdirectbodystate-method-get-contact-local-normal) **(** [int](class_int.md#class-int) contact_idx **)** const                                   |
+| [Vector3](class_vector3.md)                                                               | [get_contact_local_position](#class-physicsdirectbodystate-method-get-contact-local-position) **(** [int](class_int.md#class-int) contact_idx **)** const                               |
 | [int](class_int.md#class-int)                                                             | [get_contact_local_shape](#class-physicsdirectbodystate-method-get-contact-local-shape) **(** [int](class_int.md#class-int) contact_idx **)** const                                     |
-| [PhysicsDirectSpaceState](class_physicsdirectspacestate.md#class-physicsdirectspacestate) | [get_space_state](#class-physicsdirectbodystate-method-get-space-state) **(** **)**                                                                                                       |
-| [Vector3](class_vector3.md)                                                 | [get_velocity_at_local_position](#class-physicsdirectbodystate-method-get-velocity-at-local-position) **(** [Vector3](class_vector3.md) local_position **)** const        |
-| void                                                                                        | [integrate_forces](#class-physicsdirectbodystate-method-integrate-forces) **(** **)**                                                                                                     |
+| [PhysicsDirectSpaceState](class_physicsdirectspacestate.md#class-physicsdirectspacestate) | [get_space_state](#class-physicsdirectbodystate-method-get-space-state) **(** **)**                                                                                                     |
+| [Vector3](class_vector3.md)                                                               | [get_velocity_at_local_position](#class-physicsdirectbodystate-method-get-velocity-at-local-position) **(** [Vector3](class_vector3.md) local_position **)** const                      |
+| void                                                                                      | [integrate_forces](#class-physicsdirectbodystate-method-integrate-forces) **(** **)**                                                                                                   |
 
-## Описание свойств[¶](#property-descriptions "Постоянная ссылка на этот заголовок")
+## РћРїРёСЃР°РЅРёРµ СЃРІРѕР№СЃС‚РІ[В¶](#property-descriptions "РџРѕСЃС‚РѕСЏРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЌС‚РѕС‚ Р·Р°РіРѕР»РѕРІРѕРє")
 
 [Vector3](class_vector3.md) **angular_velocity**
 
 |          |                                |
-| -------- | ------------------------------ |
-| _Сеттер_ | set_angular_velocity(значение) |
-| _Геттер_ | get_angular_velocity()         |
+|----------|--------------------------------|
+| _РЎРµС‚С‚РµСЂ_ | set_angular_velocity(Р·РЅР°С‡РµРЅРёРµ) |
+| _Р“РµС‚С‚РµСЂ_ | get_angular_velocity()         |
 
-Скорость вращения тела в формате axis-angle. Величина вектора-это скорость вращения в _радианах_ в секунду.
+РЎРєРѕСЂРѕСЃС‚СЊ РІСЂР°С‰РµРЅРёСЏ С‚РµР»Р° РІ С„РѕСЂРјР°С‚Рµ axis-angle. Р’РµР»РёС‡РёРЅР° РІРµРєС‚РѕСЂР°-СЌС‚Рѕ СЃРєРѕСЂРѕСЃС‚СЊ РІСЂР°С‰РµРЅРёСЏ РІ _СЂР°РґРёР°РЅР°С…_ РІ СЃРµРєСѓРЅРґСѓ.
 
 ---
 
 [Vector3](class_vector3.md) **center_of_mass**
 
 |          |                      |
-| -------- | -------------------- |
-| _Геттер_ | get_center_of_mass() |
+|----------|----------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_center_of_mass() |
 
 ---
 
 [Vector3](class_vector3.md) **inverse_inertia**
 
 |          |                       |
-| -------- | --------------------- |
-| _Геттер_ | get_inverse_inertia() |
+|----------|-----------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_inverse_inertia() |
 
-Обратная величина инерции тела.
+РћР±СЂР°С‚РЅР°СЏ РІРµР»РёС‡РёРЅР° РёРЅРµСЂС†РёРё С‚РµР»Р°.
 
 ---
 
 [float](class_float.md) **inverse_mass**
 
 |          |                    |
-| -------- | ------------------ |
-| _Геттер_ | get_inverse_mass() |
+|----------|--------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_inverse_mass() |
 
-Обратная масса тела.
+РћР±СЂР°С‚РЅР°СЏ РјР°СЃСЃР° С‚РµР»Р°.
 
 ---
 
 [Vector3](class_vector3.md) **linear_velocity**
 
 |          |                               |
-| -------- | ----------------------------- |
-| _Сеттер_ | set_linear_velocity(значение) |
-| _Геттер_ | get_linear_velocity()         |
+|----------|-------------------------------|
+| _РЎРµС‚С‚РµСЂ_ | set_linear_velocity(Р·РЅР°С‡РµРЅРёРµ) |
+| _Р“РµС‚С‚РµСЂ_ | get_linear_velocity()         |
 
-Линейная скорость тела в единицах в секунду.
+Р›РёРЅРµР№РЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ С‚РµР»Р° РІ РµРґРёРЅРёС†Р°С… РІ СЃРµРєСѓРЅРґСѓ.
 
 ---
 
 [Basis](class_basis.md **principal_inertia_axes**
 
 |          |                              |
-| -------- | ---------------------------- |
-| _Геттер_ | get_principal_inertia_axes() |
+|----------|------------------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_principal_inertia_axes() |
 
 ---
 
 [bool](class_bool.md#class-bool) **sleeping**
 
 |          |                           |
-| -------- | ------------------------- |
-| _Сеттер_ | set_sleep_state(значение) |
-| _Геттер_ | is_sleeping()             |
+|----------|---------------------------|
+| _РЎРµС‚С‚РµСЂ_ | set_sleep_state(Р·РЅР°С‡РµРЅРёРµ) |
+| _Р“РµС‚С‚РµСЂ_ | is_sleeping()             |
 
-Если `true`это тело в данный момент спит (не активно).
+Р•СЃР»Рё `true`СЌС‚Рѕ С‚РµР»Рѕ РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ СЃРїРёС‚ (РЅРµ Р°РєС‚РёРІРЅРѕ).
 
 ---
 
 [float](class_float.md) **step**
 
 |          |            |
-| -------- | ---------- |
-| _Геттер_ | get_step() |
+|----------|------------|
+| _Р“РµС‚С‚РµСЂ_ | get_step() |
 
-Временной шаг (дельта), используемый для моделирования.
+Р’СЂРµРјРµРЅРЅРѕР№ С€Р°Рі (РґРµР»СЊС‚Р°), РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ РґР»СЏ РјРѕРґРµР»РёСЂРѕРІР°РЅРёСЏ.
 
 ---
 
 [float](class_float.md) **total_angular_damp**
 
 |          |                          |
-| -------- | ------------------------ |
-| _Геттер_ | get_total_angular_damp() |
+|----------|--------------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_total_angular_damp() |
 
-Скорость, с которой тело перестает вращаться, если нет никаких других сил, движущих его.
+РЎРєРѕСЂРѕСЃС‚СЊ, СЃ РєРѕС‚РѕСЂРѕР№ С‚РµР»Рѕ РїРµСЂРµСЃС‚Р°РµС‚ РІСЂР°С‰Р°С‚СЊСЃСЏ, РµСЃР»Рё РЅРµС‚ РЅРёРєР°РєРёС… РґСЂСѓРіРёС… СЃРёР», РґРІРёР¶СѓС‰РёС… РµРіРѕ.
 
 ---
 
 [Vector3](class_vector3.md) **total_gravity**
 
 |          |                     |
-| -------- | ------------------- |
-| _Геттер_ | get_total_gravity() |
+|----------|---------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_total_gravity() |
 
-Вектор полной гравитации, применяемый в настоящее время к этому телу.
+Р’РµРєС‚РѕСЂ РїРѕР»РЅРѕР№ РіСЂР°РІРёС‚Р°С†РёРё, РїСЂРёРјРµРЅСЏРµРјС‹Р№ РІ РЅР°СЃС‚РѕСЏС‰РµРµ РІСЂРµРјСЏ Рє СЌС‚РѕРјСѓ С‚РµР»Сѓ.
 
 ---
 
 [float](class_float.md) **total_linear_damp**
 
 |          |                         |
-| -------- | ----------------------- |
-| _Геттер_ | get_total_linear_damp() |
+|----------|-------------------------|
+| _Р“РµС‚С‚РµСЂ_ | get_total_linear_damp() |
 
-Скорость, с которой тело перестает двигаться, если его не двигают никакие другие силы.
+РЎРєРѕСЂРѕСЃС‚СЊ, СЃ РєРѕС‚РѕСЂРѕР№ С‚РµР»Рѕ РїРµСЂРµСЃС‚Р°РµС‚ РґРІРёРіР°С‚СЊСЃСЏ, РµСЃР»Рё РµРіРѕ РЅРµ РґРІРёРіР°СЋС‚ РЅРёРєР°РєРёРµ РґСЂСѓРіРёРµ СЃРёР»С‹.
 
 ---
 
 [Transform](class_transform.md) **transform**
 
 |          |                         |
-| -------- | ----------------------- |
-| _Сеттер_ | set_transform(значение) |
-| _Геттер_ | get_transform()         |
+|----------|-------------------------|
+| _РЎРµС‚С‚РµСЂ_ | set_transform(Р·РЅР°С‡РµРЅРёРµ) |
+| _Р“РµС‚С‚РµСЂ_ | get_transform()         |
 
-Матрица преобразования тела.
+РњР°С‚СЂРёС†Р° РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ С‚РµР»Р°.
 
-## Описание метода[¶](#method-descriptions "Постоянная ссылка на этот заголовок")
+## РћРїРёСЃР°РЅРёРµ РјРµС‚РѕРґР°[В¶](#method-descriptions "РџРѕСЃС‚РѕСЏРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЌС‚РѕС‚ Р·Р°РіРѕР»РѕРІРѕРє")
 
 - void **add_central_force** **(** [Vector3](class_vector3.md) force **)**
 
-Добавляет постоянную направленную силу, не влияя на вращение.
+Р”РѕР±Р°РІР»СЏРµС‚ РїРѕСЃС‚РѕСЏРЅРЅСѓСЋ РЅР°РїСЂР°РІР»РµРЅРЅСѓСЋ СЃРёР»Сѓ, РЅРµ РІР»РёСЏСЏ РЅР° РІСЂР°С‰РµРЅРёРµ.
 
-Это эквивалентно `add_force(force, Vector3(0,0,0))`.
+Р­С‚Рѕ СЌРєРІРёРІР°Р»РµРЅС‚РЅРѕ `add_force(force, Vector3(0,0,0))`.
 
 ---
 
 - void **add_force** **(** [Vector3](class_vector3.md) force, [Vector3](class_vector3.md) position **)**
 
-Добавляет позиционируемую силу к телу. И сила, и смещение от начала координат тела находятся в глобальных координатах.
+Р”РѕР±Р°РІР»СЏРµС‚ РїРѕР·РёС†РёРѕРЅРёСЂСѓРµРјСѓСЋ СЃРёР»Сѓ Рє С‚РµР»Сѓ. Р СЃРёР»Р°, Рё СЃРјРµС‰РµРЅРёРµ РѕС‚ РЅР°С‡Р°Р»Р° РєРѕРѕСЂРґРёРЅР°С‚ С‚РµР»Р° РЅР°С…РѕРґСЏС‚СЃСЏ РІ РіР»РѕР±Р°Р»СЊРЅС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С….
 
 ---
 
 - void **add_torque** **(** [Vector3](class_vector3.md) torque **)**
 
-Добавляет постоянную вращательную силу, не влияя на положение.
+Р”РѕР±Р°РІР»СЏРµС‚ РїРѕСЃС‚РѕСЏРЅРЅСѓСЋ РІСЂР°С‰Р°С‚РµР»СЊРЅСѓСЋ СЃРёР»Сѓ, РЅРµ РІР»РёСЏСЏ РЅР° РїРѕР»РѕР¶РµРЅРёРµ.
 
 ---
 
 - void **apply_central_impulse** **(** [Vector3](class_vector3.md) j **)**
 
-Применяет один направленный импульс, не влияя на вращение.
+РџСЂРёРјРµРЅСЏРµС‚ РѕРґРёРЅ РЅР°РїСЂР°РІР»РµРЅРЅС‹Р№ РёРјРїСѓР»СЊСЃ, РЅРµ РІР»РёСЏСЏ РЅР° РІСЂР°С‰РµРЅРёРµ.
 
-Это эквивалентно `apply_impulse(Vector3(0, 0, 0), impulse)`.
+Р­С‚Рѕ СЌРєРІРёРІР°Р»РµРЅС‚РЅРѕ `apply_impulse(Vector3(0, 0, 0), impulse)`.
 
 ---
 
 - void **apply_impulse** **(** [Vector3](class_vector3.md) position, [Vector3](class_vector3.md) j **)**
 
-Применяет позиционированный импульс к телу. Импульс не зависит от времени! Применение импульса к каждому кадру приведет
-к силе, зависящей от частоты кадров. По этой причине его следует использовать только при моделировании одноразовых
-воздействий. Позиция использует вращение глобальной системы координат, но центрируется в начале координат объекта.
+РџСЂРёРјРµРЅСЏРµС‚ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРЅС‹Р№ РёРјРїСѓР»СЊСЃ Рє С‚РµР»Сѓ. РРјРїСѓР»СЊСЃ РЅРµ Р·Р°РІРёСЃРёС‚ РѕС‚ РІСЂРµРјРµРЅРё! РџСЂРёРјРµРЅРµРЅРёРµ РёРјРїСѓР»СЊСЃР° Рє РєР°Р¶РґРѕРјСѓ РєР°РґСЂСѓ РїСЂРёРІРµРґРµС‚
+Рє СЃРёР»Рµ, Р·Р°РІРёСЃСЏС‰РµР№ РѕС‚ С‡Р°СЃС‚РѕС‚С‹ РєР°РґСЂРѕРІ. РџРѕ СЌС‚РѕР№ РїСЂРёС‡РёРЅРµ РµРіРѕ СЃР»РµРґСѓРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РѕР»СЊРєРѕ РїСЂРё РјРѕРґРµР»РёСЂРѕРІР°РЅРёРё РѕРґРЅРѕСЂР°Р·РѕРІС‹С…
+РІРѕР·РґРµР№СЃС‚РІРёР№. РџРѕР·РёС†РёСЏ РёСЃРїРѕР»СЊР·СѓРµС‚ РІСЂР°С‰РµРЅРёРµ РіР»РѕР±Р°Р»СЊРЅРѕР№ СЃРёСЃС‚РµРјС‹ РєРѕРѕСЂРґРёРЅР°С‚, РЅРѕ С†РµРЅС‚СЂРёСЂСѓРµС‚СЃСЏ РІ РЅР°С‡Р°Р»Рµ РєРѕРѕСЂРґРёРЅР°С‚ РѕР±СЉРµРєС‚Р°.
 
 ---
 
 - void **apply_torque_impulse** **(** [Vector3](class_vector3.md) j **)**
 
-Примените импульс крутящего момента (который будет зависеть от массы и формы тела). Это будет вращать тело вокруг
-вектора`j`, переданного в качестве параметра.
+РџСЂРёРјРµРЅРёС‚Рµ РёРјРїСѓР»СЊСЃ РєСЂСѓС‚СЏС‰РµРіРѕ РјРѕРјРµРЅС‚Р° (РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ Р·Р°РІРёСЃРµС‚СЊ РѕС‚ РјР°СЃСЃС‹ Рё С„РѕСЂРјС‹ С‚РµР»Р°). Р­С‚Рѕ Р±СѓРґРµС‚ РІСЂР°С‰Р°С‚СЊ С‚РµР»Рѕ РІРѕРєСЂСѓРі
+РІРµРєС‚РѕСЂР°`j`, РїРµСЂРµРґР°РЅРЅРѕРіРѕ РІ РєР°С‡РµСЃС‚РІРµ РїР°СЂР°РјРµС‚СЂР°.
 
 ---
 
 [RID](class_rid.md#class-rid) **get_contact_collider** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Возвращает [RID коллайдера](class_rid.md#class-rid).
+Р’РѕР·РІСЂР°С‰Р°РµС‚ [RID РєРѕР»Р»Р°Р№РґРµСЂР°](class_rid.md#class-rid).
 
 ---
 
 [int](class_int.md#class-int) **get_contact_collider_id** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Возвращает идентификатор объекта коллайдера.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РѕР±СЉРµРєС‚Р° РєРѕР»Р»Р°Р№РґРµСЂР°.
 
 ---
 
-[Объект](class_object.md#class-object) **get_contact_collider_object** **(** [int](class_int.md#class-int)
+[РћР±СЉРµРєС‚](class_object.md#class-object) **get_contact_collider_object** **(** [int](class_int.md#class-int)
 contact_idx **)** const
 
-Возвращает объект collider.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕР±СЉРµРєС‚ collider.
 
 ---
 
 [Vector3](class_vector3.md) **get_contact_collider_position** **(** [int](class_int.md#class-int) contact_idx **)**
 const
 
-Возвращает положение контакта в коллайдере.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕР»РѕР¶РµРЅРёРµ РєРѕРЅС‚Р°РєС‚Р° РІ РєРѕР»Р»Р°Р№РґРµСЂРµ.
 
 ---
 
 [int](class_int.md#class-int) **get_contact_collider_shape** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Возвращает индекс формы коллайдера.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ РёРЅРґРµРєСЃ С„РѕСЂРјС‹ РєРѕР»Р»Р°Р№РґРµСЂР°.
 
 ---
 
 [Vector3](class_vector3.md) **get_contact_collider_velocity_at_position** **(** [int](class_int.md#class-int)
 contact_idx **)** const
 
-Возвращает вектор линейной скорости в точке контакта коллайдера.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ РІРµРєС‚РѕСЂ Р»РёРЅРµР№РЅРѕР№ СЃРєРѕСЂРѕСЃС‚Рё РІ С‚РѕС‡РєРµ РєРѕРЅС‚Р°РєС‚Р° РєРѕР»Р»Р°Р№РґРµСЂР°.
 
 ---
 
 [int](class_int.md#class-int) **get_contact_count** **(** **)** const
 
-Возвращает количество контактов этого тела с другими телами.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРЅС‚Р°РєС‚РѕРІ СЌС‚РѕРіРѕ С‚РµР»Р° СЃ РґСЂСѓРіРёРјРё С‚РµР»Р°РјРё.
 
-**Примечание:** По умолчанию возвращается 0, если тела не настроены для мониторинга контактов.
-См[. RigidBody.contact_monitor](class_rigidbody.md#class-rigidbody-property-contact-monitor).
+**РџСЂРёРјРµС‡Р°РЅРёРµ:** РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РІРѕР·РІСЂР°С‰Р°РµС‚СЃСЏ 0, РµСЃР»Рё С‚РµР»Р° РЅРµ РЅР°СЃС‚СЂРѕРµРЅС‹ РґР»СЏ РјРѕРЅРёС‚РѕСЂРёРЅРіР° РєРѕРЅС‚Р°РєС‚РѕРІ.
+РЎРј[. RigidBody.contact_monitor](class_rigidbody.md#class-rigidbody-property-contact-monitor).
 
 ---
 
 [float](class_float.md) **get_contact_impulse** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Импульс, созданный контактом. Реализовано только для физики пули.
+РРјРїСѓР»СЊСЃ, СЃРѕР·РґР°РЅРЅС‹Р№ РєРѕРЅС‚Р°РєС‚РѕРј. Р РµР°Р»РёР·РѕРІР°РЅРѕ С‚РѕР»СЊРєРѕ РґР»СЏ С„РёР·РёРєРё РїСѓР»Рё.
 
 ---
 
 [Vector3](class_vector3.md) **get_contact_local_normal** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Возвращает локальную нормаль в точке контакта.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ Р»РѕРєР°Р»СЊРЅСѓСЋ РЅРѕСЂРјР°Р»СЊ РІ С‚РѕС‡РєРµ РєРѕРЅС‚Р°РєС‚Р°.
 
 ---
 
 [Vector3](class_vector3.md) **get_contact_local_position** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Возвращает локальное положение точки контакта.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ Р»РѕРєР°Р»СЊРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ С‚РѕС‡РєРё РєРѕРЅС‚Р°РєС‚Р°.
 
 ---
 
 [int](class_int.md#class-int) **get_contact_local_shape** **(** [int](class_int.md#class-int) contact_idx **)** const
 
-Возвращает локальный индекс формы столкновения.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ Р»РѕРєР°Р»СЊРЅС‹Р№ РёРЅРґРµРєСЃ С„РѕСЂРјС‹ СЃС‚РѕР»РєРЅРѕРІРµРЅРёСЏ.
 
 ---
 
 [PhysicsDirectSpaceState](class_physicsdirectspacestate.md#class-physicsdirectspacestate) **
 get_space_state** **(** **)**
 
-Возвращает текущее состояние пространства, полезное для запросов.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ С‚РµРєСѓС‰РµРµ СЃРѕСЃС‚РѕСЏРЅРёРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР°, РїРѕР»РµР·РЅРѕРµ РґР»СЏ Р·Р°РїСЂРѕСЃРѕРІ.
 
 ---
 
 [Vector3](class_vector3.md) **get_velocity_at_local_position** **(** [Vector3](class_vector3.md) local_position **)**
 const
 
-Возвращает скорость тела в заданном относительном положении, включая как перевод, так и вращение.
+Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃРєРѕСЂРѕСЃС‚СЊ С‚РµР»Р° РІ Р·Р°РґР°РЅРЅРѕРј РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕРј РїРѕР»РѕР¶РµРЅРёРё, РІРєР»СЋС‡Р°СЏ РєР°Рє РїРµСЂРµРІРѕРґ, С‚Р°Рє Рё РІСЂР°С‰РµРЅРёРµ.
 
 ---
 
 - void **integrate_forces** **(** **)**
 
-Вызывает встроенный код интеграции force.
+Р’С‹Р·С‹РІР°РµС‚ РІСЃС‚СЂРѕРµРЅРЅС‹Р№ РєРѕРґ РёРЅС‚РµРіСЂР°С†РёРё force.
