@@ -4,7 +4,7 @@
 <head>
     <base href="./">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Talmazan School - Facebook Start din 16 Aprilie</title>
     <link href="//fonts.googleapis.com/css?family=Anton|Nunito:200,300,400,600,700,800,900|Quicksand:300,400,500,700|Roboto:100,300,400,500,700,900|Montserrat:300,400,500,600,700,800|Raleway:100,200,300,400,600,700,800,900"
           rel="stylesheet">
@@ -12,7 +12,7 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/landing.css">
+    <link href="css/landing.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         //location.hash = '#home';
@@ -21,920 +21,983 @@
 
 <body>
 
-    <!-- Parallax Background -->
-    <!--div class="parallax-swiper">
-        <div class="parallax-bg parallax-2" data-swiper-parallax="-30%"></div>
-        <div class="parallax-bg parallax-1" data-swiper-parallax="-8%"></div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
+<!-- Parallax Background -->
+<!--div class="parallax-swiper">
+    <div class="parallax-bg parallax-2" data-swiper-parallax="-30%"></div>
+    <div class="parallax-bg parallax-1" data-swiper-parallax="-8%"></div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+    </div>
+</div-->
+
+<!-- Content -->
+<main class="content-swiper" id="content">
+    <div class="parallax-bg parallax-2" data-swiper-parallax="-30%"></div>
+    <div class="parallax-bg parallax-1" data-swiper-parallax="-8%"></div>
+    <div class="swiper-wrapper">
+
+        <!-- Home -->
+        <div class="swiper-slide content-slide" data-hash="home" id="home">
+            <aside class="home-start">
+                <div class="home-date">
+                    <span>din</span>
+                    <span class="day">16</span>
+                    <div class="month">Aprilie</div>
+                </div>
+                <h3>Curs Practic</h3>
+            </aside>
+            <aside class="home-motto">
+                <h2>Primii pasi in activitatea de</h2>
+                <h1>Social Media Manager</h1>
+                <button class="button btn-big btn-accent" data-modal-id="modal-price">Participă Acum</button>
+            </aside>
         </div>
-    </div-->
 
-    <!-- Content -->
-    <main id="content" class="content-swiper">
-        <div class="parallax-bg parallax-2" data-swiper-parallax="-30%"></div>
-        <div class="parallax-bg parallax-1" data-swiper-parallax="-8%"></div>
-        <div class="swiper-wrapper">
-
-            <!-- Home -->
-            <div class="swiper-slide content-slide" data-hash="home" id="home">
-                <aside class="home-start">
-                    <div class="home-date">
-                        <span>din</span>
-                        <span class="day">16</span>
-                        <div class="month">Aprilie</div>
-                    </div>
-                    <h3>Curs Practic</h3>
-                </aside>
-                <aside class="home-motto">
-                    <h2>Primii pasi in activitatea de</h2>
-                    <h1>Social Media Manager</h1>
-                    <button class="button btn-big btn-accent" data-modal-id="modal-price">Participă Acum</button>
-                </aside>
-            </div>
-
-            <!-- Program -->
-            <div class="swiper-slide content-slide" data-hash="program" id="program">
-                <div class="body">
-                    <div class="head">
-                        <h1>Programul cursului</h1>
-                    </div>
-                    <div class="view-swiper">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide view-slide">
-                                <!-- 1 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">1</div>
-                                        <div class="heading">
-                                            <time>06.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Pagina de Facebook și conținutul ei</h3>
-                                        <ul class="list-dash">
-                                            <li>Pagina personală;</li>
-                                            <li>Pagina de Business;</li>
-                                            <li>Creare/setare.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- 2 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">2</div>
-                                        <div class="heading">
-                                            <time>11.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Content marketing</h3>
-                                        <ul class="list-dash">
-                                            <li>Tipologia postărilor (când postăm, ce postăm);</li>
-                                            <li>Plan de postări.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide view-slide">
-                                <!-- 3 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">3</div>
-                                        <div class="heading">
-                                            <time>06.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Pagina de Facebook și conținutul ei</h3>
-                                        <ul class="list-dash">
-                                            <li>Pagina personală;</li>
-                                            <li>Pagina de Business;</li>
-                                            <li>Creare/setare.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- 4 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">4</div>
-                                        <div class="heading">
-                                            <time>11.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Content marketing</h3>
-                                        <ul class="list-dash">
-                                            <li>Tipologia postărilor (când postăm, ce postăm);</li>
-                                            <li>Plan de postări.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide view-slide">
-                                <!-- 1 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">5</div>
-                                        <div class="heading">
-                                            <time>06.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Pagina de Facebook și conținutul ei</h3>
-                                        <ul class="list-dash">
-                                            <li>Pagina personală;</li>
-                                            <li>Pagina de Business;</li>
-                                            <li>Creare/setare.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- 2 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">6</div>
-                                        <div class="heading">
-                                            <time>11.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Content marketing</h3>
-                                        <ul class="list-dash">
-                                            <li>Tipologia postărilor (când postăm, ce postăm);</li>
-                                            <li>Plan de postări.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide view-slide">
-                                <!-- 3 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">7</div>
-                                        <div class="heading">
-                                            <time>06.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Pagina de Facebook și conținutul ei</h3>
-                                        <ul class="list-dash">
-                                            <li>Pagina personală;</li>
-                                            <li>Pagina de Business;</li>
-                                            <li>Creare/setare.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- 4 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">8</div>
-                                        <div class="heading">
-                                            <time>11.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Content marketing</h3>
-                                        <ul class="list-dash">
-                                            <li>Tipologia postărilor (când postăm, ce postăm);</li>
-                                            <li>Plan de postări.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide view-slide">
-                                <!-- 3 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">9</div>
-                                        <div class="heading">
-                                            <time>06.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Pagina de Facebook și conținutul ei</h3>
-                                        <ul class="list-dash">
-                                            <li>Pagina personală;</li>
-                                            <li>Pagina de Business;</li>
-                                            <li>Creare/setare.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- 4 -->
-                                <div>
-                                    <div class="head">
-                                        <div class="number">10</div>
-                                        <div class="heading">
-                                            <time>11.05.2015</time>
-                                            <h2>LECȚIE</h2>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <video controls loop muted preload="auto">
-                                            <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                        </video>
-                                        <h3>Content marketing</h3>
-                                        <ul class="list-dash">
-                                            <li>Tipologia postărilor (când postăm, ce postăm);</li>
-                                            <li>Plan de postări.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="foot">
-                    <button class="button btn-border view-button-prev">VEZI prev 2 LECȚII</button>
-                    <button class="button view-button-next">VEZI ÎNCĂ 2 LECȚII</button>
-                </div>
-            </div>
-
-            <!-- Post Сourse -->
-            <div class="swiper-slide content-slide" data-hash="post" id="post">
+        <!-- Program -->
+        <div class="swiper-slide content-slide" data-hash="program" id="program">
+            <div class="body">
                 <div class="head">
-                    <h1>După acest curs te vei alege cu:</h1>
+                    <h1>Programul cursului</h1>
                 </div>
-                <div class="body">
-                    <video controls loop muted preload="auto">
-                        <source src="../../video/kick_video.mp4" type="video/mp4" />
-                    </video>
-                    <ul class="list-dash">
-                        <li>Cont de publicitate creat și setat în funcțiile de obiectivele propriei afaceri</li>
-                        <li>Analiza publicului țintă și propriul avatar al clientului</li>
-                        <li>Sfaturi de promovare personalizate</li>
-                        <li>Acces la lecțiile video până la finalul anului 2019</li>
-                    </ul>
-                    <ul class="list-dash">
-                        <li>Acces GRATUIT la platforma de analiză a indicatorilor de performanță kicksocialwork până la finalul anului 2019</li>
-                        <li>Aplicații pentru administrare Conținutului</li>
-                        <li>Aplicații pentru redactare FOTO/VIDEO</li>
-                    </ul>
-                    <video controls loop muted preload="auto">
-                        <source src="../../video/kick_video.mp4" type="video/mp4" />
-                    </video>
-                </div>
-            </div>
+                <div class="view-swiper">
+                    <div class="swiper-wrapper">
 
-            <!-- Offer Special -->
-            <div class="swiper-slide content-slide" data-hash="offer" id="offer">
-                <div class="head">
-                    <h1>OFERTĂ SPECIALĂ</h1>
-                </div>
-                <div class="body">
-                    <section class="offer-container">
-                        <aside>
-                            <h2 class="allcaps">Facebook Start</h2>
-                            <div class="subtitle">Nivelul I sau Cursul perfect pentru începători în SMM</div>
-                            <div class="price">99<i class="fas fa-euro-sign"></i></div>
-                            <h3>Vei învăța cum:</h3>
-                            <ul class="list-dash">
-                                <li>să administrezi corect o pagină de facebook;</li>
-                                <li>să faci content marketing;</li>
-                                <li>să-ți setezi propriul cont de publicitate;</li>
-                                <li>să faci campanii publicitare pe facebook.</li>
-                            </ul>
-                        </aside>
-                        <aside>
-                            <h2 class="allcaps">Facebook Mediu</h2>
-                            <div class="subtitle">Nivelul II sau Curs pentru intermediari</div>
-                            <div class="price">399<i class="fas fa-euro-sign"></i></div>
-                            <h3>Vei învăța cum:</h3>
-                            <ul class="list-dash">
-                                <li>să-ți ajustezi contul în business manager;</li>
-                                <li>să depistezi audiența perfectă pentru produsul tău;</li>
-                                <li>să-ți setezi particularizat contul de publicitate;</li>
-                                <li>să faci campanii de Boost Post;</li>
-                                <li>să faci promovarea campaniilor complexe.</li>
-                            </ul>
-                        </aside>
-                        <aside>
-                            <s class="price">480<i class="fas fa-euro-sign"></i></s>
-                            <span class="price">399<i class="fas fa-euro-sign"></i></span>
-                        </aside>
-                    </section>
-                </div>
-                <div class="foot">
-                    <button class="button btn-white" data-modal-id="modal-price">VREAU SĂ BENEFICIEZ DE OFERTĂ</button>
-                </div>
-            </div>
-
-            <!-- About Speaker -->
-            <div class="swiper-slide content-slide" data-hash="speaker" id="speaker">
-                <div>
-                    <div class="photo">
-                        <img src="images/photo_talmazan.jpg" alt="Dumitru Talmazan" />
-                    </div>
-                    <h2>Salut, sunt</h2>
-                    <h1>Dumitru Talmazan</h1>
-                    <h3 class="allcaps">Digital Marketing Perfomance Strategist</h3>
-                    <p>Eu sunt Dumitru Talmazan, expert în comunicare digitală și atreprenor, pasionat de dezvoltarea diferitor tipuri de afaceri în domeniul informațional.</p>
-                    <p>Îmi place să ajut oamenii să îmbrățișeze o nouă profesie, o profesie a viitorului, și să atingă un alt nivel de înțelegere a activității digitale și a rezultativității acesteia în raport cu propria afacere.</p>
-                    <p>În prezent, sunt autor și speaker în cadrul cursurilor de instruire în Facebook și Instagram de nivel internațional în cadrul companiilor: Business Molodost, Synergy, Talmazan School, Sidorin LAB cu impact pe piețile din România, Ucraina,
-                        Federația Rusă, și alte țări din spațiul post-sovietic.</p>
-                    <p>Pentru că îmi place să cunosc oameni noi și să știu că le pot fi util, administrez un blog cu ajutorul căruia împărtășesc experiența mea în domeniul digital, obținută din multitudinea de activități și proiecte în care sunt implicat.</p>
-                </div>
-                <div>
-                    <h3>Acum, dezvolt câteva direcții de afaceri:</h3>
-                    <ul class="list-dash">
-                        <li>ASAP digital team - agenție internațională de performanță digitală cu un buget de administrare de peste 300 000 euro;</li>
-                        <li>Talmazan School - școală de instruiri în domeniul rețelelor sociale;</li>
-                        <li>Kicksocialwork - Aplicație de monitorizare și analitică a activităților de promovare efectuate în Facebook;</li>
-                        <li>ZoomYourBusiness - conferință anuală despre antreprenoriatul în Republica Moldova;</li>
-                        <li>Hello From Republic of Moldova - ONG ce are ca scop promovarea Republicii pe plan internațional, proiect de suflet - despre oameni, prin oameni, Pentru Oameni.</li>
-                    </ul>
-                    <p>Dacă vrei și tu să înveți cum să utilizezi instrumentele Facebook și Instagram pentru a-ți dezvolta afacerea și a face din marca ta un brand, atunci mi-ar place să te cunosc în calitate de participant la instruirile noastre.</p>
-                    <img class="signature" src="images/signature_talmazan.png" alt="Dumitru Talmazan" />
-                </div>
-                <div>
-                    <div class="photo">
-                        <img src="images/photo_talmazan.jpg" alt="Dumitru Talmazan" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- Graduates -->
-            <div class="swiper-slide content-slide" data-hash="graduate" id="graduate">
-                <div class="head">
-                    <h1>ABSOLVENȚII TALMAZAN SCHOOL</h1>
-                </div>
-                <div class="body">
-                    <div class="coverflow-swiper">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-slide view-slide">
                             <!-- 1 -->
-                            <div class="swiper-slide coverflow-slide">
-                                <video controls loop muted preload="auto">
-                                    <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                </video>
-                                <h3>Pagina de Facebook și conținutul ei</h3>
-                                <div class="author">
-                                    <div class="avatar" style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"></div>
-                                    <div class="user">Alina Andronic</div>
-                                    <small class="brand">Mostelle</small>
-                                    <button class="button btn-white btn-small" data-modal-id="modal-price">VREAU ȘI EU</button>
+                            <div>
+                                <div class="head">
+                                    <div class="number">1</div>
+                                    <div class="heading">
+                                        <time>06.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Pagina de Facebook și conținutul ei</h3>
+                                    <ul class="list-dash">
+                                        <li>Pagina personală;</li>
+                                        <li>Pagina de Business;</li>
+                                        <li>Creare/setare.</li>
+                                    </ul>
                                 </div>
                             </div>
                             <!-- 2 -->
-                            <div class="swiper-slide coverflow-slide">
-                                <video controls loop muted preload="auto">
-                                    <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                </video>
-                                <h3>Pagina de Facebook și conținutul ei</h3>
-                                <div class="author">
-                                    <div class="avatar" style="background-image: url(images/partners/2af3b1ae68eda522e104cfa15573d653.jpg)"></div>
-                                    <div class="user">Alina Andronic</div>
-                                    <small class="brand">Mostelle</small>
-                                    <button class="button btn-white btn-small" data-modal-id="modal-price">VREAU ȘI EU</button>
+                            <div>
+                                <div class="head">
+                                    <div class="number">2</div>
+                                    <div class="heading">
+                                        <time>11.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Content marketing</h3>
+                                    <ul class="list-dash">
+                                        <li>Tipologia postărilor (când postăm, ce postăm);</li>
+                                        <li>Plan de postări.</li>
+                                    </ul>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="swiper-slide view-slide">
                             <!-- 3 -->
-                            <div class="swiper-slide coverflow-slide">
-                                <video controls loop muted preload="auto">
-                                    <source src="../../video/kick_video.mp4" type="video/mp4" />
-                                </video>
-                                <h3>Pagina de Facebook și conținutul ei</h3>
-                                <div class="author">
-                                    <div class="avatar" style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"></div>
-                                    <div class="user">Alina Andronic</div>
-                                    <small class="brand">Mostelle</small>
-                                    <button class="button btn-white btn-small" data-modal-id="modal-price">VREAU ȘI EU</button>
+                            <div>
+                                <div class="head">
+                                    <div class="number">3</div>
+                                    <div class="heading">
+                                        <time>06.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Pagina de Facebook și conținutul ei</h3>
+                                    <ul class="list-dash">
+                                        <li>Pagina personală;</li>
+                                        <li>Pagina de Business;</li>
+                                        <li>Creare/setare.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">4</div>
+                                    <div class="heading">
+                                        <time>11.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Content marketing</h3>
+                                    <ul class="list-dash">
+                                        <li>Tipologia postărilor (când postăm, ce postăm);</li>
+                                        <li>Plan de postări.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide view-slide">
+                            <!-- 1 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">5</div>
+                                    <div class="heading">
+                                        <time>06.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Pagina de Facebook și conținutul ei</h3>
+                                    <ul class="list-dash">
+                                        <li>Pagina personală;</li>
+                                        <li>Pagina de Business;</li>
+                                        <li>Creare/setare.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">6</div>
+                                    <div class="heading">
+                                        <time>11.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Content marketing</h3>
+                                    <ul class="list-dash">
+                                        <li>Tipologia postărilor (când postăm, ce postăm);</li>
+                                        <li>Plan de postări.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide view-slide">
+                            <!-- 3 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">7</div>
+                                    <div class="heading">
+                                        <time>06.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Pagina de Facebook și conținutul ei</h3>
+                                    <ul class="list-dash">
+                                        <li>Pagina personală;</li>
+                                        <li>Pagina de Business;</li>
+                                        <li>Creare/setare.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">8</div>
+                                    <div class="heading">
+                                        <time>11.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Content marketing</h3>
+                                    <ul class="list-dash">
+                                        <li>Tipologia postărilor (când postăm, ce postăm);</li>
+                                        <li>Plan de postări.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide view-slide">
+                            <!-- 3 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">9</div>
+                                    <div class="heading">
+                                        <time>06.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Pagina de Facebook și conținutul ei</h3>
+                                    <ul class="list-dash">
+                                        <li>Pagina personală;</li>
+                                        <li>Pagina de Business;</li>
+                                        <li>Creare/setare.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div>
+                                <div class="head">
+                                    <div class="number">10</div>
+                                    <div class="heading">
+                                        <time>11.05.2015</time>
+                                        <h2>LECȚIE</h2>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <video controls loop muted preload="auto">
+                                        <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                                    </video>
+                                    <h3>Content marketing</h3>
+                                    <ul class="list-dash">
+                                        <li>Tipologia postărilor (când postăm, ce postăm);</li>
+                                        <li>Plan de postări.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="foot">
-                    <button class="button btn-border coverflow-button-prev">PRECEDENTUL ABSOLVENT</button>
-                    <button class="button coverflow-button-next">URMĂTORUL ABSOLVENT</button>
-                </div>
             </div>
-
-            <!-- Partners / Clients -->
-            <div class="swiper-slide content-slide" data-hash="partner" id="partner">
-                <div class="head">
-                    <h1>COLABORĂRI / CLIENȚI</h1>
-                </div>
-                <ul class="body tile">
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                    <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span></li>
-                </ul>
-                <div class="foot">
-                    <button class="button">VEZI MAI MULTE</button>
-                </div>
-            </div>
-
-            <!-- Bonus -->
-            <div class="swiper-slide content-slide" data-hash="bonus" id="bonus">
-                <div class="head"></div>
-                <div class="body">
-                    <div>
-                        <h1>Bonus</h1>
-                        <h2>Fiecare participant al cursului va primi ca bonus:</h2>
-                        <ul class="list-dash">
-                            <li>Aplicații pentru administrarea Conținutului;</li>
-                            <li>Aplicații pentru redactare VIDEO/ FOTO;</li>
-                            <li>1 an GRATUIT la programul pentru analitica paginii de Facebook - Kicksocialwork.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img class="gift" src="images/gift.png" alt="" />
-                        <div class="row"><button class="button btn-big" data-modal-id="modal-price">APLICĂ ACUM</button></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ -->
-            <div class="swiper-slide content-slide" data-hash="faq" id="faq">
-                <div class="head">
-                    <h1>ÎNTREBĂRI FRECVENTE DIN PARTEA PARTICIPANȚILOR</h1>
-                </div>
-                <div class="body">
-                    <ul class="accordion">
-                        <li class="accordion-item">
-                            <div class="question">De ce este nevoie pentru a mă înregistra la curs?</div>
-                            <div class="accordion-collapse answer">Pentru înregistrare la curs, este nevoie să veniți la oficiul nostru, str. Mihail Kogâlniceanu, 85 cu buletinul de identitate.</div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="question">Care sunt modalitățile de achitare?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="question">Pot să achit în rate?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="question">Faceți reducere dacă suntem mai multe persoane?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                    </ul>
-                    <ul class="accordion">
-                        <li class="accordion-item">
-                            <div class="question">Care este diferența dintre cursul Online și Offline?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="question">Când și unde au loc lecțiile și cât durează acestea?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="question">Cât timp durează cursul și ce materiale este nevoie să am cu mine pentru lecții?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="question">Cum contactez speaker-ul când am întrebări?</div>
-                            <div class="accordion-collapse answer">answer</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Contact / About / Final -->
-            <div class="swiper-slide content-slide" data-hash="contact" id="contact">
-                <!--<div class="head">
-                    <h1>Contacte</h1>
-                </div>-->
-                <div class="body">
-                    <div>
-                        <h3><i class="fas fa-map-marker-alt"></i>Moldova, Chișinău, str. Mihail Kogălniceanu, 85</h3>
-                        <iframe src="https://yandex.md/map-widget/v1/-/CCqhAK2Y" frameborder="0" allowfullscreen="false"></iframe>
-                        <h3><i class="fas fa-phone"></i>060 733 999, 022 733 999</h3>
-                        <h3><i class="fas fa-envelope"></i>info@talmazan.md</h3>
-                    </div>
-                    <div>
-                        <h2 class="allcaps">Despre Talmazan School</h2>
-                        <p>Talmazan School este creat pentru cei care se află la punctul de start cu rețelele sociale, astfel încât la final, ei vor putea gestiona independent propria afacere prin intermediul rețelelor sociale.</p>
-                        <p>După aceste cursuri, absolvenții vor acționa siguri în internet, vor folosi diferite instrumente pentru a crește vizibilitatea și a promova și vor implementa diferite strategii de comunicare online pentru a mări eficiența.</p>
-                        <h2 class="allcaps">Follow Me</h2>
-                        <nav class="nav-social">
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
-                        </nav>
-                    </div>
-                </div>
+            <div class="foot">
+                <button class="button btn-border view-button-prev">VEZI prev 2 LECȚII</button>
+                <button class="button view-button-next">VEZI ÎNCĂ 2 LECȚII</button>
             </div>
         </div>
 
-        <!-- Content pagination -->
-        <!--<div class="swiper-pagination content-pagination"></div>-->
-
-        <!-- Content Scroll Bar -->
-        <!--<div class="swiper-scrollbar"></div>-->
-    </main>
-
-    <!-- Header -->
-    <header id="header" class="inner">
-        <div class="head">
-            <img class="logo" src="images/logo.png" alt="Talmazan School" data-modal-id="modal-drawer" />
-            <div class="mobile">
-                <button class="button btn-link" type="button" data-modal-id="modal-drawer"><i class="fas fa-bars"></i></button>
-                <h1>Talmazan School</h1>
-            </div>
-        </div>
-        <div class="body">
-            <menu>
-                <a href="#home">Acasă</a>
-                <a href="#program">program</a>
-                <a href="#post">după curs</a>
-                <a href="#offer">oferta exclusiva</a>
-                <a href="#speaker">despre speaker</a>
-            </menu>
-        </div>
-        <div class="foot">
-            <menu>
-                <a href="tel:"><i class="fas fa-phone"></i>060 733 999</a>
-                <a href="tel:">022 733 999</a>
-                <a href="mailto:info@talmazan.md"><i class="fas fa-envelope"></i>info@talmazan.md</a>
-            </menu>
-            <div class="mobile">
-                <a href="tel:+37322011071"><i class="fas fa-phone"></i> +373 22 011 071</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Footer -->
-    <footer id="footer" class="inner"></footer>
-
-    <!-- Modal Drawer -->
-    <aside id="modal-drawer" class="modal side-left" data-modal-id="modal-drawer">
-        <nav class="modal-view">
-            <menu class="list">
-                <a href="#home">Acasă</a>
-                <a href="#program">Program</a>
-                <a href="#post">După curs</a>
-                <a href="#offer">Oferta exclusiva</a>
-                <a href="#speaker">Despre speaker</a>
-                <a href="#graduate">Graduates</a>
-                <a href="#partner">Partners</a>
-                <a href="#bonus">Bonus</a>
-                <a href="#faq">Întrebări</a>
-                <a href="#contact">Contatcte</a>
-            </menu>
-            <menu class="list list-icon">
-                <a href="tel:"><i class="fas fa-phone"></i>060 733 999</a>
-                <a href="tel:">022 733 999</a>
-                <a href="mailto:info@talmazan.md"><i class="fas fa-envelope"></i>info@talmazan.md</a>
-            </menu>
-            <button type="button" class="button btn-link" data-modal-id="modal-drawer"><i class="fas fa-times"></i></button>
-        </nav>
-    </aside>
-
-    <!-- Modal Prices -->
-    <aside id="modal-price" class="modal side-full">
-        <div class="modal-view">
-            <div class="modal-bg" data-modal-id="modal-price"></div>
+        <!-- Post Сourse -->
+        <div class="swiper-slide content-slide" data-hash="post" id="post">
             <div class="head">
-                <h1>PREȚURI</h1>
-                <h2 class="subtitle">ALEGE FORMATUL PE CARE TE INTERESEAZĂ</h2>
+                <h1>După acest curs te vei alege cu:</h1>
             </div>
-            <form class="body">
-                <aside class="paid-method">
-                    <div>
-                        <h3>Motive pentru care să nu ratezi acest curs:</h3>
-                        <ul class="list-dash">
-                            <li>Prezența în online este vitală pentru afacerea ta;</li>
-                            <li>În Republica Moldova există 1 000 000 conturi Facebook;</li>
-                            <li>Ai parte de abordare individuală și ghidare pe tot parcursul instruirii;</li>
-                            <li>Vei învăța cum să-ți faci o prezență bine gândită în social media;</li>
-                            <li>Vei învăța cum să-ți faci afacerea recunoscută în orice regiune a globului;</li>
-                            <li>Ai parte de lecții practice în care aplici cunoștințele teoretice dobândite;</li>
-                            <li>Ai acces liber la lecțiile în format video timp de 12 luni.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Alege metoda de plata</h3>
-                        <input id="pay-cash" type="radio" name="method" />
-                        <label for="pay-cash" class="button btn-big"><i class="fas fa-wallet"></i>Cash</label>
-                        <input id="pay-transfer" type="radio" name="method" />
-                        <label for="pay-transfer" class="button btn-big"><i class="fas fa-money-check-alt"></i>Transfer</label>
-                        <a class="button btn-big" href="#" target="_blank"><i class="fas fa-credit-card"></i>Card Online</a>
-                        <h3>Investiție</h3>
-                        <ul class="list-dash">
-                            <li><span class="price">99</span> <i class="fas fa-euro-sign"></i> până la </li>
-                            <li><span class="price">159</span> <i class="fas fa-euro-sign"></i> după </li>
-                        </ul>
-                    </div>
-                    <div class="footnote">* suma fără TVA</div>
-                </aside>
-                <aside>
-                    <h3>Completeaza formularul</h3>
-                    <div class="paid-info">
-                        <div class="paid-data">
-                            <input type="text" placeholder="Nume/Prenume" />
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="paid-data">
-                            <input type="email" placeholder="E-mail" />
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="paid-data">
-                            <input type="tel" placeholder="Telefon de contact" />
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="paid-button">
-                            <button type="button" class="button btn-accent">PARTICIP ȘI EU</button>
-                        </div>
-                    </div>
-                    <div class="paid-access">
-                        <input id="agree1" type="checkbox" name="agree1" checked required/>
-                        <label for="agree1">Accesând butonul, îmi dau acordul prelucrării datelor cu caracter personal în conformitate cu politica de confidențialitate.</label>
-                    </div>
-                    <div class="paid-access">
-                        <input id="agree2" type="checkbox" name="agree2" checked required/>
-                        <label for="agree2">Accesând butonul, îmi dau acordul pentru publicitate.</label>
-                    </div>
-                </aside>
-            </form>
-            <div class="foot"></div>
-            <button type="button" class="button btn-link" data-modal-id="modal-price"><i class="fas fa-times"></i>
-            </button>
+            <div class="body">
+                <video controls loop muted preload="auto">
+                    <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                </video>
+                <ul class="list-dash">
+                    <li>Cont de publicitate creat și setat în funcțiile de obiectivele propriei afaceri</li>
+                    <li>Analiza publicului țintă și propriul avatar al clientului</li>
+                    <li>Sfaturi de promovare personalizate</li>
+                    <li>Acces la lecțiile video până la finalul anului 2019</li>
+                </ul>
+                <ul class="list-dash">
+                    <li>Acces GRATUIT la platforma de analiză a indicatorilor de performanță kicksocialwork până la
+                        finalul anului 2019
+                    </li>
+                    <li>Aplicații pentru administrare Conținutului</li>
+                    <li>Aplicații pentru redactare FOTO/VIDEO</li>
+                </ul>
+                <video controls loop muted preload="auto">
+                    <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                </video>
+            </div>
         </div>
-    </aside>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" type="text/javascript"></script>
-    <script src="//cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js" type="text/javascript"></script>
-    <script src="libs/jquery.visible.min.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function () {
+        <!-- Offer Special -->
+        <div class="swiper-slide content-slide" data-hash="offer" id="offer">
+            <div class="head">
+                <h1>OFERTĂ SPECIALĂ</h1>
+            </div>
+            <div class="body">
+                <section class="offer-container">
+                    <aside>
+                        <h2 class="allcaps">Facebook Start</h2>
+                        <div class="subtitle">Nivelul I sau Cursul perfect pentru începători în SMM</div>
+                        <div class="price">99<i class="fas fa-euro-sign"></i></div>
+                        <h3>Vei învăța cum:</h3>
+                        <ul class="list-dash">
+                            <li>să administrezi corect o pagină de facebook;</li>
+                            <li>să faci content marketing;</li>
+                            <li>să-ți setezi propriul cont de publicitate;</li>
+                            <li>să faci campanii publicitare pe facebook.</li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h2 class="allcaps">Facebook Mediu</h2>
+                        <div class="subtitle">Nivelul II sau Curs pentru intermediari</div>
+                        <div class="price">399<i class="fas fa-euro-sign"></i></div>
+                        <h3>Vei învăța cum:</h3>
+                        <ul class="list-dash">
+                            <li>să-ți ajustezi contul în business manager;</li>
+                            <li>să depistezi audiența perfectă pentru produsul tău;</li>
+                            <li>să-ți setezi particularizat contul de publicitate;</li>
+                            <li>să faci campanii de Boost Post;</li>
+                            <li>să faci promovarea campaniilor complexe.</li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <s class="price">480<i class="fas fa-euro-sign"></i></s>
+                        <span class="price">399<i class="fas fa-euro-sign"></i></span>
+                    </aside>
+                </section>
+            </div>
+            <div class="foot">
+                <button class="button btn-white" data-modal-id="modal-price">VREAU SĂ BENEFICIEZ DE OFERTĂ</button>
+            </div>
+        </div>
 
-            $('.parallax-2').parallax();
+        <!-- About Speaker -->
+        <div class="swiper-slide content-slide" data-hash="speaker" id="speaker">
+            <div>
+                <div class="photo">
+                    <img alt="Dumitru Talmazan" src="images/photo_talmazan.jpg"/>
+                </div>
+                <h2>Salut, sunt</h2>
+                <h1>Dumitru Talmazan</h1>
+                <h3 class="allcaps">Digital Marketing Perfomance Strategist</h3>
+                <p>Eu sunt Dumitru Talmazan, expert în comunicare digitală și atreprenor, pasionat de dezvoltarea
+                    diferitor tipuri de afaceri în domeniul informațional.</p>
+                <p>Îmi place să ajut oamenii să îmbrățișeze o nouă profesie, o profesie a viitorului, și să atingă un
+                    alt nivel de înțelegere a activității digitale și a rezultativității acesteia în raport cu propria
+                    afacere.</p>
+                <p>În prezent, sunt autor și speaker în cadrul cursurilor de instruire în Facebook și Instagram de nivel
+                    internațional în cadrul companiilor: Business Molodost, Synergy, Talmazan School, Sidorin LAB cu
+                    impact pe piețile din România, Ucraina,
+                    Federația Rusă, și alte țări din spațiul post-sovietic.</p>
+                <p>Pentru că îmi place să cunosc oameni noi și să știu că le pot fi util, administrez un blog cu
+                    ajutorul căruia împărtășesc experiența mea în domeniul digital, obținută din multitudinea de
+                    activități și proiecte în care sunt implicat.</p>
+            </div>
+            <div>
+                <h3>Acum, dezvolt câteva direcții de afaceri:</h3>
+                <ul class="list-dash">
+                    <li>ASAP digital team - agenție internațională de performanță digitală cu un buget de administrare
+                        de peste 300 000 euro;
+                    </li>
+                    <li>Talmazan School - școală de instruiri în domeniul rețelelor sociale;</li>
+                    <li>Kicksocialwork - Aplicație de monitorizare și analitică a activităților de promovare efectuate
+                        în Facebook;
+                    </li>
+                    <li>ZoomYourBusiness - conferință anuală despre antreprenoriatul în Republica Moldova;</li>
+                    <li>Hello From Republic of Moldova - ONG ce are ca scop promovarea Republicii pe plan internațional,
+                        proiect de suflet - despre oameni, prin oameni, Pentru Oameni.
+                    </li>
+                </ul>
+                <p>Dacă vrei și tu să înveți cum să utilizezi instrumentele Facebook și Instagram pentru a-ți dezvolta
+                    afacerea și a face din marca ta un brand, atunci mi-ar place să te cunosc în calitate de participant
+                    la instruirile noastre.</p>
+                <img alt="Dumitru Talmazan" class="signature" src="images/signature_talmazan.png"/>
+            </div>
+            <div>
+                <div class="photo">
+                    <img alt="Dumitru Talmazan" src="images/photo_talmazan.jpg"/>
+                </div>
+            </div>
+        </div>
 
-            /*let swiperParallax = new Swiper('.parallax-swiper', {
-                direction: 'vertical',
-                slidesPerView: 'auto',
-                loop: false,
-                parallax: true,
-                freeMode: true,
-                mousewheel: {
-                    enabled: true,
-                    eventsTarged: '.content-slide'
-                },
-                keyboard: {
-                    enabled: true
-                }
-             });*/
+        <!-- Graduates -->
+        <div class="swiper-slide content-slide" data-hash="graduate" id="graduate">
+            <div class="head">
+                <h1>ABSOLVENȚII TALMAZAN SCHOOL</h1>
+            </div>
+            <div class="body">
+                <div class="coverflow-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <div class="swiper-slide coverflow-slide">
+                            <video controls loop muted preload="auto">
+                                <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                            </video>
+                            <h3>Pagina de Facebook și conținutul ei</h3>
+                            <div class="author">
+                                <div class="avatar"
+                                     style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"></div>
+                                <div class="user">Alina Andronic</div>
+                                <small class="brand">Mostelle</small>
+                                <button class="button btn-white btn-small" data-modal-id="modal-price">VREAU ȘI EU
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide coverflow-slide">
+                            <video controls loop muted preload="auto">
+                                <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                            </video>
+                            <h3>Pagina de Facebook și conținutul ei</h3>
+                            <div class="author">
+                                <div class="avatar"
+                                     style="background-image: url(images/partners/2af3b1ae68eda522e104cfa15573d653.jpg)"></div>
+                                <div class="user">Alina Andronic</div>
+                                <small class="brand">Mostelle</small>
+                                <button class="button btn-white btn-small" data-modal-id="modal-price">VREAU ȘI EU
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide coverflow-slide">
+                            <video controls loop muted preload="auto">
+                                <source src="../../video/kick_video.mp4" type="video/mp4"/>
+                            </video>
+                            <h3>Pagina de Facebook și conținutul ei</h3>
+                            <div class="author">
+                                <div class="avatar"
+                                     style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"></div>
+                                <div class="user">Alina Andronic</div>
+                                <small class="brand">Mostelle</small>
+                                <button class="button btn-white btn-small" data-modal-id="modal-price">VREAU ȘI EU
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <button class="button btn-border coverflow-button-prev">PRECEDENTUL ABSOLVENT</button>
+                <button class="button coverflow-button-next">URMĂTORUL ABSOLVENT</button>
+            </div>
+        </div>
 
-            /*let swiperContent = new Swiper('.content-swiper', {
-                 direction: 'vertical',
-                 loop: false,
-                 parallax: true,
-                 allowTouchMove: false,
-                 freeMode: true,
-                 scrollbar: {
-                    el: '.content-scrollbar'
-                 },
-                 mousewheel: true,
-                 keyboard: true,
-                 pagination: {
-                     el: '.content-pagination',
-                     clickable: true
-                 },
-                 navigation: {
-                     nextEl: '.content-button-next',
-                     prevEl: '.content-button-prev'
-                 },
-                 hashNavigation: {
-                    watchState: true
-                 },
-                 breakpoints: {
-                     1000: {
-                         direction: 'horizontal',
-                         allowTouchMove: true
-                     }
+        <!-- Partners / Clients -->
+        <div class="swiper-slide content-slide" data-hash="partner" id="partner">
+            <div class="head">
+                <h1>COLABORĂRI / CLIENȚI</h1>
+            </div>
+            <ul class="body tile">
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+                <li style="background-image: url(images/partners/0c490c995e5de5ca83e3b8c69fd98e83.jpg)"><span>123</span>
+                </li>
+            </ul>
+            <div class="foot">
+                <button class="button">VEZI MAI MULTE</button>
+            </div>
+        </div>
+
+        <!-- Bonus -->
+        <div class="swiper-slide content-slide" data-hash="bonus" id="bonus">
+            <div class="head"></div>
+            <div class="body">
+                <div>
+                    <h1>Bonus</h1>
+                    <h2>Fiecare participant al cursului va primi ca bonus:</h2>
+                    <ul class="list-dash">
+                        <li>Aplicații pentru administrarea Conținutului;</li>
+                        <li>Aplicații pentru redactare VIDEO/ FOTO;</li>
+                        <li>1 an GRATUIT la programul pentru analitica paginii de Facebook - Kicksocialwork.</li>
+                    </ul>
+                </div>
+                <div>
+                    <img alt="" class="gift" src="images/gift.png"/>
+                    <div class="row">
+                        <button class="button btn-big" data-modal-id="modal-price">APLICĂ ACUM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="swiper-slide content-slide" data-hash="faq" id="faq">
+            <div class="head">
+                <h1>ÎNTREBĂRI FRECVENTE DIN PARTEA PARTICIPANȚILOR</h1>
+            </div>
+            <div class="body">
+                <ul class="accordion">
+                    <li class="accordion-item">
+                        <div class="question">De ce este nevoie pentru a mă înregistra la curs?</div>
+                        <div class="accordion-collapse answer">Pentru înregistrare la curs, este nevoie să veniți la
+                            oficiul nostru, str. Mihail Kogâlniceanu, 85 cu buletinul de identitate.
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="question">Care sunt modalitățile de achitare?</div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="question">Pot să achit în rate?</div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="question">Faceți reducere dacă suntem mai multe persoane?</div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                </ul>
+                <ul class="accordion">
+                    <li class="accordion-item">
+                        <div class="question">Care este diferența dintre cursul Online și Offline?</div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="question">Când și unde au loc lecțiile și cât durează acestea?</div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="question">Cât timp durează cursul și ce materiale este nevoie să am cu mine pentru
+                            lecții?
+                        </div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="question">Cum contactez speaker-ul când am întrebări?</div>
+                        <div class="accordion-collapse answer">answer</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact / About / Final -->
+        <div class="swiper-slide content-slide" data-hash="contact" id="contact">
+            <!--<div class="head">
+                <h1>Contacte</h1>
+            </div>-->
+            <div class="body">
+                <div>
+                    <h3><i class="fas fa-map-marker-alt"></i>Moldova, Chișinău, str. Mihail Kogălniceanu, 85</h3>
+                    <iframe allowfullscreen="false" frameborder="0"
+                            src="https://yandex.md/map-widget/v1/-/CCqhAK2Y"></iframe>
+                    <h3><i class="fas fa-phone"></i>060 733 999, 022 733 999</h3>
+                    <h3><i class="fas fa-envelope"></i>info@talmazan.md</h3>
+                </div>
+                <div>
+                    <h2 class="allcaps">Despre Talmazan School</h2>
+                    <p>Talmazan School este creat pentru cei care se află la punctul de start cu rețelele sociale,
+                        astfel încât la final, ei vor putea gestiona independent propria afacere prin intermediul
+                        rețelelor sociale.</p>
+                    <p>După aceste cursuri, absolvenții vor acționa siguri în internet, vor folosi diferite instrumente
+                        pentru a crește vizibilitatea și a promova și vor implementa diferite strategii de comunicare
+                        online pentru a mări eficiența.</p>
+                    <h2 class="allcaps">Follow Me</h2>
+                    <nav class="nav-social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content pagination -->
+    <!--<div class="swiper-pagination content-pagination"></div>-->
+
+    <!-- Content Scroll Bar -->
+    <!--<div class="swiper-scrollbar"></div>-->
+</main>
+
+<!-- Header -->
+<header class="inner" id="header">
+    <div class="head">
+        <img alt="Talmazan School" class="logo" data-modal-id="modal-drawer" src="images/logo.png"/>
+        <div class="mobile">
+            <button class="button btn-link" data-modal-id="modal-drawer" type="button"><i class="fas fa-bars"></i>
+            </button>
+            <h1>Talmazan School</h1>
+        </div>
+    </div>
+    <div class="body">
+        <menu>
+            <a href="#home">Acasă</a>
+            <a href="#program">program</a>
+            <a href="#post">după curs</a>
+            <a href="#offer">oferta exclusiva</a>
+            <a href="#speaker">despre speaker</a>
+        </menu>
+    </div>
+    <div class="foot">
+        <menu>
+            <a href="tel:"><i class="fas fa-phone"></i>060 733 999</a>
+            <a href="tel:">022 733 999</a>
+            <a href="mailto:info@talmazan.md"><i class="fas fa-envelope"></i>info@talmazan.md</a>
+        </menu>
+        <div class="mobile">
+            <a href="tel:+37322011071"><i class="fas fa-phone"></i> +373 22 011 071</a>
+        </div>
+    </div>
+</header>
+
+<!-- Footer -->
+<footer class="inner" id="footer"></footer>
+
+<!-- Modal Drawer -->
+<aside class="modal side-left" data-modal-id="modal-drawer" id="modal-drawer">
+    <nav class="modal-view">
+        <menu class="list">
+            <a href="#home">Acasă</a>
+            <a href="#program">Program</a>
+            <a href="#post">După curs</a>
+            <a href="#offer">Oferta exclusiva</a>
+            <a href="#speaker">Despre speaker</a>
+            <a href="#graduate">Graduates</a>
+            <a href="#partner">Partners</a>
+            <a href="#bonus">Bonus</a>
+            <a href="#faq">Întrebări</a>
+            <a href="#contact">Contatcte</a>
+        </menu>
+        <menu class="list list-icon">
+            <a href="tel:"><i class="fas fa-phone"></i>060 733 999</a>
+            <a href="tel:">022 733 999</a>
+            <a href="mailto:info@talmazan.md"><i class="fas fa-envelope"></i>info@talmazan.md</a>
+        </menu>
+        <button class="button btn-link" data-modal-id="modal-drawer" type="button"><i class="fas fa-times"></i></button>
+    </nav>
+</aside>
+
+<!-- Modal Prices -->
+<aside class="modal side-full" id="modal-price">
+    <div class="modal-view">
+        <div class="modal-bg" data-modal-id="modal-price"></div>
+        <div class="head">
+            <h1>PREȚURI</h1>
+            <h2 class="subtitle">ALEGE FORMATUL PE CARE TE INTERESEAZĂ</h2>
+        </div>
+        <form class="body">
+            <aside class="paid-method">
+                <div>
+                    <h3>Motive pentru care să nu ratezi acest curs:</h3>
+                    <ul class="list-dash">
+                        <li>Prezența în online este vitală pentru afacerea ta;</li>
+                        <li>În Republica Moldova există 1 000 000 conturi Facebook;</li>
+                        <li>Ai parte de abordare individuală și ghidare pe tot parcursul instruirii;</li>
+                        <li>Vei învăța cum să-ți faci o prezență bine gândită în social media;</li>
+                        <li>Vei învăța cum să-ți faci afacerea recunoscută în orice regiune a globului;</li>
+                        <li>Ai parte de lecții practice în care aplici cunoștințele teoretice dobândite;</li>
+                        <li>Ai acces liber la lecțiile în format video timp de 12 luni.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Alege metoda de plata</h3>
+                    <input id="pay-cash" name="method" type="radio"/>
+                    <label class="button btn-big" for="pay-cash"><i class="fas fa-wallet"></i>Cash</label>
+                    <input id="pay-transfer" name="method" type="radio"/>
+                    <label class="button btn-big" for="pay-transfer"><i
+                            class="fas fa-money-check-alt"></i>Transfer</label>
+                    <a class="button btn-big" href="#" target="_blank"><i class="fas fa-credit-card"></i>Card Online</a>
+                    <h3>Investiție</h3>
+                    <ul class="list-dash">
+                        <li><span class="price">99</span> <i class="fas fa-euro-sign"></i> până la</li>
+                        <li><span class="price">159</span> <i class="fas fa-euro-sign"></i> după</li>
+                    </ul>
+                </div>
+                <div class="footnote">* suma fără TVA</div>
+            </aside>
+            <aside>
+                <h3>Completeaza formularul</h3>
+                <div class="paid-info">
+                    <div class="paid-data">
+                        <input placeholder="Nume/Prenume" type="text"/>
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="paid-data">
+                        <input placeholder="E-mail" type="email"/>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="paid-data">
+                        <input placeholder="Telefon de contact" type="tel"/>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="paid-button">
+                        <button class="button btn-accent" type="button">PARTICIP ȘI EU</button>
+                    </div>
+                </div>
+                <div class="paid-access">
+                    <input checked id="agree1" name="agree1" required type="checkbox"/>
+                    <label for="agree1">Accesând butonul, îmi dau acordul prelucrării datelor cu caracter personal în
+                        conformitate cu politica de confidențialitate.</label>
+                </div>
+                <div class="paid-access">
+                    <input checked id="agree2" name="agree2" required type="checkbox"/>
+                    <label for="agree2">Accesând butonul, îmi dau acordul pentru publicitate.</label>
+                </div>
+            </aside>
+        </form>
+        <div class="foot"></div>
+        <button class="button btn-link" data-modal-id="modal-price" type="button"><i class="fas fa-times"></i>
+        </button>
+    </div>
+</aside>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js" type="text/javascript"></script>
+<script src="libs/jquery.visible.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+
+        $('.parallax-2').parallax()
+
+        /*let swiperParallax = new Swiper('.parallax-swiper', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            loop: false,
+            parallax: true,
+            freeMode: true,
+            mousewheel: {
+                enabled: true,
+                eventsTarged: '.content-slide'
+            },
+            keyboard: {
+                enabled: true
+            }
+         });*/
+
+        /*let swiperContent = new Swiper('.content-swiper', {
+             direction: 'vertical',
+             loop: false,
+             parallax: true,
+             allowTouchMove: false,
+             freeMode: true,
+             scrollbar: {
+                el: '.content-scrollbar'
+             },
+             mousewheel: true,
+             keyboard: true,
+             pagination: {
+                 el: '.content-pagination',
+                 clickable: true
+             },
+             navigation: {
+                 nextEl: '.content-button-next',
+                 prevEl: '.content-button-prev'
+             },
+             hashNavigation: {
+                watchState: true
+             },
+             breakpoints: {
+                 1000: {
+                     direction: 'horizontal',
+                     allowTouchMove: true
                  }
-            });
+             }
+        });
 
-            swiperContent
-                .on('slideChangeTransitionEnd', function() {
-                    let hash = location.hash;
-                    let menu = '#header [href="' + hash + '"]';
-                    $('#header').find('[href]').not(menu).removeClass('active');
-                    $(menu).addClass('active');
-                });*/
+        swiperContent
+            .on('slideChangeTransitionEnd', function() {
+                let hash = location.hash;
+                let menu = '#header [href="' + hash + '"]';
+                $('#header').find('[href]').not(menu).removeClass('active');
+                $(menu).addClass('active');
+            });*/
 
-            var swiperView = new Swiper('.view-swiper', {
-                direction: 'horizontal',
-                loop: false,
-                grabCursor: true,
-                slidesPerView: 1,
-                mousewheel: false,
-                keyboard: false,
-                navigation: {
-                    nextEl: '.view-button-next',
-                    prevEl: '.view-button-prev'
+        var swiperView = new Swiper('.view-swiper', {
+            direction: 'horizontal',
+            loop: false,
+            grabCursor: true,
+            slidesPerView: 1,
+            mousewheel: false,
+            keyboard: false,
+            navigation: {
+                nextEl: '.view-button-next',
+                prevEl: '.view-button-prev'
+            },
+            breakpoints: {
+                1000: {
+                    direction: 'horizontal'
                 },
-                breakpoints: {
-                    1000: {
-                        direction: 'horizontal'
-                    },
-                    600: {
-                        spaceBetween: 30
+                600: {
+                    spaceBetween: 30
+                }
+            }
+        })
+
+        var swiperCoverflow = new Swiper('.coverflow-swiper', {
+            direction: 'horizontal',
+            effect: 'coverflow',
+            spaceBetween: 30,
+            loop: true,
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            mousewheel: false,
+            keyboard: false,
+            coverflowEffect: {
+                rotate: 60,
+                stretch: -20,
+                depth: 80,
+                modifier: 1,
+                slideShadows: true
+            },
+            navigation: {
+                nextEl: '.coverflow-button-next',
+                prevEl: '.coverflow-button-prev'
+            },
+            breakpoints: {
+                1500: {
+                    coverflowEffect: {
+                        rotate: 60,
+                        stretch: -30,
+                        depth: 100,
+                        modifier: .8
                     }
                 }
-            });
+            }
+        })
 
-            var swiperCoverflow = new Swiper('.coverflow-swiper', {
-                direction: 'horizontal',
-                effect: 'coverflow',
-                spaceBetween: 30,
-                loop: true,
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                mousewheel: false,
-                keyboard: false,
-                coverflowEffect: {
-                    rotate: 60,
-                    stretch: -20,
-                    depth: 80,
-                    modifier: 1,
-                    slideShadows: true
-                },
-                navigation: {
-                    nextEl: '.coverflow-button-next',
-                    prevEl: '.coverflow-button-prev'
-                },
-                breakpoints: {
-                    1500: {
-                        coverflowEffect: {
-                            rotate: 60,
-                            stretch: -30,
-                            depth: 100,
-                            modifier: .8
-                        }
-                    }
-                }
-            });
+        let body = $('body')
 
-            let body = $('body');
+        // Dropdown
+        //-------------------------------------------------
+        $(this).on('click', '.dropdown', '[data-popup-id]', function () {
+            $(this).toggleClass('active')
 
-            // Dropdown
-            //-------------------------------------------------
-            $(this).on('click', '.dropdown', '[data-popup-id]', function() {
-                $(this).toggleClass('active');
-
-                if ($(this).is('[data-popup-id]')) {
-                    let id = $('#' + $(this).data('popup-id'));
-                    let i = 0,
-                        j = 0;
-
-                    id.attr('class').split(/\s+/).map(function(cls) {
-                        i++;
-                        switch (cls) {
-                            case 'show':
-                                id.removeClass('show');
-                                break;
-                            default:
-                                j++;
-                                break;
-                        }
-                    });
-                    if (i === j) id.addClass('show');
-                }
-            });
-
-            // Modal / Drawer
-            //-------------------------------------------------
-            $(this).on('click', '[data-modal-id]', function() {
-                let id = $('#' + $(this).data('modal-id'));
+            if ($(this).is('[data-popup-id]')) {
+                let id = $('#' + $(this).data('popup-id'))
                 let i = 0,
-                    j = 0;
+                    j = 0
 
-                id.attr('class').split(/\s+/).map(function(cls) {
-                    i++;
+                id.attr('class').split(/\s+/).map(function (cls) {
+                    i++
                     switch (cls) {
                         case 'show':
-                            id.removeClass('show');
-                            body.removeClass('no-scroll');
-                            break;
+                            id.removeClass('show')
+                            break
                         default:
-                            j++;
-                            break;
+                            j++
+                            break
                     }
-                });
-                if (i === j) {
-                    id.addClass('show');
-                    body.addClass('no-scroll');
+                })
+                if (i === j) id.addClass('show')
+            }
+        })
+
+        // Modal / Drawer
+        //-------------------------------------------------
+        $(this).on('click', '[data-modal-id]', function () {
+            let id = $('#' + $(this).data('modal-id'))
+            let i = 0,
+                j = 0
+
+            id.attr('class').split(/\s+/).map(function (cls) {
+                i++
+                switch (cls) {
+                    case 'show':
+                        id.removeClass('show')
+                        body.removeClass('no-scroll')
+                        break
+                    default:
+                        j++
+                        break
                 }
-            });
+            })
+            if (i === j) {
+                id.addClass('show')
+                body.addClass('no-scroll')
+            }
+        })
 
-            // Accordeon
-            //-------------------------------------------------
-            $(this).on('click', '.accordion-item', function() {
+        // Accordeon
+        //-------------------------------------------------
+        $(this).on('click', '.accordion-item', function () {
 
-                if ($(this).hasClass('show'))
-                    $(this).removeClass('show');
-                else
-                    $(this)
+            if ($(this).hasClass('show'))
+                $(this).removeClass('show')
+            else
+                $(this)
                     .not('.show')
                     .addClass('show')
                     .parent('.accordion')
                     .parent()
                     .find('.accordion-item.show')
                     .not(this)
-                    .removeClass('show');
-            });
+                    .removeClass('show')
+        })
 
-            // Smooth Scroll
-            //-------------------------------------------------
-            $($('a[href*="#"]:not([href="#"])')).click(function(event) {
-                event.preventDefault();
-                //$('html, body, .content-swiper > .swiper-wrapper').animate({scrollTop:$(this.hash).offset().top}, 500);
-                $('html, body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 500);
-                location.hash = $(this).attr('href');
-            });
+        // Smooth Scroll
+        //-------------------------------------------------
+        $($('a[href*="#"]:not([href="#"])')).click(function (event) {
+            event.preventDefault()
+            //$('html, body, .content-swiper > .swiper-wrapper').animate({scrollTop:$(this.hash).offset().top}, 500);
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 500)
+            location.hash = $(this).attr('href')
+        })
 
-            // Menu Active Hash
-            //-------------------------------------------------
-            $(window).scroll(function() {
-                $('[data-hash]').each(function() {
-                    if ($(this).children().visible(true, 'both')) {
-                        let hash = $(this).data('hash');
-                        let menu = $('#header').find('.body > menu');
-                        menu.children('a[href*="#"]').removeClass('active');
-                        menu.children('a[href="#' + hash + '"]').addClass('active');
-                    }
-                });
-            });
-        });
-    </script>
+        // Menu Active Hash
+        //-------------------------------------------------
+        $(window).scroll(function () {
+            $('[data-hash]').each(function () {
+                if ($(this).children().visible(true, 'both')) {
+                    let hash = $(this).data('hash')
+                    let menu = $('#header').find('.body > menu')
+                    menu.children('a[href*="#"]').removeClass('active')
+                    menu.children('a[href="#' + hash + '"]').addClass('active')
+                }
+            })
+        })
+    })
+</script>
 </body>
 
 </html>

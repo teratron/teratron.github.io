@@ -14,7 +14,7 @@
     <link href="css/landing.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-        if (window.location.href.split('#')[1]) window.location.href = window.location.href.split('#')[0];
+        if (window.location.href.split('#')[1]) window.location.href = window.location.href.split('#')[0]
     </script>
 </head>
 <body class="scene-0 scene-animation">
@@ -159,25 +159,33 @@
                 <h5 class="caption">Kick Monitoring</h5>
                 <ul class="preset">
                     <li class="pill">
-                        <input autocomplete="off" name="" placeholder="Talmazan Digital" type="text" value=""/>
+                        <label>
+                            <input autocomplete="off" name="" placeholder="Talmazan Digital" type="text" value=""/>
+                        </label>
                         <div class="avatar"
                              style="background-image: url(images/avatar_talmazan.jpg)"></div>
                         <button type="button"></button>
                     </li>
                     <li>
-                        <input autocomplete="off" name="" placeholder="Mark Zuckerberg" type="text" value=""/>
+                        <label>
+                            <input autocomplete="off" name="" placeholder="Mark Zuckerberg" type="text" value=""/>
+                        </label>
                         <div class="avatar"
                              style="background-image: url(images/avatar_zuckerberg.jpg)"></div>
                         <button type="button"></button>
                     </li>
                     <li>
-                        <input autocomplete="off" name="" placeholder="Starbucks" type="text" value=""/>
+                        <label>
+                            <input autocomplete="off" name="" placeholder="Starbucks" type="text" value=""/>
+                        </label>
                         <div class="avatar"
                              style="background-image: url(images/avatar_starbucks.png)"></div>
                         <button type="button"></button>
                     </li>
                     <li>
-                        <input autocomplete="off" name="" placeholder="Playstation" type="text" value=""/>
+                        <label>
+                            <input autocomplete="off" name="" placeholder="Playstation" type="text" value=""/>
+                        </label>
                         <div class="avatar"
                              style="background-image: url(images/avatar_playstation.png)"></div>
                         <button type="button"></button>
@@ -301,7 +309,7 @@
         hashNavigation: {
             watchState: true
         }
-    });
+    })
 
     let swiperMonitoring = new Swiper('.monitoring-swiper', {
         direction: 'horizontal',
@@ -327,75 +335,76 @@
             nextEl: '.monitoring-button-next',
             prevEl: '.monitoring-button-prev'
         }
-    });
+    })
 
     swiperMonitoring.on('slideChange', function () {
-        $(document).trigger('resize');
-        window.dispatchEvent(new Event('resize'));
-    });
+        $(document).trigger('resize')
+        window.dispatchEvent(new Event('resize'))
+    })
 
     $(document).ready(function () {
-        let body = $('body');
-        let slide1 = 'home';
-        let slide2 = 'demo';
-        let slide3 = 'monitoring';
-        let slide4 = 'tools';
+        let body = $('body')
+        let slide1 = 'home'
+        let slide2 = 'demo'
+        let slide3 = 'monitoring'
+        let slide4 = 'tools'
 
-        if (body.is('.scene-0') || body.is('.scene-1')) location.hash = '#' + slide1;
-        if (body.is('.scene-2')) location.hash = '#' + slide2;
-        if (body.is('.scene-3')) location.hash = '#' + slide3;
-        if (body.is('.scene-4')) location.hash = '#' + slide4;
+        if (body.is('.scene-0') || body.is('.scene-1')) location.hash = '#' + slide1
+        if (body.is('.scene-2')) location.hash = '#' + slide2
+        if (body.is('.scene-3')) location.hash = '#' + slide3
+        if (body.is('.scene-4')) location.hash = '#' + slide4
 
         swiperFragment
             .on('slideNextTransitionStart', function () {
-                if (body.hasClass('scene-0')) body.toggleClass('scene-0 scene-1');
+                if (body.hasClass('scene-0')) body.toggleClass('scene-0 scene-1')
             })
             .on('slideChangeTransitionEnd', function () {
-                body.toggleClass('scene-0 scene-1 scene-2 scene-3 scene-4', false);
+                body.toggleClass('scene-0 scene-1 scene-2 scene-3 scene-4', false)
 
                 switch (swiperFragment.activeIndex) {
                     case 0:
-                        body.addClass('scene-1');
-                        break;
+                        body.addClass('scene-1')
+                        break
                     case 1:
-                        body.addClass('scene-2');
-                        break;
+                        body.addClass('scene-2')
+                        break
                     case 2:
-                        body.addClass('scene-3');
-                        break;
+                        body.addClass('scene-3')
+                        break
                     default:
                     case 3:
-                        body.addClass('scene-4');
-                        break;
+                        body.addClass('scene-4')
+                        break
                 }
 
-                let video = document.getElementById('about-video');
-                if (location.hash === '#about') video.play(); else video.pause();
+                let video = document.getElementById('about-video')
+                if (location.hash === '#about') video.play()
+                else video.pause()
             })
             .on('slidePrevTransitionStart', function () {
-                if (swiperFragment.activeIndex >= 2) swiperMonitoring.slideTo(0, 0, false);
-            });
+                if (swiperFragment.activeIndex >= 2) swiperMonitoring.slideTo(0, 0, false)
+            })
 
-        let searchMonitoring = $('.monitoring-search').children('.preset');
+        let searchMonitoring = $('.monitoring-search').children('.preset')
 
         searchMonitoring.children('li')
             .on('click', function () {
-                if (swiperFragment.activeIndex >= 3) gotoMonitoringPage();
+                if (swiperFragment.activeIndex >= 3) gotoMonitoringPage()
                 if (!$(this).hasClass('pill')) {
-                    searchMonitoring.find('.pill').removeClass('pill');
-                    $(this).addClass('pill');
+                    searchMonitoring.find('.pill').removeClass('pill')
+                    $(this).addClass('pill')
                 }
             })
             .find('button')
             .on('click', function () {
-                if (swiperFragment.activeIndex !== 2) gotoMonitoringPage();
-            });
+                if (swiperFragment.activeIndex !== 2) gotoMonitoringPage()
+            })
 
         function gotoMonitoringPage() {
-            body.toggleClass('scene-3');
-            location.hash = '#' + slide3;
+            body.toggleClass('scene-3')
+            location.hash = '#' + slide3
         }
-    });
+    })
 
     document.addEventListener('DOMContentLoaded', function () {
         Highcharts.chart('container-1', {
@@ -420,7 +429,7 @@
                 name: 'John',
                 data: [5, 7, 3]
             }]
-        });
+        })
 
         Highcharts.chart('container-2', {
             chart: {
@@ -444,7 +453,7 @@
                 name: 'John',
                 data: [5, 7, 3]
             }]
-        });
+        })
 
         Highcharts.chart('container-3', {
             chart: {
@@ -468,8 +477,8 @@
                 name: 'John',
                 data: [1, 0, 4]
             }]
-        });
-    });
+        })
+    })
 </script>
 </body>
 </html>

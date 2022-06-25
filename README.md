@@ -1,5 +1,5 @@
 # Карта:
 
-### [Шпаргалки](cheatsheet)
+### [Шпаргалки](cheatsheets)
 
 ### [Talmazan](talmazan)

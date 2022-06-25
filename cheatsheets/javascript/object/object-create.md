@@ -9,10 +9,11 @@ true // указываем, что свойство перечислимо } });
 //------------------------------------------------------ // В следующем примере мы рассмотрим с Вами как с помощью
 метода create() указать создаваемому объекту объект, // который будет использован в качестве прототипа. let obj = {
 fullName: function() { // возвращает значения свойств текущего объекта firstName и lastName return this.firstName + " "
+
 + this.lastName   
-}, upperCase: function(){ // возвращает значения свойств текущего объекта firstName и lastName в верхнем регистре
-return (this.firstName + " " + this.lastName).toUpperCase()   	
-} }
+  }, upperCase: function(){ // возвращает значения свойств текущего объекта firstName и lastName в верхнем регистре
+  return (this.firstName + " " + this.lastName).toUpperCase()   	
+  } }
 
 let myObj = Object.create( obj, { // объект-прототип соответствует объекту obj firstName: { // добавляем новое свойство
 value: "Boris"      // указываем значение свойства }, lastName: { // добавляем новое свойство value: "Britva", //

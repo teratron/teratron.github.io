@@ -59,7 +59,7 @@
                         <input autocomplete="off" id="monitoring-input" name=""
                                placeholder="Enter the url, caption or hashtag for search"
                                type="text" value=""/>
-                        <img alt="" class="spinner" onerror="this.display='none';" src="images/loading4.gif"/>
+                        <img alt="" class="spinner" onerror="this.display='none'" src="images/loading4.gif"/>
                         <button class="button" data-modal-id="modal-monitoring" type="button">Search</button>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
             </div>
         </div>
         <div class="body">
-            <menu class="bar">
+            <nav class="bar">
                 <a href="#home">Acasă</a>
                 <a href="#home">Prețuri</a>
                 <div class="dropdown">
@@ -263,7 +263,7 @@
                         <a href="#contact">Contacte</a>
                     </menu>
                 </div>
-            </menu>
+            </nav>
         </div>
         <div class="foot">
             <menu class="bar">
@@ -538,8 +538,8 @@
 <script src="//code.highcharts.com/highcharts.src.js" type="text/javascript"></script>
 <script src="js/jquery.visible.min.js" type="text/javascript"></script>
 <script>
-    let body = $('body');
-    let play = false;
+    let body = $('body')
+    let play = false
 
     let swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
@@ -554,82 +554,82 @@
             el: '.swiper-pagination',
             clickable: true
         }
-    });
-    console.log(swiper);
+    })
+    console.log(swiper)
 
     $(document).ready(function () {
 
         // Dropdown
         //-------------------------------------------------
         $(this).on('click', '.dropdown', '[data-popup-id]', function () {
-            $(this).toggleClass('active');
+            $(this).toggleClass('active')
 
             if ($(this).is('[data-popup-id]')) {
-                let id = $('#' + $(this).data('popup-id'));
-                let i = 0, j = 0;
+                let id = $('#' + $(this).data('popup-id'))
+                let i = 0, j = 0
 
                 id.attr('class').split(/\s+/).map(function (cls) {
-                    i++;
+                    i++
                     switch (cls) {
                         case 'show':
-                            id.removeClass('show');
-                            break;
+                            id.removeClass('show')
+                            break
                         default:
-                            j++;
-                            break;
+                            j++
+                            break
                     }
-                });
-                if (i === j) id.addClass('show');
+                })
+                if (i === j) id.addClass('show')
             }
-        });
+        })
 
         // Modal / Drawer
         //-------------------------------------------------
         $(this).on('click', '[data-modal-id]', function () {
-            let id = $('#' + $(this).data('modal-id'));
-            let i = 0, j = 0;
+            let id = $('#' + $(this).data('modal-id'))
+            let i = 0, j = 0
 
             id.attr('class').split(/\s+/).map(function (cls) {
-                i++;
+                i++
                 switch (cls) {
                     case 'show':
-                        id.removeClass('show');
-                        body.removeClass('no-scroll');
-                        break;
+                        id.removeClass('show')
+                        body.removeClass('no-scroll')
+                        break
                     default:
-                        j++;
-                        break;
+                        j++
+                        break
                 }
-            });
+            })
             if (i === j) {
-                id.addClass('show');
-                body.addClass('no-scroll');
+                id.addClass('show')
+                body.addClass('no-scroll')
             }
-        });
+        })
 
         // Smooth Scroll
         //-------------------------------------------------
         $($('a[href*="#"]:not([href="#"])')).click(function (event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop: $(this.hash).offset().top}, 500);
-        });
+            event.preventDefault()
+            $('html, body').animate({scrollTop: $(this.hash).offset().top}, 500)
+        })
 
         // Video Scroll Play/Pause (jquery.visible.min.libs)
         //-------------------------------------------------
         $(window).scroll(function () {
             $('video').each(function () {
                 if ($(this).visible() && !play) {
-                    $(this)[0].play();
-                    play = true;
+                    $(this)[0].play()
+                    play = true
                 } else {
                     if (play) {
-                        $(this)[0].pause();
-                        play = false;
+                        $(this)[0].pause()
+                        play = false
                     }
                 }
-            });
-        });
-    });
+            })
+        })
+    })
 
     document.addEventListener('DOMContentLoaded', function () {
         Highcharts.chart('container-1', {
@@ -654,7 +654,7 @@
                 name: 'John',
                 data: [5, 7, 3]
             }]
-        });
+        })
 
         Highcharts.chart('container-2', {
             chart: {
@@ -678,7 +678,7 @@
                 name: 'John',
                 data: [5, 7, 3]
             }]
-        });
+        })
 
         Highcharts.chart('container-3', {
             chart: {
@@ -702,8 +702,8 @@
                 name: 'John',
                 data: [1, 0, 4]
             }]
-        });
-    });
+        })
+    })
 </script>
 </body>
 </html>

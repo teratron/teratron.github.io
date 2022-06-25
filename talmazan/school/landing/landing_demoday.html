@@ -4,263 +4,283 @@
 <head>
     <base href="./">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Talmazan School - Demoday</title>
     <link href="//fonts.googleapis.com/css?family=Anton|Nunito:200,300,400,600,700,800,900|Quicksand:300,400,500,700|Roboto:100,300,400,500,700,900|Montserrat:300,400,500,600,700,800|Raleway:100,200,300,400,600,700,800,900"
           rel="stylesheet">
     <link crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/landing.css">
-    <link rel="stylesheet" href="css/landing_demoday.css">
+    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/landing_demoday.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>
 
 <body id="start-facebook">
 
-    <!-- Content -->
-    <main id="content" class="content-swiper">
-        <div class="swiper-wrapper">
+<!-- Content -->
+<main class="content-swiper" id="content">
+    <div class="swiper-wrapper">
 
-            <!-- Demoday -->
-            <div class="swiper-slide content-slide" data-hash="demoday" id="demoday">
-                <aside class="head">
-                    <h1>Facebook</h1>
-                    <h2>Demo<br />Day
-                        <span class="author">by Talmazan Dumitru</span>
-                    </h2>
-                </aside>
-                <aside class="body">
-                    <div class="date">
-                        <div class="month">2 Mai</div>
-                        <div class="year">2019</div>
-                        <time>18:00</time>
-                    </div>
-                </aside>
-                <aside class="foot">
-                    <button class="button btn-big" data-modal-id="modal-price">Participă</button>
-                </aside>
-            </div>
-
-            <!-- Practice -->
-            <div class="swiper-slide content-slide" data-hash="practice" id="practice">
-                <div class="head">
-                    <!--<h1>10 ore de practică</h1>-->
-                    <h1>Programul evenimentului:</h1>
+        <!-- Demoday -->
+        <div class="swiper-slide content-slide" data-hash="demoday" id="demoday">
+            <aside class="head">
+                <h1>Facebook</h1>
+                <h2>Demo<br/>Day
+                    <span class="author">by Talmazan Dumitru</span>
+                </h2>
+            </aside>
+            <aside class="body">
+                <div class="date">
+                    <div class="month">2 Mai</div>
+                    <div class="year">2019</div>
+                    <time>18:00</time>
                 </div>
-                <div class="body">
-                    <aside>
-                        <h3>FUNDAMENT</h3>
-                        <ul class="list-dash">
-                            <li>Ecosistem</li>
-                            <li>Profil Personal</li>
-                            <li>Profil Business</li>
-                            <li>Grupuri</li>
-                            <li>Google Tag Manager</li>
-                            <li>Yandex Metrica</li>
-                            <li>Google Analytics</li>
-                            <li>Telefon</li>
-                            <li>Fake profile</li>
-                        </ul>
-                    </aside>
-                    <aside>
-                        <h3>COMUNICARE</h3>
-                        <ul class="list-dash">
-                            <li>Avatar client</li>
-                            <li>Content marketing</li>
-                            <li>Formare de publicitate</li>
-                        </ul>
-                    </aside>
-                    <aside>
-                        <h3>RECLAME</h3>
-                        <ul class="list-dash">
-                            <li>Business manager</li>
-                            <li>Cont de publicitate</li>
-                            <li>Instrumente de publicitate</li>
-                            <li>Pixel</li>
-                            <li>Audiențe</li>
-                        </ul>
-                    </aside>
-                    <aside>
-                        <h3>STRATEGII</h3>
-                        <ul class="list-dash">
-                            <li>Rapoarte</li>
-                            <li>Reclame</li>
-                            <li>Content</li>
-                            <li>Vânzare prin video</li>
-                            <li>БИЧ</li>
-                        </ul>
-                    </aside>
-                </div>
-                <div class="foot">
-                    <h3>Completează formularul</h3>
-                    <form class="paid-inline">
-                        <input type="text" placeholder="Nume/Prenume" name="name" required />
-                        <input type="email" placeholder="E-mail" name="email" required />
-                        <input type="tel" placeholder="Telefon de contact" name="phone" required />
-                        <button type="submit" class="button btn-big">PARTICIP ȘI EU</button>
-                        <aside class="foot">
-                            <div class="paid-access">
-                                <input id="agree3" type="checkbox" name="agree1" checked required/>
-                                <label for="agree3">Accesând butonul, îmi dau acordul prelucrării datelor cu caracter personal în conformitate cu politica de confidențialitate.</label>
-                            </div>
-                            <div class="paid-access">
-                                <input id="agree4" type="checkbox" name="agree2" checked required/>
-                                <label for="agree4">Accesând butonul, îmi dau acordul pentru publicitate.</label>
-                            </div>
-                        </aside>
-                    </form>
-                </div>
-            </div>
-
-            <!-- About Speaker -->
-            <div class="swiper-slide content-slide" data-hash="speaker" id="speaker">
-                <div>
-                    <div class="photo">
-                        <img src="images/photo_talmazan.jpg" alt="Dumitru Talmazan" />
-                    </div>
-                    <h2>Salut, sunt</h2>
-                    <h1>Dumitru Talmazan</h1>
-                    <h3 class="allcaps">antreprenor digital, speaker internațional și expert în social media marketing</h3>
-                    <p>Îmi place să ajut oamenii să îmbrățișeze o nouă profesie, o profesie a viitorului, și să atingă un alt nivel de înțelegere a activității digitale și a rezultativității acesteia în raport cu propria afacere.</p>
-                    <p>În prezent, sunt autor și speaker în cadrul cursurilor de instruire în Facebook și Instagram de nivel internațional în cadrul companiilor: Business Molodost, Synergy, Talmazan School, Sidorin LAB cu impact pe piețile din România, Ucraina,
-                        Federația Rusă, și alte țări din spațiul post-sovietic.</p>
-                    <p>Pentru că îmi place să cunosc oameni noi și să știu că le pot fi util, administrez un blog cu ajutorul căruia împărtășesc experiența mea în domeniul digital, obținută din multitudinea de activități și proiecte în care sunt implicat.</p>
-                </div>
-                <div>
-                    <h3>Acum, dezvolt câteva direcții de afaceri:</h3>
-                    <ul class="list-dash">
-                        <li>ASAP digital team - agenție internațională de performanță digitală cu un buget de administrare de peste 300 000 euro;</li>
-                        <li>Talmazan School - școală de instruiri în domeniul rețelelor sociale;</li>
-                        <li>Kicksocialwork - Aplicație de monitorizare și analitică a activităților de promovare efectuate în Facebook;</li>
-                        <li>ZoomYourBusiness - conferință anuală despre antreprenoriatul în Republica Moldova;</li>
-                        <li>Hello From Republic of Moldova - ONG ce are ca scop promovarea Republicii pe plan internațional, proiect de suflet - despre oameni, prin oameni, Pentru Oameni.</li>
-                        <li>Walk with Talmazan - blog de expertiză și life stile cu experți naționali și internaționali, cu personalități de vază pe care cu drag îi voi invita la o plimbare și la o discuție.</li>
-                    </ul>
-                    <p>Dacă vrei și tu să înveți cum să utilizezi instrumentele Facebook și Instagram pentru a-ți dezvolta afacerea și a face din marca ta un brand, atunci mi-ar place să te cunosc în calitate de participant la instruirile noastre.</p>
-                </div>
-                <div>
-                    <div class="photo">
-                        <img src="images/photo_talmazan.jpg" alt="Dumitru Talmazan">
-                    </div>
-                </div>
-            </div>
+            </aside>
+            <aside class="foot">
+                <button class="button btn-big" data-modal-id="modal-price">Participă</button>
+            </aside>
         </div>
-    </main>
 
-    <!-- Header -->
-    <header id="header" class="inner">
-        <div class="head">
-            <img class="logo" src="images/logo.png" alt="Talmazan School" />
-        </div>
-        <div class="body"></div>
-        <div class="foot"></div>
-    </header>
-
-    <!-- Modal Prices -->
-    <aside id="modal-price" class="modal side-full">
-        <div class="modal-view">
-            <div class="modal-bg" data-modal-id="modal-price"></div>
+        <!-- Practice -->
+        <div class="swiper-slide content-slide" data-hash="practice" id="practice">
             <div class="head">
-                <h1>PREȚURI</h1>
-                <h2 class="subtitle allcaps">Alege formatul care îți convine</h2>
+                <!--<h1>10 ore de practică</h1>-->
+                <h1>Programul evenimentului:</h1>
             </div>
-            <form class="body" id="leadform">
-                <aside class="paid-method">
-                    <div>
-                        <h3>Motive pentru care să nu ratezi acest curs:</h3>
-                        <ul class="list-dash">
-                            <li>Prezența în online este vitală pentru afacerea ta;</li>
-                            <li>În Republica Moldova există 1 000 000 conturi Facebook;</li>
-                            <li>Ai parte de abordare individuală și ghidare pe tot parcursul instruirii;</li>
-                            <li>Vei învăța cum să-ți faci o prezență bine gândită în social media;</li>
-                            <li>Vei învăța cum să-ți faci afacerea recunoscută în orice regiune a globului;</li>
-                            <li>Ai parte de lecții practice în care aplici cunoștințele teoretice dobândite;</li>
-                            <li>Ai acces liber la lecțiile în format video timp de 12 luni.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Alege metoda de plata</h3>
-                        <input id="pay-cash" type="radio" name="method" value="cash" required checked/>
-                        <label for="pay-cash" class="button btn-big"><i class="fas fa-wallet"></i>Cash</label>
-                        <input id="pay-transfer" type="radio" name="method" value="transfer" />
-                        <label for="pay-transfer" class="button btn-big"><i class="fas fa-money-check-alt"></i>Transfer</label>
-                        <input id="pay-card" type="radio" name="method" value="card" />
-                        <label for="pay-card" class="button btn-big"><i class="fas fa-credit-card"></i>Card Online</label>
-                        <h3>Investiție</h3>
-                        <ul class="list-dash">
-                            <li><span class="price">99</span> <i class="fas fa-euro-sign"></i> până la 20 aprilie inclusiv</li>
-                            <li><span class="price">149</span> <i class="fas fa-euro-sign"></i> după 21 aprilie</li>
-                        </ul>
-                        <div class="footnote" style="padding-left: 6rem;">* suma fără TVA</div>
-                    </div>
+            <div class="body">
+                <aside>
+                    <h3>FUNDAMENT</h3>
+                    <ul class="list-dash">
+                        <li>Ecosistem</li>
+                        <li>Profil Personal</li>
+                        <li>Profil Business</li>
+                        <li>Grupuri</li>
+                        <li>Google Tag Manager</li>
+                        <li>Yandex Metrica</li>
+                        <li>Google Analytics</li>
+                        <li>Telefon</li>
+                        <li>Fake profile</li>
+                    </ul>
                 </aside>
                 <aside>
-                    <h3>Completează formularul</h3>
-                    <div class="paid-info">
-                        <div class="paid-data">
-                            <input type="text" placeholder="Nume/Prenume" name="name" required />
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="paid-data">
-                            <input type="email" placeholder="E-mail" name="email" required />
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="paid-data">
-                            <input type="tel" placeholder="Telefon de contact" name="phone" required />
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="paid-button">
-                            <button type="submit" class="button" disabled>PARTICIP ȘI EU</button>
-                        </div>
-                    </div>
-                    <div class="paid-access">
-                        <input id="agree1" type="checkbox" name="agree1" checked required/>
-                        <label for="agree1">Accesând butonul, îmi dau acordul prelucrării datelor cu caracter personal în conformitate cu politica de confidențialitate.</label>
-                    </div>
-                    <div class="paid-access">
-                        <input id="agree2" type="checkbox" name="agree2" checked required/>
-                        <label for="agree2">Accesând butonul, îmi dau acordul pentru publicitate.</label>
-                    </div>
+                    <h3>COMUNICARE</h3>
+                    <ul class="list-dash">
+                        <li>Avatar client</li>
+                        <li>Content marketing</li>
+                        <li>Formare de publicitate</li>
+                    </ul>
                 </aside>
-            </form>
-            <div class="foot"></div>
-            <button type="button" class="button btn-link" data-modal-id="modal-price"><i class="fas fa-times"></i></button>
+                <aside>
+                    <h3>RECLAME</h3>
+                    <ul class="list-dash">
+                        <li>Business manager</li>
+                        <li>Cont de publicitate</li>
+                        <li>Instrumente de publicitate</li>
+                        <li>Pixel</li>
+                        <li>Audiențe</li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h3>STRATEGII</h3>
+                    <ul class="list-dash">
+                        <li>Rapoarte</li>
+                        <li>Reclame</li>
+                        <li>Content</li>
+                        <li>Vânzare prin video</li>
+                        <li>БИЧ</li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="foot">
+                <h3>Completează formularul</h3>
+                <form class="paid-inline">
+                    <input name="name" placeholder="Nume/Prenume" required type="text"/>
+                    <input name="email" placeholder="E-mail" required type="email"/>
+                    <input name="phone" placeholder="Telefon de contact" required type="tel"/>
+                    <button class="button btn-big" type="submit">PARTICIP ȘI EU</button>
+                    <aside class="foot">
+                        <div class="paid-access">
+                            <input checked id="agree3" name="agree1" required type="checkbox"/>
+                            <label for="agree3">Accesând butonul, îmi dau acordul prelucrării datelor cu caracter
+                                personal în conformitate cu politica de confidențialitate.</label>
+                        </div>
+                        <div class="paid-access">
+                            <input checked id="agree4" name="agree2" required type="checkbox"/>
+                            <label for="agree4">Accesând butonul, îmi dau acordul pentru publicitate.</label>
+                        </div>
+                    </aside>
+                </form>
+            </div>
         </div>
-    </aside>
 
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>-->
-    <script>
-        $(document).ready(function() {
+        <!-- About Speaker -->
+        <div class="swiper-slide content-slide" data-hash="speaker" id="speaker">
+            <div>
+                <div class="photo">
+                    <img alt="Dumitru Talmazan" src="images/photo_talmazan.jpg"/>
+                </div>
+                <h2>Salut, sunt</h2>
+                <h1>Dumitru Talmazan</h1>
+                <h3 class="allcaps">antreprenor digital, speaker internațional și expert în social media marketing</h3>
+                <p>Îmi place să ajut oamenii să îmbrățișeze o nouă profesie, o profesie a viitorului, și să atingă un
+                    alt nivel de înțelegere a activității digitale și a rezultativității acesteia în raport cu propria
+                    afacere.</p>
+                <p>În prezent, sunt autor și speaker în cadrul cursurilor de instruire în Facebook și Instagram de nivel
+                    internațional în cadrul companiilor: Business Molodost, Synergy, Talmazan School, Sidorin LAB cu
+                    impact pe piețile din România, Ucraina,
+                    Federația Rusă, și alte țări din spațiul post-sovietic.</p>
+                <p>Pentru că îmi place să cunosc oameni noi și să știu că le pot fi util, administrez un blog cu
+                    ajutorul căruia împărtășesc experiența mea în domeniul digital, obținută din multitudinea de
+                    activități și proiecte în care sunt implicat.</p>
+            </div>
+            <div>
+                <h3>Acum, dezvolt câteva direcții de afaceri:</h3>
+                <ul class="list-dash">
+                    <li>ASAP digital team - agenție internațională de performanță digitală cu un buget de administrare
+                        de peste 300 000 euro;
+                    </li>
+                    <li>Talmazan School - școală de instruiri în domeniul rețelelor sociale;</li>
+                    <li>Kicksocialwork - Aplicație de monitorizare și analitică a activităților de promovare efectuate
+                        în Facebook;
+                    </li>
+                    <li>ZoomYourBusiness - conferință anuală despre antreprenoriatul în Republica Moldova;</li>
+                    <li>Hello From Republic of Moldova - ONG ce are ca scop promovarea Republicii pe plan internațional,
+                        proiect de suflet - despre oameni, prin oameni, Pentru Oameni.
+                    </li>
+                    <li>Walk with Talmazan - blog de expertiză și life stile cu experți naționali și internaționali, cu
+                        personalități de vază pe care cu drag îi voi invita la o plimbare și la o discuție.
+                    </li>
+                </ul>
+                <p>Dacă vrei și tu să înveți cum să utilizezi instrumentele Facebook și Instagram pentru a-ți dezvolta
+                    afacerea și a face din marca ta un brand, atunci mi-ar place să te cunosc în calitate de participant
+                    la instruirile noastre.</p>
+            </div>
+            <div>
+                <div class="photo">
+                    <img alt="Dumitru Talmazan" src="images/photo_talmazan.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
-            let body = $('body');
+<!-- Header -->
+<header class="inner" id="header">
+    <div class="head">
+        <img alt="Talmazan School" class="logo" src="images/logo.png"/>
+    </div>
+    <div class="body"></div>
+    <div class="foot"></div>
+</header>
 
-            // Modal / Drawer
-            //-------------------------------------------------
-            $(this).on('click', '[data-modal-id]', function() {
-                let id = $('#' + $(this).data('modal-id'));
-                let i = 0,
-                    j = 0;
+<!-- Modal Prices -->
+<aside class="modal side-full" id="modal-price">
+    <div class="modal-view">
+        <div class="modal-bg" data-modal-id="modal-price"></div>
+        <div class="head">
+            <h1>PREȚURI</h1>
+            <h2 class="subtitle allcaps">Alege formatul care îți convine</h2>
+        </div>
+        <form class="body" id="leadform">
+            <aside class="paid-method">
+                <div>
+                    <h3>Motive pentru care să nu ratezi acest curs:</h3>
+                    <ul class="list-dash">
+                        <li>Prezența în online este vitală pentru afacerea ta;</li>
+                        <li>În Republica Moldova există 1 000 000 conturi Facebook;</li>
+                        <li>Ai parte de abordare individuală și ghidare pe tot parcursul instruirii;</li>
+                        <li>Vei învăța cum să-ți faci o prezență bine gândită în social media;</li>
+                        <li>Vei învăța cum să-ți faci afacerea recunoscută în orice regiune a globului;</li>
+                        <li>Ai parte de lecții practice în care aplici cunoștințele teoretice dobândite;</li>
+                        <li>Ai acces liber la lecțiile în format video timp de 12 luni.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Alege metoda de plata</h3>
+                    <input checked id="pay-cash" name="method" required type="radio" value="cash"/>
+                    <label class="button btn-big" for="pay-cash"><i class="fas fa-wallet"></i>Cash</label>
+                    <input id="pay-transfer" name="method" type="radio" value="transfer"/>
+                    <label class="button btn-big" for="pay-transfer"><i
+                            class="fas fa-money-check-alt"></i>Transfer</label>
+                    <input id="pay-card" name="method" type="radio" value="card"/>
+                    <label class="button btn-big" for="pay-card"><i class="fas fa-credit-card"></i>Card Online</label>
+                    <h3>Investiție</h3>
+                    <ul class="list-dash">
+                        <li><span class="price">99</span> <i class="fas fa-euro-sign"></i> până la 20 aprilie inclusiv
+                        </li>
+                        <li><span class="price">149</span> <i class="fas fa-euro-sign"></i> după 21 aprilie</li>
+                    </ul>
+                    <div class="footnote" style="padding-left: 6rem;">* suma fără TVA</div>
+                </div>
+            </aside>
+            <aside>
+                <h3>Completează formularul</h3>
+                <div class="paid-info">
+                    <div class="paid-data">
+                        <input name="name" placeholder="Nume/Prenume" required type="text"/>
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="paid-data">
+                        <input name="email" placeholder="E-mail" required type="email"/>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="paid-data">
+                        <input name="phone" placeholder="Telefon de contact" required type="tel"/>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="paid-button">
+                        <button class="button" disabled type="submit">PARTICIP ȘI EU</button>
+                    </div>
+                </div>
+                <div class="paid-access">
+                    <input checked id="agree1" name="agree1" required type="checkbox"/>
+                    <label for="agree1">Accesând butonul, îmi dau acordul prelucrării datelor cu caracter personal în
+                        conformitate cu politica de confidențialitate.</label>
+                </div>
+                <div class="paid-access">
+                    <input checked id="agree2" name="agree2" required type="checkbox"/>
+                    <label for="agree2">Accesând butonul, îmi dau acordul pentru publicitate.</label>
+                </div>
+            </aside>
+        </form>
+        <div class="foot"></div>
+        <button class="button btn-link" data-modal-id="modal-price" type="button"><i class="fas fa-times"></i></button>
+    </div>
+</aside>
 
-                id.attr('class').split(/\s+/).map(function(cls) {
-                    i++;
-                    switch (cls) {
-                        case 'show':
-                            id.removeClass('show');
-                            body.removeClass('no-scroll');
-                            break;
-                        default:
-                            j++;
-                            break;
-                    }
-                });
-                if (i === j) {
-                    id.addClass('show');
-                    body.addClass('no-scroll');
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>-->
+<script>
+    $(document).ready(function () {
+
+        let body = $('body')
+
+        // Modal / Drawer
+        //-------------------------------------------------
+        $(this).on('click', '[data-modal-id]', function () {
+            let id = $('#' + $(this).data('modal-id'))
+            let i = 0,
+                j = 0
+
+            id.attr('class').split(/\s+/).map(function (cls) {
+                i++
+                switch (cls) {
+                    case 'show':
+                        id.removeClass('show')
+                        body.removeClass('no-scroll')
+                        break
+                    default:
+                        j++
+                        break
                 }
-            });
-        });
-    </script>
+            })
+            if (i === j) {
+                id.addClass('show')
+                body.addClass('no-scroll')
+            }
+        })
+    })
+</script>
 </body>
 
 </html>

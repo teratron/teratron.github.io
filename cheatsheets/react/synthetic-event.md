@@ -2,23 +2,23 @@
 
 [Назад][back]
 
-| Тип | Атрибут |
-|---|---|
-| boolean        | bubbles
-| boolean        | cancelable
-| DOMEventTarget | currentTarget
-| boolean        | defaultPrevented
-| number         | eventPhase
-| boolean        | isTrusted
-| DOMEvent       | nativeEvent
-| void           | preventDefault()
-| boolean        | isDefaultPrevented()
-| void           | stopPropagation()
-| boolean        | isPropagationStopped()
-| void           | persist()
-| DOMEventTarget | target
-| number         | timeStamp
-| string         | type
+| Тип            | Атрибут                |
+|----------------|------------------------|
+| boolean        | bubbles                |
+| boolean        | cancelable             |
+| DOMEventTarget | currentTarget          |
+| boolean        | defaultPrevented       |
+| number         | eventPhase             |
+| boolean        | isTrusted              |
+| DOMEvent       | nativeEvent            |
+| void           | preventDefault()       |
+| boolean        | isDefaultPrevented()   |
+| void           | stopPropagation()      |
+| boolean        | isPropagationStopped() |
+| void           | persist()              |
+| DOMEventTarget | target                 |
+| number         | timeStamp              |
+| string         | type                   |
 
 ### Поддерживаемые события
 
@@ -46,9 +46,9 @@
 - onCut
 - onPaste
 
-| Тип | Свойства |
-|---|---|
-| DOMDataTransfer | clipboardData
+| Тип             | Свойства      |
+|-----------------|---------------|
+| DOMDataTransfer | clipboardData |
 
 ### Композиционные события
 
@@ -56,9 +56,9 @@
 - onCompositionStart
 - onCompositionUpdate
 
-| Тип | Свойства |
-|---|---|
-| string | data
+| Тип    | Свойства |
+|--------|----------|
+| string | data     |
 
 ### События клавиатуры
 
@@ -66,20 +66,20 @@
 - onKeyPress
 - onKeyUp
 
-| Тип | Свойства |
-|---|---|
-| boolean | altKey
-| number  | charCode
-| boolean | ctrlKey
-| boolean | getModifierState(key)
-| string  | key
-| number  | keyCode
-| string  | locale
-| number  | location
-| boolean | metaKey
-| boolean | repeat
-| boolean | shiftKey
-| number  | which
+| Тип     | Свойства              |
+|---------|-----------------------|
+| boolean | altKey                |
+| number  | charCode              |
+| boolean | ctrlKey               |
+| boolean | getModifierState(key) |
+| string  | key                   |
+| number  | keyCode               |
+| string  | locale                |
+| number  | location              |
+| boolean | metaKey               |
+| boolean | repeat                |
+| boolean | shiftKey              |
+| number  | which                 |
 
 ### События фокуса
 
@@ -88,9 +88,9 @@
 - onFocus
 - onBlur
 
-| Тип | Свойства |
-|---|---|
-| DOMEventTarget | relatedTarget
+| Тип            | Свойства      |
+|----------------|---------------|
+| DOMEventTarget | relatedTarget |
 
 #### onFocus
 
@@ -200,22 +200,22 @@ function Example() {
 События `onMouseEnter` и `onMouseLeave` всплывают с покинутого элемента к наведённому, вместо обычного процесса всплытия
 и не имеют фазы перехвата.
 
-| Тип | Свойства |
-|---|---|
-| boolean        | altKey
-| number         | button
-| number         | buttons
-| number         | clientX
-| number         | clientY
-| boolean        | ctrlKey
-| boolean        | getModifierState(key)
-| boolean        | metaKey
-| number         | pageX
-| number         | pageY
-| DOMEventTarget | relatedTarget
-| number         | screenX
-| number         | screenY
-| boolean        | shiftKey
+| Тип            | Свойства              |
+|----------------|-----------------------|
+| boolean        | altKey                |
+| number         | button                |
+| number         | buttons               |
+| number         | clientX               |
+| number         | clientY               |
+| boolean        | ctrlKey               |
+| boolean        | getModifierState(key) |
+| boolean        | metaKey               |
+| number         | pageX                 |
+| number         | pageY                 |
+| DOMEventTarget | relatedTarget         |
+| number         | screenX               |
+| number         | screenY               |
+| boolean        | shiftKey              |
 
 ### События курсора
 
@@ -233,18 +233,18 @@ function Example() {
 События `onPointerEnter` и `onPointerLeave` всплывают с покинутого элемента к наведённому, вместо обычного процесса
 всплытия и не имеют фазы перехвата.
 
-| Тип | Свойства |
-|---|---|
-| number  | pointerId
-| number  | width
-| number  | height
-| number  | pressure
-| number  | tangentialPressure
-| number  | tiltX
-| number  | tiltY
-| number  | twist
-| string  | pointerType
-| boolean | isPrimary
+| Тип     | Свойства           |
+|---------|--------------------|
+| number  | pointerId          |
+| number  | width              |
+| number  | height             |
+| number  | pressure           |
+| number  | tangentialPressure |
+| number  | tiltX              |
+| number  | tiltY              |
+| number  | twist              |
+| string  | pointerType        |
+| boolean | isPrimary          |
 
 ### События выбора
 
@@ -257,36 +257,36 @@ function Example() {
 - onTouchMove
 - onTouchStart
 
-| Тип | Свойства |
-|---|---|
-| boolean      | altKey
-| DOMTouchList | changedTouches
-| boolean      | ctrlKey
-| boolean      | getModifierState(key)
-| boolean      | metaKey
-| boolean      | shiftKey
-| DOMTouchList | targetTouches
-| DOMTouchList | touches
+| Тип          | Свойства              |
+|--------------|-----------------------|
+| boolean      | altKey                |
+| DOMTouchList | changedTouches        |
+| boolean      | ctrlKey               |
+| boolean      | getModifierState(key) |
+| boolean      | metaKey               |
+| boolean      | shiftKey              |
+| DOMTouchList | targetTouches         |
+| DOMTouchList | touches               |
 
 ### События UI
 
 - onScroll
 
-| Тип | Свойства |
-|---|---|
-| number          | detail
-| DOMAbstractView | view
+| Тип             | Свойства |
+|-----------------|----------|
+| number          | detail   |
+| DOMAbstractView | view     |
 
 ### События колёсика мыши
 
 - onWheel
 
-| Тип | Свойства |
-|---|---|
-| number | deltaMode
-| number | deltaX
-| number | deltaY
-| number | deltaZ
+| Тип    | Свойства  |
+|--------|-----------|
+| number | deltaMode |
+| number | deltaX    |
+| number | deltaY    |
+| number | deltaZ    |
 
 ### События медиа-элементов
 
@@ -325,21 +325,21 @@ function Example() {
 - onAnimationEnd
 - onAnimationIteration
 
-| Тип | Свойства |
-|---|---|
-| string | animationName
-| string | pseudoElement
-| float  | elapsedTime
+| Тип    | Свойства      |
+|--------|---------------|
+| string | animationName |
+| string | pseudoElement |
+| float  | elapsedTime   |
 
 ### События переходов
 
 - onTransitionEnd
 
-| Тип | Свойства |
-|---|---|
-| string | propertyName
-| string | pseudoElement
-| float  | elapsedTime
+| Тип    | Свойства      |
+|--------|---------------|
+| string | propertyName  |
+| string | pseudoElement |
+| float  | elapsedTime   |
 
 ### Другие события
 
