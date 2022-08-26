@@ -87,6 +87,14 @@
 
     npm unpublish http-server
 
+### Remove one version
+
+	npm unpublish [<@scope>/]<pkg>@<version>
+
+### Remove all versions
+
+	npm unpublish [<@scope>/]<pkg> --force
+
 ### Управление правами доступа к пакетам в репозитории npm
 
 *Вы можете задать права доступа других пользователей к опубликованному пакету:*

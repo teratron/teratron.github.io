@@ -10,6 +10,8 @@
 
 ### [Godot](godot)
 
+### [Python](python)
+
 ### [Git](git)
 
 ### [NPM](npm)
