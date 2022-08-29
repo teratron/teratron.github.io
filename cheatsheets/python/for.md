@@ -3,93 +3,22 @@
 [Назад][back]
 
 ```python
+message = "Hello"
 
+for c in message:
+    print(c)
+else:
+    print(f"Последний символ: {c}. Цикл завершен");
+
+print("Работа программы завершена")
 ```
 
-```python
-
-```
+### Вложенные циклы
 
 ```python
-
-```
-
-```python
-
-```
-
-### While
-
-```python
-
-```
-
-```python
-
-```
-
-### Бесконечный цикл
-
-```python
-
-```
-
-### Range
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-### Map
-
-```python
-
-```
-
-```python
-
-```
-
-### Channel
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-### Break
-
-```python
-
-```
-
-### Continue
-
-```python
-
+for c1 in  "ab":
+    for c2 in "ba":
+        print(f"{c1}{c2}")
 ```
 
 [Назад][back]

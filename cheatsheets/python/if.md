@@ -4,6 +4,7 @@
 
 ```python
 language = "german"
+
 if language == "english":
     print("Hello")
     print("World")
@@ -20,6 +21,7 @@ else:
 ```python
 language = "russian"
 daytime = "morning"
+
 if language == "english":
     if daytime == "morning":
         print("Good morning")
@@ -30,22 +32,6 @@ else:
         print("Доброе утро")
     else:
         print("Добрый вечер")
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
 ```
 
 [Назад][back]
