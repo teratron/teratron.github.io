@@ -438,36 +438,26 @@ Here's a simple footnote,[^1] and here's a longer one.[^note]
 ### Table
 
 ```markdown
-| Syntax | Description |
-| --- | --- |
-| Header | Title |
-| Paragraph | Text |
+| Syntax    | Description |
+|-----------|-------------|
+| Header    | Title       |
+| Paragraph | Text        |
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Syntax    | Description |   Test Text |
+|:----------|:-----------:|------------:|
+| Header    |    Title    | Here's this |
+| Paragraph |    Text     |    And more |
 ```
 
-| Syntax | Description |
-| --- | --- |
-| Header | Title |
-| Paragraph | Text |
+| Syntax    | Description |
+|-----------|-------------|
+| Header    | Title       |
+| Paragraph | Text        |
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Syntax    | Description |   Test Text |
+|:----------|:-----------:|------------:|
+| Header    |    Title    | Here's this |
+| Paragraph |    Text     |    And more |
 
 ### Emoji
 

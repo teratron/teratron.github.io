@@ -118,7 +118,7 @@ print(f"sum(3, 5) = {sum(3, 5)}")   # sum(3, 5) = 8
 
 ```python
 def get_message():
-    return "Hello METANIT.COM"
+    return
     print("End of the function") # не имеет смысла - она никогда выполнится
 
 print(get_message())
@@ -127,27 +127,133 @@ print(get_message())
 ### Функция как тип
 
 ```python
+def sum(a, b): return a + b
+def multiply(a, b): return a * b
 
+operation = sum
+result = operation(5, 6)
+print(result)   # 11
+
+operation = multiply
+print(operation(5, 6))   # 30
 ```
 
-```python
+### Функция как параметр функции
 
+```python
+def do_operation(a, b, operation):
+    result = operation(a, b)
+    print(f"result = {result}")
+
+def sum(a, b): return a + b
+def multiply(a, b): return a * b
+
+do_operation(5, 4, sum)        # result = 9
+do_operation(5, 4, multiply)   # result = 20
 ```
 
-```python
+### Функция как результат функции
 
+```python
+def sum(a, b): return a + b
+def subtract(a, b): return a - b
+def multiply(a, b): return a * b
+
+def select_operation(choice):
+    if choice == 1:
+        return sum
+    elif choice == 2:
+        return subtract
+    else:
+        return multiply
+
+operation = select_operation(1)     # operation = sum
+print(operation(10, 6))             # 16
+
+operation = select_operation(2)     # operation = subtract
+print(operation(10, 6))             # 4
+
+operation = select_operation(3)     # operation = multiply
+print(operation(10, 6))             # 60
 ```
 
-```python
+### Замыкания closure
 
+```python
+def outer():          # внешняя функция
+    n = 5             # лексическое окружение - локальная переменная
+    def inner():      # локальная функция
+        nonlocal n
+        n += 1        # операции с лексическим окружением
+        print(n)
+    return inner
+
+fn = outer()   # fn = inner, так как функция outer возвращает функцию inner
+# вызываем внутреннюю функцию inner
+fn()    # 6
+fn()    # 7
+fn()    # 8
 ```
 
-```python
+Применение параметров:
 
+```python
+def multiply(n):
+    def inner(m): return n * m
+    return inner
+
+fn = multiply(5)
+print(fn(5))        # 25
+print(fn(6))        # 30
+print(fn(7))        # 35
 ```
 
-```python
+### Скрытие переменных
 
+```python
+name = "Tom"
+
+def say_hi():
+    name = "Bob"        # скрываем значение глобальной переменной
+    print("Hello", name)
+
+def say_bye():
+    print("Good bye", name)
+
+say_hi()    # Hello Bob
+say_bye()   # Good bye Tom
+```
+
+### global {#global-id}
+
+```python
+name = "Tom"
+
+def say_hi():
+    global  name
+    name = "Bob"        # изменяем значение глобальной переменной
+    print("Hello", name)
+
+def say_bye():
+    print("Good bye", name)
+
+say_hi()    # Hello Bob
+say_bye()   # Good bye Bob
+```
+
+### nonlocal {#nonlocal-id}
+
+```python
+def outer():    # внешняя функция
+    n = 5
+    def inner():    # вложенная функция
+        nonlocal n  # указываем, что n - это переменная из окружающей функции
+        n = 25
+        print(n)
+    inner()     # 25
+    print(n)
+
+outer()         # 25
 ```
 
 [Назад][back]
