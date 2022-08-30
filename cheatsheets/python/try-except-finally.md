@@ -88,7 +88,7 @@ except ValueError as e:
     print("Сведения об исключении", e)      # invalid literal for int() with base 10: 'fdsf'
 ```
 
-### Генерация исключений и оператор raise
+### Генерация исключений и оператор raise {#raise-id}
 
 Оператору `raise` передается объект `BaseException` - в данном случае объект `Exception`.
 В конструктор этого типа можно ему передать сообщение, которое затем можно вывести пользователю.
@@ -141,22 +141,6 @@ try:
     bob.display_info()
 except PersonAgeException as e:
     print(e)            # Недопустимое значение: -23. Возраст должен быть в диапазоне от 1 до 110
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
 ```
 
 ### Иерархия исключений {#exception-id}
