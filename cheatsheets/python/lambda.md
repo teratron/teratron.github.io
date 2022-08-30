@@ -23,7 +23,7 @@ print(sum(4, 5))    # 9
 print(sum(5, 6))    # 11
 ```
 
-Передача лямбда-выражения в качестве параметра:
+### Передача лямбда-выражения в качестве параметра:
 
 ```python
 def do_operation(a, b, operation):
@@ -34,7 +34,7 @@ do_operation(5, 4, lambda a, b: a + b)  # result = 9
 do_operation(5, 4, lambda a, b: a * b)  # result = 20
 ```
 
-Возвращение лямбда-выражений из функций:
+### Возвращение лямбда-выражений из функций:
 
 ```python
 def select_operation(choice):
@@ -46,13 +46,13 @@ def select_operation(choice):
         return lambda a, b: a * b
 
 operation = select_operation(1)  # operation = sum
-print(operation(10, 6))  # 16
+print(operation(10, 6))          # 16
 
 operation = select_operation(2)  # operation = subtract
-print(operation(10, 6))  # 4
+print(operation(10, 6))          # 4
 
 operation = select_operation(3)  # operation = multiply
-print(operation(10, 6))  # 60
+print(operation(10, 6))          # 60
 ```
 
 ### Замыкания
