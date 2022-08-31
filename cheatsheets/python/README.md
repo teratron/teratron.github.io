@@ -40,98 +40,13 @@
 | **[for](for.md)**                           | используется для перебора элементов последовательности или итеративного объекта                                                                                                             | 
 | not                                         | логический оператор «не»                                                                                                                                                                    | 
 
+**[type](type.md)**
+
 **[list](list.md)**
 **[tuple](tuple.md)**
-
-## Преобразование типов
-
-### int
-
-```python
-a = "2"
-b = 3
-c = int(a) + b
-print(c)        # 5
-```
-
-```python
-a = int(15)     # a = 15
-b = int(3.7)    # b = 3
-c = int("4")    # c = 4
-e = int(False)  # e = 0
-f = int(True)   # f = 1
-```
-
-```python
-b = int("a1c")  # Ошибка
-c = int("4.7")  # Ошибка
-```
-
-### float
-
-```python
-a = "2.7"
-b = 3
-c = float(a) + b
-print(c)        # 5.7
-```
-
-```python
-a = float(15)       # a = 15.0
-b = float(3.7)      # b = 3.7
-c = float("4.7")    # c = 4.7
-d = float("5")      # d = 5.0
-e = float(False)    # e = 0.0
-f = float(True)     # f = 1.0
-```
-
-```python
-d = float("abc")    # Ошибка
-```
-
-### str
-
-```python
-a = str(False)      # a = "False"
-b = str(True)       # b = "True"
-c = str(5)          # c = "5"
-d = str(5.7)        # d = "5.7"
-```
-
-```python
-age = 22
-message = "Age: " + age       # Ошибка
-message = "Age: " + str(age)  # Age: 22
-print(message)
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
+**[range](range.md)**
+**[dictionary](dictionary.md)**
+**[set](set.md)**
 
 [Назад к перечню шпаргалок][back]
 
