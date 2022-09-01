@@ -1,12 +1,12 @@
 # match
 
-[Назад][back]
+[РќР°Р·Р°Рґ][back]
 
 ```python
 def print_hello(language):
     match language:
         case "russian":
-            print("Привет")
+            print("РџСЂРёРІРµС‚")
         case "english" | "british english" | "english":
             print("Hello")
         case "german": print("Hallo")
@@ -15,7 +15,7 @@ def print_hello(language):
 
 print_hello("english")      # Hello
 print_hello("german")       # Hallo
-print_hello("russian")      # Привет
+print_hello("russian")      # РџСЂРёРІРµС‚
 print_hello("spanish")      # Undefined
 ```
 
@@ -37,7 +37,7 @@ print(operation(10, 5, 3))      # 50
 print(operation(10, 5, 4))      # 0
 ```
 
-### Кортежи в pattern matching
+### РљРѕСЂС‚РµР¶Рё РІ pattern matching
 
 ```python
 def print_data(user):
@@ -57,7 +57,7 @@ print_data(("Tom", 28))     # Age: 28
 print_data(("Sam", 37))     # Name: Sam  Age: 37
 ```
 
-### Пропуск элементов
+### РџСЂРѕРїСѓСЃРє СЌР»РµРјРµРЅС‚РѕРІ
 
 ```python
 def print_data(user):
@@ -89,7 +89,7 @@ print_data(("Sam", 22, "Microsoft"))            # Name: Sam  Age: 22  Company: M
 print_data(("Bob", 41, "Google", "english"))    # Name: Bob  Age: 41  Company: Google Language: english
 ```
 
-### Кортеж с неопределенным количеством элементов
+### РљРѕСЂС‚РµР¶ СЃ РЅРµРѕРїСЂРµРґРµР»РµРЅРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј СЌР»РµРјРµРЅС‚РѕРІ
 
 ```python
 def print_data(user):
@@ -117,7 +117,7 @@ print_data(("Tom", 37, "Google"))                   # Default user
 print_data(("Bob", 41, "Microsoft", "english"))     # Bob (41)
 ```
 
-### Массивы в pattern matching
+### РњР°СЃСЃРёРІС‹ РІ pattern matching
 
 ```python
 def print_people(people):
@@ -132,28 +132,28 @@ def print_people(people):
 print_people(["Tom", "Sam", "Bob"])         # default people
 print_people(["Tom", "Mike", "Bob"])        # Second Person: Mike
 print_people(["Alice", "Bill", "Kate"])     # Alice, Bill, Kate
-print_people(["Tom", "Kate"])               # несоответствует ни одному из шаблонов
+print_people(["Tom", "Kate"])               # РЅРµСЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅРё РѕРґРЅРѕРјСѓ РёР· С€Р°Р±Р»РѕРЅРѕРІ
 ```
 
 ```python
 def print_people(people):
     match people:
         case [_]:
-            print("Массив из одного элемента")
+            print("РњР°СЃСЃРёРІ РёР· РѕРґРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°")
         case [_, _]:
-            print("Массив из двух элементов")
+            print("РњР°СЃСЃРёРІ РёР· РґРІСѓС… СЌР»РµРјРµРЅС‚РѕРІ")
         case [_, _, _]:
-            print("Массив из трех элементов")
+            print("РњР°СЃСЃРёРІ РёР· С‚СЂРµС… СЌР»РµРјРµРЅС‚РѕРІ")
         case _:
-            print("Непонятно")
+            print("РќРµРїРѕРЅСЏС‚РЅРѕ")
 
-print_people(["Tom"])                   # Массив из одного элемента
-print_people(["Tom", "Sam"])            # Массив из двух элементов
-print_people(["Tom", "Sam", "Bob"])     # Массив из трех элементов
-print_people("Tom")                     # Непонятно
+print_people(["Tom"])                   # РњР°СЃСЃРёРІ РёР· РѕРґРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
+print_people(["Tom", "Sam"])            # РњР°СЃСЃРёРІ РёР· РґРІСѓС… СЌР»РµРјРµРЅС‚РѕРІ
+print_people(["Tom", "Sam", "Bob"])     # РњР°СЃСЃРёРІ РёР· С‚СЂРµС… СЌР»РµРјРµРЅС‚РѕРІ
+print_people("Tom")                     # РќРµРїРѕРЅСЏС‚РЅРѕ
 ```
 
-### Массивы неопределенной длины
+### РњР°СЃСЃРёРІС‹ РЅРµРѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РґР»РёРЅС‹
 
 ```python
 def print_people(people):
@@ -177,7 +177,7 @@ print_people(["Sam", "Tom"])            # First: Sam
 print_people(["Bob", "Sam", "Tom"])     # First: Bob
 ```
 
-### Альтернативные значения
+### РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ
 
 ```python
 def print_people(people):
@@ -192,7 +192,7 @@ print_people(["Tomas", "Sam", "Bob"])       # Tom/Tomas, Sam, Bob
 print_people(["Alice", "Bill", "Kate"])     # Alice, Bill, Kate
 ```
 
-### Словари в pattern matching
+### РЎР»РѕРІР°СЂРё РІ pattern matching
 
 ```python
 
@@ -214,6 +214,6 @@ print_people(["Alice", "Bill", "Kate"])     # Alice, Bill, Kate
 
 ```
 
-[Назад][back]
+[РќР°Р·Р°Рґ][back]
 
-[back]: <.> "Назад к оглавлению"
+[back]: <.> "РќР°Р·Р°Рґ Рє РѕРіР»Р°РІР»РµРЅРёСЋ"

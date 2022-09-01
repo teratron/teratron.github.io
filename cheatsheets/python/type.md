@@ -11,7 +11,7 @@
 ```python
 isMarried = False
 print(isMarried)    # False
- 
+
 isAlive = True
 print(isAlive)      # True
 ```
@@ -32,6 +32,7 @@ print("Количество:", count) # Количество: 15
 a = 0b11
 b = 0b1011
 c = 0b100001
+
 print(a)    # 3 в десятичной системе
 print(b)    # 11 в десятичной системе
 print(c)    # 33 в десятичной системе
@@ -43,6 +44,7 @@ print(c)    # 33 в десятичной системе
 a = 0o7
 b = 0o11
 c = 0o17
+
 print(a)    # 7 в десятичной системе
 print(b)    # 9 в десятичной системе
 print(c)    # 15 в десятичной системе
@@ -54,6 +56,7 @@ print(c)    # 15 в десятичной системе
 a = 0x0A
 b = 0xFF
 c = 0xA1
+
 print(a)    # 10 в десятичной системе
 print(b)    # 255 в десятичной системе
 print(c)    # 161 в десятичной системе
@@ -65,6 +68,7 @@ print(c)    # 161 в десятичной системе
 height = 1.68
 pi = 3.14
 weight = 68.
+
 print(height)   # 1.68
 print(pi)       # 3.14
 print(weight)   # 68.0
