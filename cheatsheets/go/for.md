@@ -36,8 +36,8 @@ for fmt.Println("start"); i < 3; i++ {
 
 ```go
 for i := 0; i < 3; fmt.Println("after") {
+    fmt.Println(i)
     i++
-    continue
 }
 // 0
 // after
@@ -181,6 +181,14 @@ for range m { // цикл не будет выполнятся
 ```
 
 ### Channel
+
+```go
+ch := make(chan int, 1)
+i := 0
+for ch <- 1; i < 5; i++ {
+    fmt.Println(i)
+}
+```
 
 ```go
 ch := make(chan int)
