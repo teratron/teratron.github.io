@@ -107,7 +107,7 @@ tom.display_info()  # Имя: Tom  Возраст: 25
 class Person:
     def __init__(self, name):
         self.__name = name  # устанавливаем имя
-        self.__age = 1  # устанавливаем возраст
+        self.__age = 1      # устанавливаем возраст
 
     @property
     def age(self):
@@ -233,7 +233,9 @@ tom.display_info()  # Name: Tom
 
 ### Проверка типа объекта isinstance()
 
-    isinstance(object, type)
+```
+isinstance(object, type)
+```
 
 ```python
 class Person:
@@ -348,7 +350,7 @@ tom = Person()
 tom.print_type()        # Person - обращение к статическому методу через имя объекта
 ```
 
-### Класс object. Строковое представление объекта &#95;&#95;str&#95;&#95;()
+### Строковое представление объекта &#95;&#95;str&#95;&#95;()
 
 ```python
 class Person:
