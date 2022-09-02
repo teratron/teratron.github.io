@@ -166,6 +166,8 @@ class Person:
       del self._name
 
    name = property(get_name, set_name, del_name, "Person's Name Attribute")
+   # name = property(get_name, set_name, None)
+   # name = property(get_name, None, None)
 
 d = Person()
 d.name = 'Pankaj'

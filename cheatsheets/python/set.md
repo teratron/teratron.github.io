@@ -156,9 +156,9 @@ print(users.issuperset(superusers))   # False
 print(superusers.issuperset(users))   # True
 ```
 
-### frozen set
+### frozenset()
 
-Тип **frozen set** является видом множеств, которое не может быть изменено.
+Тип **frozenset** является видом множеств, которое не может быть изменено.
 Для его создания используется функция `frozenset()`:
 
 ```python
