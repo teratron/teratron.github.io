@@ -1,17 +1,33 @@
---------------------------------------------------
-Создание и инициализация структуры
---------------------------------------------------
-type person struct { name string age int }
+### Создание и инициализация структуры
 
-var tom person var tom person = person{"Tom", 23} var alice person = person{age: 23, name: "Alice"}
+```go
+type person struct {
+    name string
+    age int
+}
 
-var tom = person{name: "Tom", age: 24} bob := person{name: "Bob", age: 31}
+var tom person
+// или
+var tom person = person{"Tom", 23}
+var alice person = person{age: 23, name: "Alice"}
+
+var tom = person{name: "Tom", age: 24}
+bob := person{name: "Bob", age: 31}
 
 undefined := person{} // name - пустая строка, age - 0
+```
 
---------------------------------------------------
-Обращение к полям структуры
---------------------------------------------------
+```go
+
+```
+
+```go
+
+```
+
+### Обращение к полям структуры
+
+```go
 package main
 
 import "fmt"
@@ -25,10 +41,10 @@ func main() { var tom = person{name: "Tom", age: 24} fmt.Println(tom.name)      
     fmt.Println(tom.name, tom.age) // Tom 38
 
 }
+```
 
---------------------------------------------------
-Указатели на структуры
---------------------------------------------------
+### Указатели на структуры
+
 package main
 
 import "fmt"
@@ -51,9 +67,8 @@ var tom *person = &person{name:"Tom", age:23} var bob *person = new(person)
 tom := person{name: "Tom", age: 22} var agePointer *int = &tom.age // указатель на поле tom.age
 *agePointer = 35 // изменяем значение поля fmt.Println(tom.age)            // 35
 
---------------------------------------------------
-Вложенные структуры
---------------------------------------------------
+### Вложенные структуры
+
 package main
 
 import "fmt"
@@ -70,9 +85,8 @@ func main() { var tom = person{ name: "Tom", age: 24, contactInfo: contact{ emai
 
 }
 
---------------------------------------------------
-Хранения ссылки на структуру того же типа
---------------------------------------------------
+### Хранения ссылки на структуру того же типа
+
 package main
 
 import "fmt"
