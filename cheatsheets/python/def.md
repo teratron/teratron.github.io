@@ -11,7 +11,7 @@ say_hello()         # вызов функции say_hello
 
 ```python
 def say_hello(): print("Hello")
- 
+
 say_hello()
 ```
 
@@ -114,7 +114,7 @@ print(f"sum(4, 6) = {result}")      # sum(4, 6) = 10
 print(f"sum(3, 5) = {sum(3, 5)}")   # sum(3, 5) = 8
 ```
 
-Выход из функции
+Выход из функции:
 
 ```python
 def get_message():
