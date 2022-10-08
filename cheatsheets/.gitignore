@@ -1,4 +1,5 @@
 *
+
 !*/
 !.gitignore
 !.gitattributes
@@ -6,3 +7,5 @@
 
 !*.md
 !**/*.md
+!*.rst
+!**/*.rst
