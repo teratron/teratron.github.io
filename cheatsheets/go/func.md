@@ -286,6 +286,30 @@ func SaveUser(w http.ResponseWriter, rq *http.Request) {
 }
 ```
 
+### Go использует лучшие возможности функционального программирования
+
+Функция StartTimer возвращает новую функцию, которая через замыкание имеет доступ к значению t, установленному во время
+ее области рождения.
+Затем эта функция может сравнивать текущее время со значением t, тем самым создавая полезный таймер.
+
+```go
+func StartTimer (name string) func() {
+    t := time.Now()
+    log.Println(name, "started")
+
+    return func() {
+        d := time.Now().Sub(t)
+        log.Println(name, "took", d)
+    }
+}
+
+func RunTimer() {
+    stop := StartTimer("My timer")
+    defer stop()
+    time.Sleep(1 * time.Second)
+}
+```
+
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
