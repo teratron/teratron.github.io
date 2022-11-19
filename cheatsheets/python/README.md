@@ -4,6 +4,7 @@
 
 - **[Structure](structure.md)**
 - **[Exception](exception.md)**
+- **[Encapsulation](encapsulation.md)**
 - **[Types](types.md)**
 - **[Round](round.md)**
 
