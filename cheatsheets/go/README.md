@@ -13,13 +13,8 @@
 | **[goto](goto.md)**     |                                |        |      |                   |
 | **[defer*](defer.md)**  |                                |        |      |                   |
 
-**[Defer, Panic, Recover](defer-panic-recover.md)**
-
-**[Project Layout](project-layout.md)**
-
-```go
-
-```
+- **[Defer, Panic, Recover](defer-panic-recover.md)**
+- **[Project Layout](project-layout.md)**
 
 ```go
 
