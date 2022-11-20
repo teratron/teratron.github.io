@@ -2,13 +2,14 @@
 
 [Назад к перечню шпаргалок][back]
 
+- **[Types](types.md)**
+- **[Round](round.md)**
 - **[Structure](structure.md)**
 - **[Exception](exception.md)**
 - **[Encapsulation](encapsulation.md)**
 - **[Decorator](decorator.md)**
 - **[Dataclass](dataclass.md)**
-- **[Types](types.md)**
-- **[Round](round.md)**
+- **[Closure](closure.md)**
 
 | Keyword                                     | Описание                                                                                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

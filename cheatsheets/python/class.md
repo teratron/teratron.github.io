@@ -411,6 +411,28 @@ print(tom)          # Name: Tom  Age: 23
 tom.display_info()  # Name: Tom  Age: 23
 ```
 
+### Композиция классов
+
+Один из способов организации взаимодействия между классами – это **композиция**, или же ассоциация, классов.
+
+```python
+class Salary:
+   def __init__(self, pay):
+      self.pay = pay
+   
+   def get_total(self):
+      return self.pay * 12
+
+class Employee:
+   def __init__(self, pay, bonus):
+      self.pay = pay
+      self.bonus = bonus
+      self.salary = Salary(self.pay)
+
+def get_salary(self):
+   return f'Total: {self.salary.get_total() + self.bonus}'
+```
+
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
