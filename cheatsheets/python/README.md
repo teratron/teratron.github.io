@@ -6,6 +6,7 @@
 - **[Exception](exception.md)**
 - **[Encapsulation](encapsulation.md)**
 - **[Decorator](decorator.md)**
+- **[Dataclass](dataclass.md)**
 - **[Types](types.md)**
 - **[Round](round.md)**
 

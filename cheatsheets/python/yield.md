@@ -47,28 +47,6 @@ for i in a:
 
 ```
 
-```python
-
-```
-
-### blank
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
