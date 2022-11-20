@@ -5,6 +5,7 @@
 - **[Structure](structure.md)**
 - **[Exception](exception.md)**
 - **[Encapsulation](encapsulation.md)**
+- **[Decorator](decorator.md)**
 - **[Types](types.md)**
 - **[Round](round.md)**
 
