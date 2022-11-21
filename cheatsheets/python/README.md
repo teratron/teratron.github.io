@@ -8,7 +8,8 @@
 - **[Exception](exception.md)**
 - **[Encapsulation](encapsulation.md)**
 - **[Decorator](decorator.md)**
-- **[Dataclass](dataclass.md)**
+  - **[@dataclass](dataclass.md)**
+  - **[@classmethod](classmethod.md)**
 - **[Closure](closure.md)**
 
 | Keyword                                     | Описание                                                                                                                                                                                    |
