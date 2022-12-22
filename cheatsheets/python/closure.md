@@ -1,4 +1,4 @@
-# closure
+# Closure
 
 [Назад][back]
 
@@ -13,12 +13,9 @@
 ```python
 def closure_example():
     x = 11
-
     def inner():
         print(f'Переменная из замыкания: {x}')
-
     return inner
-
 
 closure_example()()
 

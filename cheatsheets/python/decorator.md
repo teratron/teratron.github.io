@@ -1,4 +1,4 @@
-# decorator
+# Decorator
 
 [Назад][back]
 
@@ -102,6 +102,7 @@ print_text('Просыпайся!')
 ### Класс как декоратор
 
 При помощи метода `__call__()` экземпляры классов можно делать вызываемыми, что позволяет декорировать функции.
+`info_func()` является экземпляром класса `Numerator`, поэтому счетчик при каждом новом вызове будет увеличиваться.
 
 ```python
 class Numerator:
@@ -130,7 +131,32 @@ print(info_func())
 # ((), {})
 ```
 
-`info_func()` является экземпляром класса `Numerator`, поэтому счетчик при каждом новом вызове будет увеличиваться.
+```python
+class decorator(object):
+    def __init__(self, f):
+        print("inside decorator.__init__()")
+        f() # Prove that function definition has completed
+
+    def __call__(self):
+        print("inside decorator.__call__()")
+
+@decorator
+def function():
+    print("inside function()")
+
+print("Finished decorating function()")
+
+function()
+
+# inside decorator.__init__()
+# inside function()
+# Finished decorating function()
+# inside decorator.__call__()
+```
+
+```python
+
+```
 
 ```python
 

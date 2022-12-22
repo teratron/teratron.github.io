@@ -1,4 +1,4 @@
-# encapsulation
+# Encapsulation
 
 [Назад][back]
 
