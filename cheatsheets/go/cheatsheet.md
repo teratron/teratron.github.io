@@ -488,7 +488,8 @@ for key, value := range m {
 
 ## Structs
 
-There are no classes, only structs. Structs can have methods.
+Классов нет, только структуры.
+Структуры могут иметь методы.
 
 ```go
 // A struct is a type. It's also a collection of fields
@@ -500,8 +501,12 @@ type Vertex struct {
 
 // Creating
 var v = Vertex{1, 2}
-var v = Vertex{X: 1, Y: 2}               // Creates a struct by defining values with keys
-var v = []Vertex{{1, 2}, {5, 2}, {5, 5}} // Initialize a slice of structs
+var v = Vertex{X: 1, Y: 2} // Создает структуру, определяя значения с ключами
+var v = []Vertex{          // Инициализировать фрагмент структур
+        {1, 2},
+        {5, 2},
+        {5, 5}
+    }
 
 // Accessing members
 v.X = 4
