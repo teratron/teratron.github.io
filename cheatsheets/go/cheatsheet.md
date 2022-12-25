@@ -83,57 +83,57 @@ func main() {
 
 ### Arithmetic
 
-|Operator|Description|
-|--------|-----------|
-|`+`|addition|
-|`-`|subtraction|
-|`*`|multiplication|
-|`/`|quotient|
-|`%`|remainder|
-|`&`|bitwise and|
-|`\|`|bitwise or|
-|`^`|bitwise xor|
-|`&^`|bit clear (and not)|
-|`<<`|left shift|
-|`>>`|right shift|
+| Operator | Description         |
+|----------|---------------------|
+| `+`      | addition            |
+| `-`      | subtraction         |
+| `*`      | multiplication      |
+| `/`      | quotient            |
+| `%`      | remainder           |
+| `&`      | bitwise and         |
+| `&#124;` | bitwise or          |
+| `^`      | bitwise xor         |
+| `&^`     | bit clear (and not) |
+| `<<`     | left shift          |
+| `>>`     | right shift         |
 
 ### Comparison
 
-|Operator|Description|
-|--------|-----------|
-|`==`|equal|
-|`!=`|not equal|
-|`<`|less than|
-|`<=`|less than or equal|
-|`>`|greater than|
-|`>=`|greater than or equal|
+| Operator | Description           |
+|----------|-----------------------|
+| `==`     | equal                 |
+| `!=`     | not equal             |
+| `<`      | less than             |
+| `<=`     | less than or equal    |
+| `>`      | greater than          |
+| `>=`     | greater than or equal |
 
 ### Logical
 
-|Operator|Description|
-|--------|-----------|
-|`&&`|logical and|
-|`\|\|`|logical or|
-|`!`|logical not|
+| Operator       | Description |
+|----------------|-------------|
+| `&&`           | logical and |
+| `&#124;&#124;` | logical or  |
+| `!`            | logical not |
 
 ### Other
 
-|Operator|Description|
-|--------|-----------|
-|`&`|address of / create pointer|
-|`*`|dereference pointer|
-|`<-`|send / receive operator (see 'Channels' below)|
+| Operator | Description                                    |
+|----------|------------------------------------------------|
+| `&`      | address of / create pointer                    |
+| `*`      | dereference pointer                            |
+| `<-`     | send / receive operator (see 'Channels' below) |
 
 ## Declarations
 
 Type goes after identifier!
 
 ```go
-var foo int // declaration without initialization
-var foo int = 42 // declaration with initialization
+var foo int                 // declaration without initialization
+var foo int = 42            // declaration with initialization
 var foo, bar int = 42, 1302 // declare and init multiple vars at once
-var foo = 42 // type omitted, will be inferred
-foo := 42 // shorthand, only in func bodies, omit var keyword, type is always implicit
+var foo = 42                // type omitted, will be inferred
+foo := 42                   // shorthand, only in func bodies, omit var keyword, type is always implicit
 const constant = "This is a constant"
 
 // iota can be used for incrementing numbers, starting from 0
@@ -144,8 +144,9 @@ const (
     c = 1 << iota
     d
 )
-    fmt.Println(a, b) // 1 2 (0 is skipped)
-    fmt.Println(c, d) // 8 16 (2^3, 2^4)
+
+fmt.Println(a, b) // 1 2 (0 is skipped)
+fmt.Println(c, d) // 8 16 (2^3, 2^4)
 ```
 
 ## Functions
@@ -499,8 +500,8 @@ type Vertex struct {
 
 // Creating
 var v = Vertex{1, 2}
-var v = Vertex{X: 1, Y: 2} // Creates a struct by defining values with keys
-var v = []Vertex{{1,2},{5,2},{5,5}} // Initialize a slice of structs
+var v = Vertex{X: 1, Y: 2}               // Creates a struct by defining values with keys
+var v = []Vertex{{1, 2}, {5, 2}, {5, 5}} // Initialize a slice of structs
 
 // Accessing members
 v.X = 4

@@ -473,9 +473,9 @@ That is so funny! :joy:
 
 ### Escaping Characters
 
-```markdown
 \* Without the backslash, this would be a bullet in an unordered list.
 
+```markdown
 | Character | Name                |
 |-----------|---------------------|
 | \         | backslash           |
@@ -493,8 +493,6 @@ That is so funny! :joy:
 | !         | exclamation mark    |
 | &#124;         | pipe                |
 ```
-
-\* Without the backslash, this would be a bullet in an unordered list.
 
 | Character | Name                |
 |-----------|---------------------|
