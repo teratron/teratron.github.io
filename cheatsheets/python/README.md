@@ -2,26 +2,29 @@
 
 [Назад к перечню шпаргалок][back]
 
+- **[Structure](structure.md)**
 - **[Types](types.md)**
 - **[Round](round.md)**
-- **[Structure](structure.md)**
 - **[Exception](exception.md)**
 - **[Encapsulation](encapsulation.md)**
-- **[Decorator](decorator.md)**
-  - **[@dataclass](dataclass.md)**
-  - **[@classmethod](classmethod.md)**
 - **[Closure](closure.md)**
 - **[Generator](generator.md)**
-- **[Дескрипторы](generator.md)**
-- **[Метаклассы](generator.md)**
+- **[Metaclass](metaclass.md)**
 
-**[Bitwise](bitwise.md)**:
--`__and__`
--`__or__`
--`__xor__`
--`__lshift__`
--`__rshift__`
--`__invert__`
+**[Decorator](decorator.md)**
+
+- **[@dataclass](dataclass.md)**
+- **[@classmethod](classmethod.md)**
+
+**[Descriptor](descriptor.md)**:
+
+- **[Bitwise](bitwise.md)**:
+  - `__and__`
+  - `__or__`
+  - `__xor__`
+  - `__lshift__`
+  - `__rshift__`
+  - `__invert__`
 
 | Keyword                                     | Описание                                                                                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
