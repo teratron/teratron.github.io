@@ -11,7 +11,7 @@
 - **[Generator](generator.md)**
 - **[Metaclass](metaclass.md)**
 
-**[Decorator](decorator.md)**
+**[Decorator](decorator.md)**:
 
 - **[@dataclass](dataclass.md)**
 - **[@classmethod](classmethod.md)**
@@ -72,8 +72,6 @@
 
 ### Соглашения по именованию сущностей
 
-Следуйте этим соглашениям по именованию сущностей:
-
 | Тип                 | Общедоступный       | Внутренний          |
 |---------------------|---------------------|---------------------|
 | Пакеты (директории) | lower_with_under    | —                   |
@@ -95,6 +93,7 @@
 | `super()`      |                                                                                                       |
 | `property()`   |                                                                                                       |
 | `isinstance()` |                                                                                                       |
+| `issubclass()` |                                                                                                       |
 
 #### Некоторые операции над последовательностями:
 
