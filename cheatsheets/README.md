@@ -22,6 +22,8 @@
 
 ### [MySQL](mysql)
 
+### [Makefile](makefile)
+
 #### Tools:
 
 - [Convertsimple: Convert HTML to Markdown](https://www.convertsimple.com/convert-html-to-markdown)
