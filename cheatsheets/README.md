@@ -8,6 +8,8 @@
 
 ### [Go](go)
 
+### [Rust](rust)
+
 ### [Godot](godot)
 
 ### [Python](python)

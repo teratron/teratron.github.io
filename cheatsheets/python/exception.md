@@ -146,6 +146,7 @@ finally:
 #Создание класса исключения.
 class NetworkError(RuntimeError):
     pass
+
 try:
     # Для возбуждения исключения необходимого типа используется инструкция raise.
     raise NetworkError("Exception text") 
