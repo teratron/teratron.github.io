@@ -170,6 +170,147 @@ fn main() {
 }
 ```
 
+### Выражение where
+
+```rust
+fn display<T>(printable: &T) where T: Printer {
+    printable.print();
+}
+```
+
+### Привязка нескольких trait
+
+```rust
+trait Printer {
+    fn print(&self);
+}
+trait Sender {
+    fn send(&self);
+}
+
+struct Message {
+    text: String,
+}
+
+impl Printer for Message {
+    fn print(&self) {
+        println!("Сообщение: {}", self.text);
+    }
+}
+impl Sender for Message {
+    fn send(&self) {
+        println!("Сообщение отправлено");
+    }
+}
+
+fn process(obj: &(impl Printer + Sender)) {
+    obj.print();
+    obj.send();
+}
+
+fn main() {
+    let mes = Message {
+        text: String::from("Hello Rust"),
+    };
+    process(&mes);
+}
+```
+
+### Применение нескольких параметров разных trait
+
+```rust
+fn process(obj1: &(impl Printer + Editor), obj2: &(impl Printer + Sender)) {
+    // ...
+}
+
+// Вариант с оператором where
+fn process<T, S>(obj1: &T, obj2: &S) where T: Printer + Editor, S: Printer + Sender {
+    // ...
+}
+```
+
+### Ограничения trait в обобщенных типах
+
+```rust
+struct Person<T: Sender + Printer> {
+    device: T,
+}
+
+// или
+struct Person<T> where T: Sender + Printer {
+    device: T,
+}
+
+trait Printer {
+    fn print(&self, message: &str);
+}
+trait Sender {
+    fn send(&self, message: &str);
+}
+
+struct Smartphone {}
+
+impl Printer for Smartphone {
+    fn print(&self, message: &str) {
+        println!("{}", message);
+    }
+}
+impl Sender for Smartphone {
+    fn send(&self, message: &str) {
+        println!("Сообщение {} отправлено", message);
+    }
+}
+
+fn main() {
+    let iphone = Smartphone {};
+    let tom = Person { device: iphone };
+
+    tom.device.print("Hello Rust!");
+    tom.device.send("Hello Rust!");
+}
+```
+
+### Привязка trait в реализациях методов
+
+```rust
+struct Person<T> {
+    device: T,
+}
+
+impl<T: Sender + Printer> Person<T> {
+    fn send_message(&self, message: &str) {
+        self.device.print(message);
+        self.device.send(message);
+    }
+}
+
+trait Printer {
+    fn print(&self, message: &str);
+}
+trait Sender {
+    fn send(&self, message: &str);
+}
+
+struct Smartphone {}
+
+impl Printer for Smartphone {
+    fn print(&self, message: &str) {
+        println!("{}", message);
+    }
+}
+impl Sender for Smartphone {
+    fn send(&self, message: &str) {
+        println!("Сообщение {} отправлено", message);
+    }
+}
+
+fn main() {
+    let iphone = Smartphone {};
+    let tom = Person { device: iphone };
+    tom.send_message("Hello Rust!");
+}
+```
+
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
