@@ -2,9 +2,9 @@
 set_url: ## git remote set-url origin git@github.com:login/repo.git
 	git remote set-url origin git@github.com:teratron/teratron.github.io.git
 
-message = Update cheatsheet.
+message = Update rust cheatsheet.
 branch = master
-add_commit_push: ## add commit push
+add-commit-push: ## add commit push
 	git add .
 	git commit -m "$(message)"
 	git push origin $(branch)
