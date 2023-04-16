@@ -91,8 +91,8 @@ m.call();
 
 ```rust
 enum Option<T> {
-    None,
     Some(T),
+    None,
 }
 ```
 

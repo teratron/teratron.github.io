@@ -32,32 +32,6 @@ fn main() {
 }
 ```
 
-```rust
-struct Person {
-    name: String,
-    age: u8,
-}
-
-trait Printer {
-    fn preview(&self) -> String;
-}
-
-impl Printer for Person {
-    fn preview(&self) -> String {
-        format!("[Предпросмотр] Person {}; age: {}", self.name, self.age)
-    }
-}
-
-fn main() {
-    let tom = Person {
-        name: String::from("Tom"),
-        age: 36,
-    };
-    let tom_preview = tom.preview();
-    println!("{}", tom_preview);
-}
-```
-
 ### Реализация по умолчанию
 
 ```rust
@@ -71,6 +45,7 @@ struct Person {
     name: String,
     age: u8,
 }
+
 struct Message {
     text: String,
 }
@@ -81,6 +56,7 @@ impl Printer for Person {
         println!("Person {}; age: {}", self.name, self.age);
     }
 }
+
 impl Printer for Message {
     // используем реализацию метода по умолчанию
 }
@@ -136,6 +112,7 @@ struct Person {
     name: String,
     age: u8,
 }
+
 struct Message {
     title: String,
 }
@@ -149,6 +126,7 @@ impl Printer for Person {
         println!("Person {}; age: {}", self.name, self.age)
     }
 }
+
 impl Printer for Message {
     fn print(&self) {
         println!("Message: {}", self.title)
@@ -215,6 +193,7 @@ fn main() {
 struct VoiceMessage {
     address: String,
 }
+
 struct TextMessage {
     address: String,
     text: String,
@@ -229,6 +208,7 @@ impl Sender for VoiceMessage {
         println!("Голосовое сообщение отправлено на адрес {}", self.address);
     }
 }
+
 impl Sender for TextMessage {
     fn send(&self) {
         println!(

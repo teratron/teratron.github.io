@@ -102,6 +102,7 @@ struct Person {
     name: String,
     age: u8,
 }
+
 impl Person {
     fn change_age(&mut self, age: u8) {
         self.age = age;
