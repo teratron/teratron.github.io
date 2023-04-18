@@ -184,6 +184,7 @@ fn display<T>(printable: &T) where T: Printer {
 trait Printer {
     fn print(&self);
 }
+
 trait Sender {
     fn send(&self);
 }
@@ -197,6 +198,7 @@ impl Printer for Message {
         println!("Сообщение: {}", self.text);
     }
 }
+
 impl Sender for Message {
     fn send(&self) {
         println!("Сообщение отправлено");
@@ -244,6 +246,7 @@ struct Person<T> where T: Sender + Printer {
 trait Printer {
     fn print(&self, message: &str);
 }
+
 trait Sender {
     fn send(&self, message: &str);
 }
@@ -255,6 +258,7 @@ impl Printer for Smartphone {
         println!("{}", message);
     }
 }
+
 impl Sender for Smartphone {
     fn send(&self, message: &str) {
         println!("Сообщение {} отправлено", message);
@@ -287,6 +291,7 @@ impl<T: Sender + Printer> Person<T> {
 trait Printer {
     fn print(&self, message: &str);
 }
+
 trait Sender {
     fn send(&self, message: &str);
 }
@@ -298,6 +303,7 @@ impl Printer for Smartphone {
         println!("{}", message);
     }
 }
+
 impl Sender for Smartphone {
     fn send(&self, message: &str) {
         println!("Сообщение {} отправлено", message);
