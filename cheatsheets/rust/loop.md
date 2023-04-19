@@ -1,8 +1,8 @@
-# blank
+# loop
 
 [Назад][back]
 
-## blank
+## Цикл
 
 ```rust
 

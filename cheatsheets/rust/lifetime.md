@@ -1,8 +1,8 @@
-# blank
+# Lifetime
 
 [Назад][back]
 
-## blank
+## Время жизни ссылки
 
 ```rust
 

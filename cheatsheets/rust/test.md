@@ -15,7 +15,7 @@ cargo test name_of_test
 cargo test name_
 cargo test --test integration_test
 
-# Мы устанавливаем количество тестовых потоков равным 1 , указывая программе не использовать параллелизм.
+# Мы устанавливаем количество тестовых потоков равным 1, указывая программе не использовать параллелизм.
 cargo test -- --test-threads=1
 
 # Если мы хотим видеть напечатанные результаты прохождения тестов при помощи println!.
@@ -29,33 +29,6 @@ cargo test -- --include-ignored
 
 cargo test --help
 cargo test -- --help
-```
-
-```rust
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
-}
-```
-
-```rust
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn exploration() {
-        assert_eq!(2 + 2, 4);
-    }
-
-    #[test]
-    fn another() {
-        panic!("Make this test fail");
-    }
-}
-
 ```
 
 ### assert!
@@ -126,6 +99,21 @@ mod tests {
     #[test]
     fn it_adds_two() {
         assert_ne!(5, add_two(2));
+    }
+}
+```
+
+```rust
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn exploration() {
+        assert_eq!(2 + 2, 4);
+    }
+
+    #[test]
+    fn another() {
+        panic!("Make this test fail");
     }
 }
 ```

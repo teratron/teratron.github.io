@@ -1,8 +1,8 @@
-# blank
+# fn
 
 [Назад][back]
 
-## blank
+## Функция
 
 ```rust
 
