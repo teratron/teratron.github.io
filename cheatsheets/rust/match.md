@@ -16,7 +16,7 @@ match num {
 
 ```rust
 let num = 3;
-let result = match num{
+let result = match num {
     1 => "один",
     2 => "два",
     3 => "три",

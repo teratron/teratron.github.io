@@ -85,9 +85,16 @@ let m = Message::Write(String::from("hello"));
 m.call();
 ```
 
-### Перечисление Option и его преимущества перед Null-значениями
+### Result
 
-Тип `Option` кодирует очень распространённый сценарий, в котором значение может быть чем-то, а может быть ничем.
+```rust
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
+```
+
+### Option
 
 ```rust
 enum Option<T> {
@@ -100,10 +107,6 @@ enum Option<T> {
 let some_number = Some(5);  // let some_number: Option<i32> = Some(5);
 let some_char: Option<char> = Some('e');
 let absent_number: Option<i32> = None;
-```
-
-```rust
-
 ```
 
 ```rust
