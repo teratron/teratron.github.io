@@ -202,15 +202,21 @@ fn main() {
 
 ```
 
-[https://doc.rust-lang.ru/book](https://doc.rust-lang.ru/book/title-page.html)
-[https://metanit.com/rust](https://metanit.com/rust/)
-[https://refactoring.guru/ru/design-patterns/rust](https://refactoring.guru/ru/design-patterns/rust)
+---
 
-[https://cheats.rs](https://cheats.rs/)
-[https://lib.rs](https://lib.rs/)
-[https://docs.rs](https://docs.rs/)
+- [https://doc.rust-lang.ru/book](https://doc.rust-lang.ru/book/title-page.html)
+- [https://metanit.com/rust](https://metanit.com/rust/)
+- [https://refactoring.guru/ru/design-patterns/rust](https://refactoring.guru/ru/design-patterns/rust)
 
-[https://github.com/Eddort/learn-rust-ru](https://github.com/Eddort/learn-rust-ru)
+---
+
+- [https://cheats.rs](https://cheats.rs/)
+- [https://lib.rs](https://lib.rs/)
+- [https://docs.rs](https://docs.rs/)
+
+---
+
+- [https://github.com/Eddort/learn-rust-ru](https://github.com/Eddort/learn-rust-ru)
 
 [Назад к перечню шпаргалок][back]
 
