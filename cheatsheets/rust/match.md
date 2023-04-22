@@ -26,6 +26,26 @@ println!("result = {}", result);    // result = три
 ```
 
 ```rust
+fn factorial(num: u64) -> u64 {
+    match num {
+        0 | 1 => 1,
+        _ => factorial(num - 1) * num,
+    }
+}
+```
+
+```rust
+fn exp(x: u64, n: u64) -> u64 {
+    match n {
+        0 => 1,
+        1 => x,
+        i if i % 2 == 0 => exp(x * x, n / 2),
+        _ => x * exp(x * x, (n - 1) / 2),
+    }
+}
+```
+
+```rust
 #[derive(Debug)] // so we can inspect the state in a minute
 enum UsState {
     Alabama,

@@ -186,6 +186,14 @@ fn main() {
 }
 ```
 
+```rust
+let (a, b) = (b, a);
+
+// или
+
+std::mem::swap(&mut a, &mut b);
+```
+
 ### Затенение переменных (shadowing)
 
 То есть мы можем определить переменную с одним, и тем же именем и она будет скрывать (затенять)
@@ -204,12 +212,12 @@ fn main() {
 }
 ```
 
-```rust
-
-```
+### Format
 
 ```rust
-
+  let x = 42.1337;
+  let s = format!("{:.2}", x);
+  println!("{}", s); // 42.13
 ```
 
 ```rust
@@ -243,6 +251,11 @@ fn main() {
 - [https://cheats.rs](https://cheats.rs/)
 - [https://lib.rs](https://lib.rs/)
 - [https://docs.rs](https://docs.rs/)
+- [https://programming-idioms.org/cheatsheet/Rust](https://programming-idioms.org/cheatsheet/Rust)
+- []()
+- []()
+- []()
+- []()
 
 ---
 

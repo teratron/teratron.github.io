@@ -63,8 +63,27 @@ fn square(mut n: i32) {
 
 ```
 
-```rust
+### Print the type of a variable
 
+```rust
+fn type_of<T>(_: &T) -> &'static str {
+    std::intrinsics::type_name::<T>()
+}
+
+println!("{}", type_of(&x));
+```
+
+```rust
+#![feature(core_intrinsics)]
+
+fn type_of<T>(_: &T) -> String {
+    format!("{}", std::intrinsics::type_name::<T>())
+}
+
+fn main() {
+    let x: i32 = 1;
+    println!("{}", type_of(&x));
+}
 ```
 
 ### return
