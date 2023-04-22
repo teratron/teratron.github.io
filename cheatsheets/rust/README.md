@@ -68,27 +68,6 @@
 - virtual
 - yield
 
-### Соглашения по именованию сущностей
-
-| Item                    | Convention                                                 |
-|-------------------------|------------------------------------------------------------|
-| Crates                  | unclear                                                    |
-| Modules                 | snake_case                                                 |
-| Types                   | UpperCamelCase                                             |
-| Traits                  | UpperCamelCase                                             |
-| Enum variants           | UpperCamelCase                                             |
-| Functions               | snake_case                                                 |
-| Methods                 | snake_case                                                 |
-| General constructors    | new or with_more_details                                   |
-| Conversion constructors | from_some_other_type                                       |
-| Macros                  | snake_case!                                                |
-| Local variables         | snake_case                                                 |
-| Statics                 | SCREAMING_SNAKE_CASE                                       |
-| Constants               | SCREAMING_SNAKE_CASE                                       |
-| Type parameters         | concise UpperCamelCase, usually single uppercase letter: T |
-| Lifetimes               | short lowercase, usually a single letter: 'a, 'de, 'src    |
-| Features                | unclear but see C-FEATURE                                  |
-
 ## Macros
 
 | Keyword                                 | Описание                                                                                       |
@@ -135,6 +114,57 @@
 | vec                                     | Создает `Vec`, содержащий аргументы.                                                           |
 | write                                   | Записывает форматированные данные в буфер.                                                     |
 | writeln                                 | Записывает форматированные данные в буфер с добавлением новой строки.                          |
+
+### Соглашения по именованию сущностей
+
+| Item                    | Convention                                                 |
+|-------------------------|------------------------------------------------------------|
+| Crates                  | unclear                                                    |
+| Modules                 | snake_case                                                 |
+| Types                   | UpperCamelCase                                             |
+| Traits                  | UpperCamelCase                                             |
+| Enum variants           | UpperCamelCase                                             |
+| Functions               | snake_case                                                 |
+| Methods                 | snake_case                                                 |
+| General constructors    | new or with_more_details                                   |
+| Conversion constructors | from_some_other_type                                       |
+| Macros                  | snake_case!                                                |
+| Local variables         | snake_case                                                 |
+| Statics                 | SCREAMING_SNAKE_CASE                                       |
+| Constants               | SCREAMING_SNAKE_CASE                                       |
+| Type parameters         | concise UpperCamelCase, usually single uppercase letter: T |
+| Lifetimes               | short lowercase, usually a single letter: 'a, 'de, 'src    |
+| Features                | unclear but see C-FEATURE                                  |
+
+### as_, to_, into_
+
+Преобразования должны предоставляться в виде методов со следующими префиксами имен:
+
+| Префикс | Стоимость              | Владение                                                                                                                                     |
+|---------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| as_     | бесплатный, свободный  | заимствованный -> заимствованный                                                                                                             |
+| to_     | дорогой, ценный        | заимствованный -> заимствованный; заимствованный -> принадлежащий (типы, не являющиеся копиями); принадлежащий -> принадлежащий (типы копий) |
+| into_   | изменяемый, переменная | принадлежащий -> принадлежащий (типы, не являющиеся копиями)                                                                                 |
+
+Например:
+
+- str::as_bytes() предоставляет представление a str в виде фрагмента байтов UTF-8, который является бесплатным. Входные
+  данные являются заимствованными &str, а выходные данные являются заимствованными &[u8].
+- Path::to_str выполняет дорогостоящую проверку UTF-8 на байты пути к операционной системе. Входные и выходные данные
+  заимствованы. Было бы неправильно вызывать это as_str потому что этот метод имеет нетривиальные затраты во время
+  выполнения.
+- str::to_lowercase() выдает корректный в юникоде эквивалент a в нижнем регистре str, который включает перебор символов
+  строки и может потребовать выделения памяти. Входные данные являются заимствованными &str, а выходные - принадлежащими
+  String.
+- f64::to_radians() преобразует величину с плавающей запятой из градусов в радианы. Входные данные являются f64.
+  Передача ссылки &f64 не гарантируется, поскольку f64 копирование обходится дешево. Вызов функции into_radians может
+  ввести в заблуждение, поскольку входные данные не используются.
+- String::into_bytes() извлекает базовую Vec<u8> часть String, которая является бесплатной. Он принимает права
+  собственности на String и возвращает принадлежащий Vec<u8>.
+- BufReader::into_inner() становится владельцем буферизованного считывателя и извлекает базовый считыватель, который
+  является бесплатным. Данные в буфере удаляются.
+- BufWriter::into_inner() получает право собственности на буферизованное средство записи и извлекает базовое средство
+  записи, что требует потенциально дорогостоящей очистки любых буферизованных данных.
 
 ## Переменные
 
