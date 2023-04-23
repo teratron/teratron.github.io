@@ -242,12 +242,12 @@ fn main() {
 
 ---
 
-- https://doc.rust-lang.org/book/title-page.html
-- https://doc.rust-lang.org/stable/rust-by-example/index.html
-- https://doc.rust-lang.org/reference/introduction.html
-- https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html
-- https://rust-lang.github.io/api-guidelines/naming.html
-- https://rust-cli.github.io/book/tutorial/cli-args.html
+- [https://doc.rust-lang.org/book/title-page.html](https://doc.rust-lang.org/book/title-page.html)
+- [https://doc.rust-lang.org/stable/rust-by-example/index.html](https://doc.rust-lang.org/stable/rust-by-example/index.html)
+- [https://doc.rust-lang.org/reference/introduction.html](https://doc.rust-lang.org/reference/introduction.html)
+- [https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html)
+- [https://rust-lang.github.io/api-guidelines/naming.html](https://rust-lang.github.io/api-guidelines/naming.html)
+- [https://rust-cli.github.io/book/tutorial/cli-args.html](https://rust-cli.github.io/book/tutorial/cli-args.html)
 
 ---
 
@@ -268,6 +268,7 @@ fn main() {
 
 ---
 
+- [https://github.com/rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust)
 - [https://github.com/Eddort/learn-rust-ru](https://github.com/Eddort/learn-rust-ru)
 
 [Назад к перечню шпаргалок][back]
