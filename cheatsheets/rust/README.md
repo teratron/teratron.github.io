@@ -242,12 +242,14 @@ fn main() {
 
 ---
 
-- [https://doc.rust-lang.org/book/title-page.html](https://doc.rust-lang.org/book/title-page.html)
-- [https://doc.rust-lang.org/stable/rust-by-example/index.html](https://doc.rust-lang.org/stable/rust-by-example/index.html)
-- [https://doc.rust-lang.org/reference/introduction.html](https://doc.rust-lang.org/reference/introduction.html)
-- [https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html)
-- [https://rust-lang.github.io/api-guidelines/naming.html](https://rust-lang.github.io/api-guidelines/naming.html)
-- [https://rust-cli.github.io/book/tutorial/cli-args.html](https://rust-cli.github.io/book/tutorial/cli-args.html)
+- [https://doc.rust-lang.org/book](https://doc.rust-lang.org/book/)
+- [https://doc.rust-lang.org/stable/rust-by-example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [https://doc.rust-lang.org/reference](https://doc.rust-lang.org/reference/)
+- [https://doc.rust-lang.org/rustdoc](https://doc.rust-lang.org/rustdoc/)
+- [https://doc.rust-lang.org/std](https://doc.rust-lang.org/std/)
+- [https://doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/)
+- [https://rust-lang.github.io/api-guidelines](https://rust-lang.github.io/api-guidelines/)
+- [https://rust-cli.github.io/book/tutorial](https://rust-cli.github.io/book/tutorial/)
 
 ---
 
@@ -261,7 +263,6 @@ fn main() {
 - [https://lib.rs](https://lib.rs/)
 - [https://docs.rs](https://docs.rs/)
 - [https://programming-idioms.org/cheatsheet/Rust](https://programming-idioms.org/cheatsheet/Rust)
-- []()
 - []()
 - []()
 - []()
