@@ -241,11 +241,43 @@ fn main() {
 }
 ```
 
+### Обобщение кода через типажи
+
+```rust
+pub trait Area {
+    fn area(&self) -> f64;
+}
+
+impl Area for Rectangle {
+    fn area(&self) -> f64 {
+        self.width * self.length
+    }
+}
+
+impl Area for Square {
+    fn area(&self) -> f64 {
+        self.rectangle.area()
+    }
+}
+
+fn main() {
+    let rect1 = Rectangle::new(3., 5.).unwrap();
+    let rect2 = Rectangle::new(4., 6.).unwrap();
+
+    let sq1 = Square::new(8.).unwrap();
+    let sq2 = Square::new(4.).unwrap();
+
+    let figures_with_area: [&Area; 4] = [&rect1, &rect2, &sq1, &sq2];
+
+    for f in figures_with_area.iter() {
+        println!("Площадь равна {}", f.area());
+    }
+}
+```
+
 ### Наследование trait
 
 ```rust
-use std::f32::consts::PI;
-
 trait Shape {
     // У любой формы можно посчитать площадь.
     fn area(&self) -> f32;
@@ -320,6 +352,55 @@ fn areas_sum(shape1: &dyn Shape, shape2: &dyn Shape) -> f32 {
 fn foo(rectangle: Rectangle, circle: Circle) {
     // Можем передать ссылки на две разные фигуры.
     let sum = areas_sum(&rectangle, &circle);
+}
+```
+
+### Display
+
+Типаж для печати объектов в терминал определён в стандартной библиотеке Rust следующим образом:
+
+```rust
+pub trait Display {
+    fn fmt(&self, f: &mut Formatter) -> Result<(), Error>;
+}
+```
+
+```rust
+use std::fmt;
+
+struct Rectangle {
+    width: f64,
+    length: f64,
+}
+
+pub struct Square {
+    rectangle: Rectangle,
+}
+
+impl fmt::Display for Rectangle {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "прямоугольник({}, {})", self.width, self.length)
+    }
+}
+
+impl fmt::Display for Square {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "квадрат({}, {})", self.rectangle.width, self.rectangle.length)
+    }
+}
+
+fn main() {
+    let rect1 = Rectangle::new(3., 5.).unwrap();
+    let rect2 = Rectangle::new(4., 6.).unwrap();
+
+    let sq1 = Square::new(8.).unwrap();
+    let sq2 = Square::new(4.).unwrap();
+
+    let figures_with_display: [&Display; 4] = [&rect1, &rect2, &sq1, &sq2];
+
+    for f in figures_with_display.iter() {
+        println!("Фигура: {}", f);
+    }
 }
 ```
 

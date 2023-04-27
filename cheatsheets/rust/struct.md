@@ -42,8 +42,45 @@ impl Foo {
 }
 ```
 
-```rust
+### Простое наследование
 
+```rust
+struct Rectangle {
+    width: f64,
+    length: f64,
+}
+
+impl Rectangle {
+    pub fn new(width: f64, length: f64) -> Option<Rectangle> {
+        if width > 0. && length > 0. {
+            Some( Rectangle { length, width } )
+        } else {
+            None
+        }
+    }
+
+    pub fn area(&self) -> f64 {
+        self.width * self.length
+    }
+}
+
+pub struct Square {
+    rectangle: Rectangle,
+}
+
+impl Square {
+    pub fn new(side: f64) -> Option<Square> {
+        if side > 0. {
+            Some( Square { rectangle: Rectangle { length: side, width: side } } )
+        } else {
+            None
+        }
+    }
+
+    pub fn area(&self) -> f64 {
+        self.rectangle.area()
+    }
+}
 ```
 
 ```rust
