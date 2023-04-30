@@ -18,10 +18,20 @@ let absent_number: Option<i32> = None;
 ```
 
 ```rust
+let s = Some(String::from("Hello!"));
 
+if let Some(_s) = s {
+    println!("found a string");
+}
+
+// или
+
+if let Some(_) = s {
+    println!("found a string");
+}
+
+println!("{:?}", s);
 ```
-
-### blank
 
 ```rust
 

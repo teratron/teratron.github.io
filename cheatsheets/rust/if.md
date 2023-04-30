@@ -69,6 +69,34 @@ match coin {
 }
 ```
 
+```rust
+fn foo(_: i32, y: i32) {
+    println!("This code only uses the y parameter: {}", y);
+}
+
+fn main() {
+    foo(3, 4);
+}
+```
+
+```rust
+let s = Some(String::from("Hello!"));
+
+if let Some(_s) = s {
+    println!("found a string");
+}
+
+println!("{:?}", s);
+```
+
+```rust
+
+```
+
+```rust
+
+```
+
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
