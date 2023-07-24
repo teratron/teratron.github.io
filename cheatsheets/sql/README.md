@@ -370,96 +370,133 @@ exec sp_rename '[schema.old_table_name]', 'new_table_name'
 exec sp_rename 'table_name.[oldColumName]' , 'newColumName', 'COLUMN'
 ```
 
-SCOPE_IDENTITY
--- returns the last IDENTITY value inserted into an IDENTITY column in the same scope
--- returns the last identity value generated for any table in the current session and the current scope
--- A scope is a module; a Stored Procedure, trigger, function, or batch
+### SCOPE_IDENTITY
+
+```sql
+-- возвращает последнее значение IDENTITY, вставленное в столбец IDENTITY в той же области
+-- возвращает последнее значение идентификатора, сгенерированное для любой таблицы в текущем сеансе и текущей области
+-- область видимости — это модуль; хранимая процедура, триггер, функция или пакет
 
 SELECT SCOPE_IDENTITY()
-НАЙТИ, КАКОЙ ТАБЛИЦЕ ПРИНАДЛЕЖИТ ОГРАНИЧЕНИЕ
+```
+
+### Найти, какой таблице принадлежит ограничение
+
+```sql
 SELECT
-OBJECT_NAME(o.parent_object_id)
+    OBJECT_NAME(o.parent_object_id)
 FROM
-sys.objects o
+    sys.objects o
 WHERE
-o.name = 'MyConstraintName' AND o.parent_object_id <> 0
-TRY-CATCH
+    o.name = 'MyConstraintName' AND o.parent_object_id <> 0
+```
+
+### TRY-CATCH
+
+```sql
 BEGIN TRY
-BEGIN TRANSACTION
+    BEGIN TRANSACTION
 
     -- Do something here
 
     COMMIT TRANSACTION
-
 END TRY
 BEGIN CATCH
-DECLARE
-@ErrorMessage NVARCHAR(4000),
-@ErrorSeverity INT,
-@ErrorState INT;
-SELECT
-@ErrorMessage = ERROR_MESSAGE(),
-@ErrorSeverity = ERROR_SEVERITY(),
-@ErrorState = ERROR_STATE();
-RAISERROR (
-@ErrorMessage,
-@ErrorSeverity,
-@ErrorState
-);
+    DECLARE
+        @ErrorMessage NVARCHAR(4000),
+        @ErrorSeverity INT,
+        @ErrorState INT;
+    SELECT
+        @ErrorMessage = ERROR_MESSAGE(),
+        @ErrorSeverity = ERROR_SEVERITY(),
+        @ErrorState = ERROR_STATE();
+    RAISERROR (
+        @ErrorMessage,
+        @ErrorSeverity,
+        @ErrorState
+    );
 
     ROLLBACK TRANSACTION
-
 END CATCH
-Условия с переменными WHERE CLAUSE
+```
+
+### Условия с переменными WHERE CLAUSE
+
+```sql
 -- using '=' operator
 WHERE Column = IIF(@Variable IS NULL ,@Variable, Column)
 
 -- using 'LIKE, IN, etc.'
 WHERE (@Variable IS NULL OR Column LIKE '%' + @Variable + '%' )
-ВСТАВИТЬ РАЗДЕЛЕННУЮ ЗАПЯТОЙ СТРОКУ В ТАБЛИЦУ
+```
+
+### Вставить разделенную запятой строку в таблицу
+
+```sql
 DECLARE @String = '1, 4, 3'
 DECLARE @Tbl TABLE(ID INT);
 
-INSERT INTO @Tbl
-(
-ID
+INSERT INTO @Tbl (
+    ID
 )
-(SELECT value
-FROM STRING_SPLIT(@String, ',')
-WHERE RTRIM(value) <> '');
-UPDATE WITH JOIN
+(
+    SELECT value
+    FROM STRING_SPLIT(@String, ',')
+    WHERE RTRIM(value) <> ''
+);
+```
+
+### UPDATE с JOIN
+
+```sql
 UPDATE Table1
 SET Table1.Column = B.Column
 FROM Table1 A
-INNER JOIN Table2 B
-ON A.ID = B.ID
-DELETE WITH JOIN
+    INNER JOIN Table2 B
+        ON A.ID = B.ID
+```
+
+### DELETE с JOIN
+
+```sql
 DELETE A
 FROM Table1 A
 INNER JOIN Table2 B
-ON B.Id = A.Id
+    ON B.Id = A.Id
 WHERE A.Column = 1 AND B.Column = 2
-UPDATE/INSERT IDENTITY COLUMN
+```
+
+### UPDATE/INSERT identity column
+
+```sql
 SET IDENTITY_INSERT YourTable ON
 
 -- UPDATE/INSERT STATEMENT HERE
 
 SET IDENTITY_INSERT YourTable OFF
-Находим Foreign Key ограничения ссылок таблицы
+```
+
+### Находим Foreign Key ограничения ссылок таблицы
+
+```sql
 SELECT
-OBJECT_NAME(f.parent_object_id) TableName,
-COL_NAME(fc.parent_object_id,fc.parent_column_id) ColName
+    OBJECT_NAME(f.parent_object_id) TableName,
+    COL_NAME(fc.parent_object_id,fc.parent_column_id) ColName
 FROM
-sys.foreign_keys AS f
+    sys.foreign_keys AS f
 INNER JOIN
-sys.foreign_key_columns AS fc
-ON f.OBJECT_ID = fc.constraint_object_id
+    sys.foreign_key_columns AS fc
+        ON f.OBJECT_ID = fc.constraint_object_id
 INNER JOIN
-sys.tables t
-ON t.OBJECT_ID = fc.referenced_object_id
+    sys.tables t
+        ON t.OBJECT_ID = fc.referenced_object_id
 WHERE
-OBJECT_NAME (f.referenced_object_id) = 'Table_Name'
-Парсим JSON файл в таблицу
+    OBJECT_NAME (f.referenced_object_id) = 'Table_Name'
+```
+
+### Парсим JSON файл в таблицу
+
+```sql
 -- JSON Data sample:
 -- {
 -- "label": "test ",
@@ -475,110 +512,168 @@ DECLARE @tbl TABLE (id INT, label VARCHAR(500));
 DECLARE @json VARCHAR(max);
 
 SELECT @json = BulkColumn
-FROM OPENROWSET (BULK 'C:\jsonFile.json', SINGLE_CLOB) as j
-
-INSERT INTO @tbl (id, label)
-SELECT [value], label
-FROM OPENJSON(@json)
-WITH ([value] int,
-label nvarchar(max))
+    FROM OPENROWSET (BULK 'C:\jsonFile.json', SINGLE_CLOB) as j
+    
+    INSERT INTO @tbl (id, label)
+    SELECT [value], label
+    FROM OPENJSON(@json)
+    WITH ([value] int,
+        label nvarchar(max))
 
 SELECT * FROM @tbl
-Добавляем FK в существующую колонку
+```
+
+### Добавляем FK в существующую колонку
+
+```sql
 ALTER TABLE [Table1]
 ADD CONSTRAINT FK_Table2_Id FOREIGN KEY (Table1_Id)
-REFERENCES Table2(Table2_Id);
-Список всех пользовательских функций по типу
+    REFERENCES Table2(Table2_Id);
+```
+
+### Список всех пользовательских функций по типу
+
+```sql
 SELECT [Name], [Definition], [Type_desc]
-FROM sys.sql_modules m
+    FROM sys.sql_modules m
 INNER JOIN sys.objects o
-ON m.object_id=o.object_id
+    ON m.object_id=o.object_id
 WHERE [Type_desc] like '%function%'
-Обновляем и изменяем часть строки
+```
+
+### Обновляем и изменяем часть строки
+
+```sql
 UPDATE dbo.[Table]
 SET Value = REPLACE(Value, '123\', '')
 WHERE ID <=4
-Генерируем случайные INT SQL
----- Create the variables for the random number generation
+```
+
+### Генерируем случайные INT SQL
+
+```sql
+--- Создайте переменные для генерации случайных чисел
 DECLARE @Random INT;
 DECLARE @Upper INT;
 DECLARE @Lower INT
 
----- This will create a random number between 1 and 999
-SET @Lower = 1 ---- The lowest random number
-SET @Upper = 999 ---- The highest random number
+--- Это создаст случайное число от 1 до 999
+SET @Lower = 1   --- Наименьшее случайное число
+SET @Upper = 999 --- Самое большое случайное число
 SELECT @Random = ROUND(((@Upper - @Lower -1) * RAND() + @Lower), 0)
 SELECT @Random
-Создаем случайные ДАТЫ между двумя диапазонами
+```
+
+### Создаем случайные ДАТЫ между двумя диапазонами
+
+```sql
 DECLARE @FromDate DATE = '2019-09-01';
 DECLARE @ToDate DATE = '2019-12-31';
 
 SELECT DATEADD(DAY, RAND(CHECKSUM(NEWID()))*(1+DATEDIFF(DAY, @FromDate, @ToDate)), @FromDate)
-Получаем Список таблиц
+```
+
+### Получаем список таблиц
+
+```sql
 SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'
-Проверить, существует ли таблица в базе данных
+```
+
+### Проверить, существует ли таблица в базе данных
+
+```sql
 IF EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'Table')
 BEGIN
 -- exists
 END
-Сгенерировать 6-значный уникальный номер
+```
+
+### Сгенерировать 6-значный уникальный номер
+
+```sql
 SELECT LEFT(CAST(RAND()*1000000000+999999 AS INT),6) AS OTP
-Ищем table name
+```
+
+### Ищем table name
+
+```sql
 SELECT * FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_NAME LIKE '%%'
-Поиск между двумя датами
---convert to date to ignore time
+```
+
+### Поиск между двумя датами
+
+```sql
+--- convert to date to ignore time
 SELECT * FROM Table T
 WHERE CONVERT(DATE,T.DateColumn) BETWEEN COALESCE(CONVERT(DATE,@DateFrom), CONVERT(DATE,T.DateColumn)) AND COALESCE(
 CONVERT(DATE,@DateTo), CONVERT(DATE,T.DateColumn))
-Формат дат
---Output: 21/03/2022
+```
+
+### Формат дат
+
+```sql
+-- Output: 21/03/2022
 SELECT FORMAT (getdate(), 'dd/MM/yyyy ') as date
 
---Output: 21/03/2022, 11:36:14
+-- Output: 21/03/2022, 11:36:14
 SELECT FORMAT (getdate(), 'dd/MM/yyyy, hh:mm:ss ') as date
 
---Output: Wednesday, March, 2022
+-- Output: Wednesday, March, 2022
 SELECT FORMAT (getdate(), 'dddd, MMMM, yyyy') as date
 
---Output: Mar 21 2022
+-- Output: Mar 21 2022
 SELECT FORMAT (getdate(), 'MMM dd yyyy') as date
 
---Output: 03.21.22
+-- Output: 03.21.22
 SELECT FORMAT (getdate(), 'MM.dd.yy') as date
 
---Output: 03-21-22
+-- Output: 03-21-22
 SELECT FORMAT (getdate(), 'MM-dd-yy') as date
 
---Output: 11:36:14 AM
+-- Output: 11:36:14 AM
 SELECT FORMAT (getdate(), 'hh:mm:ss tt') as date
 
---Output: 03/21/2022
+-- Output: 03/21/2022
 SELECT FORMAT (getdate(), 'd','us') as date
-Триггеры
+```
+
+### Триггеры
+
+```sql
 create trigger t1 on table1
 after insert
 as
 begin
-insert into Audit
-(Column)
-select 'Insert New Row with Key' + cast(t.Id as nvarchar(10)) + 'in table1'
-from table1 t where Id IN (select Id from inserted)
+    insert into Audit
+    (Column)
+    select 'Insert New Row with Key' + cast(t.Id as nvarchar(10)) + 'in table1'
+    from table1 t where Id IN (select Id from inserted)
 end
 go
-Найти все таблицы, содержащие столбец с указанным именем
-SELECT c.name AS 'ColumnName'
-,t.name AS 'TableName'
+```
+
+### Найти все таблицы, содержащие столбец с указанным именем
+
+```sql
+SELECT c.name AS 'ColumnName', t.name AS 'TableName'
 FROM sys.columns c
 JOIN sys.tables t ON c.object_id = t.object_id
 WHERE c.name LIKE '%COLUMN_NAME%'
-ORDER BY TableName
-,ColumnName;
-Скрипт для создания отбрасываемых всех таблиц с префиксом
+ORDER BY TableName, ColumnName;
+```
+
+### Скрипт для создания отбрасываемых всех таблиц с префиксом
+
+```sql
 SELECT 'DROP TABLE ' + TABLE_NAME + ''
 FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_NAME LIKE 'PREFIX_%'
-Скрипт для изменения таблиц, чтобы удалить все ограничения
+```
+
+### Скрипт для изменения таблиц, чтобы удалить все ограничения
+
+```sql
 DECLARE @SQL varchar(4000)=''
 SELECT @SQL =
 @SQL + 'ALTER TABLE ' + s.name+'.'+t.name + ' DROP CONSTRAINT [' + RTRIM(f.name) +'];' + CHAR(13)
@@ -590,39 +685,44 @@ WHERE t.name LIKE 'PREFIX_%'
 --EXEC (@SQL)
 
 PRINT @SQL
-Cursor
-Перебрать набор данных
+```
+
+## Cursor
+
+### Перебрать набор данных
+
+```sql
 -- two variables to hold product name and list price (gonna be used on the loop)
 DECLARE
-@product_name VARCHAR(MAX),
-@list_price DECIMAL;
+    @product_name VARCHAR(MAX),
+    @list_price DECIMAL;
 
 --defines the result set for the cursor
 DECLARE cursor_product CURSOR
 FOR SELECT
-product_name,
-list_price
-FROM
-dbo.products;
+        product_name,
+        list_price
+    FROM
+        dbo.products;
 
 -- open cursor
 OPEN cursor_product;
 
 --fetch a row from the cursor into one or more variables
 FETCH NEXT FROM cursor_product INTO
-@product_name,
-@list_price;
+    @product_name,
+    @list_price;
 
 -- loop through the cursor
 WHILE @@FETCH_STATUS = 0
-BEGIN
--- use current product_name and list_price from current index of the cursor in the loop
-PRINT @product_name + CAST(@list_price AS varchar);
--- fetch next row from the cursor
-FETCH NEXT FROM cursor_product INTO
-@product_name,
-@list_price;
-END;
+    BEGIN
+        -- use current product_name and list_price from current index of the cursor in the loop
+        PRINT @product_name + CAST(@list_price AS varchar);
+        -- fetch next row from the cursor
+        FETCH NEXT FROM cursor_product INTO
+        @product_name,
+        @list_price;
+    END;
 
 -- close cursor
 CLOSE cursor_product;
@@ -649,6 +749,9 @@ Group By
 SELECT age, COUNT(age) FROM users GROUP BY age;
 SELECT age, COUNT(age) FROM users WHERE age > 20 GROUP BY age;
 SELECT age, COUNT(age) FROM users GROUP BY age HAVING count(age) >=2;
+```
+
+[https://uproger.com/shpargalki-sql-2023/](https://uproger.com/shpargalki-sql-2023/)
 
 [Назад к перечню шпаргалок][back]
 
