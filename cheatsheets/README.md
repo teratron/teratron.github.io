@@ -22,7 +22,9 @@
 
 ### [SASS](sass)
 
-### [MySQL](mysql)
+### [SQL](sql)
+
+- ### [MySQL](mysql)
 
 ### [Makefile](makefile)
 
