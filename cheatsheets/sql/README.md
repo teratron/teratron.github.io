@@ -436,9 +436,7 @@ WHERE (@Variable IS NULL OR Column LIKE '%' + @Variable + '%' )
 DECLARE @String = '1, 4, 3'
 DECLARE @Tbl TABLE(ID INT);
 
-INSERT INTO @Tbl (
-    ID
-)
+INSERT INTO @Tbl (ID)
 (
     SELECT value
     FROM STRING_SPLIT(@String, ',')
@@ -552,14 +550,14 @@ WHERE ID <=4
 ### Генерируем случайные INT SQL
 
 ```sql
---- Создайте переменные для генерации случайных чисел
+-- Создайте переменные для генерации случайных чисел
 DECLARE @Random INT;
 DECLARE @Upper INT;
 DECLARE @Lower INT
 
---- Это создаст случайное число от 1 до 999
-SET @Lower = 1   --- Наименьшее случайное число
-SET @Upper = 999 --- Самое большое случайное число
+-- Это создаст случайное число от 1 до 999
+SET @Lower = 1   -- Наименьшее случайное число
+SET @Upper = 999 -- Самое большое случайное число
 SELECT @Random = ROUND(((@Upper - @Lower -1) * RAND() + @Lower), 0)
 SELECT @Random
 ```
@@ -604,7 +602,7 @@ WHERE TABLE_NAME LIKE '%%'
 ### Поиск между двумя датами
 
 ```sql
---- convert to date to ignore time
+-- convert to date to ignore time
 SELECT * FROM Table T
 WHERE CONVERT(DATE,T.DateColumn) BETWEEN COALESCE(CONVERT(DATE,@DateFrom), CONVERT(DATE,T.DateColumn)) AND COALESCE(
 CONVERT(DATE,@DateTo), CONVERT(DATE,T.DateColumn))
@@ -682,7 +680,7 @@ INNER JOIN sys.foreign_keys f ON f.parent_object_id = t.object_id
 INNER JOIN sys.schemas s ON s.schema_id = f.schema_id
 WHERE t.name LIKE 'PREFIX_%'
 
---EXEC (@SQL)
+-- EXEC (@SQL)
 
 PRINT @SQL
 ```
@@ -697,7 +695,7 @@ DECLARE
     @product_name VARCHAR(MAX),
     @list_price DECIMAL;
 
---defines the result set for the cursor
+-- defines the result set for the cursor
 DECLARE cursor_product CURSOR
 FOR SELECT
         product_name,
@@ -708,7 +706,7 @@ FOR SELECT
 -- open cursor
 OPEN cursor_product;
 
---fetch a row from the cursor into one or more variables
+-- fetch a row from the cursor into one or more variables
 FETCH NEXT FROM cursor_product INTO
     @product_name,
     @list_price;
