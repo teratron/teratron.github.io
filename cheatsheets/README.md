@@ -14,6 +14,8 @@
 
 ### [Python](python)
 
+### [Mojo](mojo)
+
 ### [Git](git)
 
 ### [NPM](npm)

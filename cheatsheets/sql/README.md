@@ -220,15 +220,13 @@ SELECT column_names FROM table1 INNER JOIN table2 ON table1.column_name=table2.c
 SELECT table1.column_name1, table2.column_name2, table3.column_name3 FROM ((table1 INNER JOIN table2 ON relationship) INNER JOIN table3 ON relationship);
 ```
 
-**LEFT (OUTER) JOIN** возвращает все записи из левой таблицы (таблица1) и соответствующие записи из правой таблицы (
-таблица2).
+**LEFT (OUTER) JOIN** возвращает все записи из левой таблицы (1) и соответствующие записи из правой таблицы (2).
 
 ```sql
 SELECT column_names FROM table1 LEFT JOIN table2 ON table1.column_name=table2.column_name;
 ```
 
-**RIGHT (OUTER) JOIN** возвращает все записи из правой таблицы (таблица2) и соответствующие записи из левой таблицы (
-таблица1).
+**RIGHT (OUTER) JOIN** возвращает все записи из правой таблицы (2) и соответствующие записи из левой таблицы (1).
 
 ```sql
 SELECT column_names FROM table1 RIGHT JOIN table2 ON table1.column_name=table2.column_name;
