@@ -2,42 +2,6 @@
 
 [Назад][back]
 
-### Базовый синтаксис исключений
-
-```python
-try:
-   # Действия, которые необходимо выполнить
-   pass
-except  (Exception1[, Exception2[,...ExceptionN]]]) as exc_obj:
-   # Обработка указанных исключений
-   # exc_obj содержит экземпляр исключения
-   pass
-else:
-   # Блок вызывается в случае если в процессе выполнения не возбуждалось исключений. 
-   pass
-finally:
-   # Блок выполняется всегда.
-   pass
-```
-
-### Несколько обработчиков исключений
-
-```python
-try:
-   # Действия, которые необходимо выполнить
-   pass
-except ValueError:
-   # обработка исключения ValueError
-   pass
-except (TypeError, ZeroDivisionError):
-   # Обработка нескольких исключений:
-   # TypeError and ZeroDivisionError
-   pass
-except:
-   # Обработка всех остальных типов исключений
-   pass
-```
-
 ### Иерархия встроенных (built-in) исключений
 
 ```
@@ -105,6 +69,42 @@ BaseException
            +-- UnicodeWarning
            +-- BytesWarning
            +-- ResourceWarning
+```
+
+### Базовый синтаксис исключений
+
+```python
+try:
+   # Действия, которые необходимо выполнить
+   pass
+except  (Exception1[, Exception2[,...ExceptionN]]]) as exc_obj:
+   # Обработка указанных исключений
+   # exc_obj содержит экземпляр исключения
+   pass
+else:
+   # Блок вызывается в случае если в процессе выполнения не возбуждалось исключений. 
+   pass
+finally:
+   # Блок выполняется всегда.
+   pass
+```
+
+### Несколько обработчиков исключений
+
+```python
+try:
+   # Действия, которые необходимо выполнить
+   pass
+except ValueError:
+   # обработка исключения ValueError
+   pass
+except (TypeError, ZeroDivisionError):
+   # Обработка нескольких исключений:
+   # TypeError and ZeroDivisionError
+   pass
+except:
+   # Обработка всех остальных типов исключений
+   pass
 ```
 
 ### Примеры использования встроенных исключений
