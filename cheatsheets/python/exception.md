@@ -205,6 +205,173 @@ except NetworkError as e:
     print('Второй обработчик, id исключения:', id(e))
 ```
 
+### Определение пользовательских исключений
+
+```python
+# Определяем пользовательское исключение
+class InvalidAgeException(Exception):
+    "Raised when the input value is less than 18"
+    pass
+ 
+# Нужно угадать это число
+number = 18
+ 
+try:
+    input_num = int(input("Enter a number: "))
+    if input_num < number:
+        raise InvalidAgeException
+    else:
+        print("Eligible to Vote")
+        
+except InvalidAgeException:
+    print("Exception occurred: Invalid Age")
+
+# Результат:
+# Enter a number: 45
+# Eligible to Vote
+
+# Результат:
+# Enter a number: 14
+# Exception occurred: Invalid Age
+```
+
+```python
+# определение пользовательских исключений
+class Error(Exception):
+    """Базовый класс для других исключений"""
+    pass
+
+class ValueTooSmallError(Error):
+    """Вызывается, когда входное значение мало"""
+    pass
+
+class ValueTooLargeError(Error):
+    """Вызывается, когда входное значение велико"""
+    pass
+
+# число, которое нужно угадать
+number = 10
+
+# игра продолжается до тех пор, 
+# пока пользователь его не угадает
+while True:
+    try:
+        i_num = int(input("Ввести число: "))
+        if i_num < number:
+            raise ValueTooSmallError
+        elif i_num > number:
+            raise ValueTooLargeError
+        break
+    except ValueTooSmallError:
+        print("Это число меньше загаданного, попробуйте еще раз!\n")
+    except ValueTooLargeError:
+        print("Это число больше загаданного, попробуйте еще раз!\n")
+
+print("Поздравляю! Вы правильно угадали.")
+
+# Результат:
+# Ввести число: 12
+# Это число больше загаданного, попробуйте еще раз!
+
+# Ввести число: 0
+# Это число меньше загаданного, попробуйте еще раз!
+
+# Ввести число: 8
+# Это число меньше загаданного, попробуйте еще раз!
+
+# Ввести число: 10
+# Поздравляю! Вы правильно угадали.
+```
+
+### Кастомизация классов исключений
+
+```python
+class SalaryNotInRangeError(Exception):
+    """Исключение, вызванное ошибками во входном значении salary
+ 
+    Атрибуты:
+        salary -- значение salary, которое вызвало ошибку
+        message -- объяснение ошибки
+    """
+ 
+    def __init__(self, salary, message="Salary is not in (5000, 15000) range"):
+        self.salary = salary
+        self.message = message
+        super().__init__(self.message)
+
+    # переопределяем метод '__str__'
+    def __str__(self):
+        return f'{self.salary} -> {self.message}'
+
+salary = int(input("Enter salary amount: "))
+if not 5000 < salary < 15000:
+    raise SalaryNotInRangeError(salary)
+
+# Результат:
+# Enter salary amount: 2000
+# Traceback (most recent call last):
+# File "<string>", line 17, in <module>
+# raise SalaryNotInRangeError(salary)
+# __main__.SalaryNotInRangeError: Salary is not in (5000, 15000) range
+```
+
+```python
+class Error(Exception):
+    """Базовый класс для исключений в этом модуле."""
+    pass
+
+class InputError(Error):
+    """Исключение для ошибок во входных данных.
+    Attributes:
+        expression -- выражение, в котором произошла ошибка
+        message -- объяснение ошибки
+    """
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message
+
+
+x = input("Ведите положительное целое число: ")
+try:
+    x = int(x)
+    if x < 0:
+        raise InputError(f'!!! x = input({x})', 
+                         '-> Допустимы только положительные числа.')
+except ValueError:
+    print("Error type of value!")
+except InputError as e:
+    print(e.args[0])
+    print(e.args[1])
+else:
+    print(x)
+
+# Результат:
+# Ведите положительное целое число: 3
+# 3
+
+# Ведите положительное целое число: 7.9
+# Error type of value!
+
+# Ведите положительное целое число: -5
+# !!! x = input(-5)
+# -> Допустимы только положительные числа.
+```
+
+### Перехват пользовательского исключения
+
+```python
+import sqlite3 
+
+class MyError(Exception):
+     """Could not connect to db"""
+     pass
+
+try:         
+    conn= sqlite3.connect('database.sqlite')
+except sqlite3.Error as e:
+    raise MyError(f'Could not connect to db: {e.value}')
+```
+
 [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
