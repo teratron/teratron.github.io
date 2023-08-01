@@ -2,7 +2,7 @@
 
 [Назад][back]
 
-### Иерархия встроенных (built-in) исключений
+### Иерархия встроенных (built-in) исключений  {#exception-id}
 
 ```
 BaseException
@@ -89,6 +89,83 @@ finally:
    pass
 ```
 
+```python
+try:
+    number = int(input("Введите число: "))
+    print("Введенное число:", number)
+except:
+    print("Преобразование прошло неудачно")
+finally:
+    print("Блок try завершил выполнение")
+
+print("Завершение программы")
+```
+
+### else
+
+```python
+try:
+    print(a/b)
+except ZeroDivisionError:
+    print("Ошибка: произошло деление на 0")
+else:
+    print("Ошибок не найдено")
+```
+
+```python
+try:
+    number1 = int(input("Введите первое число: "))
+    number2 = int(input("Введите второе число: "))
+    print("Результат деления:", number1/number2)
+except ValueError:
+    print("Преобразование прошло неудачно")
+except ZeroDivisionError:
+    print("Попытка деления числа на ноль")
+except BaseException:
+    print("Общее исключение")
+```
+
+```python
+try:
+    number1 = int(input("Введите первое число: "))
+    number2 = int(input("Введите второе число: "))
+    print("Результат деления:", number1/number2)
+except (ZeroDivisionError, ValueError):    #  обработка двух типов исключений - ZeroDivisionError и ValueError
+    print("Попытка деления числа на ноль или некорректный ввод")
+```
+
+### Получение информации об исключении
+
+С помощью оператора `as` мы можем передать всю информацию об исключении в переменную:
+
+```python
+try:
+    number = int(input("Введите число: "))  # Введите число: 'fdsf'
+    print("Введенное число:", number)
+except ValueError as e:
+    print("Сведения об исключении", e)      # invalid literal for int() with base 10: 'fdsf'
+```
+
+### Генерация исключений и оператор raise {#raise-id}
+
+Оператору `raise` передается объект `BaseException` - в данном случае объект `Exception`.
+В конструктор этого типа можно ему передать сообщение, которое затем можно вывести пользователю.
+В итоге, если number2 будет равно 0, то сработает оператор `raise`, который сгенерирует исключение.
+В итоге управление программой перейдет к блоку `except`, который обрабатывает исключения типа `Exception`:
+
+```python
+try:
+    number1 = int(input("Введите первое число: "))
+    number2 = int(input("Введите второе число: "))
+    if number2 == 0:
+        raise Exception("Второе число не должно быть равно 0")
+    print("Результат деления двух чисел:", number1/number2)
+except ValueError:
+    print("Введены некорректные данные")
+except Exception as e:
+    print(e)
+```
+
 ### Несколько обработчиков исключений
 
 ```python
@@ -154,6 +231,8 @@ except RuntimeError as e:
     print("Обработана RuntimeError:", e)
 except NetworkError as e:
     print("Обработана NetworkError:", e)
+
+# Обработана RuntimeError: Exception text
 ```
 
 ```python
@@ -167,6 +246,8 @@ except NetworkError as e:
     print("Обработана NetworkError:", e)
 except RuntimeError as e:
     print("Обработана RuntimeError:", e)
+
+# Обработана NetworkError: Exception text
 ```
 
 ### Каскадная обработка исключений
@@ -227,10 +308,10 @@ except InvalidAgeException:
     print("Exception occurred: Invalid Age")
 
 # Результат:
+
 # Enter a number: 45
 # Eligible to Vote
 
-# Результат:
 # Enter a number: 14
 # Exception occurred: Invalid Age
 ```
@@ -270,6 +351,7 @@ while True:
 print("Поздравляю! Вы правильно угадали.")
 
 # Результат:
+
 # Ввести число: 12
 # Это число больше загаданного, попробуйте еще раз!
 
@@ -281,6 +363,39 @@ print("Поздравляю! Вы правильно угадали.")
 
 # Ввести число: 10
 # Поздравляю! Вы правильно угадали.
+```
+
+```python
+class PersonAgeException(Exception):
+    def __init__(self, age, minage, maxage):
+        self.age = age
+        self.minage = minage
+        self.maxage = maxage
+
+    def __str__(self):
+        return f"Недопустимое значение: {self.age}. " \
+               f"Возраст должен быть в диапазоне от {self.minage} до {self.maxage}"
+
+class Person:
+    def __init__(self, name, age):
+        self.__name = name          # устанавливаем имя
+        minage, maxage = 1, 110
+        if minage < age < maxage:   # устанавливаем возраст, если передано корректное значение
+            self.__age = age
+        else:                       # иначе генерируем исключение
+            raise PersonAgeException(age, minage, maxage)
+
+    def display_info(self):
+        print(f"Имя: {self.__name}  Возраст: {self.__age}")
+
+try:
+    tom = Person("Tom", 37)
+    tom.display_info()  # Имя: Tom  Возраст: 37
+
+    bob = Person("Bob", -23)
+    bob.display_info()
+except PersonAgeException as e:
+    print(e)            # Недопустимое значение: -23. Возраст должен быть в диапазоне от 1 до 110
 ```
 
 ### Кастомизация классов исключений
@@ -346,6 +461,7 @@ else:
     print(x)
 
 # Результат:
+
 # Ведите положительное целое число: 3
 # 3
 
@@ -367,7 +483,7 @@ class MyError(Exception):
      pass
 
 try:         
-    conn= sqlite3.connect('database.sqlite')
+    conn = sqlite3.connect('database.sqlite')
 except sqlite3.Error as e:
     raise MyError(f'Could not connect to db: {e.value}')
 ```
