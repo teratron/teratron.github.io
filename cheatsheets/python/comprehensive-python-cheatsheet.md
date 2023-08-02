@@ -1,10 +1,11 @@
-Comprehensive Python Cheatsheet
-===============================
+# Comprehensive Python Cheatsheet
 
-**Source:** [https://github.com/gto76/python-cheatsheet](https://github.com/gto76/python-cheatsheet)
+[Назад][back]
 
-Contents
---------
+**Источник:** [https://github.com/gto76/python-cheatsheet](https://github.com/gto76/python-cheatsheet)
+
+## Содержание
+
 **&nbsp;&nbsp;&nbsp;** **1. Collections:** **&nbsp;** **[`List`](#list)**__,__ **[`Dictionary`](#dictionary)**__
 ,__ **[`Set`](#set)**__,__ **[`Tuple`](#tuple)**__,__ **[`Range`](#range)**__,__ **[`Enumerate`](#enumerate)**__
 ,__ **[`Iterator`](#iterator)**__,__ **[`Generator`](#generator)**__.__  
@@ -117,13 +118,16 @@ value = <dict>.pop(key)                         # Removes item or raises KeyErro
 ### Counter
 
 ```python
->>> from collections import Counter
->>> colors = ['blue', 'blue', 'blue', 'red', 'red']
->>> counter = Counter(colors)
->>> counter['yellow'] += 1
+from collections import Counter
+
+colors = ['blue', 'blue', 'blue', 'red', 'red']
+counter = Counter(colors)
+counter['yellow'] += 1
+
 Counter({'blue': 3, 'red': 2, 'yellow': 1})
->>> counter.most_common()[0]
-('blue', 3)
+counter.most_common()[0]
+
+# ('blue', 3)
 ```
 
 Set
@@ -289,7 +293,7 @@ from types import FunctionType, MethodType, LambdaType, GeneratorType, ModuleTyp
 ### Abstract Base Classes
 
 **Each abstract base class specifies a set of virtual subclasses. These classes are then recognized by isinstance() and
-issubclass() as subclasses of the ABC, although they are really not. ABC can also manually decide whether or not a
+issubclass() as subclasses of the ABC, although they are really not. ABC can also manually decide whether a
 specific class is its virtual subclass, usually based on which methods the class has implemented. For instance, Iterable
 ABC looks for method iter(), while Collection ABC looks for iter(), contains() and len().**
 
@@ -1336,7 +1340,7 @@ class Counter:
 
 ### Context Manager
 
-* **With statements only work with objects that have enter() and exit() special methods.**
+* **With statements only work with objects that have `enter()` and `exit()` special methods.**
 * **Enter() should lock the resources and optionally return an object.**
 * **Exit() should release the resources.**
 * **Any exception that happens inside the with block is passed to the exit() method.**
@@ -2117,7 +2121,8 @@ with <conn>:                                    # Exits the block with commit() 
 <conn>.executemany('<query>', <coll_of_above>)  # Runs execute() multiple times.
 ```
 
-* **Passed values can be of type str, int, float, bytes, None, bool, datetime.date or datetime.datetime.**
+* **Passed values can be of type `str`, `int`, `float`, `bytes`, `None`, `bool`, `datetime.date` or `datetime.datetime`.
+  **
 * **Bools will be stored and returned as ints and dates as [ISO formatted strings](#encode).**
 
 ### Example
@@ -2234,11 +2239,11 @@ b'\x00\x01\x00\x02\x00\x00\x00\x03'
 
 #### Integer types. Use a capital letter for unsigned type. Minimum and standard sizes are in brackets:
 
-* **`'b'` - char (1/1)**
-* **`'h'` - short (2/2)**
-* **`'i'` - int (2/4)**
-* **`'l'` - long (4/4)**
-* **`'q'` - long long (8/8)**
+* **`'b'` - `char` (1/1)**
+* **`'h'` - `short` (2/2)**
+* **`'i'` - `int` (2/4)**
+* **`'l'` - `long` (4/4)**
+* **`'q'` - `long long` (8/8)**
 
 #### Floating point types:
 
@@ -2453,7 +2458,7 @@ Metaprogramming
 
 ### Type
 
-**Type is the root class. If only passed an object it returns its type (class). Otherwise it creates a new class.**
+**Type is the root class. If only passed an object it returns its type (class). Otherwise, it creates a new class.**
 
 ```python
 <class> = type('<class_name>', <tuple_of_parents>, <dict_of_class_attributes>)
@@ -2489,12 +2494,12 @@ class MyMetaClass(type):
   instance (MyMetaClass in our case).**
 * **Like in our case, new() can also be called directly, usually from a new() method of a child
   class (**`def __new__(cls): return super().__new__(cls)`**).**
-* **The only difference between the examples above is that my\_meta\_class() returns a class of type type, while
+* **The only difference between the examples above is that my\_meta\_class() returns a class of type, while
   MyMetaClass() returns a class of type MyMetaClass.**
 
 ### Metaclass Attribute
 
-**Right before a class is created it checks if it has the 'metaclass' attribute defined. If not, it recursively checks
+**Right before a class is created it checks if it has the `metaclass` attribute defined. If not, it recursively checks
 if any of his parents has it defined and eventually comes to type().**
 
 ```python
@@ -2560,7 +2565,7 @@ Coroutines
 ----------
 
 * **Coroutines have a lot in common with threads, but unlike threads, they only give up control when they call another
-  coroutine and they don’t use as much memory.**
+  coroutine, and they don’t use as much memory.**
 * **Coroutine definition starts with `'async'` and its call with `'await'`.**
 * **`'asyncio.run(<coroutine>)'` is the main entry point for asynchronous programs.**
 * **Functions wait(), gather() and as_completed() start multiple coroutines at the same time.**
@@ -2797,7 +2802,7 @@ app.run()
 ```
 
 * **Starts the app on `'http://localhost:5000'`.**
-* **A WSGI server like [Waitress](https://flask.palletsprojects.com/en/latest/deploying/waitress/) and a HTTP server
+* **A WSGI server like [Waitress](https://flask.palletsprojects.com/en/latest/deploying/waitress/) and an HTTP server
   such as [Nginx](https://flask.palletsprojects.com/en/latest/deploying/nginx/) are needed to run globally.**
 
 ### Static Request
@@ -3740,9 +3745,6 @@ from plotly.express import line
 
 #### Displays a line chart of total coronavirus deaths per million grouped by continent:
 
-![Covid Deaths](web/covid_deaths.png)
-<div id="2a950764-39fc-416d-97fe-0a6226a3095f" class="plotly-graph-div" style="height:340px; width:100%;"></div>
-
 ```python
 covid = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv',
                     usecols=['iso_code', 'date', 'total_deaths', 'population'])
@@ -3758,9 +3760,6 @@ line(df, x='Date', y='Total Deaths per Million', color='Continent').show()
 ```
 
 #### Displays a multi-axis line chart of total coronavirus cases and changes in prices of Bitcoin, Dow Jones and gold:
-
-![Covid Cases](web/covid_cases.png)
-<div id="e23ccacc-a456-478b-b467-7282a2165921" class="plotly-graph-div" style="height:315px; width:100%;"></div>
 
 ```python
 import pandas as pd, plotly.graph_objects as go
@@ -3907,3 +3906,7 @@ Index
 * **Ctrl+F / ⌘F is usually sufficient.**
 * **Searching `'#<title>'` on the [webpage](https://gto76.github.io/python-cheatsheet/) will limit the search to the
   titles.**
+
+[Назад][back]
+
+[back]: <.> "Назад к оглавлению"
