@@ -145,11 +145,11 @@ This is really***very***important text.
 ```markdown
 > #### The quarterly results look great!
 >
-> - Revenue was off the chart.
-> - Profits were higher than ever.
+> — Revenue was off the chart.
+> — Profits were higher than ever.
 >
 >
->  *Everything* is going according to **plan**.
+> *Everything* is going, according to **plan**.
 ```
 
 > #### The quarterly results look great!
@@ -158,7 +158,7 @@ This is really***very***important text.
 > - Profits were higher than ever.
 >
 >
->  *Everything* is going according to **plan**.
+> *Everything* is going, according to **plan**.
 
 ### Ordered List
 
@@ -166,25 +166,25 @@ This is really***very***important text.
 1. First item
 2. Second item
 3. Third item
-1. First item
-1. Second item
-8. Third item
-3. Third item
+    1. First item
+        1. Second item
+4. Third item
+5. Third item
     1. Indented item
     2. Indented item
-4. Fourth item
+6. Fourth item
 ```
 
 1. First item
 2. Second item
 3. Third item
-1. First item
-1. Second item
-8. Third item
-3. Third item
+    1. First item
+        1. Second item
+4. Third item
+5. Third item
     1. Indented item
     2. Indented item
-4. Fourth item
+6. Fourth item
 
 ### Unordered List
 
@@ -192,8 +192,8 @@ This is really***very***important text.
 - First item
 - Second item
 - Third item
-    - Indented item
-    - Indented item
+    - Indented item 1
+    - Indented item 2
 - Fourth item
 * First item
 * Second item
@@ -207,8 +207,8 @@ This is really***very***important text.
 - First item
 - Second item
 - Third item
-    - Indented item
-    - Indented item
+    - Indented item 1
+    - Indented item 2
 - Fourth item
 
 * First item
@@ -360,14 +360,14 @@ See the section on [`code`](#code).
 **An Example Putting the Parts Together:**
 
 ```markdown
-In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy
+In a hole in the ground, there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy
 smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a [hobbit-hole][1], and that
 means comfort.
 
 [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
 ```
 
-In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy
+In a hole in the ground, there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy
 smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a [hobbit-hole][1], and that
 means comfort.
 

@@ -37,48 +37,48 @@ RigidBody имеет 4 [mode](#property-mode):
 
 ## Свойства
 
-| Тип | Свойство | По умолчанию |
-| --- | --- | --- |
-| [float](float.md) | [angular_damp](#property-angular-damp) | `-1.0` |
-| [Vector3](vector3.md#vector3) | [angular_velocity](#property-angular-velocity) | `Vector3( 0, 0, 0 )` |
-| [bool](bool.md) | [axis\_lock\_angular_x](#property-axis-lock-angular-x) | `false` |
-| [bool](bool.md) | [axis\_lock\_angular_y](#property-axis-lock-angular-y) | `false` |
-| [bool](bool.md) | [axis\_lock\_angular_z](#property-axis-lock-angular-z) | `false` |
-| [bool](bool.md) | [axis\_lock\_linear_x](#property-axis-lock-linear-x) | `false` |
-| [bool](bool.md) | [axis\_lock\_linear_y](#property-axis-lock-linear-y) | `false` |
-| [bool](bool.md) | [axis\_lock\_linear_z](#property-axis-lock-linear-z) | `false` |
-| [float](float.md) | [bounce](#property-bounce) |     |
-| [bool](bool.md) | [can_sleep](#property-can-sleep) | `true` |
-| [bool](bool.md) | [contact_monitor](#property-contact-monitor) | `false` |
-| [int](int.md#int) | [contacts_reported](#property-contacts-reported) | `0` |
-| [bool](bool.md) | [continuous_cd](#property-continuous-cd) | `false` |
-| [bool](bool.md) | [custom_integrator](#property-custom-integrator) | `false` |
-| [float](float.md) | [friction](#property-friction) |     |
-| [float](float.md) | [gravity_scale](#property-gravity-scale) | `1.0` |
-| [float](float.md) | [linear_damp](#property-linear-damp) | `-1.0` |
-| [Vector3](vector3.md#vector3) | [linear_velocity](#property-linear-velocity) | `Vector3( 0, 0, 0 )` |
-| [float](float.md) | [mass](#property-mass) | `1.0` |
-| [Mode](#enum-rigidbody-mode) | [mode](#property-mode) | `0` |
-| [PhysicsMaterial](physicsmaterial.md) | [physics\_material\_override](#property-physics-material-override) |     |
-| [bool](bool.md) | [sleeping](#property-sleeping) | `false` |
-| [float](float.md) | [weight](#property-weight) | `9.8` |
+| Тип                                   | Свойство                                                           | По умолчанию         |
+|---------------------------------------|--------------------------------------------------------------------|----------------------|
+| [float](float.md)                     | [angular_damp](#property-angular-damp)                             | `-1.0`               |
+| [Vector3](vector3.md#vector3)         | [angular_velocity](#property-angular-velocity)                     | `Vector3( 0, 0, 0 )` |
+| [bool](bool.md)                       | [axis\_lock\_angular_x](#property-axis-lock-angular-x)             | `false`              |
+| [bool](bool.md)                       | [axis\_lock\_angular_y](#property-axis-lock-angular-y)             | `false`              |
+| [bool](bool.md)                       | [axis\_lock\_angular_z](#property-axis-lock-angular-z)             | `false`              |
+| [bool](bool.md)                       | [axis\_lock\_linear_x](#property-axis-lock-linear-x)               | `false`              |
+| [bool](bool.md)                       | [axis\_lock\_linear_y](#property-axis-lock-linear-y)               | `false`              |
+| [bool](bool.md)                       | [axis\_lock\_linear_z](#property-axis-lock-linear-z)               | `false`              |
+| [float](float.md)                     | [bounce](#property-bounce)                                         |                      |
+| [bool](bool.md)                       | [can_sleep](#property-can-sleep)                                   | `true`               |
+| [bool](bool.md)                       | [contact_monitor](#property-contact-monitor)                       | `false`              |
+| [int](int.md#int)                     | [contacts_reported](#property-contacts-reported)                   | `0`                  |
+| [bool](bool.md)                       | [continuous_cd](#property-continuous-cd)                           | `false`              |
+| [bool](bool.md)                       | [custom_integrator](#property-custom-integrator)                   | `false`              |
+| [float](float.md)                     | [friction](#property-friction)                                     |                      |
+| [float](float.md)                     | [gravity_scale](#property-gravity-scale)                           | `1.0`                |
+| [float](float.md)                     | [linear_damp](#property-linear-damp)                               | `-1.0`               |
+| [Vector3](vector3.md#vector3)         | [linear_velocity](#property-linear-velocity)                       | `Vector3( 0, 0, 0 )` |
+| [float](float.md)                     | [mass](#property-mass)                                             | `1.0`                |
+| [Mode](#enum-rigidbody-mode)          | [mode](#property-mode)                                             | `0`                  |
+| [PhysicsMaterial](physicsmaterial.md) | [physics\_material\_override](#property-physics-material-override) |                      |
+| [bool](bool.md)                       | [sleeping](#property-sleeping)                                     | `false`              |
+| [float](float.md)                     | [weight](#property-weight)                                         | `9.8`                |
 
 ## Методы
 
-| Тип | Метод |
-| --- | --- |
-| void | [\_integrate\_forces](#method-integrate-forces) **(** [PhysicsDirectBodyState](physicsdirectbodystate.md#physicsdirectbodystate) state **)** virtual |
-| void | [add\_central\_force](#method-add-central-force) **(** [Vector3](vector3.md#vector3) force **)** |
-| void | [add_force](#method-add-force) **(** [Vector3](vector3.md#vector3) force, [Vector3](vector3.md#vector3) position **)** |
-| void | [add_torque](#method-add-torque) **(** [Vector3](vector3.md#vector3) torque **)** |
-| void | [apply\_central\_impulse](#method-apply-central-impulse) **(** [Vector3](vector3.md#vector3) impulse **)** |
-| void | [apply_impulse](#method-apply-impulse) **(** [Vector3](vector3.md#vector3) position, [Vector3](vector3.md#vector3) impulse **)** |
-| void | [apply\_torque\_impulse](#method-apply-torque-impulse) **(** [Vector3](vector3.md#vector3) impulse **)** |
-| [bool](bool.md) | [get\_axis\_lock](#method-get-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis **)** const |
-| [Array](array.md#array) | [get\_colliding\_bodies](#method-get-colliding-bodies) **(** **)** const |
-| [Basis](basis.md#basis) | [get\_inverse\_inertia_tensor](#method-get-inverse-inertia-tensor) **(** **)** |
-| void | [set\_axis\_lock](#method-set-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis, [bool](bool.md) lock **)** |
-| void | [set\_axis\_velocity](#method-set-axis-velocity) **(** [Vector3](vector3.md#vector3) axis_velocity **)** |
+| Тип                     | Метод                                                                                                                                                |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| void                    | [\_integrate\_forces](#method-integrate-forces) **(** [PhysicsDirectBodyState](physicsdirectbodystate.md#physicsdirectbodystate) state **)** virtual |
+| void                    | [add\_central\_force](#method-add-central-force) **(** [Vector3](vector3.md#vector3) force **)**                                                     |
+| void                    | [add_force](#method-add-force) **(** [Vector3](vector3.md#vector3) force, [Vector3](vector3.md#vector3) position **)**                               |
+| void                    | [add_torque](#method-add-torque) **(** [Vector3](vector3.md#vector3) torque **)**                                                                    |
+| void                    | [apply\_central\_impulse](#method-apply-central-impulse) **(** [Vector3](vector3.md#vector3) impulse **)**                                           |
+| void                    | [apply_impulse](#method-apply-impulse) **(** [Vector3](vector3.md#vector3) position, [Vector3](vector3.md#vector3) impulse **)**                     |
+| void                    | [apply\_torque\_impulse](#method-apply-torque-impulse) **(** [Vector3](vector3.md#vector3) impulse **)**                                             |
+| [bool](bool.md)         | [get\_axis\_lock](#method-get-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis **)** const                             |
+| [Array](array.md#array) | [get\_colliding\_bodies](#method-get-colliding-bodies) **(** **)** const                                                                             |
+| [Basis](basis.md#basis) | [get\_inverse\_inertia_tensor](#method-get-inverse-inertia-tensor) **(** **)**                                                                       |
+| void                    | [set\_axis\_lock](#method-set-axis-lock) **(** [BodyAxis](physicsserver.md#enum-physicsserver-bodyaxis) axis, [bool](bool.md) lock **)**             |
+| void                    | [set\_axis\_velocity](#method-set-axis-velocity) **(** [Vector3](vector3.md#vector3) axis_velocity **)**                                             |
 
 ## Сигналы
 
@@ -191,10 +191,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [float](float.md) **angular_damp**
 
-| _По умолчанию_ | `-1.0` |
-| --- | --- |
-| _Setter_ | set\_angular\_damp(value) |
-| _Getter_ | get\_angular\_damp() |
+| _По умолчанию_ | `-1.0`                    |
+|----------------|---------------------------|
+| _Setter_       | set\_angular\_damp(value) |
+| _Getter_       | get\_angular\_damp()      |
 
 Гасит вращательные силы RigidBody.
 
@@ -205,10 +205,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [Vector3](vector3.md) **angular_velocity**
 
-| _По умолчанию_ | `Vector3( 0, 0, 0 )` |
-| --- | --- |
-| _Setter_ | set\_angular\_velocity(value) |
-| _Getter_ | get\_angular\_velocity() |
+| _По умолчанию_ | `Vector3( 0, 0, 0 )`          |
+|----------------|-------------------------------|
+| _Setter_       | set\_angular\_velocity(value) |
+| _Getter_       | get\_angular\_velocity()      |
 
 Скорость вращения тела в формате axis-angle.
 Величина вектора-это скорость вращения в _радианах_ в секунду.
@@ -217,10 +217,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **axis\_lock\_angular_x**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_axis\_lock(value) |
-| _Getter_ | get\_axis\_lock() |
+| _По умолчанию_ | `false`                |
+|----------------|------------------------|
+| _Setter_       | set\_axis\_lock(value) |
+| _Getter_       | get\_axis\_lock()      |
 
 Зафиксируйте вращение корпуса по оси X.
 
@@ -228,10 +228,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **axis\_lock\_angular_y**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_axis\_lock(value) |
-| _Getter_ | get\_axis\_lock() |
+| _По умолчанию_ | `false`                |
+|----------------|------------------------|
+| _Setter_       | set\_axis\_lock(value) |
+| _Getter_       | get\_axis\_lock()      |
 
 Зафиксируйте вращение корпуса по оси Y.
 
@@ -239,10 +239,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **axis\_lock\_angular_z**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_axis\_lock(value) |
-| _Getter_ | get\_axis\_lock() |
+| _По умолчанию_ | `false`                |
+|----------------|------------------------|
+| _Setter_       | set\_axis\_lock(value) |
+| _Getter_       | get\_axis\_lock()      |
 
 Зафиксируйте вращение тела по оси Z.
 
@@ -250,10 +250,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **axis\_lock\_linear_x**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_axis\_lock(value) |
-| _Getter_ | get\_axis\_lock() |
+| _По умолчанию_ | `false`                |
+|----------------|------------------------|
+| _Setter_       | set\_axis\_lock(value) |
+| _Getter_       | get\_axis\_lock()      |
 
 Зафиксируйте движение тела по оси X.
 
@@ -261,10 +261,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **axis\_lock\_linear_y**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_axis\_lock(value) |
-| _Getter_ | get\_axis\_lock() |
+| _По умолчанию_ | `false`                |
+|----------------|------------------------|
+| _Setter_       | set\_axis\_lock(value) |
+| _Getter_       | get\_axis\_lock()      |
 
 Зафиксируйте движение тела по оси Y.
 
@@ -272,10 +272,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **axis\_lock\_linear_z**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_axis\_lock(value) |
-| _Getter_ | get\_axis\_lock() |
+| _По умолчанию_ | `false`                |
+|----------------|------------------------|
+| _Setter_       | set\_axis\_lock(value) |
+| _Getter_       | get\_axis\_lock()      |
 
 Зафиксируйте движение тела по оси Z.
 
@@ -283,10 +283,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [float](float.md) **bounce**
 
-| _По умолчанию_ | `0.0` |
-| --- | --- |
-| _Setter_ | set_bounce(value) |
-| _Getter_ | get_bounce() |
+| _По умолчанию_ | `0.0`             |
+|----------------|-------------------|
+| _Setter_       | set_bounce(value) |
+| _Getter_       | get_bounce()      |
 
 Упругость тела. Значения варьируются от `0` (no bounce) до `1` (full bounciness).
 Устарело, используйте [PhysicsMaterial.bounce](physicsmaterial.md) вместо этого
@@ -296,10 +296,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **can_sleep**
 
-| _По умолчанию_ | `true` |
-| --- | --- |
-| _Setter_ | set\_can\_sleep(value) |
-| _Getter_ | is\_able\_to_sleep() |
+| _По умолчанию_ | `true`                 |
+|----------------|------------------------|
+| _Setter_       | set\_can\_sleep(value) |
+| _Getter_       | is\_able\_to_sleep()   |
 
 Если `true`тело может войти в спящий режим, когда нет движения. См. [sleeping](#property-sleeping).
 
@@ -311,10 +311,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **contact_monitor**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_contact\_monitor(value) |
-| _Getter_ | is\_contact\_monitor_enabled() |
+| _По умолчанию_ | `false`                        |
+|----------------|--------------------------------|
+| _Setter_       | set\_contact\_monitor(value)   |
+| _Getter_       | is\_contact\_monitor_enabled() |
 
 Если `true`, то RigidBody будет излучать сигналы при столкновении с другим RigidBody.
 См. также [contacts_reported](#property-contacts-reported).
@@ -323,10 +323,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [int](int.md) **contacts_reported**
 
-| _По умолчанию_ | `0` |
-| --- | --- |
-| _Setter_ | set\_max\_contacts_reported(value) |
-| _Getter_ | get\_max\_contacts_reported() |
+| _По умолчанию_ | `0`                                |
+|----------------|------------------------------------|
+| _Setter_       | set\_max\_contacts_reported(value) |
+| _Getter_       | get\_max\_contacts_reported()      |
 
 Максимальное количество контактов, которые будут записаны. Требуется, чтобы [contact_monitor](#property-contact-monitor)
 был установлен в `true`.
@@ -339,10 +339,10 @@ body\_shape\_index, [int](int.md) local\_shape\_index **)**
 
 [bool](bool.md) **continuous_cd**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_use\_continuous\_collision\_detection(value) |
-| _Getter_ | is\_using\_continuous\_collision\_detection() |
+| _По умолчанию_ | `false`                                           |
+|----------------|---------------------------------------------------|
+| _Setter_       | set\_use\_continuous\_collision\_detection(value) |
+| _Getter_       | is\_using\_continuous\_collision\_detection()     |
 
 Если `true`используется непрерывное обнаружение столкновений.
 Continuous collision detection пытается предсказать, где столкнется движущееся тело, вместо того, чтобы перемещать его и
@@ -356,10 +356,10 @@ Continuous collision detection пытается предсказать, где �
 
 [bool](bool.md) **custom_integrator**
 
-| _По умолчанию_ | `false` |
-| --- | --- |
-| _Setter_ | set\_use\_custom_integrator(value) |
-| _Getter_ | is\_using\_custom_integrator() |
+| _По умолчанию_ | `false`                            |
+|----------------|------------------------------------|
+| _Setter_       | set\_use\_custom_integrator(value) |
+| _Getter_       | is\_using\_custom_integrator()     |
 
 Если значение `true`, интеграция внутренних сил будет отключена (например, гравитация или трение воздуха) для этого
 тела. Помимо реакции на столкновение, тело будет перемещаться только так, как определено
@@ -369,10 +369,10 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **friction**
 
-| _По умолчанию_ | `1.0` |
-| --- | --- |
-| _Setter_ | set_friction(value) |
-| _Getter_ | get_friction() |
+| _По умолчанию_ | `1.0`               |
+|----------------|---------------------|
+| _Setter_       | set_friction(value) |
+| _Getter_       | get_friction()      |
 
 Трение кузова, от 0 (без трения) до 1 (максимальное трение).
 
@@ -383,10 +383,10 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **gravity_scale**
 
-| _По умолчанию_ | `1.0` |
-| --- | --- |
-| _Setter_ | set\_gravity\_scale(value) |
-| _Getter_ | get\_gravity\_scale() |
+| _По умолчанию_ | `1.0`                      |
+|----------------|----------------------------|
+| _Setter_       | set\_gravity\_scale(value) |
+| _Getter_       | get\_gravity\_scale()      |
 
 Это умножается на глобальную настройку 3D gravity, найденную в **Project > Project Settings > Physics > 3d** для
 создания гравитации RigidBody.
@@ -397,10 +397,10 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **linear_damp**
 
-| _По умолчанию_ | `-1.0` |
-| --- | --- |
-| _Setter_ | set\_linear\_damp(value) |
-| _Getter_ | get\_linear\_damp() |
+| _По умолчанию_ | `-1.0`                   |
+|----------------|--------------------------|
+| _Setter_       | set\_linear\_damp(value) |
+| _Getter_       | get\_linear\_damp()      |
 
 Линейная влажность тела. Не может быть меньше -1.0.
 Если это значение отличается от -1.0, любая линейная влажность, полученная из мира или областей, будет переопределена.
@@ -412,10 +412,10 @@ Continuous collision detection пытается предсказать, где �
 
 [Vector3](vector3.md) **linear_velocity**
 
-| _По умолчанию_ | `Vector3( 0, 0, 0 )` |
-| --- | --- |
-| _Setter_ | set\_linear\_velocity(value) |
-| _Getter_ | get\_linear\_velocity() |
+| _По умолчанию_ | `Vector3( 0, 0, 0 )`         |
+|----------------|------------------------------|
+| _Setter_       | set\_linear\_velocity(value) |
+| _Getter_       | get\_linear\_velocity()      |
 
 Линейная скорость тела в единицах в секунду. Может использоваться спорадически, но **не устанавливайте это каждый кадр**
 , потому что физика может работать в другом потоке и работать с другой степенью детализации.
@@ -426,10 +426,10 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **mass**
 
-| _По умолчанию_ | `1.0` |
-| --- | --- |
-| _Setter_ | set_mass(value) |
-| _Getter_ | get_mass() |
+| _По умолчанию_ | `1.0`           |
+|----------------|-----------------|
+| _Setter_       | set_mass(value) |
+| _Getter_       | get_mass()      |
 
 Масса тела.
 
@@ -437,10 +437,10 @@ Continuous collision detection пытается предсказать, где �
 
 [Mode](#enum-rigidbody-mode) **mode**
 
-| _По умолчанию_ | `0` |
-| --- | --- |
-| _Setter_ | set_mode(value) |
-| _Getter_ | get_mode() |
+| _По умолчанию_ | `0`             |
+|----------------|-----------------|
+| _Setter_       | set_mode(value) |
+| _Getter_       | get_mode()      |
 
 Возможные значения см. [Mode](#enum-rigidbody-mode).
 
@@ -448,10 +448,10 @@ Continuous collision detection пытается предсказать, где �
 
 [PhysicsMaterial](physicsmaterial.md) **physics\_material\_override**
 
-| _По умолчанию_ | null |
-| --- | --- |
-| _Setter_ | set\_physics\_material_override(value) |
-| _Getter_ | get\_physics\_material_override() |
+| _По умолчанию_ | null                                   |
+|----------------|----------------------------------------|
+| _Setter_       | set\_physics\_material_override(value) |
+| _Getter_       | get\_physics\_material_override()      |
 
 Переопределение физического материала для тела.
 Если материалу присвоено это свойство, он будет использоваться вместо любого другого физического материала, например
@@ -473,10 +473,10 @@ Continuous collision detection пытается предсказать, где �
 
 [float](float.md) **weight**
 
-| _По умолчанию_ | `9.8` |
-| --- | --- |
-| _Setter_ | set_weight(value) |
-| _Getter_ | get_weight() |
+| _По умолчанию_ | `9.8`             |
+|----------------|-------------------|
+| _Setter_       | set_weight(value) |
+| _Getter_       | get_weight()      |
 
 Вес тела, основанный на его массе и глобальной 3D-гравитации. Глобальные значения задаются в **Project > Project
 Settings > Physics > 3d**.
