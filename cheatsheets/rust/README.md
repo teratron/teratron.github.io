@@ -2,20 +2,35 @@
 
 [Назад к перечню шпаргалок][back]
 
-| Keyword      | Пример                                                | Описание                                            |
-|--------------|-------------------------------------------------------|-----------------------------------------------------|
-| let          | `let thing: i32 = 100;`                               |                                                     |
-|              | `let (part1, part2) = ("first", "second");`           |                                                     |
-|              | `let shadowing_example = 123.4;`                      |                                                     |
-|              | `let shadowing_example = shadowing_example as u32;`   |                                                     |
-|              | `let (part1, part2) = ("first", "second");`           |                                                     |
-| let mut      | `let mut changing_thing = true;`                      |                                                     |
-|              | `changing_thing = false;`                             |                                                     |
-| ------------ | ----------------------------------------------------- | --------------------------------------------------- |
-| static       | `static LANGUAGE: &str = "Rust";`                     | Изменяемая переменная с временем жизни `'static`.   |
-| static mut   |                                                       |                                                     |
-| const        | `const THRESHOLD: i32 = 10;`                          | Неизменяемая переменная.                            |
-|              | `const WORDS: &'static str = "hello rust!";`          |                                                     |
+| Keyword        | Пример                                              | Описание                                          |
+|----------------|-----------------------------------------------------|---------------------------------------------------|
+| **let**        | `let thing: i32 = 100;`                             |                                                   |
+|                | `let (part1, part2) = ("first", "second");`         |                                                   |
+|                | `let shadowing_example = 123.4;`                    |                                                   |
+|                | `let shadowing_example = shadowing_example as u32;` |                                                   |
+|                | `let (part1, part2) = ("first", "second");`         |                                                   |
+|                |                                                     |                                                   |
+| **let mut**    | `let mut changing_thing = true;`                    |                                                   |
+|                | `changing_thing = false;`                           |                                                   |
+|                |                                                     |                                                   |
+| **static**     | `static LANGUAGE: &str = "Rust";`                   | Изменяемая переменная с временем жизни `'static`. |
+|                |                                                     |                                                   |
+| **static mut** |                                                     |                                                   |
+|                |                                                     |                                                   |
+| **const**      | `const THRESHOLD: i32 = 10;`                        | Неизменяемая переменная.                          |
+|                | `const WORDS: &'static str = "hello rust!";`        |                                                   |
+|                |                                                     |                                                   |
+
+## Documentation
+
+| Example  | Explanation                                                                                           |
+|----------|-------------------------------------------------------------------------------------------------------|
+| ///      | Комментарий документа внешней строки, используйте его для типов, признаков, функций.                  |
+| //!      | Комментарий внутренней строки документа, в основном используемый в начале файла для модуля документа. |
+| //       | Line comment, use these to document code flow or internals.                                           |
+| /* … */  | Заблокировать комментарий.                                                                            |
+| /** … */ | Комментарий документа внешнего блока.                                                                 |
+| /*! … */ | Комментарий документа внутреннего блока.                                                              |
 
 ### Владение (Ownership) и его передача присваиванием (Move)
 
