@@ -550,6 +550,18 @@ gold = "gold"
 print(gold not in message)   # True
 ```
 
+### Formatter
+
+```python
+loss: float = 0.034_489_701
+print(f"{loss = :.3f}")  # loss = 0.034
+```
+
+```python
+z = 5
+print(f"z = {z:0b}")  # z = 101
+```
+
 [https://okpython.net/](https://okpython.net/)
 
 [Назад к перечню шпаргалок][back]
