@@ -438,7 +438,6 @@ impl Iterator for Counter {
         }
     }
 }
-
 ```
 
 ```rust
