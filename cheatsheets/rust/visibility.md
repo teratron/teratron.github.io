@@ -174,6 +174,8 @@ fn main() {
 
 ### use
 
+Декларация `use` используется, чтобы связать полный путь с новым именем, что упрощает доступ.
+
 ```rust
 use crate::deeply::nested::{
     my_first_function,
