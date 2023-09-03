@@ -49,7 +49,7 @@ struct Tank<'base> {
 fn main() {
     let base20x40 = BaseDimension { length: 20, breadth: 40 };
     let tank20x40 = Tank { colour: Colour::R, base: &base20x40};
-    
+
     println!("{:?}", tank20x40);
     println!("{:?}", base20x40);
 }
@@ -77,19 +77,19 @@ fn healthcare_centres<'h, 'city>(hosp: &'h Hospital<'city>, city: &'city City) -
 
 fn main() {
     let kd = City {
-        name: "Kaduna".to_string(), 
-        country: "NGA".to_string(), 
-        continent: "Africa".to_string(), 
+        name: "Kaduna".to_string(),
+        country: "NGA".to_string(),
+        continent: "Africa".to_string(),
     };
     let saints_hosp = Hospital {
         name: "Saints Hospital".to_string(),
         location: &kd,
     };
     let hc = healthcare_centres(&saints_hosp, &kd);
-    
+
     println!("{:#?}", hc);
-    println!("{:#?}", saints_hosp); 
-    println!("{:#?}", kd);   
+    println!("{:#?}", saints_hosp);
+    println!("{:#?}", kd);
 }
 ```
 

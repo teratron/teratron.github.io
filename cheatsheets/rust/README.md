@@ -27,6 +27,34 @@
 | /** … */ | Комментарий документа внешнего блока.                                                                 |
 | /*! … */ | Комментарий документа внутреннего блока.                                                              |
 
+### Cli
+
+- rust-src
+- cargo
+  * cargo new
+  * cargo new name_project --lib
+  * cargo build (--> _target/debug_)
+  * cargo build --release (--> _target/release_)
+  * cargo run
+  * cargo check
+  * cargo update
+  * cargo doc --open
+- clippy
+- rust-docs
+- rust-std
+- rustc
+- rustfmt
+
+**Cargo:**
+
+- Мы можем создать проект с помощью `cargo new`.
+- можно собирать проект, используя команду `cargo build`,
+- можно одновременно собирать и запускать проект одной командой `cargo run`,
+- можно собрать проект для проверки ошибок с помощью `cargo check`, не тратя время на кодогенерацию исполняемого файла,
+- `cargo build` сохраняет результаты сборки не в директорию с исходным кодом, а в отдельный каталог _target/debug_.
+- `cargo build --release` для его компиляции с оптимизацией. Данная команда создаёт исполняемый файл в папке
+  _target/release_ в отличие от папки _target/debug_.
+
 ### Владение (Ownership) и его передача присваиванием (Move)
 
 **Правила владения**
