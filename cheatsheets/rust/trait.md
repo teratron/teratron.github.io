@@ -441,7 +441,21 @@ impl Iterator for Counter {
 ```
 
 ```rust
+use std::fmt::Display;
 
+trait Trait: Display {
+    fn print(&self) {
+        println!("i am {}", self);
+    }
+}
+
+impl Trait for f32 {}
+impl Trait for f64 {}
+
+fn main() {
+    1.5_f32.print(); // prints "i am 1.5"
+    1.5_f64.print(); // prints "i am 1.5"
+}
 ```
 
 ```rust
