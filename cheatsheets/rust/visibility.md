@@ -280,6 +280,34 @@ fn main() {
 }
 ```
 
+```rust
+// in src/lib.rs
+#[path = "sub"]
+pub mod f32 {
+    type F = f32;
+    mod implementation;
+    pub use implementation::*;
+}
+
+#[path = "sub"]
+pub mod f64 {
+    type F = f64;
+    mod implementation;
+    pub use implementation::*;
+}
+
+// in src/sub/implementation.rs
+use super::F;
+
+pub fn f(x: F) -> F {
+    x + 1.0
+}
+
+// usage
+library::f32::f(123.f32);
+library::f64::f(123.f64);
+```
+
 ### Иерархия файлов
 
 ```
