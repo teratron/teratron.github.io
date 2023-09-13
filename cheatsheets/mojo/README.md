@@ -41,12 +41,12 @@ mojo package --help
 | True    |          |
 | False   |          |
 
-| Объявления | Описание                     |
-|------------|------------------------------|
-| let        | неизменяемые `строгий режим` |
-| var        | изменяемые                   |
-| const      |                              |
-| alias      |                              |
+| Объявления | Описание                         |
+|------------|----------------------------------|
+| let        | неизменяемые `строгий режим`     |
+| var        | изменяемые                       |
+| const      |                                  |
+| alias      | выражения именованных параметров |
 
 | Аргументы | Описание                             |
 |-----------|--------------------------------------|
@@ -356,12 +356,50 @@ from mypackage import MyPair
 # ...
 ```
 
-```mojo
+## Generics
 
+```mojo
+struct Array[T: AnyType]:
+    var data: Pointer[T]
+    var size: Int
+    var cap: Int
+
+    fn __init__(inout self, size: Int, value: T):
+        self.cap = size * 2
+        self.size = size
+        self.data = Pointer[T].alloc(self.cap)
+        for i in range(self.size):
+            self.data.store(i, value)
+              
+    fn __getitem__(self, i: Int) -> T:
+        return self.data.load(i)
+
+    fn __del__(owned self):
+        self.data.free()
+
+fn main():
+    let v = Array[Float32](4, 3.14)
+    print(v[0], v[1], v[2], v[3])  # 3.14 3.14 3.14 3.14
 ```
 
-```mojo
+## Выражения именованных параметров `alias`
 
+```mojo
+struct DType:
+    var value: UI8
+    alias invalid = DType(0)
+    alias bool = DType(1)
+    alias int8 = DType(2)
+    alias uint8 = DType(3)
+    alias int16 = DType(4)
+    alias int16 = DType(5)
+    # ...
+    alias float32 = DType(15)
+    
+alias Float16 = SIMD[DType.float16, 1]
+alias UInt8 = SIMD[DType.uint8, 1]
+
+var x : Float16   # F16 works like a "typedef"
 ```
 
 ```mojo
