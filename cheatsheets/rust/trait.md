@@ -458,12 +458,36 @@ fn main() {
 }
 ```
 
-```rust
+## Generics
 
+```rust
+trait From<T> {
+    fn from(T) -> Self;
+}
+
+impl From<u8> for u16 {
+    //...
+}
+
+impl From<u8> for u32{
+    //...
+}
 ```
 
-```rust
+## Traits inheritance
 
+```rust
+trait Person {
+    fn full_name(&self) -> String;
+}
+
+trait Employee: Person { // Employee inherits from person trait
+    fn job_title(&self) -> String;
+}
+
+trait ExpatEmployee: Employee + Expat { // ExpatEmployee inherits from Employee and Expat traits
+    fn additional_tax(&self) -> f64;
+}
 ```
 
 ```rust
