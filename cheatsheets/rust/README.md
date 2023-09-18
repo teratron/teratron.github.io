@@ -89,6 +89,24 @@
 - **[Macros](macros.md)**
 - **[Result](result.md)** - обработка потенциального сбоя.
 - **[Option](option.md)**
+- **[From/Into]()**
+
+```rust
+impl<T, U> From<T> for U
+where
+    T: Into<U>
+{
+}
+
+impl<f32, f64> From<f32> for f64
+where
+    T: Into<f64>
+{
+    fn from() -> f64 {
+        0.3
+    }
+}
+```
 
 **Умные указатели** - являются структурами данных, которые имеют дополнительные метаданные и возможности:
 
