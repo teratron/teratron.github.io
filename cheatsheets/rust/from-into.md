@@ -2,45 +2,18 @@
 
 [Назад][back]
 
-```rust
-// impl<T, U> From<T> for U
-// where
-//    T: Into<U>
-
-impl<f32, f64> From<f32> for f64
-where
-    T: Into<f64>
-{
-    fn from() -> f64 {
-        0.3
-    }
-}
-```
-
-```rust
-struct Wrapper<T>(Vec<T>);
-impl<T> From<Wrapper<T>> for Vec<T> {
-    fn from(w: Wrapper<T>) -> Vec<T> {
-        w.0
-    }
-}
-```
-
-```rust
-struct Wrapper<T>(Vec<T>);
-impl<T> Into<Vec<T>> for Wrapper<T> {
-    fn into(self) -> Vec<T> {
-        self.0
-    }
-}
-```
-
 ## From
 
 ```rust
 pub trait From<T>: Sized {
     fn from(value: T) -> Self;
 }
+```
+
+```rust
+impl<T, U> From<T> for U
+where
+   T: Into<U>,
 ```
 
 ```rust
@@ -81,6 +54,30 @@ pub trait Into<T>: Sized {
 ```
 
 ```rust
+impl<T, U> Into<U> for T
+where
+    U: From<T>,
+```
+
+```rust
+struct Wrapper<T>(Vec<T>);
+impl<T> From<Wrapper<T>> for Vec<T> {
+    fn from(w: Wrapper<T>) -> Vec<T> {
+        w.0
+    }
+}
+```
+
+```rust
+struct Wrapper<T>(Vec<T>);
+impl<T> Into<Vec<T>> for Wrapper<T> {
+    fn into(self) -> Vec<T> {
+        self.0
+    }
+}
+```
+
+```rust
 fn is_hello<T: Into<Vec<u8>>>(s: T) {
    let bytes = b"hello".to_vec();
    assert_eq!(bytes, s.into());
@@ -88,30 +85,6 @@ fn is_hello<T: Into<Vec<u8>>>(s: T) {
 
 let s = "hello".to_string();
 is_hello(s);
-```
-
-```rust
-
-```
-
-```rust
-
-```
-
-```rust
-
-```
-
-```rust
-
-```
-
-```rust
-
-```
-
-```rust
-
 ```
 
 [Назад][back]
