@@ -16,7 +16,78 @@
 | **const**      | `const THRESHOLD: i32 = 10;`                        | Неизменяемая переменная.                          |
 |                | `const WORDS: &'static str = "hello rust!";`        |                                                   |
 
-## Documentation
+## Типы
+
+| Data Type | Example                                             |
+|-----------|-----------------------------------------------------|
+| i8        | `let data: i8 = -100;`                              |
+| i16       | `let data: i16 = -32_000;`                          |
+| i32       | `let data: i32 = -2_147_483_648;`                   |
+| i64       | `let data: i64 = -9_223_372_036_854_775_808;`       |
+| i128      | `let data: i128 = -170_141_183_460_469_231...;`     |
+| isize     | `let data: isize = {i32 or i64, OS dependent};`     |
+| u8        | `let data: u8 = 255;`                               |
+| u16       | `let data: u16 = 65535;`                            |
+| u32       | `let data: u32 = 4_294_967_295;`                    |
+| u64       | `let data: u64 = 18_446_744_073_709_551_615;`       |
+| u128      | `let data: u128 = 340_282_366_920_938_463...;`      |
+| usize     | `let data: usize = {u32 or u64, OS dependent};`     |
+| f32       | `let data: f32 = 3.14;`                             |
+| f64       | `let data: f64 = 3.141592653589793238;`             |
+| bool      | `let data: bool = true;`                            |
+| char      | `let data: char = 'z';`                             |
+| str       | `let data: &str = "Hello, world!";`                 |
+| array     | `let data: [i32; 5] = [1, 2, 3, 4, 5];`             |
+| tuple     | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
+| slice     | `let data: &[i32] = &[1, 2, 3][..];`                |
+| unit type | `let data: () = ();`                                |
+| function  | `fn main() {}`                                      |
+| struct    | `struct User {name: String, age: u32}`              |
+| enum      | `enum Color {Red, Green, Blue}`                     |
+| traits    | `trait Summary {fn summarize(&self) -> String;}`    |
+| reference | `let data: &i32 = &1;`                              |
+| Vec       | `let data: Vec<i32> = vec![1, 2, 3];`               |
+| String    | `let data: String = String::from("hello");`         |
+
+| Smart Pointer            | Example                                                      | Explanation                                                                                                           |
+|--------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| [Box<T>](box.md)         | `let data: Box<i32> = Box::new(5);`                          |                                                                                                                       |
+| [Rc<T>](rc.md)           | `let rc_type: Rc<i32> = Rc::new(5);`                         | умный указатель с подсчётом ссылок.                                                                                   |
+| [Weak<T>]()              | `let data: Weak<i32> = Weak::downgrade(&rc_type);`           |                                                                                                                       |
+| [Arc<T>]()               | `let data: Arc<i32> = Arc::new(5);`                          |                                                                                                                       |
+| [RefCell<T>](refcell.md) | `let data: RefCell<i32> = RefCell::new(5);`                  | предоставляет единоличное владение данными.                                                                           |
+| [Cell<T>]()              | `let data: RefCell<Cell<i32>> = RefCell::new(Cell::new(5));` |                                                                                                                       |
+| [Deref<T>]()             |                                                              | изменяет поведение оператора разыменования `*`.                                                                       |
+| [Drop<T>]()              |                                                              | типажом умного указателя, который позволяет регулировать, что происходит, когда значение выйдет из области видимости. |
+
+| Async Type | Example                                                   | Explanation |
+|------------|-----------------------------------------------------------|-------------|
+| Future     | `let future: Future = async { 5 };`                       |             |
+| Stream     | `let stream: Stream = (0..5).into_stream();`              |             |
+| Pin        | `let pin: Pin = Pin::new(future);`                        |             |
+| JoinHandle | `let handle: JoinHandle = tokio::spawn(async {});`        |             |
+| Poll       | `let poll: Poll = future.poll();`                         |             |
+| Ready      | `let ready: Ready = Poll::Ready(5);`                      |             |
+| Pending    | `let pending: Pending = Poll::Pending;`                   |             |
+| Task       | `let task: Task = tokio::spawn(async {});`                |             |
+| Context    | `let context: Context = &mut Context::from_waker(waker);` |             |
+| Waker      | `let waker: Waker = noop_waker();`                        |             |
+
+| Concurrency + Async     | Example                                                                                                                         |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| std::thread             | `thread::spawn(move \|\|; {})`                                                                                                  |
+| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                               |
+| std::thread::JoinHandle | `let handle = std::thread::spawn(move \|\| {}); handle.join();`                                                                 |
+| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                  |
+| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                               |
+| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                                 |
+| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                    |
+| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                             |
+| std::sync::Barrier      | `let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move \|\| b.wait();)`                                  |
+| std::sync::Condvar      | `let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move \|\| let &(ref lock, ref cvar) = &*pair;) ...` |
+| std::sync::Once         | `static START: Once = Once::new(); START.call_once(\|\| initialize()); START.call_once(\|\| println!("This will not run"));`    |
+
+## Документация
 
 | Example  | Explanation                                                                                           |
 |----------|-------------------------------------------------------------------------------------------------------|
@@ -26,59 +97,6 @@
 | /* … */  | Заблокировать комментарий.                                                                            |
 | /** … */ | Комментарий документа внешнего блока.                                                                 |
 | /*! … */ | Комментарий документа внутреннего блока.                                                              |
-
-### Cli
-
-- rust-src
-- cargo
-  * cargo new
-  * cargo new name_project --lib
-  * cargo build (--> _target/debug_)
-  * cargo build --release (--> _target/release_)
-  * cargo run
-  * cargo check
-  * cargo update
-  * cargo doc --open
-- clippy
-- rust-docs
-- rust-std
-- rustc
-- rustfmt
-
-**Cargo:**
-
-- Мы можем создать проект с помощью `cargo new`.
-- можно собирать проект, используя команду `cargo build`,
-- можно одновременно собирать и запускать проект одной командой `cargo run`,
-- можно собрать проект для проверки ошибок с помощью `cargo check`, не тратя время на кодогенерацию исполняемого файла,
-- `cargo build` сохраняет результаты сборки не в директорию с исходным кодом, а в отдельный каталог _target/debug_.
-- `cargo build --release` для его компиляции с оптимизацией. Данная команда создаёт исполняемый файл в папке
-  _target/release_ в отличие от папки _target/debug_.
-
-### Владение (Ownership) и его передача присваиванием (Move)
-
-**Правила владения**
-
-- Каждое значение в языке Rust имеет переменную, которая называется его владельцем.
-- В каждый момент времени может существовать только один владелец.
-- Если владелец выйдет из области видимости, значение будет отброшено.
-
-**Ключевое правило:** Каждое значение имеет одного и только одного владельца-переменную:
-
-- После операции присваивания переменная типа `String` перестает владеть своим бывшим значением, и ее нельзя больше
-  использовать (Тип `String` не реализует `Copy`).
-- Для простых типов (primitive types), значение копируется, а не передается, и для них многократное присваивание
-  выглядит обычным образом (`Copy` реализован для простых скалярных типов, а также для неких кортежей `tuples`).
-
-**Ссылки и заимствование** (References and Borrowing):
-
-- Занять можно как для чтения `&`, так и для записи `&mut`.
-- Занять для чтения (immutable borrow) можно сколько угодно раз в "области видимости переменной" (variable scope).
-- Занять для записи (mutable borrow) — только один раз.
-- Нельзя занимать одновременно для чтения и записи (все это похоже на read/write locks).
-- Результат заимствования называется ссылкой (reference).
-
----
 
 - **[Видимость](visibility.md)**
 - **[Контейнеры](crate.md)**
@@ -91,14 +109,7 @@
 - **[Option](option.md)**
 - **[From/Into](from-into.md)**
 
-**Умные указатели** - являются структурами данных, которые имеют дополнительные метаданные и возможности:
-
-- **[Box](box.md)**
-- **[Rc](rc.md)** - умный указатель с подсчётом ссылок.
-- **[RefCell](refcell.md)** - предоставляет единоличное владение данными.
-- **[Deref](deref.md)** - изменяет поведение оператора разыменования `*`.
-- **[Drop](drop.md)** - типажом умного указателя, который позволяет регулировать, что происходит, когда значение выйдет
-  из области видимости.
+## Ключевые слова
 
 | Keyword                | Описание                                                                                                                                       |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -142,23 +153,7 @@
 | where                  | обозначить утверждения, которые ограничивают тип                                                                                               |
 | [while](while.md)      | условный цикл, основанный на результате условного выражения                                                                                    |
 
-### Ключевые слова, зарезервированные для будущего использования
-
-- abstract
-- become
-- box
-- do
-- final
-- macro
-- override
-- priv
-- try
-- typeof
-- unsized
-- virtual
-- yield
-
-## Macros
+## Макросы
 
 | Keyword                                 | Описание                                                                                       |
 |-----------------------------------------|------------------------------------------------------------------------------------------------|
@@ -205,7 +200,7 @@
 | write                                   | Записывает форматированные данные в буфер.                                                     |
 | writeln                                 | Записывает форматированные данные в буфер с добавлением новой строки.                          |
 
-### Соглашения по именованию сущностей
+## Соглашения по именованию сущностей
 
 | Item                    | Convention                                                 |
 |-------------------------|------------------------------------------------------------|
@@ -239,7 +234,7 @@
 Например:
 
 - **str::as_bytes()** предоставляет `str` в виде фрагмента байтов UTF-8, который является бесплатным. Входные данные
-  являются заимствованными &`str`, а выходные данные являются заимствованными `&[u8]`.
+  являются заимствованными `&str`, а выходные данные являются заимствованными `&[u8]`.
 - **Path::to_str** выполняет дорогостоящую проверку UTF-8 на байты пути к операционной системе. Входные и выходные
   данные заимствованы. Было бы неправильно вызывать это `as_str` потому что этот метод имеет нетривиальные затраты во
   время выполнения.
@@ -326,6 +321,61 @@ let y = 10;
 ```
 
 ---
+
+## Cli
+
+- rust-src
+- cargo
+  * cargo new
+  * cargo new name_project --lib
+  * cargo build (--> _target/debug_)
+  * cargo build --release (--> _target/release_)
+  * cargo run
+  * cargo check
+  * cargo update
+  * cargo doc --open
+- clippy
+- rust-docs
+- rust-std
+- rustc
+- rustfmt
+
+**Cargo:**
+
+- Мы можем создать проект с помощью `cargo new`.
+- можно собирать проект, используя команду `cargo build`,
+- можно одновременно собирать и запускать проект одной командой `cargo run`,
+- можно собрать проект для проверки ошибок с помощью `cargo check`, не тратя время на кодогенерацию исполняемого файла,
+- `cargo build` сохраняет результаты сборки не в директорию с исходным кодом, а в отдельный каталог _target/debug_.
+- `cargo build --release` для его компиляции с оптимизацией. Данная команда создаёт исполняемый файл в папке
+  _target/release_ в отличие от папки _target/debug_.
+
+### Владение (Ownership) и его передача присваиванием (Move)
+
+**Правила владения**
+
+- Каждое значение в языке Rust имеет переменную, которая называется его владельцем.
+- В каждый момент времени может существовать только один владелец.
+- Если владелец выйдет из области видимости, значение будет отброшено.
+
+**Ключевое правило:** Каждое значение имеет одного и только одного владельца-переменную:
+
+- После операции присваивания переменная типа `String` перестает владеть своим бывшим значением, и ее нельзя больше
+  использовать (Тип `String` не реализует `Copy`).
+- Для простых типов (primitive types), значение копируется, а не передается, и для них многократное присваивание
+  выглядит обычным образом (`Copy` реализован для простых скалярных типов, а также для неких кортежей `tuples`).
+
+**Ссылки и заимствование** (References and Borrowing):
+
+- Занять можно как для чтения `&`, так и для записи `&mut`.
+- Занять для чтения (immutable borrow) можно сколько угодно раз в "области видимости переменной" (variable scope).
+- Занять для записи (mutable borrow) — только один раз.
+- Нельзя занимать одновременно для чтения и записи (все это похоже на read/write locks).
+- Результат заимствования называется ссылкой (reference).
+
+---
+
+## Ссылки
 
 - [https://doc.rust-lang.org/book](https://doc.rust-lang.org/book/)
 - [https://doc.rust-lang.org/stable/rust-by-example](https://doc.rust-lang.org/stable/rust-by-example/)
