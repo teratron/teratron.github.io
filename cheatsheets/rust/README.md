@@ -49,16 +49,16 @@
 | Vec       | `let data: Vec<i32> = vec![1, 2, 3];`               |
 | String    | `let data: String = String::from("hello");`         |
 
-| Smart Pointer            | Example                                                      | Explanation                                                                                                           |
-|--------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Box<T>](box.md)         | `let data: Box<i32> = Box::new(5);`                          |                                                                                                                       |
-| [Rc<T>](rc.md)           | `let rc_type: Rc<i32> = Rc::new(5);`                         | умный указатель с подсчётом ссылок.                                                                                   |
-| [Weak<T>]()              | `let data: Weak<i32> = Weak::downgrade(&rc_type);`           |                                                                                                                       |
-| [Arc<T>]()               | `let data: Arc<i32> = Arc::new(5);`                          |                                                                                                                       |
-| [RefCell<T>](refcell.md) | `let data: RefCell<i32> = RefCell::new(5);`                  | предоставляет единоличное владение данными.                                                                           |
-| [Cell<T>]()              | `let data: RefCell<Cell<i32>> = RefCell::new(Cell::new(5));` |                                                                                                                       |
-| [Deref<T>]()             |                                                              | изменяет поведение оператора разыменования `*`.                                                                       |
-| [Drop<T>]()              |                                                              | типажом умного указателя, который позволяет регулировать, что происходит, когда значение выйдет из области видимости. |
+| Smart Pointer         | Example                                                      | Explanation                                                                         |
+|-----------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| [Box](box.md)         | `let data: Box<i32> = Box::new(5);`                          | позволяет хранить данные в куче, а не в стеке.                                      |
+| [Rc](rc.md)           | `let rc_type: Rc<i32> = Rc::new(5);`                         | умный указатель с подсчётом ссылок.                                                 |
+| [Weak]()              | `let data: Weak<i32> = Weak::downgrade(&rc_type);`           |                                                                                     |
+| [Arc]()               | `let data: Arc<i32> = Arc::new(5);`                          |                                                                                     |
+| [RefCell](refcell.md) | `let data: RefCell<i32> = RefCell::new(5);`                  | предоставляет единоличное владение данными.                                         |
+| [Cell]()              | `let data: RefCell<Cell<i32>> = RefCell::new(Cell::new(5));` |                                                                                     |
+| [Deref]()             |                                                              | изменяет поведение оператора разыменования `*`.                                     |
+| [Drop]()              |                                                              | позволяет регулировать, что происходит, когда значение выйдет из области видимости. |
 
 | Async Type | Example                                                   | Explanation |
 |------------|-----------------------------------------------------------|-------------|
@@ -73,19 +73,19 @@
 | Context    | `let context: Context = &mut Context::from_waker(waker);` |             |
 | Waker      | `let waker: Waker = noop_waker();`                        |             |
 
-| Concurrency + Async     | Example                                                                                                                         |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| std::thread             | `thread::spawn(move \|\|; {})`                                                                                                  |
-| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                               |
-| std::thread::JoinHandle | `let handle = std::thread::spawn(move \|\| {}); handle.join();`                                                                 |
-| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                  |
-| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                               |
-| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                                 |
-| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                    |
-| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                             |
-| std::sync::Barrier      | `let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move \|\| b.wait();)`                                  |
-| std::sync::Condvar      | `let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move \|\| let &(ref lock, ref cvar) = &*pair;) ...` |
-| std::sync::Once         | `static START: Once = Once::new(); START.call_once(\|\| initialize()); START.call_once(\|\| println!("This will not run"));`    |
+| Concurrency + Async     | Example                                                                                                                                      |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| std::thread             | thread::spawn(move &#124;&#124; {});                                                                                                         |
+| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                                            |
+| std::thread::JoinHandle | `let handle = std::thread::spawn(move &#124;&#124; {}); handle.join();`                                                                      |
+| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                               |
+| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                                            |
+| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                                              |
+| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                                 |
+| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                                          |
+| std::sync::Barrier      | `let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move &#124;&#124; b.wait();)`                                       |
+| std::sync::Condvar      | `let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move &#124;&#124; let &(ref lock, ref cvar) = &*pair;) ...`      |
+| std::sync::Once         | `static START: Once = Once::new(); START.call_once(&#124;&#124; initialize()); START.call_once(&#124;&#124; println!("This will not run"));` |
 
 ## Документация
 
