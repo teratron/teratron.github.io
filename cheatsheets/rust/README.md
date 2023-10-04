@@ -54,7 +54,7 @@
 | [Box](box.md)         | `let data: Box<i32> = Box::new(5);`                          | позволяет хранить данные в куче, а не в стеке.                                      |
 | [Rc](rc.md)           | `let rc_type: Rc<i32> = Rc::new(5);`                         | умный указатель с подсчётом ссылок.                                                 |
 | [Weak]()              | `let data: Weak<i32> = Weak::downgrade(&rc_type);`           |                                                                                     |
-| [Arc]()               | `let data: Arc<i32> = Arc::new(5);`                          |                                                                                     |
+| [Arc]()               | `let data: Arc<i32> = Arc::new(5);`                          | атомарный подсчет ссылок.                                                           |
 | [RefCell](refcell.md) | `let data: RefCell<i32> = RefCell::new(5);`                  | предоставляет единоличное владение данными.                                         |
 | [Cell]()              | `let data: RefCell<Cell<i32>> = RefCell::new(Cell::new(5));` |                                                                                     |
 | [Deref]()             |                                                              | изменяет поведение оператора разыменования `*`.                                     |
@@ -73,19 +73,19 @@
 | Context    | `let context: Context = &mut Context::from_waker(waker);` |             |
 | Waker      | `let waker: Waker = noop_waker();`                        |             |
 
-| Concurrency + Async     | Example                                                                                                                                      |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| std::thread             | thread::spawn(move &#124;&#124; {});                                                                                                         |
-| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                                            |
-| std::thread::JoinHandle | `let handle = std::thread::spawn(move &#124;&#124; {}); handle.join();`                                                                      |
-| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                               |
-| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                                            |
-| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                                              |
-| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                                 |
-| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                                          |
-| std::sync::Barrier      | `let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move &#124;&#124; b.wait();)`                                       |
-| std::sync::Condvar      | `let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move &#124;&#124; let &(ref lock, ref cvar) = &*pair;) ...`      |
-| std::sync::Once         | `static START: Once = Once::new(); START.call_once(&#124;&#124; initialize()); START.call_once(&#124;&#124; println!("This will not run"));` |
+| Concurrency + Async     | Example                                                                                                                                    |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| std::thread             | thread::spawn(move &#124;&#124; {});                                                                                                       |
+| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                                          |
+| std::thread::JoinHandle | let handle = std::thread::spawn(move &#124;&#124; {}); handle.join();                                                                      |
+| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                             |
+| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                                          |
+| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                                            |
+| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                               |
+| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                                        |
+| std::sync::Barrier      | let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move &#124;&#124; b.wait();)                                       |
+| std::sync::Condvar      | let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move &#124;&#124; let &(ref lock, ref cvar) = &*pair;) ...      |
+| std::sync::Once         | static START: Once = Once::new(); START.call_once(&#124;&#124; initialize()); START.call_once(&#124;&#124; println!("This will not run")); |
 
 ## Документация
 
@@ -93,8 +93,8 @@
 |----------|-------------------------------------------------------------------------------------------------------|
 | ///      | Комментарий документа внешней строки, используйте его для типов, признаков, функций.                  |
 | //!      | Комментарий внутренней строки документа, в основном используемый в начале файла для модуля документа. |
-| //       | Line comment, use these to document code flow or internals.                                           |
-| /* … */  | Заблокировать комментарий.                                                                            |
+| //       | Комментарий к строке. Используйте их для документирования потока кода или внутреннего устройства.     |
+| /* … */  | Блочный комментарий.                                                                                  |
 | /** … */ | Комментарий документа внешнего блока.                                                                 |
 | /*! … */ | Комментарий документа внутреннего блока.                                                              |
 
