@@ -12,6 +12,7 @@
 - **[Closure](closure.md)**
 - **[Generator](generator.md)**
 - **[Metaclass](metaclass.md)**
+- **[Generics](generics.md)**
 
 **[Decorator](decorator.md)**:
 
