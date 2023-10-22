@@ -18,36 +18,36 @@
 
 ## Типы
 
-| Data Type | Example                                             |
-|-----------|-----------------------------------------------------|
-| i8        | `let data: i8 = -100;`                              |
-| i16       | `let data: i16 = -32_000;`                          |
-| i32       | `let data: i32 = -2_147_483_648;`                   |
-| i64       | `let data: i64 = -9_223_372_036_854_775_808;`       |
-| i128      | `let data: i128 = -170_141_183_460_469_231...;`     |
-| isize     | `let data: isize = {i32 or i64, OS dependent};`     |
-| u8        | `let data: u8 = 255;`                               |
-| u16       | `let data: u16 = 65535;`                            |
-| u32       | `let data: u32 = 4_294_967_295;`                    |
-| u64       | `let data: u64 = 18_446_744_073_709_551_615;`       |
-| u128      | `let data: u128 = 340_282_366_920_938_463...;`      |
-| usize     | `let data: usize = {u32 or u64, OS dependent};`     |
-| f32       | `let data: f32 = 3.14;`                             |
-| f64       | `let data: f64 = 3.141592653589793238;`             |
-| bool      | `let data: bool = true;`                            |
-| char      | `let data: char = 'z';`                             |
-| str       | `let data: &str = "Hello, world!";`                 |
-| array     | `let data: [i32; 5] = [1, 2, 3, 4, 5];`             |
-| tuple     | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
-| slice     | `let data: &[i32] = &[1, 2, 3][..];`                |
-| unit type | `let data: () = ();`                                |
-| function  | `fn main() {}`                                      |
-| struct    | `struct User {name: String, age: u32}`              |
-| enum      | `enum Color {Red, Green, Blue}`                     |
-| traits    | `trait Summary {fn summarize(&self) -> String;}`    |
-| reference | `let data: &i32 = &1;`                              |
-| Vec       | `let data: Vec<i32> = vec![1, 2, 3];`               |
-| String    | `let data: String = String::from("hello");`         |
+| Data Type         | Example                                             |
+|-------------------|-----------------------------------------------------|
+| i8                | `let data: i8 = -100;`                              |
+| i16               | `let data: i16 = -32_000;`                          |
+| i32               | `let data: i32 = -2_147_483_648;`                   |
+| i64               | `let data: i64 = -9_223_372_036_854_775_808;`       |
+| i128              | `let data: i128 = -170_141_183_460_469_231...;`     |
+| isize             | `let data: isize = {i32 or i64, OS dependent};`     |
+| u8                | `let data: u8 = 255;`                               |
+| u16               | `let data: u16 = 65535;`                            |
+| u32               | `let data: u32 = 4_294_967_295;`                    |
+| u64               | `let data: u64 = 18_446_744_073_709_551_615;`       |
+| u128              | `let data: u128 = 340_282_366_920_938_463...;`      |
+| usize             | `let data: usize = {u32 or u64, OS dependent};`     |
+| f32               | `let data: f32 = 3.14;`                             |
+| f64               | `let data: f64 = 3.141592653589793238;`             |
+| bool              | `let data: bool = true;`                            |
+| char              | `let data: char = 'z';`                             |
+| str               | `let data: &str = "Hello, world!";`                 |
+| [array](array.md) | `let data: [i32; 5] = [1, 2, 3, 4, 5];`             |
+| tuple             | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
+| slice             | `let data: &[i32] = &[1, 2, 3][..];`                |
+| unit type         | `let data: () = ();`                                |
+| function          | `fn main() {}`                                      |
+| struct            | `struct User {name: String, age: u32}`              |
+| enum              | `enum Color {Red, Green, Blue}`                     |
+| traits            | `trait Summary {fn summarize(&self) -> String;}`    |
+| reference         | `let data: &i32 = &1;`                              |
+| Vec               | `let data: Vec<i32> = vec![1, 2, 3];`               |
+| String            | `let data: String = String::from("hello");`         |
 
 | Smart Pointer         | Example                                                      | Explanation                                                                         |
 |-----------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -73,19 +73,19 @@
 | Context    | `let context: Context = &mut Context::from_waker(waker);` |             |
 | Waker      | `let waker: Waker = noop_waker();`                        |             |
 
-| Concurrency + Async     | Example                                                                                                                                    |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| std::thread             | thread::spawn(move &#124;&#124; {});                                                                                                       |
-| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                                          |
-| std::thread::JoinHandle | let handle = std::thread::spawn(move &#124;&#124; {}); handle.join();                                                                      |
-| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                             |
-| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                                          |
-| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                                            |
-| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                               |
-| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                                        |
-| std::sync::Barrier      | let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move &#124;&#124; b.wait();)                                       |
-| std::sync::Condvar      | let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move &#124;&#124; let &(ref lock, ref cvar) = &*pair;) ...      |
-| std::sync::Once         | static START: Once = Once::new(); START.call_once(&#124;&#124; initialize()); START.call_once(&#124;&#124; println!("This will not run")); |
+| Concurrency + Async     | Example                                                                                                                       |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| std::thread             | `thread::spawn(move ll {});`                                                                                                  |
+| std::sync::mpsc         | `let (tx, rx) = mpsc::channel();`                                                                                             |
+| std::thread::JoinHandle | `let handle = std::thread::spawn(move ll {}); handle.join();`                                                                 |
+| tokio::task::JoinHandle | `let handle = tokio::spawn(async {}); handle.await.unwrap(); `                                                                |
+| std::sync::Arc          | `let arc = Arc::new(vec![1, 2, 3]); let arc_clone = arc.clone();`                                                             |
+| std::sync::Mutex        | `let mutex = Mutex::new(0); let mut guard = mutex.lock().unwrap(); *guard = 1;`                                               |
+| tokio::sync::Mutex      | `let mutex = Mutex::new(0); let mut guard = mutex.lock().await; *guard = 1;`                                                  |
+| std::sync::RwLock       | `let rwlock = RwLock::new(0); let mut guard = rwlock.write().unwrap(); *guard = 1;`                                           |
+| std::sync::Barrier      | `let barrier = Arc::new(Barrier::new(3)); let b = barrier.clone(); spawn(move ll b.wait();)`                                  |
+| std::sync::Condvar      | `let pair = Mutex::new((0, Condvar::new())); let pair = pair.clone(); spawn(move ll let &(ref lock, ref cvar) = &*pair;) ...` |
+| std::sync::Once         | `static START: Once = Once::new(); START.call_once(ll initialize()); START.call_once(ll println!("This will not run"));`      |
 
 ## Документация
 
@@ -102,12 +102,13 @@
 - **[Контейнеры](crate.md)**
 - **[Generics](generics.md)** - обобщенные типы.
 - **[Closures](closures.md)** - замыкания - это анонимные функции.
-- **[Lifetime](lifetime.md)** - время жизни ссылки.
+- **[Lifetime](lifetime.md)**
 - **[Tests](tests.md)** - функции, которые проверяют, что не тестовый код работает ожидаемым образом.
-- **[Macros](macros.md)**
+- **[Макросы](macros.md)**
 - **[Result](result.md)** - обработка потенциального сбоя.
 - **[Option](option.md)**
-- **[From/Into](from-into.md)**
+- **[From](from.md)**
+- **[Into](into.md)**
 
 ## Ключевые слова
 
@@ -152,53 +153,6 @@
 | [use](visibility.md)   | ввести объекты в область видимости                                                                                                             |
 | where                  | обозначить утверждения, которые ограничивают тип                                                                                               |
 | [while](while.md)      | условный цикл, основанный на результате условного выражения                                                                                    |
-
-## Макросы
-
-| Keyword                                 | Описание                                                                                       |
-|-----------------------------------------|------------------------------------------------------------------------------------------------|
-| concat_bytes `Experimental`             | Объединяет литералы в байтовый фрагмент.                                                       |
-| concat_idents `Experimental`            | Объединяет идентификаторы в один идентификатор.                                                |
-| const_format_args `Experimental`        | То же, что `format_args`, но может использоваться в некоторых контекстах const.                |
-| format_args_nl `Experimental`           | То же, что `format_args`, но добавляет новую строку в конце.                                   |
-| log_syntax `Experimental`               | Выводит переданные токены в стандартный вывод.                                                 |
-| trace_macros `Experimental`             | Включает или отключает функциональность трассировки, используемую для отладки других макросов. |
-| assert                                  | Утверждает, что логическое выражение находится `true` во время выполнения.                     |
-| assert_eq                               | Утверждает, что два выражения равны друг другу (используя `PartialEq`).                        |
-| assert_ne                               | Утверждает, что два выражения не равны друг другу (используя `PartialEq`).                     |
-| cfg                                     | Вычисляет логические комбинации флагов конфигурации во время компиляции.                       |
-| column                                  | Расширяется до номера столбца, в котором оно было вызвано.                                     |
-| compile_error                           | Вызывает сбой компиляции с указанным сообщением об ошибке при обнаружении.                     |
-| concat                                  | Объединяет литералы в статический фрагмент строки.                                             |
-| dbg                                     | Выводит и возвращает значение заданного выражения для быстрой и грязной отладки.               |
-| debug_assert                            | Утверждает, что логическое выражение находится `true` во время выполнения.                     |
-| debug_assert_eq                         | Утверждает, что два выражения равны друг другу.                                                |
-| debug_assert_ne                         | Утверждает, что два выражения не равны друг другу.                                             |
-| env                                     | Проверяет переменную среды во время компиляции.                                                |
-| eprint                                  | Выводит стандартную ошибку.                                                                    |
-| eprintln                                | Выводит стандартную ошибку с новой строкой.                                                    |
-| file                                    | Расширяется до имени файла, в котором оно было вызвано.                                        |
-| format_args                             | Создает параметры для других макросов форматирования строк.                                    |
-| include                                 | Анализирует файл как выражение или элемент в соответствии с контекстом.                        |
-| include_bytes                           | Включает файл в качестве ссылки на массив байтов.                                              |
-| include_str                             | Включает файл в кодировке UTF-8 в виде строки.                                                 |
-| is_x86_feature_detected `x86 or x86-64` | Макрос для проверки во время выполнения, доступна ли функция ЦП на платформах x86/x86-64.      |
-| line                                    | Расширяется до номера строки, в которой оно было вызвано.                                      |
-| matches                                 | Возвращает, соответствует ли данное выражение какому-либо из заданных шаблонов.                |
-| module_path                             | Расширяется до строки, представляющей текущий путь к модулю.                                   |
-| option_env                              | Необязательно проверяет переменную среды во время компиляции.                                  |
-| panic                                   | Вызывает панику в текущем потоке.                                                              |
-| print                                   | Печатает на стандартный вывод.                                                                 |
-| println                                 | Печатает на стандартный вывод с новой строкой.                                                 |
-| stringify                               | Упорядочивает его аргументы.                                                                   |
-| thread_local                            | Объявите новый ключ локального хранилища потока типа of `type std::thread::LocalKey`.          |
-| todo                                    | Указывает на незаконченный код.                                                                |
-| try `Deprecated`                        | Разворачивает результат или распространяет его ошибку.                                         |
-| unimplemented                           | Указывает на невыполненный код, вызывая панику сообщением “не реализовано”.                    |
-| unreachable                             | Указывает на недоступный код.                                                                  |
-| vec                                     | Создает `Vec`, содержащий аргументы.                                                           |
-| write                                   | Записывает форматированные данные в буфер.                                                     |
-| writeln                                 | Записывает форматированные данные в буфер с добавлением новой строки.                          |
 
 ## Соглашения по именованию сущностей
 
@@ -322,7 +276,7 @@ let y = 10;
 
 ---
 
-## Cli
+## CLI
 
 - rust-src
 - cargo
