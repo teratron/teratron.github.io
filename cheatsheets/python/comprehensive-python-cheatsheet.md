@@ -35,17 +35,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** **[`NumPy`](#numpy)**__
 ,__ **[`Image`](#image)**__,__ **[`Audio`](#audio)**__,__ **[`Games`](#pygame)**__,__ **[`Data`](#pandas)**__.__
 
-
-Main
-----
+## Main
 
 ```python
 if __name__ == '__main__':     # Runs main() if file wasn't imported.
     main()
 ```
 
-List
-----
+## List
 
 ```python
 <list> = <list>[<slice>]       # Or: <list>[from_inclusive : to_exclusive : ±step]
@@ -86,8 +83,7 @@ list_of_chars    = list(<str>)
 <list>.clear()                 # Removes all items. Also works on dictionary and set.
 ```
 
-Dictionary
-----------
+## Dictionary
 
 ```python
 <view> = <dict>.keys()                          # Coll. of keys that reflects changes.
@@ -130,8 +126,7 @@ counter.most_common()[0]
 # ('blue', 3)
 ```
 
-Set
----
+## Set
 
 ```python
 <set> = set()                                   # `{}` returns a dictionary.
@@ -166,8 +161,8 @@ Set
 <frozenset> = frozenset(<collection>)
 ```
 
-Tuple
------
+## Tuple
+
 **Tuple is an immutable and hashable list.**
 
 ```python
@@ -193,8 +188,8 @@ Point(x=1, y=2)
 2
 ```
 
-Range
------
+## Range
+
 **Immutable and hashable sequence of integers.**
 
 ```python
@@ -208,16 +203,14 @@ Range
 [0, 1, 2]
 ```
 
-Enumerate
----------
+## Enumerate
 
 ```python
 for i, el in enumerate(<collection> [, i_start]):
     ...
 ```
 
-Iterator
---------
+## Iterator
 
 ```python
 <iter> = iter(<collection>)                 # `iter(<iter>)` returns unmodified iterator.
@@ -226,7 +219,7 @@ Iterator
 <list> = list(<iter>)                       # Returns a list of iterator's remaining elements.
 ```
 
-### Itertools
+## Itertools
 
 ```python
 import itertools as it
@@ -248,8 +241,7 @@ import itertools as it
 <iter> = it.islice(<coll>, from_inc, …)     # `to_exclusive, +step_size`. Indices can be None.
 ```
 
-Generator
----------
+## Generator
 
 * **Any function that contains a yield statement returns a generator.**
 * **Generators and iterators are interchangeable.**
@@ -267,8 +259,7 @@ def count(start, step):
 (10, 12, 14)
 ```
 
-Type
-----
+## Type
 
 * **Everything is an object.**
 * **Every object has a type.**
@@ -331,8 +322,7 @@ True
 +--------------------+----------+----------+----------+----------+----------+
 ```
 
-String
-------
+## String
 
 ```python
 <str>  = <str>.strip()                       # Strips all whitespace characters from both ends.
@@ -383,8 +373,7 @@ String
 
 * **`'isspace()'` checks for whitespaces: `'[ \t\n\r\f\v\x1c-\x1f\x85\xa0\u1680…]'`.**
 
-Regex
------
+## Regex
 
 ```python
 import re
@@ -429,8 +418,7 @@ import re
 * **Use a capital letter for negation (all non-ASCII characters will be matched when used in combination with ASCII
   flag).**
 
-Format
-------
+## Format
 
 ```perl
 <str> = f'{<el_1>}, {<el_2>}'            # Curly brackets can also contain expressions.
@@ -534,8 +522,7 @@ Format
 {90:X}                                   # '5A'
 ```
 
-Numbers
--------
+## Numbers
 
 ```python
 <int>      = int(<float/str/bool>)                # Or: math.floor(<float>)
@@ -600,8 +587,7 @@ from random import random, randint, choice        # Also: shuffle, gauss, triang
 <int> = ~<int>                                    # Not. Also -<int> - 1.
 ```
 
-Combinatorics
--------------
+## Combinatorics
 
 * **Every function returns an iterator.**
 * **If you want to print the iterator, you need to pass it to the list() function first!**
@@ -643,8 +629,7 @@ import itertools as it
  ('c', 'a'), ('c', 'b')]                         # c x  x  .
 ```
 
-Datetime
---------
+## Datetime
 
 * **Module 'datetime' provides 'date' `<D>`, 'time' `<T>`, 'datetime' `<DT>` and 'timedelta' `<TD>` classes. All are
   immutable and hashable.**
@@ -736,8 +721,7 @@ from dateutil.tz import UTC, tzlocal, gettz, datetime_exists, resolve_imaginary
 <float>  = <TD>    / <TD>                   # How many weeks/years there are in TD. Also //.
 ```
 
-Arguments
----------
+## Arguments
 
 ### Inside Function Call
 
@@ -758,8 +742,7 @@ def func(<nondefault_args>, <default_args>): ...  # def func(x, y=0): ...
 * **Default values are evaluated when function is first encountered in the scope.**
 * **Any mutation of a mutable default value will persist between invocations!**
 
-Splat Operator
---------------
+## Splat Operator
 
 ### Inside Function Call
 
@@ -831,8 +814,7 @@ def f(x, y, *, z): ...          # f(x=1, y=2, z=3) | f(1, y=2, z=3) | f(1, 2, z=
 head, *body, tail = <coll.>     # Head or tail can be omitted.
 ```
 
-Inline
-------
+## Inline
 
 ### Lambda
 
@@ -903,8 +885,7 @@ Player = make_dataclass('Player', ['loc', 'dir'])   # Creates a class.
 player = Player(point, direction)                   # Returns its instance.
 ```
 
-Imports
--------
+## Imports
 
 ```python
 import <module>            # Imports a built-in or '<module>.py'.
@@ -917,8 +898,8 @@ import <package>.<module>  # Imports a built-in or '<package>/<module>.py'.
 * **Running `'import <package>'` does not automatically provide access to the package's modules unless they are
   explicitly imported in its init script.**
 
-Closure
--------
+## Closure
+
 **We have/get a closure in Python when:**
 
 * **A nested function references a value of its enclosing function and then**
@@ -981,8 +962,7 @@ def get_counter():
 (1, 2, 3)
 ```
 
-Decorator
----------
+## Decorator
 
 * **A decorator takes a function, adds some functionality and returns it.**
 * **It can be any [callable](#callable), but is usually implemented as a function that returns a [closure](#closure).**
@@ -1058,8 +1038,7 @@ def add(x, y):
   function as a 'print_result' argument. Decorators can however manually check if the argument they received is a
   function and act accordingly.**
 
-Class
------
+## Class
 
 ```python
 class <name>:
@@ -1215,8 +1194,8 @@ from copy import copy, deepcopy
 <object> = deepcopy(<object>)
 ```
 
-Duck Types
-----------
+## Duck Types
+
 **A duck type is an implicit type that prescribes a set of special methods. Any object that has those methods defined is
 considered a member of that duck type.**
 
@@ -1365,8 +1344,7 @@ class MyOpen:
 Hello World!
 ```
 
-Iterable Duck Types
--------------------
+## Iterable Duck Types
 
 ### Iterable
 
@@ -1481,8 +1459,7 @@ class MyAbcSequence(abc.Sequence):
 * **Other ABCs that generate missing methods are: MutableSequence, Set, MutableSet, Mapping and MutableMapping.**
 * **Names of their required methods are stored in `'<abc>.__abstractmethods__'`.**
 
-Enum
-----
+## Enum
 
 ```python
 from enum import Enum, auto
@@ -1537,8 +1514,7 @@ LogicOp = Enum('LogicOp', {'AND': partial(lambda l, r: l and r),
                            'OR':  partial(lambda l, r: l or r)})
 ```
 
-Exceptions
-----------
+## Exceptions
 
 ```python
 try:
@@ -1666,9 +1642,9 @@ class MyError(Exception): pass
 class MyInputError(MyError): pass
 ```
 
-Exit
-----
-**Exits the interpreter by raising SystemExit exception.**
+## Exit
+
+**Exit the interpreter by raising SystemExit exception.**
 
 ```python
 import sys
@@ -1677,8 +1653,7 @@ sys.exit(<el>)                    # Prints to stderr and exits with 1.
 sys.exit(<int>)                   # Exits with passed exit code.
 ```
 
-Print
------
+## Print
 
 ```python
 print(<el_1>, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
@@ -1696,9 +1671,9 @@ pprint(<collection>, width=80, depth=None, compact=False, sort_dicts=True)
 
 * **Levels deeper than 'depth' get replaced by '...'.**
 
-Input
------
-**Reads a line from the user input or pipe if present.**
+## Input
+
+**Read a line from the user input or pipe if present.**
 
 ```python
 <str> = input(prompt=None)
@@ -1708,8 +1683,7 @@ Input
 * **Prompt string is printed to the standard output before reading input.**
 * **Raises EOFError when user hits EOF (ctrl-d/ctrl-z⏎) or input stream gets exhausted.**
 
-Command Line Arguments
-----------------------
+## Command Line Arguments
 
 ```python
 import sys
@@ -1735,8 +1709,8 @@ value = args.<name>
 * **Use `'default=<el>'` to set the default value.**
 * **Use `'type=FileType(<mode>)'` for files. Accepts 'encoding', but 'newline' is None.**
 
-Open
-----
+## Open
+
 **Opens the file and returns a corresponding file object.**
 
 ```python
@@ -1809,8 +1783,7 @@ def write_to_file(filename, text):
         file.write(text)
 ```
 
-Paths
------
+## Paths
 
 ```python
 from os import getcwd, path, listdir, scandir
@@ -1893,8 +1866,7 @@ from pathlib import Path
 <file> = open(<Path>)               # Also <Path>.read/write_text/bytes().
 ```
 
-OS Commands
------------
+## OS Commands
 
 ```python
 import os, shutil, subprocess
@@ -1951,8 +1923,8 @@ CompletedProcess(args=['bc', '-s'], returncode=0)
 '2\n'
 ```
 
-JSON
-----
+## JSON
+
 **Text file format for storing collections of strings and numbers.**
 
 ```python
@@ -1977,8 +1949,8 @@ def write_to_json_file(filename, an_object):
         json.dump(an_object, file, ensure_ascii=False, indent=2)
 ```
 
-Pickle
-------
+## Pickle
+
 **Binary file format for storing Python objects.**
 
 ```python
@@ -2003,8 +1975,8 @@ def write_to_pickle_file(filename, an_object):
         pickle.dump(an_object, file)
 ```
 
-CSV
----
+## CSV
+
 **Text file format for storing spreadsheets.**
 
 ```python
@@ -2038,12 +2010,12 @@ import csv
 
 ### Parameters
 
-* **`'dialect'` - Master parameter that sets the default values. String or a 'csv.Dialect' object.**
+* **`'dialect'` - Primary parameter that sets the default values. String or a 'csv.Dialect' object.**
 * **`'delimiter'` - A one-character string used to separate fields.**
 * **`'quotechar'` - Character for quoting fields that contain special characters.**
 * **`'doublequote'` - Whether quotechars inside fields are/get doubled or escaped.**
 * **`'skipinitialspace'` - Is space character at the start of the field stripped by the reader.**
-* **`'lineterminator'` - How writer terminates rows. Reader is hardcoded to '\n', '\r', '\r\n'.**
+* **`'lineterminator'` - How a writer terminates rows. Reader is hardcoded to '\n', '\r', '\r\n'.**
 * **`'quoting'` - 0: As necessary, 1: All, 2: All but numbers which are read as floats, 3: None.**
 * **`'escapechar'` - Character for escaping quotechars if doublequote is False.**
 
@@ -2080,8 +2052,8 @@ def write_to_csv_file(filename, rows, dialect='excel'):
         writer.writerows(rows)
 ```
 
-SQLite
-------
+## SQLite
+
 **A server-less database engine that stores each database into a separate file.**
 
 ```python
@@ -2160,8 +2132,8 @@ with <conn>.begin(): ...                        # Exits the block with commit or
 +------------+--------------+-----------+----------------------------------+
 ```
 
-Bytes
------
+## Bytes
+
 **Bytes object is an immutable sequence of single bytes. Mutable version is called bytearray.**
 
 ```python
@@ -2205,8 +2177,7 @@ def write_bytes(filename, bytes_obj):
         file.write(bytes_obj)
 ```
 
-Struct
-------
+## Struct
 
 * **Module that performs conversions between a sequence of numbers and a bytes object.**
 * **System’s type sizes, byte order, and alignment rules are used by default.**
@@ -2250,8 +2221,8 @@ b'\x00\x01\x00\x02\x00\x00\x00\x03'
 * **`'f'` - float (4/4)**
 * **`'d'` - double (8/8)**
 
-Array
------
+## Array
+
 **List that can only hold numbers of a predefined type. Available types and their minimum sizes in bytes are listed
 above. Sizes and byte order are always determined by the system, however bytes of each element can be swapped with
 byteswap() method.**
@@ -2265,8 +2236,7 @@ from array import array
 <file>.write(<array>)                          # Writes array to the binary file.
 ```
 
-Memory View
------------
+## Memory View
 
 * **A sequence object that points to the memory of another object.**
 * **Each element can reference a single or multiple consecutive bytes, depending on format.**
@@ -2296,8 +2266,8 @@ Memory View
 '<hex>' = <mview>.hex()                        # Treats mview as a bytes object.
 ```
 
-Deque
------
+## Deque
+
 **A thread-safe list with efficient appends and pops from either side. Pronounced "deck".**
 
 ```python
@@ -3732,8 +3702,7 @@ c  7  8  6
 <Sr/DF>       = <R>.mean/sum/max()             # Or: <R>.apply/agg(<agg_func/str>)
 ```
 
-Plotly
-------
+## Plotly
 
 ```python
 # $ pip3 install plotly kaleido
@@ -3806,8 +3775,7 @@ if __name__ == '__main__':
     main()
 ```
 
-PySimpleGUI
------------
+## PySimpleGUI
 
 ```python
 # $ pip3 install PySimpleGUI
@@ -3819,8 +3787,7 @@ event, values = window.read()
 print(f'Hello {values[0]}!' if event == 'Ok' else '')
 ```
 
-Appendix
---------
+## Appendix
 
 ### Cython
 
@@ -3899,8 +3866,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Index
------
+## Index
 
 * **Only available in the [PDF](https://transactions.sendowl.com/products/78175486/4422834F/view).**
 * **Ctrl+F / ⌘F is usually sufficient.**

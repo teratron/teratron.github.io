@@ -87,105 +87,84 @@
 
 ### Функции
 
-| #     | Built-in Functions                               | Описание |
-|-------|--------------------------------------------------|----------|
-| **A** |                                                  |          |
-|       | [`abs()`](#abs "abs")                            |          |
-|       | [`aiter()`](#aiter "aiter")                      |          |
-|       | [`all()`](#all "all")                            |          |
-|       | [`any()`](#any "any")                            |          |
-|       | [`anext()`](#anext "anext")                      |          |
-|       | [`ascii()`](#ascii "ascii")                      |          |
-| **B** |                                                  |          |
-|       | [`bin()`](#bin "bin")                            |          |
-|       | [`bool()`](#bool "bool")                         |          |
-|       | [`breakpoint()`](#breakpoint "breakpoint")       |          |
-|       | [`bytearray()`](#func-bytearray)                 |          |
-|       | [`bytes()`](#func-bytes)                         |          |
-| **C** |                                                  |          |
-|       | [`callable()`](#callable "callable")             |          |
-|       | [`chr()`](#chr "chr")                            |          |
-|       | [`classmethod()`](#classmethod "classmethod")    |          |
-|       | [`compile()`](#compile "compile")                |          |
-|       | [`complex()`](#complex "complex")                |          |
-| **D** |                                                  |          |
-|       | [`delattr()`](#delattr "delattr")                |          |
-|       | [`dict()`](#func-dict)                           |          |
-|       | [`dir()`](#dir "dir")                            |          |
-|       | [`divmod()`](#divmod "divmod")                   |          |
-| **E** |                                                  |          |
-|       | [`enumerate()`](#enumerate "enumerate")          |          |
-|       | [`eval()`](#eval "eval")                         |          |
-|       | [`exec()`](#exec "exec")                         |          |
-| **F** |                                                  |          |
-|       | [`filter()`](#filter "filter")                   |          |
-|       | [`float()`](#float "float")                      |          |
-|       | [`format()`](#format "format")                   |          |
-|       | [`frozenset()`](#func-frozenset)                 |          |
-| **G** |                                                  |          |
-|       | [`getattr()`](#getattr "getattr")                |          |
-|       | [`globals()`](#globals "globals")                |          |
-| **H** |                                                  |          |
-|       | [`hasattr()`](#hasattr "hasattr")                |          |
-|       | [`hash()`](#hash "hash")                         |          |
-|       | [`help()`](#help "help")                         |          |
-|       | [`hex()`](#hex "hex")                            |          |
-| **I** |                                                  |          |
-|       | [`id()`](#id "id")                               |          |
-|       | [`input()`](#input "input")                      |          |
-|       | [`int()`](#int "int")                            |          |
-|       | [`isinstance()`](#isinstance "isinstance")       |          |
-|       | [`issubclass()`](#issubclass "issubclass")       |          |
-|       | [`iter()`](#iter "iter")                         |          |
-| **L** |                                                  |          |
-|       | [`len()`](#len "len")                            |          |
-|       | [`list()`](#func-list)                           |          |
-|       | [`locals()`](#locals "locals")                   |          |
-| **M** |                                                  |          |
-|       | [`map()`](#map "map")                            |          |
-|       | [`max()`](#max "max")                            |          |
-|       | [`memoryview()`](#func-memoryview)               |          |
-|       | [`min()`](#min "min")                            |          |
-| **N** |                                                  |          |
-|       | [`next()`](#next "next")                         |          |
-| **O** |                                                  |          |
-|       | [`object()`](#object "object")                   |          |
-|       | [`oct()`](#oct "oct")                            |          |
-|       | [`open()`](#open "open")                         |          |
-|       | [`ord()`](#ord "ord")                            |          |
-| **P** |                                                  |          |
-|       | [`pow()`](#pow "pow")                            |          |
-|       | [`print()`](#print "print")                      |          |
-|       | [`property()`](#property "property")             |          |
-| **R** |                                                  |          |
-|       | [`range()`](#func-range)                         |          |
-|       | [`repr()`](#repr "repr")                         |          |
-|       | [`reversed()`](#reversed "reversed")             |          |
-|       | [`round()`](#round "round")                      |          |
-| **S** |                                                  |          |
-|       | [`set()`](#func-set)                             |          |
-|       | [`setattr()`](#setattr "setattr")                |          |
-|       | [`slice()`](#slice "slice")                      |          |
-|       | [`sorted()`](#sorted "sorted")                   |          |
-|       | [`staticmethod()`](#staticmethod "staticmethod") |          |
-|       | [`str()`](#func-str)                             |          |
-|       | [`sum()`](#sum "sum")                            |          |
-|       | [`super()`](#super "super")                      |          |
-| **T** |                                                  |          |
-|       | [`tuple()`](#func-tuple)                         |          |
-|       | [`type()`](#type "type")                         |          |
-| **V** |                                                  |          |
-|       | [`vars()`](#vars "vars")                         |          |
-| **Z** |                                                  |          |
-|       | [`zip()`](#zip "zip")                            |          |
-| \_    |                                                  |          |
-|       | [`__import__()`](#import__ "__import__")         |          |
+| #     | Built-in Functions | Описание |
+|-------|--------------------|----------|
+| **A** | `abs()`            |          |
+|       | `aiter()`          |          |
+|       | `all()`            |          |
+|       | `any()`            |          |
+|       | `anext()`          |          |
+|       | `ascii()`          |          |
+| **B** | `bin()`            |          |
+|       | `bool()`           |          |
+|       | `breakpoint()`     |          |
+|       | `bytearray()`      |          |
+|       | `bytes()`          |          |
+| **C** | `callable()`       |          |
+|       | `chr()`            |          |
+|       | `classmethod()`    |          |
+|       | `compile()`        |          |
+|       | `complex()`        |          |
+| **D** | `delattr()`        |          |
+|       | `dict()`           |          |
+|       | `dir()`            |          |
+|       | `divmod()`         |          |
+| **E** | `enumerate()`      |          |
+|       | `eval()`           |          |
+|       | `exec()`           |          |
+| **F** | `filter()`         |          |
+|       | `float()`          |          |
+|       | `format()`         |          |
+|       | `frozenset()`      |          |
+| **G** | `getattr()`        |          |
+|       | `globals()`        |          |
+| **H** | `hasattr()`        |          |
+|       | `hash()`           |          |
+|       | `help()`           |          |
+|       | `hex()`            |          |
+| **I** | `id()`             |          |
+|       | `input()`          |          |
+|       | `int()`            |          |
+|       | `isinstance()`     |          |
+|       | `issubclass()`     |          |
+|       | `iter()`           |          |
+| **L** | `len()`            |          |
+|       | `list()`           |          |
+|       | `locals()`         |          |
+| **M** | `map()`            |          |
+|       | `max()`            |          |
+|       | `memoryview()`     |          |
+|       | `min()`            |          |
+| **N** | `next()`           |          |
+| **O** | `object()`         |          |
+|       | `oct()`            |          |
+|       | `open()`           |          |
+|       | `ord()`            |          |
+| **P** | `pow()`            |          |
+|       | `print()`          |          |
+|       | `property()`       |          |
+| **R** | `range()`          |          |
+|       | `repr()`           |          |
+|       | `reversed()`       |          |
+|       | `round()`          |          |
+| **S** | `set()`            |          |
+|       | `setattr()`        |          |
+|       | `slice()`          |          |
+|       | `sorted()`         |          |
+|       | `staticmethod()`   |          |
+|       | `str()`            |          |
+|       | `sum()`            |          |
+|       | `super()`          |          |
+| **T** | `tuple()`          |          |
+|       | `type()`           |          |
+| **V** | `vars()`           |          |
+| **Z** | `zip()`            |          |
+| \_    | `__import__()`     |          |
 
 #### Некоторые операции над последовательностями:
 
 | Операции  | Описание                                        |
 |-----------|-------------------------------------------------|
-| `len(s)`  | длина                                           |
 | `s[0]`    | обращение к элементу                            |
 | `s[-1]`   | обращение к элементу с конца последовательности |
 | `s[1:3]`  | срез начиная со смещения 1 и до 2 (не 3)        |
