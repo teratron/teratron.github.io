@@ -2,8 +2,6 @@
 
 [Назад к перечню шпаргалок][back]
 
-- **[Comprehensive Python Cheatsheet](comprehensive-python-cheatsheet.md)**
-
 - **[Structure](structure.md)** / **[rst](structure.rst)**
 - **[Types](types.md)**
 - **[Round](round.md)**
@@ -87,79 +85,79 @@
 
 ### Функции
 
-| #     | Built-in Functions | Описание |
-|-------|--------------------|----------|
-| **A** | `abs()`            |          |
-|       | `aiter()`          |          |
-|       | `all()`            |          |
-|       | `any()`            |          |
-|       | `anext()`          |          |
-|       | `ascii()`          |          |
-| **B** | `bin()`            |          |
-|       | `bool()`           |          |
-|       | `breakpoint()`     |          |
-|       | `bytearray()`      |          |
-|       | `bytes()`          |          |
-| **C** | `callable()`       |          |
-|       | `chr()`            |          |
-|       | `classmethod()`    |          |
-|       | `compile()`        |          |
-|       | `complex()`        |          |
-| **D** | `delattr()`        |          |
-|       | `dict()`           |          |
-|       | `dir()`            |          |
-|       | `divmod()`         |          |
-| **E** | `enumerate()`      |          |
-|       | `eval()`           |          |
-|       | `exec()`           |          |
-| **F** | `filter()`         |          |
-|       | `float()`          |          |
-|       | `format()`         |          |
-|       | `frozenset()`      |          |
-| **G** | `getattr()`        |          |
-|       | `globals()`        |          |
-| **H** | `hasattr()`        |          |
-|       | `hash()`           |          |
-|       | `help()`           |          |
-|       | `hex()`            |          |
-| **I** | `id()`             |          |
-|       | `input()`          |          |
-|       | `int()`            |          |
-|       | `isinstance()`     |          |
-|       | `issubclass()`     |          |
-|       | `iter()`           |          |
-| **L** | `len()`            |          |
-|       | `list()`           |          |
-|       | `locals()`         |          |
-| **M** | `map()`            |          |
-|       | `max()`            |          |
-|       | `memoryview()`     |          |
-|       | `min()`            |          |
-| **N** | `next()`           |          |
-| **O** | `object()`         |          |
-|       | `oct()`            |          |
-|       | `open()`           |          |
-|       | `ord()`            |          |
-| **P** | `pow()`            |          |
-|       | `print()`          |          |
-|       | `property()`       |          |
-| **R** | `range()`          |          |
-|       | `repr()`           |          |
-|       | `reversed()`       |          |
-|       | `round()`          |          |
-| **S** | `set()`            |          |
-|       | `setattr()`        |          |
-|       | `slice()`          |          |
-|       | `sorted()`         |          |
-|       | `staticmethod()`   |          |
-|       | `str()`            |          |
-|       | `sum()`            |          |
-|       | `super()`          |          |
-| **T** | `tuple()`          |          |
-|       | `type()`           |          |
-| **V** | `vars()`           |          |
-| **Z** | `zip()`            |          |
-| \_    | `__import__()`     |          |
+| #     | Built-in Functions                 | Описание                                                                                                              |
+|-------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **A** | `abs(x)`                           | Возвращает абсолютное значение числа.                                                                                 |
+|       | `aiter(async_iterable)`            | Возвращает асинхронный итератор для асинхронной итерации.                                                             |
+|       | `all(iterable)`                    | Возвращает, `True` если все элементы итерируемого значения истинны.                                                   |
+|       | `any(iterable)`                    | Возвращает, `True` если какой-либо элемент итерируемого значения имеет значение `True`.                               |
+|       | `anext(async_iterator[, default])` | Когда ожидает, возвращает следующий элемент из заданного асинхронного итератора.                                      |
+|       | `ascii(object)`                    | Как `repr()`, возвращает строку, содержащую печатное представление объекта, но экранируют символы, отличные от ASCII. |
+| **B** | `bin()`                            |                                                                                                                       |
+|       | `bool()`                           |                                                                                                                       |
+|       | `breakpoint()`                     |                                                                                                                       |
+|       | `bytearray()`                      |                                                                                                                       |
+|       | `bytes()`                          |                                                                                                                       |
+| **C** | `callable()`                       |                                                                                                                       |
+|       | `chr()`                            |                                                                                                                       |
+|       | `classmethod()`                    |                                                                                                                       |
+|       | `compile()`                        |                                                                                                                       |
+|       | `complex()`                        |                                                                                                                       |
+| **D** | `delattr()`                        |                                                                                                                       |
+|       | `dict()`                           |                                                                                                                       |
+|       | `dir()`                            |                                                                                                                       |
+|       | `divmod()`                         |                                                                                                                       |
+| **E** | `enumerate()`                      |                                                                                                                       |
+|       | `eval()`                           |                                                                                                                       |
+|       | `exec()`                           |                                                                                                                       |
+| **F** | `filter()`                         |                                                                                                                       |
+|       | `float()`                          |                                                                                                                       |
+|       | `format()`                         |                                                                                                                       |
+|       | `frozenset()`                      |                                                                                                                       |
+| **G** | `getattr()`                        |                                                                                                                       |
+|       | `globals()`                        |                                                                                                                       |
+| **H** | `hasattr()`                        |                                                                                                                       |
+|       | `hash()`                           |                                                                                                                       |
+|       | `help()`                           |                                                                                                                       |
+|       | `hex()`                            |                                                                                                                       |
+| **I** | `id()`                             |                                                                                                                       |
+|       | `input()`                          |                                                                                                                       |
+|       | `int()`                            |                                                                                                                       |
+|       | `isinstance()`                     |                                                                                                                       |
+|       | `issubclass()`                     |                                                                                                                       |
+|       | `iter()`                           |                                                                                                                       |
+| **L** | `len()`                            |                                                                                                                       |
+|       | `list()`                           |                                                                                                                       |
+|       | `locals()`                         |                                                                                                                       |
+| **M** | `map()`                            |                                                                                                                       |
+|       | `max()`                            |                                                                                                                       |
+|       | `memoryview()`                     |                                                                                                                       |
+|       | `min()`                            |                                                                                                                       |
+| **N** | `next()`                           |                                                                                                                       |
+| **O** | `object()`                         |                                                                                                                       |
+|       | `oct()`                            |                                                                                                                       |
+|       | `open()`                           |                                                                                                                       |
+|       | `ord()`                            |                                                                                                                       |
+| **P** | `pow()`                            |                                                                                                                       |
+|       | `print()`                          |                                                                                                                       |
+|       | `property()`                       |                                                                                                                       |
+| **R** | `range()`                          |                                                                                                                       |
+|       | `repr()`                           |                                                                                                                       |
+|       | `reversed()`                       |                                                                                                                       |
+|       | `round()`                          |                                                                                                                       |
+| **S** | `set()`                            |                                                                                                                       |
+|       | `setattr()`                        |                                                                                                                       |
+|       | `slice()`                          |                                                                                                                       |
+|       | `sorted()`                         |                                                                                                                       |
+|       | `staticmethod()`                   |                                                                                                                       |
+|       | `str()`                            |                                                                                                                       |
+|       | `sum()`                            |                                                                                                                       |
+|       | `super()`                          |                                                                                                                       |
+| **T** | `tuple()`                          |                                                                                                                       |
+|       | `type()`                           |                                                                                                                       |
+| **V** | `vars()`                           |                                                                                                                       |
+| **Z** | `zip()`                            |                                                                                                                       |
+| \_    | `__import__()`                     |                                                                                                                       |
 
 #### Некоторые операции над последовательностями:
 
