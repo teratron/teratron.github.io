@@ -4,7 +4,7 @@
 
 [Назад к перечню шпаргалок][back]
 
-### Heading
+## Heading
 
 ```markdown
 # H1
@@ -13,11 +13,6 @@
 #### H4
 ##### H5
 ###### H6
-
-H1
-=
-H2
--
 ```
 
 # H1
@@ -32,13 +27,7 @@ H2
 
 ###### H6
 
-H1
-=
-
-H2
--
-
-### Heading ID
+## Heading ID
 
 ```markdown
 ### My Heading {#heading-id}
@@ -46,7 +35,7 @@ H2
 
 ### My Heading {#heading-id}
 
-### Bold
+## Bold
 
 ```markdown
 **bold text**
@@ -56,7 +45,7 @@ __bold text__
 **bold text**\
 __bold text__
 
-### Italic
+## Italic
 
 ```markdown
 *italicized text*
@@ -66,7 +55,7 @@ _italicized text_
 *italicized text*\
 _italicized text_
 
-### Strikethrough
+## Strikethrough
 
 ```markdown
 ~~The world is flat.~~
@@ -74,7 +63,7 @@ _italicized text_
 
 ~~The world is flat.~~
 
-### Highlight
+## Highlight
 
 ```markdown
 I need to highlight these ==very important words==.
@@ -82,7 +71,7 @@ I need to highlight these ==very important words==.
 
 I need to highlight these ==very important words==.
 
-### Subscript
+## Subscript
 
 ```markdown
 H~2~O
@@ -90,7 +79,7 @@ H~2~O
 
 H~2~O
 
-### Superscript
+## Superscript
 
 ```markdown
 X^2^
@@ -98,7 +87,7 @@ X^2^
 
 X^2^
 
-### Emphasis
+## Emphasis
 
 ```markdown
 This text is ***really important***.
@@ -114,7 +103,7 @@ This text is __*really important*__.\
 This text is **_really important_**.\
 This is really***very***important text.
 
-### Blockquote
+## Blockquote
 
 ```markdown
 > blockquote
@@ -159,6 +148,8 @@ This is really***very***important text.
 >
 >
 > *Everything* is going, according to **plan**.
+
+## List
 
 ### Ordered List
 
@@ -250,7 +241,7 @@ Second Term
 - [ ] Update the website
 - [ ] Contact the media
 
-### Code
+## Code
 
 `code`
 
@@ -277,19 +268,23 @@ Second Term
         </head>
     </html>
 
-### Horizontal Rule
+## Horizontal Rule
 
 ```markdown
 ***
+
 ---
+
 ___
 ```
 
 ***
+
 ---
+
 ___
 
-### Link
+## Link
 
 ```markdown
 [Markdown Guide](https://www.markdownguide.org)
@@ -377,13 +372,15 @@ means comfort.
 
 ```markdown
 [My Heading](#heading-id)
+
 [My Heading](https://teratron.github.io/cheatsheet/markdown/#heading-id)
 ```
 
-[My Heading](#heading-id)\
+[My Heading](#heading-id)
+
 [My Heading](https://teratron.github.io/cheatsheet/markdown/#heading-id)
 
-### Footnote
+## Footnote
 
 ```markdown
 Here's a simple footnote,[^1] and here's a longer one.[^note]
@@ -411,7 +408,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^note]
 
     Add as many paragraphs as you like.
 
-### Image
+## Image
 
 ```markdown
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
@@ -435,7 +432,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^note]
 
 [![An old rock in the desert](https://www.markdownguide.org/assets/images/tux.png "New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864)
 
-### Table
+## Table
 
 ```markdown
 | Syntax    | Description |
@@ -459,7 +456,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^note]
 | Header    |    Title    | Here's this |
 | Paragraph |    Text     |    And more |
 
-### Emoji
+## Emoji
 
 ```markdown
 Gone camping! :tent: Be back soon.
@@ -471,7 +468,7 @@ That is so funny! :joy:
 
 *See also [Emojipedia](https://https://emojipedia.org/.org)*
 
-### Escaping Characters
+## Escaping Characters
 
 \* Without the backslash, this would be a bullet in an unordered list.
 

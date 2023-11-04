@@ -24,7 +24,82 @@ fn main():
     mine.dump()  # 2 4
 ```
 
-## Перегруженные функции и методы
+## Параметры
+
+### Параметры по умолчанию
+
+```mojo
+@value
+struct DefaultParams[msg: StringLiteral = "woof"]:
+    alias message = msg
+
+fn main():
+    print(DefaultParams[]().message)        # woof
+    print(DefaultParams["meow"]().message)  # meow
+```
+
+```mojo
+@value
+struct Thing[param: Int]: pass
+
+fn foo[value: Int]():
+    print(value)
+
+fn main():
+    print(Thing[2].param) # 2
+    let x = Thing[9]()
+    print(x.param)        # 9
+    
+    let y = Thing[12]()
+    alias constant = y.param + 4
+    foo[constant]()       # 16
+```
+
+### Параметры ключевых слов
+
+```mojo
+struct KwParamStruct[a: Int, msg: String = "🔥mojo🔥"]:
+    fn __init__(inout self):
+        print(msg, a)
+
+fn main():
+    KwParamStruct[a=42]()               # 🔥mojo🔥 42
+    KwParamStruct[5, msg="hello"]()     # hello 5
+    KwParamStruct[msg="hello", a=42]()  # hello 42
+```
+
+### Вывод параметров структуры для частично связанных типов
+
+```mojo
+@value
+struct Thing[v: Int]: pass
+
+struct CtadStructWithDefault[a: Int, b: Int, c: Int = 8]:
+    fn __init__(inout self, x: Thing[a]):
+        print("hello", a, b, c)
+
+    @staticmethod
+    fn foo(x: Thing[a]):
+        print("🔥", a, b, c)
+
+fn main():
+    _ = CtadStructWithDefault[b=7](Thing[6]())  # hello 6 7 8
+    CtadStructWithDefault[b=7].foo(Thing[6]())  # 🔥 6 7 8
+```
+
+### Передача аргумента ключевого слова поддерживается при вызове `__getitem__`
+
+```mojo
+@value
+struct MyStruct:
+  fn __getitem__(self, x: Int, y: Int, z: Int) -> Int:
+    return x * y + z
+
+fn main():
+    print(MyStruct()[z=7, x=3, y=5])  # 22
+```
+
+## Перегруженные методы
 
 ```mojo
 struct Complex:
@@ -113,40 +188,6 @@ fn main():
 
     # Uncomment to see an error:
     # use_ptr(p) # ERROR: `p` здесь больше недействителен!
-```
-
-### Параметры по умолчанию
-
-```mojo
-@value
-struct DefaultParams[msg: StringLiteral = "woof"]:
-    alias message = msg
-
-fn main():
-    print(DefaultParams[]().message)        # woof
-    print(DefaultParams["meow"]().message)  # meow
-```
-
-```mojo
-@value
-struct Thing[param: Int]:
-    pass
-
-fn foo[value: Int]():
-    print(value)
-
-fn main():
-    print(Thing[2].param) # 2
-    let x = Thing[9]()
-    print(x.param)        # 9
-    
-    let y = Thing[12]()
-    alias constant = y.param + 4
-    foo[constant]()       # 16
-```
-
-```mojo
-
 ```
 
 ```mojo

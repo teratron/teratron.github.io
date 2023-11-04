@@ -95,19 +95,7 @@ fn main():
     print(foo(b=7, a=6))  # 42
 ```
 
-### Вывод из аргументов ключевого слова
-
-```mojo
-fn bar[A: AnyType, B: AnyType](a: A, b: B):
-    print("Hello 🔥")
-
-fn bar[B: AnyType](a: StringLiteral, b: B):
-    print(a)
-
-fn main():
-    bar(1, 2)           # Hello 🔥
-    bar(b=2, a="Yay!")  # Yay!
-```
+## Параметры
 
 ### Параметры по умолчанию
 
@@ -125,8 +113,7 @@ fn main():
 
 ```mojo
 @value
-struct Bar[v: Int]:
-    pass
+struct Bar[v: Int]: pass
 
 fn foo[a: Int = 42, msg: StringLiteral = "quack"](bar: Bar[a]):
     print(msg, a)
@@ -135,16 +122,52 @@ fn main():
     foo(Bar[9]())  # quack 9
 ```
 
-```mojo
+### Параметры ключевых слов
 
+```mojo
+fn foo[a: Int, b: Int = 42]():
+    print(a, "+", b)
+
+fn main():
+    foo[a=5]()        # 5 + 42
+    foo[a=7, b=13]()  # 7 + 13
+    foo[b=20, a=6]()  # 6 + 20
 ```
 
-```mojo
+### Вывод из параметров ключевого слова
 
+```mojo
+fn bar[A: AnyType, B: AnyType](a: A, b: B):
+    print("Hello 🔥")
+
+fn bar[B: AnyType](a: StringLiteral, b: B):
+    print(a)
+
+fn main():
+    bar(1, 2)           # Hello 🔥
+    bar(b=2, a="Yay!")  # Yay!
 ```
 
-```mojo
+### Автоматическая параметризация
 
+```mojo
+@value
+struct Thing[x: Int, y: Int]: pass
+
+fn foo(v: Thing):
+    print(v.x, v.y)
+
+fn baz(v: Thing[y=7]): pass
+
+fn main():
+    let v = Thing[2, 3]()
+    foo(v)  # 2 3
+```
+
+На входные параметры аргумента функции можно ссылаться в сигнатуре функции:
+
+```mojo
+fn foo(x: SIMD, y: SIMD[x.type, x.size]): pass
 ```
 
 ```mojo
