@@ -21,11 +21,11 @@
 <template>
     <div id="app">
         <button v-on:click="counter++">+</button>
-        <span>{{ counter }}</span>
+        <span>{{counter}}</span>
         <button v-on:click="if(counter>0) counter--">-</button>
         <!-- или -->
         <button @click="counter++">+</button>
-        <span>{{ counter }}</span>
+        <span>{{counter}}</span>
         <button @click="if(counter>0) counter--">-</button>
     </div>
 </template>
@@ -52,7 +52,7 @@
 <template>
     <div id="app">
         <button @click="increase">+</button>
-        <span>{{ counter }}</span>
+        <span>{{counter}}</span>
         <button @click="decrease">-</button>
     </div>
 </template>
@@ -81,7 +81,7 @@
 <template>
     <div id="app">
         <button v-on:click="increase(4)">+</button>
-        <span>{{ counter }}</span>
+        <span>{{counter}}</span>
         <button v-on:click="decrease(2)">-</button>
     </div>
 </template>
@@ -112,7 +112,7 @@
 <template>
     <div id="app">
         <button v-on:click="increase($event)">+</button>
-        <span>{{ counter }}</span>
+        <span>{{counter}}</span>
         <button v-on:click="decrease($event)">-</button>
     </div>
 </template>
@@ -141,7 +141,7 @@
 <template>
     <div id="app">
         <button v-on:click="increase(4, $event)">+</button>
-        <span>{{ counter }}</span>
+        <span>{{counter}}</span>
         <button v-on:click="decrease(2, $event)">-</button>
     </div>
 </template>
@@ -173,8 +173,8 @@
 <template>
     <div id="app">
         <button v-on:click="increase(2), inform">+</button>
-        <span>{{ counter }}</span>
-        <div>{{ status }}</div>
+        <span>{{counter}}</span>
+        <div>{{status}}</div>
     </div>
 </template>
 ```

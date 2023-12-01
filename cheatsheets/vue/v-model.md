@@ -25,7 +25,7 @@
         <p>Введите имя:
             <input type="text" v-model="userName" placeholder="Введите имя"/>
         </p>
-        <p>Ваше имя: {{ userName }}</p>
+        <p>Ваше имя: {{userName}}</p>
     </div>
 </template>
 ```
@@ -51,7 +51,7 @@
         <p>Высота:
             <input type="number" v-model="height" placeholder="Введите высоту"/>
         </p>
-        <p>Площаль прямоугольника: {{ width * height }}</p>
+        <p>Площаль прямоугольника: {{width * height}}</p>
     </div>
 </template>
 ```

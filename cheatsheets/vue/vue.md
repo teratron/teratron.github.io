@@ -31,8 +31,8 @@
 
 <template>
     <div id="app">
-        <p>Name: {{ name }}</p>
-        <p>Age: {{ age }}</p>
+        <p>Name: {{name}}</p>
+        <p>Age: {{age}}</p>
     </div>
 </template>
 ```
@@ -59,8 +59,8 @@
 
 <template>
     <div id="app">
-        <p>Name: {{ name }}</p>
-        <p>Age: {{ age }}</p>
+        <p>Name: {{name}}</p>
+        <p>Age: {{age}}</p>
     </div>
 </template>
 ```
@@ -86,8 +86,8 @@
 
 <template>
     <div id="app">
-        <p>{{ welcome() }}</p>
-        <p>{{ displayUser() }}</p>
+        <p>{{welcome()}}</p>
+        <p>{{displayUser()}}</p>
     </div>
 </template>
 ```
@@ -115,8 +115,8 @@
 
 <template>
     <div id="app">
-        <p>Name: {{ name }}</p>
-        <p>Age: {{ age }}</p>
+        <p>Name: {{name}}</p>
+        <p>Age: {{age}}</p>
     </div>
 </template>
 ```

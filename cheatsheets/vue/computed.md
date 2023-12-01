@@ -35,9 +35,9 @@
     <div id="app">
         <input type="text" v-model="name"/>
         <input type="text" v-model="age"/>
-        <p>Имя: {{ name }} Возраст {{ age }}</p>
-        <p>{{ checkAge() }}</p>
-        <p>{{ enabled }}</p>
+        <p>Имя: {{name}} Возраст {{age}}</p>
+        <p>{{checkAge()}}</p>
+        <p>{{enabled}}</p>
     </div>
 </template>
 ```
@@ -74,7 +74,7 @@
         <input type="text" v-model="firstname"/>
         <input type="text" v-model="lastname"/>
         <input type="text" v-model="fullname"/>
-        <p>Имя: {{ fullname }}</p>
+        <p>Имя: {{fullname}}</p>
     </div>
 </template>
 ```

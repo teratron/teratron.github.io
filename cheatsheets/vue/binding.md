@@ -28,11 +28,11 @@
 
 <template>
     <div id="app">
-        <p>{{ name }} - {{ age }}</p>
-        <p>{{ age > 25 ? 'Больше 25 лет' : '25 лет или меньше' }}</p>
-        <p>{{ sayHi() }}</p>
-        <p>12 часов: {{ welcome(15) }}</p>
-        <p>22 часа: {{ welcome(22) }}</p>
+        <p>{{name}} - {{age}}</p>
+        <p>{{age > 25 ? 'Больше 25 лет' : '25 лет или меньше'}}</p>
+        <p>{{sayHi()}}</p>
+        <p>12 часов: {{welcome(15)}}</p>
+        <p>22 часа: {{welcome(22)}}</p>
     </div>
 </template>
 ```
@@ -73,9 +73,9 @@
 
 <template>
     <div id="app">
-        <a v-bind:href="link" v-bind:title="title">{{ text }}</a>
+        <a v-bind:href="link" v-bind:title="title">{{text}}</a>
         <!-- или -->
-        <a :href="link" :title="title">{{ text }}</a>
+        <a :href="link" :title="title">{{text}}</a>
     </div>
 </template>
 ```
@@ -96,7 +96,7 @@
 
 <template>
     <div id="app">
-        <p v-once>{{ message }}</p>  <!-- Hello -->
+        <p v-once>{{message}}</p>  <!-- Hello -->
     </div>
 </template>
 ```
@@ -115,7 +115,7 @@
 <template>
     <div id="app">
         <div v-html="message"></div>
-        <div>{{ message }}</div>
+        <div>{{message}}</div>
     </div>
 </template>
 ```
