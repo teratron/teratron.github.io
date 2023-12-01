@@ -2,6 +2,10 @@
 
 ### [JavaScript](javascript)
 
+### [TypeScript](typescript)
+
+### [Vue](vue)
+
 ### [React](react)
 
 ### [GraphQL](graphql)
