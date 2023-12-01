@@ -2,37 +2,13 @@
 
 [Назад к перечню шпаргалок][back]
 
-## [Объект приложения Vue](vue.md)
+## Содержание:
 
-```vue
+### [Объект приложения Vue](vue.md)
 
-```
+### [Привязка данных](binding.md)
 
-```vue
-
-```
-
-```vue
-
-```
-
-```vue
-
-```
-
-```vue
-
-```
-
-```vue
-
-```
-
-```vue
-
-```
-
-## Ссылки
+## Ссылки:
 
 [https://vuejs.org](https://vuejs.org)\
 [https://vue-router-ru.netlify.app](https://vue-router-ru.netlify.app)\
