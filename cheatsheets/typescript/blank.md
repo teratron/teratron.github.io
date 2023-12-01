@@ -2,9 +2,7 @@
 
 [Назад][back]
 
-```typescript
-
-```
+---
 
 ```typescript
 
@@ -29,6 +27,12 @@
 ```typescript
 
 ```
+
+```typescript
+
+```
+
+---
 
 [Назад][back]
 

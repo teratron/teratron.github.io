@@ -1,10 +1,11 @@
-# blank
+# Наблюдаемые свойства
 
 [Назад][back]
 
 ---
 
 ```vue
+
 <script setup>
 
 </script>
@@ -15,6 +16,7 @@
 ```
 
 ```vue
+
 <script setup>
 
 </script>
@@ -25,6 +27,7 @@
 ```
 
 ```vue
+
 <script setup>
 
 </script>
@@ -35,6 +38,7 @@
 ```
 
 ```vue
+
 <script setup>
 
 </script>
@@ -45,6 +49,7 @@
 ```
 
 ```vue
+
 <script setup>
 
 </script>
@@ -55,6 +60,7 @@
 ```
 
 ```vue
+
 <script setup>
 
 </script>
@@ -65,6 +71,7 @@
 ```
 
 ```vue
+
 <script setup>
 
 </script>

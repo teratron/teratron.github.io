@@ -2,10 +2,11 @@
 
 [Назад][back]
 
+---
+
 ## Интерполяция
 
-```vue
-
+```html
 <script setup>
     Vue.createApp({
         data() {
@@ -39,7 +40,6 @@
 ## v-text
 
 ```vue
-
 <script setup>
     const vueApp = Vue.createApp({
         data() {
@@ -59,7 +59,6 @@
 ## v-bind
 
 ```vue
-
 <script setup>
     Vue.createApp({
         data() {
@@ -84,7 +83,6 @@
 ## v-once
 
 ```vue
-
 <script setup>
     const vueApp = Vue.createApp({
         data() {
@@ -106,7 +104,6 @@
 ## v-html
 
 ```vue
-
 <script setup>
     const vueApp = Vue.createApp({
         data() {
@@ -123,38 +120,7 @@
 </template>
 ```
 
-```vue
-
-<script setup>
-
-</script>
-
-<template>
-
-</template>
-```
-
-```vue
-
-<script setup>
-
-</script>
-
-<template>
-
-</template>
-```
-
-```vue
-
-<script setup>
-
-</script>
-
-<template>
-
-</template>
-```
+---
 
 [Назад][back]
 

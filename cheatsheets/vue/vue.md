@@ -1,9 +1,10 @@
-# Vue
+# Объект приложения Vue
 
 [Назад][back]
 
-```vue
+---
 
+```vue
 <script setup>
     const vueApp = Vue.createApp({})
     vueApp.mount('#app')
@@ -17,7 +18,6 @@
 ## Данные приложения
 
 ```vue
-
 <script setup>
     Vue.createApp({
         data() {
@@ -38,7 +38,6 @@
 ```
 
 ```vue
-
 <script setup>
     const tom = {name: 'Tom', age: 36}
     const vueApp = Vue.createApp({
@@ -53,7 +52,8 @@
             this.age = 25;
             console.log(this.age)    // 25
         }
-    });
+    })
+
     vueApp.mount('#app')
 </script>
 
@@ -68,7 +68,6 @@
 ## Методы
 
 ```vue
-
 <script setup>
     Vue.createApp({
         data() {
@@ -94,7 +93,6 @@
 ```
 
 ```vue
-
 <script setup>
     const app = Vue.createApp({
         data() {
@@ -122,6 +120,8 @@
     </div>
 </template>
 ```
+
+---
 
 [Назад][back]
 
