@@ -34,6 +34,8 @@
 
 ### [Makefile](makefile)
 
+### [Namespace](namespace.md)
+
 ## Tools:
 
 - [Convertsimple: Convert HTML to Markdown](https://www.convertsimple.com/convert-html-to-markdown)
