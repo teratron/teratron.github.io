@@ -2,6 +2,8 @@
 
 [Назад к перечню шпаргалок][back]
 
+---
+
 ## Ключевые слова
 
 | Keyword           | Описание                                 | Пример |
@@ -43,6 +45,8 @@
 ## [Функции](functions.md)
 
 ## [Структуры](structures.md)
+
+## [Трейты](traits.md)
 
 ## [Модули](modules.md)
 
@@ -128,7 +132,7 @@ fn main():
 
 ## Ссылки
 
-[https://docs.modular.com/mojo/](https://docs.modular.com/mojo/)
+[https://docs.modular.com/mojo](https://docs.modular.com/mojo)
 
 ---
 
