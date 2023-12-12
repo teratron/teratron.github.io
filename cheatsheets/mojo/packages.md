@@ -2,6 +2,8 @@
 
 [Назад][back]
 
+---
+
 **Пакет** - это просто набор модулей Mojo в каталоге, который включает `__init__.mojo` файл.
 
 ```
@@ -69,6 +71,8 @@ from .mymodule import MyPair
 from mypackage import MyPair
 # ...
 ```
+
+---
 
 [Назад][back]
 

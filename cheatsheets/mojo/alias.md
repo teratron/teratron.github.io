@@ -2,6 +2,8 @@
 
 [Назад][back]
 
+---
+
 ```mojo
 struct DType:
     var value: UI8
@@ -51,6 +53,8 @@ var x: Float16   # FLoat16 работает как «typedef»
 ```mojo
 
 ```
+
+---
 
 [Назад][back]
 

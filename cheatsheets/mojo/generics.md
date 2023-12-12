@@ -2,6 +2,8 @@
 
 [Назад][back]
 
+---
+
 ```mojo
 struct Array[T: AnyType]:
     var data: Pointer[T]
@@ -38,25 +40,7 @@ fn main():
 
 ```
 
-```mojo
-
-```
-
-```mojo
-
-```
-
-```mojo
-
-```
-
-```mojo
-
-```
-
-```mojo
-
-```
+---
 
 [Назад][back]
 

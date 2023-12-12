@@ -2,6 +2,8 @@
 
 [Назад][back]
 
+---
+
 ## Синтаксис (Synopsis)
 
 ```
@@ -46,6 +48,8 @@ mojo package --help
 ```shell
 mojo package mypackage -o mypack.mojopkg
 ```
+
+---
 
 [Назад][back]
 

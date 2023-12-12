@@ -2,6 +2,8 @@
 
 [Назад][back]
 
+---
+
 ```mojo
 struct MyPair:
     var first: Int
@@ -209,6 +211,8 @@ fn main():
 ```mojo
 
 ```
+
+---
 
 [Назад][back]
 
