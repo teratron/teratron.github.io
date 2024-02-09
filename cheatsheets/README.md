@@ -1,40 +1,42 @@
 # Шпаргалки:
 
-### [JavaScript](javascript)
+## [JavaScript](javascript)
 
-### [TypeScript](typescript)
+## [TypeScript](typescript)
 
-### [Vue](vue)
+## [Vue](vue)
 
-### [React](react)
+## [React](react)
 
-### [GraphQL](graphql)
+## [GraphQL](graphql)
 
-### [Go](go)
+## [Go](go)
 
-### [Rust](rust)
+## [Rust](rust)
 
-### [Godot](godot)
+## [Godot](godot)
 
-### [Python](python)
+## [Python](python)
 
-### [Mojo](mojo)
+## [Mojo](mojo)
 
-### [Git](git)
+## [Git](git)
 
-### [NPM](npm)
+## [NPM](npm)
 
-### [Markdown](markdown)
+## [Markdown](markdown)
 
-### [SASS](sass)
+## [SASS](sass)
 
-### [SQL](sql)
+## [SQL](sql)
 
 - ### [MySQL](mysql)
 
-### [Makefile](makefile)
+## [Makefile](makefile)
 
-### [Namespace](namespace.md)
+## [Nginx](nginx)
+
+## [Namespace](namespace.md)
 
 ## Tools:
 
