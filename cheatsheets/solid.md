@@ -105,12 +105,14 @@ class User():
         piece.move(position)
         chessmate_check()
     
-    board = ChessBoard()
-    user_white = User("white", board)
-    user_black = User("black", board)
-    pieces = user_white.pieces
-    horse = helper.getHorse(user_white, 1)
-    user.move(horse)
+board = ChessBoard()
+
+user_white = User("white", board)
+user_black = User("black", board)
+
+pieces = user_white.pieces
+horse = helper.getHorse(user_white, 1)
+user.move(horse)
 ```
 
 _**LSP** это основа хорошего объектно-ориентированного проектирования программного обеспечения, потому что он следует
