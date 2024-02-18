@@ -38,6 +38,8 @@
 
 ## [Namespace](namespace.md)
 
+## [S.O.L.I.D](solid.md)
+
 ## Tools:
 
 - [Convertsimple: Convert HTML to Markdown](https://www.convertsimple.com/convert-html-to-markdown)
