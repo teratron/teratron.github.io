@@ -32,7 +32,6 @@ class User:
     def get_name(self):
         pass
 
-
 class UserDB:
     def get_user(self, id) -> User:
         pass
@@ -100,11 +99,11 @@ class User():
         create_pieces()
         self.color = color
         self.board = board
-  
+
     def move(self, piece: Piece, position: int):
         piece.move(position)
         chessmate_check()
-    
+
 board = ChessBoard()
 
 user_white = User("white", board)
