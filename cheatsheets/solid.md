@@ -61,7 +61,7 @@ class Discount:
 ```
 
 Чтобы следовать **OCP
-**, мы добавим новый класс, который будет расширять Discount. И в этом новом классе реализуем требуемую логику:
+**, мы добавим новый класс, который будет расширять `Discount`. И в этом новом классе реализуем требуемую логику:
 
 ```python
 class Discount:
@@ -119,23 +119,157 @@ _**LSP** это основа хорошего объектно-ориентир�
 
 ## 4. Interface Segregation Principle
 
-```python
+**Принцип разделения интерфейсов
+** - клиенты не должны зависеть от интерфейсов, которые они не используют. Этот принцип устраняет недостатки реализации больших интерфейсов.
 
+Классический пример:
+
+```python
+class IShape:
+    def draw(self):
+        raise NotImplementedError
+
+class Circle(IShape):
+    def draw(self):
+        pass
+
+class Square(IShape):
+    def draw(self):
+        pass
+
+class Rectangle(IShape):
+    def draw(self):
+        pass
 ```
 
 ```python
+from abc import ABC, abstractmethod
 
-```
+class InputDevice(ABC):
+    @abstractmethod
+    def read_input(self):
+        pass
 
-```python
+class OutputDevice(ABC):
+    @abstractmethod
+    def write_output(self, data):
+        pass
 
+class Keyboard(InputDevice):
+    def read_input(self):
+        # Логика чтения ввода с клавиатуры
+        pass
+
+class Mouse(InputDevice):
+    def read_input(self):
+        # Логика чтения ввода с мыши
+        pass
+
+class Monitor(OutputDevice):
+    def write_output(self, data):
+        # Логика вывода данных на монитор
+        pass
+
+class Printer(OutputDevice):
+    def write_output(self, data):
+        # Логика вывода данных на принтер
+        pass
 ```
 
 ## 5. Dependency Inversion Principle
 
-```python
+**Принцип инверсии зависимостей
+** - классы не должны напрямую полагаться на другие классы, а вместо этого должны зависеть от абстракций.
 
+```python
+class AuthenticationForUser():
+    def __init__(self, connector: Connector):
+        self.connection = connector.connect()
+
+    def authenticate(self, credentials):
+        pass
+
+    def is_authenticated(self):
+        pass	
+
+    def last_login(self):
+        pass
+
+class AnonymousAuth(AuthenticationForUser):
+	pass
+
+class GithubAuth(AuthenticationForUser):
+	def last_login(self):
+		pass
+
+class FacebookAuth(AuthenticationForUser):
+	pass
+
+class Permissions()
+	def __init__(self, auth: AuthenticationForUser)
+		self.auth = auth
+
+	def has_permissions():
+		pass
+		
+class IsLoggedInPermissions(Permissions):
+	def last_login():
+		return auth.last_log
 ```
+
+Другой пример:
+
+```python
+from abc import ABC, abstractmethod
+
+class Notification(ABC):
+    @abstractmethod
+    def send_notification(self, message):
+        pass
+
+class EmailSender(Notification):
+    def send_notification(self, message):
+        # Логика отправки уведомления по электронной почте
+        pass
+
+class SMSNotification(Notification):
+    def send_notification(self, message):
+        # Логика отправки уведомления по SMS
+        pass
+
+class User:
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+        self.notification_service = EmailSender()
+
+    def send_notification(self, message):
+        self.notification_service.send_notification(message)
+```
+
+Чтобы применить принцип **DIP
+**, мы изменяем `User`, чтобы он зависел от абстракции `Notification`, а не от конкретной реализации:
+
+```python
+class User:
+    def __init__(self, username, email, notification_service):
+        self.username = username
+        self.email = email
+        self.notification_service = notification_service
+
+    def send_notification(self, message):
+        self.notification_service.send_notification(message)
+
+email_sender = EmailSender()
+user = User("John", "john@example.com", email_sender)
+user.send_notification("Hello!")
+
+sms_notification = SMSNotification()
+user = User("Jane", "jane@example.com", sms_notification)
+user.send_notification("Hi there!")
+```
+
+Теперь User зависит от абстракции Notification и может быть легко настроен для работы с различными реализациями уведомлений.
 
 ```python
 
@@ -147,12 +281,12 @@ _**LSP** это основа хорошего объектно-ориентир�
 
 ## Ссылки
 
-- [https://tproger.ru/articles/principy-solid-python](https://tproger.ru/articles/principy-solid-python)
 - [https://www.youtube.com/watch?v=WEVGU8qIJyM](https://www.youtube.com/watch?v=WEVGU8qIJyM)
+- [https://tproger.ru/articles/principy-solid-python](https://tproger.ru/articles/principy-solid-python)
 - [https://metanit.com/sharp/patterns/5.1.php](https://metanit.com/sharp/patterns/5.1.php)
 
 ---
 
 [Назад к перечню шпаргалок][back]
 
-[back]: <> "Назад к перечню шпаргалок"
+[back]: </.> "Назад к перечню шпаргалок"
