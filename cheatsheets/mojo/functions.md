@@ -172,12 +172,25 @@ fn main():
 fn foo(x: SIMD, y: SIMD[x.type, x.size]): pass
 ```
 
-```mojo
+### Аргументы и параметры только для ключевых слов
 
+```mojo
+fn my_product(a: Int, b: Int = 1, *, c: Int, d: Int = 2):
+    print(a * b * c * d)
+
+my_product(3, c=5)     # prints '30'
+my_product(3, 5, d=7)  # error: missing 1 required keyword-only argument: 'c'
 ```
 
 ```mojo
+fn prod_with_offset(*args: Int, offset: Int = 0) -> Int:
+  var res = 1
+  for i in range(len(args)):
+      res *= args[i]
+  return res + offset
 
+print(prod_with_offset(2, 3, 4, 10))         # prints 240
+print(prod_with_offset(2, 3, 4, offset=10))  # prints 34
 ```
 
 ```mojo

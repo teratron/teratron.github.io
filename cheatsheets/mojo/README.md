@@ -53,6 +53,10 @@
 
 ## [Трейты](traits.md)
 
+## [Dict](dict.md)
+
+## [Set](set.md)
+
 - CollectionElement
 - Copyable
 - Destructable
@@ -79,12 +83,35 @@
 
 ## [SIMD](simd.md)
 
-```mojo
+## *_
 
+`*_` синтаксис, который позволяет пользователям явно отменять привязку любого количества позиционных параметров.
+
+```mojo
+struct StructWithDefault[a: Int, b: Int, c: Int = 8, d: Int = 9]: pass
+
+alias all_unbound = StructWithDefault[*_]
+# equivalent to
+# alias all_unbound = StructWithDefault[_, _, _, _]
+
+alias first_bound = StructWithDefault[5, *_]
+# equivalent to
+# alias first_bound = StructWithDefault[5, _, _, _]
+
+alias last_bound = StructWithDefault[*_, 6]
+# equivalent to
+# alias last_bound = StructWithDefault[_, _, _, 6]
+
+alias mid_unbound = StructWithDefault[3, *_, 4]
+# equivalent to
+# alias mid_unbound = StructWithDefault[3, _, _, 4]
 ```
 
 ```mojo
-
+alias last_bound = StructWithDefault[*_, 6]
+# При использовании `last_bound` вы должны указать `a`, `b` и `c`.
+# `last_bound` не имеет значения по умолчанию для `c`.
+var s = last_bound[1, 2, 3]()
 ```
 
 ```mojo
