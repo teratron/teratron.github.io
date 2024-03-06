@@ -85,7 +85,7 @@ let m = Message::Write(String::from("hello"));
 m.call();
 ```
 
-### Result
+## Result
 
 ```rust
 enum Result<T, E> {
@@ -94,22 +94,20 @@ enum Result<T, E> {
 }
 ```
 
-### Option
+## Option
 
 ```rust
 enum Option<T> {
     Some(T),
     None,
 }
-```
 
-```rust
 let some_number = Some(5);  // let some_number: Option<i32> = Some(5);
 let some_char: Option<char> = Some('e');
 let absent_number: Option<i32> = None;
 ```
 
-### Обобщение через перечисление
+## Обобщение через перечисление
 
 ```rust
 struct Rectangle {
@@ -178,7 +176,7 @@ fn main() {
 }
 ```
 
-### Деструктуризация перечислений
+## Деструктуризация перечислений
 
 ```rust
 enum Message {

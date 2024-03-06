@@ -9,9 +9,7 @@ enum Option<T> {
     Some(T),
     None,
 }
-```
 
-```rust
 let some_number = Some(5);  // let some_number: Option<i32> = Some(5);
 let some_char: Option<char> = Some('e');
 let absent_number: Option<i32> = None;
@@ -33,15 +31,7 @@ if let Some(_) = s {
 println!("{:?}", s);
 ```
 
-```rust
-
-```
-
-```rust
-
-```
-
-### Оператор ?
+## Оператор ?
 
 ```rust
 fn last_char_of_first_line(text: &str) -> Option<char> {
