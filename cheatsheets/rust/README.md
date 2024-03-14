@@ -18,36 +18,36 @@
 
 ## Типы
 
-| Data Type         | Example                                             |
-|-------------------|-----------------------------------------------------|
-| i8                | `let data: i8 = -100;`                              |
-| i16               | `let data: i16 = -32_000;`                          |
-| i32               | `let data: i32 = -2_147_483_648;`                   |
-| i64               | `let data: i64 = -9_223_372_036_854_775_808;`       |
-| i128              | `let data: i128 = -170_141_183_460_469_231...;`     |
-| isize             | `let data: isize = {i32 or i64, OS dependent};`     |
-| u8                | `let data: u8 = 255;`                               |
-| u16               | `let data: u16 = 65535;`                            |
-| u32               | `let data: u32 = 4_294_967_295;`                    |
-| u64               | `let data: u64 = 18_446_744_073_709_551_615;`       |
-| u128              | `let data: u128 = 340_282_366_920_938_463...;`      |
-| usize             | `let data: usize = {u32 or u64, OS dependent};`     |
-| f32               | `let data: f32 = 3.14;`                             |
-| f64               | `let data: f64 = 3.141592653589793238;`             |
-| bool              | `let data: bool = true;`                            |
-| char              | `let data: char = 'z';`                             |
-| str               | `let data: &str = "Hello, world!";`                 |
-| [array](array.md) | `let data: [i32; 5] = [1, 2, 3, 4, 5];`             |
-| tuple             | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
-| slice             | `let data: &[i32] = &[1, 2, 3][..];`                |
-| unit type         | `let data: () = ();`                                |
-| function          | `fn main() {}`                                      |
-| struct            | `struct User {name: String, age: u32}`              |
-| enum              | `enum Color {Red, Green, Blue}`                     |
-| traits            | `trait Summary {fn summarize(&self) -> String;}`    |
-| reference         | `let data: &i32 = &1;`                              |
-| Vec               | `let data: Vec<i32> = vec![1, 2, 3];`               |
-| String            | `let data: String = String::from("hello");`         |
+| Data Type           | Example                                             |
+|---------------------|-----------------------------------------------------|
+| i8                  | `let data: i8 = -100;`                              |
+| i16                 | `let data: i16 = -32_000;`                          |
+| i32                 | `let data: i32 = -2_147_483_648;`                   |
+| i64                 | `let data: i64 = -9_223_372_036_854_775_808;`       |
+| i128                | `let data: i128 = -170_141_183_460_469_231...;`     |
+| isize               | `let data: isize = {i32 or i64, OS dependent};`     |
+| u8                  | `let data: u8 = 255;`                               |
+| u16                 | `let data: u16 = 65535;`                            |
+| u32                 | `let data: u32 = 4_294_967_295;`                    |
+| u64                 | `let data: u64 = 18_446_744_073_709_551_615;`       |
+| u128                | `let data: u128 = 340_282_366_920_938_463...;`      |
+| usize               | `let data: usize = {u32 or u64, OS dependent};`     |
+| f32                 | `let data: f32 = 3.14;`                             |
+| f64                 | `let data: f64 = 3.141592653589793238;`             |
+| bool                | `let data: bool = true;`                            |
+| char                | `let data: char = 'z';`                             |
+| str                 | `let data: &str = "Hello, world!";`                 |
+| [array](array.md)   | `let data: [i32; 5] = [1, 2, 3, 4, 5];`             |
+| tuple               | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
+| slice               | `let data: &[i32] = &[1, 2, 3][..];`                |
+| unit                | `let data: () = ();`                                |
+| [function](fn.md)   | `fn main() {}`                                      |
+| [struct](struct.md) | `struct User {name: String, age: u32}`              |
+| [enum](enum.md)     | `enum Color {Red, Green, Blue}`                     |
+| [trait](trait.md)   | `trait Summary {fn summarize(&self) -> String;}`    |
+| reference           | `let data: &i32 = &1;`                              |
+| Vec                 | `let data: Vec<i32> = vec![1, 2, 3];`               |
+| String              | `let data: String = String::from("hello");`         |
 
 | Smart Pointer         | Example                                                      | Explanation                                                                         |
 |-----------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|
