@@ -83,10 +83,25 @@ fn main() {
 ```
 
 ```rust
+fn factorial(n: u32) -> u32 {
+    let mut product = 1;
+    for i in 1..=n {
+        product *= dbg!(i);
+    }
+    product
+}
 
+fn fizzbuzz(n: u32) -> u32 {
+    todo!("реализуй меня")
+}
+
+fn main() {
+    let n = 13;
+    println!("{n}! = {}", factorial(4));
+}
 ```
 
-### blank
+## blank
 
 ```rust
 

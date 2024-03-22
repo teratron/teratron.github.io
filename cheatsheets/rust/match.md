@@ -131,7 +131,7 @@ fn add_fancy_hat() {}
 fn remove_fancy_hat() {}
 ```
 
-### Компактное управление потоком выполнения с if let
+## Компактное управление потоком выполнения с if let
 
 ```rust
 let config_max = Some(3u8);
@@ -165,7 +165,7 @@ if let Coin::Quarter(state) = coin {
 }
 ```
 
-### Деструктуризация для получения значений
+## Деструктуризация для получения значений
 
 ```rust
 fn main() {
@@ -294,7 +294,19 @@ match numbers {
 }
 ```
 
-### Дополнительные условия оператора сопоставления (Match Guards)
+```rust
+fn describe_point(point: (i32, i32)) {
+    match point {
+        (0, _) => println!("на оси Y"),
+        (_, 0) => println!("на оси X"),
+        (x, _) if x < 0 => println!("слева от оси Y"),
+        (_, y) if y < 0 => println!("ниже оси X"),
+        _ => println!("первый квадрант"),
+    }
+}
+```
+
+## Дополнительные условия оператора сопоставления (Match Guards)
 
 ```rust
 let num = Some(4);
@@ -358,8 +370,20 @@ match msg {
 // Found an id in range: 5
 ```
 
-```rust
+## Examples
 
+```rust
+#[rustfmt::skip]
+fn main() {
+    let input = 'x';
+    match input {
+        'q'                       => println!("выход"),
+        'a' | 's' | 'w' | 'd'     => println!("движение"),
+        '0'..='9'                 => println!("число"),
+        key if key.is_lowercase() => println!("буква в нижнем регистре: {key}"),
+        _                         => println!("другое"),
+    }
+}
 ```
 
 [Назад][back]

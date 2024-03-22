@@ -208,21 +208,17 @@
 ## Переменные
 
 ```rust
-fn main() {
-    let age = 36;
-    age = 25;       // ошибка!
-    println!("Age = {}", age);
-}
+let age = 36;
+age = 25;       // ошибка!
+println!("Age = {}", age);
 ```
 
 ```rust
-fn main() {
-    let mut age = 36;
-    println!("Начальное значение: {}", age);
+let mut age = 36;
+println!("Начальное значение: {}", age);
 
-    age = 25;
-    println!("Конечное значение: {}", age);
-}
+age = 25;
+println!("Конечное значение: {}", age);
 ```
 
 ```rust
@@ -239,16 +235,14 @@ std::mem::swap(&mut a, &mut b);
 определение предыдущей переменной с тем же именем.
 
 ```rust
-fn main() {
-    let number = 10;
-    println!("number = {}", number);
+let number = 10;
+println!("number = {}", number);
 
-    let number = 15;
-    println!("number = {}", number);
+let number = 15;
+println!("number = {}", number);
 
-    let number = 254;
-    println!("number = {}", number);
-}
+let number = 254;
+println!("number = {}", number);
 ```
 
 Здесь мы получаем предупреждение о том, что не используем переменную `y`, но мы не получаем предупреждения о неиспользовании переменной `_x`.
@@ -261,17 +255,27 @@ let y = 10;
 ## Format
 
 ```rust
-  let x = 42.1337;
-  let s = format!("{:.2}", x);
-  println!("{}", s); // 42.13
+let x = 42.1337;
+let s = format!("{:.2}", x);
+println!("{}", s); // 42.13
 ```
 
 ```rust
+// Сырая строка
+println!(r#"<a href="link.html">ссылка</a>"#); // "<a href="link.html">ссылка</a>"
 
+// Экранирование
+println!("<a href=\"link.html\">ссылка</a>"); // <a href="link.html">ссылка</a>
 ```
 
 ```rust
+fn takes_u32(x: u32) {
+    println!("u32: {x}");
+}
 
+fn takes_i8(y: i8) {
+    println!("i8: {y}");
+}
 ```
 
 ---
