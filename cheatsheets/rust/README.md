@@ -286,6 +286,7 @@ fn takes_i8(y: i8) {
 - cargo
   * cargo new
   * cargo new name_project --lib
+  * cargo init
   * cargo build (--> _target/debug_)
   * cargo build --release (--> _target/release_)
   * cargo run
