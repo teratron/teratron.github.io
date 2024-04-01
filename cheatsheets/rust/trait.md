@@ -1,6 +1,6 @@
 # trait
 
-[Назад][back]
+← [Назад][back]
 
 ## Интерфейс
 
@@ -502,6 +502,6 @@ trait ExpatEmployee: Employee + Expat { // ExpatEmployee inherits from Employee 
 
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

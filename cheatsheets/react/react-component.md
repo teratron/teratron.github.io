@@ -1,6 +1,6 @@
 # React.Component
 
-[Назад][back]
+← [Назад][back]
 
 ### render()
 
@@ -52,6 +52,6 @@ shouldComponentUpdate(nextProps, nextState)
 изменение состояния или свойства.
 `shouldComponentUpdate()` вызывается перед отрисовкой при получении новых свойств или состояний.
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

@@ -1,6 +1,6 @@
 # From
 
-[Назад][back]
+← [Назад][back]
 
 ```rust
 pub trait From<T>: Sized {
@@ -43,6 +43,6 @@ fn open_and_parse_file(file_name: &str) -> Result<i32, CliError> {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

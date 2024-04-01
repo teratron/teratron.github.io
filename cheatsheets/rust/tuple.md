@@ -1,40 +1,36 @@
-# Descriptor
+# Tuple
 
 ← [Назад][back]
 
-```python
+---
+
+## blank
+
+```rust
 
 ```
 
-```python
+```rust
 
 ```
 
-```python
+```rust
 
 ```
 
-```python
+```rust
 
 ```
 
-### blank
-
-```python
+```rust
 
 ```
 
-```python
+```rust
 
 ```
 
-```python
-
-```
-
-```python
-
-```
+---
 
 ← [Назад][back]
 

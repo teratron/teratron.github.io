@@ -1,6 +1,6 @@
 # while
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 number = 1
@@ -68,6 +68,6 @@ while number < 5:
     print(f"number = {number}")
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

@@ -1,6 +1,6 @@
 # nil
 
-[Назад][back]
+← [Назад][back]
 
 ### `nil` может представлять нулевые значения многих типов
 
@@ -228,6 +228,6 @@ fmt.Println(*new(func()) == nil)       // true
 fmt.Println(*new(interface{}) == nil)  // true
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

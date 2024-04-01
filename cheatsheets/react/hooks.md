@@ -1,6 +1,6 @@
 # Hooks
 
-[Назад][back]
+← [Назад][back]
 
 #### Основные хуки:
 
@@ -319,6 +319,6 @@ function useFriendStatus(friendID) {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

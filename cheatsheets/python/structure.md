@@ -1,6 +1,6 @@
 # Structure
 
-[Назад][back]
+← [Назад][back]
 
 ```
 gmaps_crawler
@@ -343,6 +343,6 @@ is NOT a package, as it doesn't contain an __init__.py.
 I also have another special file in my top-level package: __main__.py. This is the file that is run when we execute our
 top-level package directly via python -m omission. We'll talk about what goes in that __main__.py in a bit.
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

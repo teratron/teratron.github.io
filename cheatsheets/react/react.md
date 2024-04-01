@@ -1,6 +1,6 @@
 # React
 
-[Назад][back]
+← [Назад][back]
 
 ### React API
 
@@ -265,6 +265,6 @@ function MyComponent() {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

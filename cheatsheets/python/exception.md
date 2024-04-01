@@ -1,6 +1,6 @@
 # Exception
 
-[Назад][back]
+← [Назад][back]
 
 ### Иерархия встроенных (built-in) исключений {#exception-id}
 
@@ -519,6 +519,6 @@ except sqlite3.Error as e:
     raise MyError(f'Could not connect to db: {e.value}')
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

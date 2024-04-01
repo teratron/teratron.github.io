@@ -1,6 +1,6 @@
 # React
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 - #### [React](react.md)
 - #### [React.Component](react-component.md)
@@ -17,6 +17,6 @@
 - #### [Render-props](render-props.md)
 - #### [SyntheticEvent](synthetic-event.md)
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 [back]: <../.> "Назад к перечню шпаргалок"

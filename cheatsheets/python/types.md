@@ -1,6 +1,6 @@
 # Types and Variables
 
-[Назад][back]
+← [Назад][back]
 
 ## Типы данных
 
@@ -254,6 +254,6 @@ print(message)
 
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

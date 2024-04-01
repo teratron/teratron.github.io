@@ -1,6 +1,6 @@
 # SQL
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 ## 1. Запросы для поиска данных
 
@@ -749,6 +749,6 @@ SELECT age, COUNT(age) FROM users GROUP BY age HAVING count(age) >=2;
 
 [https://uproger.com/shpargalki-sql-2023/](https://uproger.com/shpargalki-sql-2023/)
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 [back]: <../.> "Назад к перечню шпаргалок"

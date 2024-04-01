@@ -1,6 +1,6 @@
 # Portal
 
-[Назад][back]
+← [Назад][back]
 
 ### ReactDOM.createPortal
 
@@ -111,6 +111,6 @@ function Child() {
 ReactDOM.render(<Parent />, appRoot);
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

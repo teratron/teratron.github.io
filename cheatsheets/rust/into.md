@@ -1,6 +1,6 @@
 # Into
 
-[Назад][back]
+← [Назад][back]
 
 ```rust
 pub trait Into<T>: Sized {
@@ -42,6 +42,6 @@ let s = "hello".to_string();
 is_hello(s);
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

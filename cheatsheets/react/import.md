@@ -1,6 +1,6 @@
 # Import
 
-[Назад][back]
+← [Назад][back]
 
 ### import()
 
@@ -91,6 +91,6 @@ import React, { lazy } from 'react';
 const MyComponent = lazy(() => import('./MyComponent.js'));
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

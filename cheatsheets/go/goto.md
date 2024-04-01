@@ -1,6 +1,6 @@
 # goto
 
-[Назад][back]
+← [Назад][back]
 
 ```go
 var age int
@@ -39,6 +39,6 @@ LOOP: for a < 20 {
 // value of a: 19
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

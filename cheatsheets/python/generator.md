@@ -1,6 +1,6 @@
 # Generator
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 num = [1, 4, -5, 10, -7, 2, 3, -1]
@@ -107,6 +107,6 @@ for name in tree('C:\Users\XXX\Downloads\Test'):
 
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

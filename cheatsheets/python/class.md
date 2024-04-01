@@ -1,6 +1,6 @@
 # class
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 class Person:
@@ -433,6 +433,6 @@ def get_salary(self):
    return f'Total: {self.salary.get_total() + self.bonus}'
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

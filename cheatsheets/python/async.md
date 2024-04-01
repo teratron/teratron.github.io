@@ -1,6 +1,6 @@
 # async
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 import asyncio
@@ -70,6 +70,6 @@ print(time.strftime('%X'))
 
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

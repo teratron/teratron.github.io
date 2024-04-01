@@ -1,6 +1,6 @@
 # Python
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 - **[Structure](structure.md)** / **[rst](structure.rst)**
 - **[Types](types.md)**
@@ -503,6 +503,6 @@ print(f"z = {z:0b}")  # z = 101
 
 [https://okpython.net/](https://okpython.net/)
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 [back]: <../.> "Назад к перечню шпаргалок"

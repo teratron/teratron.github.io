@@ -1,6 +1,6 @@
 # Ref
 
-[Назад][back]
+← [Назад][back]
 
 ### React.forwardRef
 
@@ -207,6 +207,6 @@ class Parent extends React.Component {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

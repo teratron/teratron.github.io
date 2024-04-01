@@ -1,6 +1,6 @@
 # slice
 
-[Назад][back]
+← [Назад][back]
 
 ### Срез
 
@@ -30,6 +30,6 @@ users = append(users[:3], users[4:]...)   // удаляем 4-й элемент
 fmt.Println(users)                        // ["Bob", "Alice", "Kate", "Tom", "Paul", "Mike", "Robert"]
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

@@ -1,6 +1,6 @@
 # coroutine
 
-[Назад][back]
+← [Назад][back]
 
 ### yield() и resume()
 
@@ -218,6 +218,6 @@ func test():
 	emit_signal("health", 200)
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

@@ -1,6 +1,6 @@
 # signal
 
-[Назад][back]
+← [Назад][back]
 
 ## Пользовательские сигналы
 
@@ -79,6 +79,6 @@ func doSomething():
 	print("Game is Over Do Something ")
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

@@ -1,6 +1,6 @@
 # Context
 
-[Назад][back]
+← [Назад][back]
 
 ### React.createContext
 
@@ -379,6 +379,6 @@ class ThemedButton extends React.Component {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

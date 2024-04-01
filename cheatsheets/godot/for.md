@@ -1,6 +1,6 @@
 # for
 
-[Назад][back]
+← [Назад][back]
 
 ```gdscript
 for x in [5, 7, 11]:
@@ -51,6 +51,6 @@ for i in 2.2:
 # Similar to range(ceil(2.2))
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

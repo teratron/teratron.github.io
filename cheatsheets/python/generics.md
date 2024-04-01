@@ -1,6 +1,6 @@
 # Generics
 
-[Назад][back]
+← [Назад][back]
 
 ## Function
 
@@ -88,6 +88,6 @@ class Stack(Generic[T]):
 
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

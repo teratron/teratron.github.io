@@ -1,6 +1,6 @@
 # error
 
-[Назад][back]
+← [Назад][back]
 
 ```go
 package main
@@ -34,6 +34,6 @@ func main() {
 // err3: err2: err1: / err2: err1:
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <../.> "Назад к оглавлению"

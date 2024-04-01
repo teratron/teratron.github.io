@@ -1,6 +1,6 @@
 # CLI
 
-[Назад][back]
+← [Назад][back]
 
 ---
 
@@ -51,6 +51,6 @@ mojo package mypackage -o mypack.mojopkg
 
 ---
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

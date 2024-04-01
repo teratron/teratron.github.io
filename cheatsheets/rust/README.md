@@ -1,6 +1,6 @@
 # Rust
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 | Keyword        | Пример                                              | Описание                                          |
 |----------------|-----------------------------------------------------|---------------------------------------------------|
@@ -38,8 +38,8 @@
 | char                | `let data: char = 'z';`                             |
 | str                 | `let data: &str = "Hello, world!";`                 |
 | [array](array.md)   | `let data: [i32; 5] = [1, 2, 3, 4, 5];`             |
-| tuple               | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
-| slice               | `let data: &[i32] = &[1, 2, 3][..];`                |
+| [tuple](tuple.md)   | `let data: (i32, f64, &str) = (500, 6.4, "hello");` |
+| [slice](slice.md)   | `let data: &[i32] = &[1, 2, 3][..];`                |
 | unit                | `let data: () = ();`                                |
 | [function](fn.md)   | `fn main() {}`                                      |
 | [struct](struct.md) | `struct User {name: String, age: u32}`              |
@@ -366,6 +366,6 @@ fn takes_i8(y: i8) {
 - [https://github.com/rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust)
 - [https://github.com/Eddort/learn-rust-ru](https://github.com/Eddort/learn-rust-ru)
 
-[Назад к перечню шпаргалок][back]
+← [Назад к перечню шпаргалок][back]
 
 [back]: <../.> "Назад к перечню шпаргалок"

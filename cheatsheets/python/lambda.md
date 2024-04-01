@@ -1,6 +1,6 @@
 # lambda
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 message = lambda: print("hello")
@@ -66,6 +66,6 @@ print(fn(6))        # 30
 print(fn(7))        # 35
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

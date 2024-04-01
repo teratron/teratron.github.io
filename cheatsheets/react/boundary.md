@@ -1,6 +1,6 @@
 # Boundary
 
-[Назад][back]
+← [Назад][back]
 
 ### Error Boundary
 
@@ -191,6 +191,6 @@ class MyComponent extends React.Component {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

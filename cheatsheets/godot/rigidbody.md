@@ -1,6 +1,6 @@
 # RigidBody
 
-[Назад][back]
+← [Назад][back]
 
 **Наследует:**
 [PhysicsBody](physicsbody.md) **<** [CollisionObject](collisionobject.md) **<** [Spatial](spatial.md) **<** [Node](node.md) **<** [Object](object.md)
@@ -571,6 +571,6 @@ void **set\_axis\_velocity** **(** [Vector3](vector3.md) axis_velocity **)**
 Устанавливает скорость оси. Скорость на заданной векторной оси будет установлена как заданная длина вектора. Это полезно
 для прыжкового поведения.
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

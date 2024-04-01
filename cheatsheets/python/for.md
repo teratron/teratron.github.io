@@ -1,6 +1,6 @@
 # for
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 message = "Hello"
@@ -21,6 +21,6 @@ for c1 in  "ab":
         print(f"{c1}{c2}")
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

@@ -1,6 +1,6 @@
 # Result
 
-[Назад][back]
+← [Назад][back]
 
 ```rust
 enum Result<T, E> {
@@ -160,6 +160,6 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

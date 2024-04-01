@@ -1,6 +1,6 @@
 # Metaclass
 
-[Назад][back]
+← [Назад][back]
 
 ```python
 class MyMeta(type):
@@ -86,6 +86,6 @@ Strategy.for_name('always_ok').validate_credentials('john', 'x')
 
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"

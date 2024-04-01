@@ -1,6 +1,6 @@
 # Annotation
 
-[Назад][back]
+← [Назад][back]
 
 ### @export
 
@@ -173,6 +173,6 @@ func test():
     print("unreachable")
 ```
 
-[Назад][back]
+← [Назад][back]
 
 [back]: <.> "Назад к оглавлению"
