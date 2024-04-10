@@ -244,13 +244,40 @@ fn main() {
 ### Обобщение кода через типажи
 
 ```rust
-pub trait Area {
+trait Area {
     fn area(&self) -> f64;
+}
+
+struct Rectangle {
+    width: f64,
+    length: f64,
+}
+
+impl Rectangle {
+    fn new(width: f64, length: f64) -> Option<Self> {
+        if width <= 0. || length <= 0. {
+            None
+        } else {
+            Some(Rectangle { width, length })
+        }
+    }
 }
 
 impl Area for Rectangle {
     fn area(&self) -> f64 {
         self.width * self.length
+    }
+}
+
+struct Square {
+    rectangle: Rectangle,
+}
+
+impl Square {
+    fn new(side: f64) -> Option<Self> {
+        Some(Square {
+            rectangle: Rectangle::new(side, side)?,
+        })
     }
 }
 
@@ -267,7 +294,7 @@ fn main() {
     let sq1 = Square::new(8.).unwrap();
     let sq2 = Square::new(4.).unwrap();
 
-    let figures_with_area: [&Area; 4] = [&rect1, &rect2, &sq1, &sq2];
+    let figures_with_area: [&dyn Area; 4] = [&rect1, &rect2, &sq1, &sq2];
 
     for f in figures_with_area.iter() {
         println!("Площадь равна {}", f.area());

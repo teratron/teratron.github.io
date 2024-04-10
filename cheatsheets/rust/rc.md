@@ -1,4 +1,4 @@
-# blank
+# Rc
 
 ← [Назад][back]
 
@@ -15,8 +15,6 @@
 ```rust
 
 ```
-
-### blank
 
 ```rust
 
