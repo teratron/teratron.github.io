@@ -2,8 +2,6 @@
 
 ← [Назад][back]
 
-## Интерфейс
-
 ```rust
 struct Person {
     name: String,
@@ -32,7 +30,7 @@ fn main() {
 }
 ```
 
-### Реализация по умолчанию
+## Реализация по умолчанию
 
 ```rust
 trait Printer {
@@ -75,7 +73,7 @@ fn main() {
 }
 ```
 
-### Обращение к методам trait внутри trait
+## Обращение к методам trait внутри trait
 
 ```rust
 struct Person {
@@ -105,7 +103,7 @@ fn main() {
 }
 ```
 
-### Trait как тип параметров
+## Trait как тип параметров
 
 ```rust
 struct Person {
@@ -151,7 +149,7 @@ fn main() {
 }
 ```
 
-### Trait как тип результата
+## Trait как тип результата
 
 ```rust
 struct TextMessage {
@@ -241,7 +239,7 @@ fn main() {
 }
 ```
 
-### Обобщение кода через типажи
+## Обобщение кода через типажи
 
 ```rust
 trait Area {
@@ -302,7 +300,7 @@ fn main() {
 }
 ```
 
-### Наследование trait
+## Наследование trait
 
 ```rust
 trait Shape {
@@ -335,7 +333,21 @@ impl HasAngles for Rectangle {
 }
 ```
 
-### Полиморфизм
+```rust
+trait Person {
+    fn full_name(&self) -> String;
+}
+
+trait Employee: Person { // Employee inherits from person trait
+    fn job_title(&self) -> String;
+}
+
+trait ExpatEmployee: Employee + Expat { // ExpatEmployee inherits from Employee and Expat traits
+    fn additional_tax(&self) -> f64;
+}
+```
+
+## Полиморфизм
 
 - **Статический полиморфизм** требует, чтобы при компиляции программы было известно, какие конкретные типы используются
   в каждом обобщённом контексте. Имея эту информацию компилятор проводит, так называемую, мономорфизацию. Когда одна
@@ -382,7 +394,7 @@ fn foo(rectangle: Rectangle, circle: Circle) {
 }
 ```
 
-### Display
+## Display
 
 Типаж для печати объектов в терминал определён в стандартной библиотеке Rust следующим образом:
 
@@ -431,7 +443,7 @@ fn main() {
 }
 ```
 
-### type
+## type
 
 Указание типов-заполнителей в определениях типажей с ассоциированными типами:
 
@@ -498,22 +510,6 @@ impl From<u8> for u16 {
 
 impl From<u8> for u32{
     //...
-}
-```
-
-## Traits inheritance
-
-```rust
-trait Person {
-    fn full_name(&self) -> String;
-}
-
-trait Employee: Person { // Employee inherits from person trait
-    fn job_title(&self) -> String;
-}
-
-trait ExpatEmployee: Employee + Expat { // ExpatEmployee inherits from Employee and Expat traits
-    fn additional_tax(&self) -> f64;
 }
 ```
 
