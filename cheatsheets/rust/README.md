@@ -100,15 +100,16 @@
 
 - **[Видимость](visibility.md)**
 - **[Контейнеры](crate.md)**
+- **[Tests](tests.md)**
 - **[Generics](generics.md)** - обобщенные типы.
 - **[Closures](closures.md)** - замыкания - это анонимные функции.
 - **[Lifetime](lifetime.md)**
-- **[Tests](tests.md)** - функции, которые проверяют, что не тестовый код работает ожидаемым образом.
 - **[Макросы](macros.md)**
 - **[Result](result.md)** - обработка потенциального сбоя.
 - **[Option](option.md)**
 - **[From](from.md)**
 - **[Into](into.md)**
+- **[Default](default.md)**
 
 ## Ключевые слова
 

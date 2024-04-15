@@ -2,6 +2,8 @@
 
 ← [Назад][back]
 
+---
+
 | Keyword                                 | Описание                                                                                       |
 |-----------------------------------------|------------------------------------------------------------------------------------------------|
 | concat_bytes `Experimental`             | Объединяет литералы в байтовый фрагмент.                                                       |
@@ -83,25 +85,22 @@ fn main() {
 ```
 
 ```rust
-fn factorial(n: u32) -> u32 {
-    let mut product = 1;
-    for i in 1..=n {
-        product *= dbg!(i);
-    }
-    product
+fn add(a: i32, b: i32) -> i32 {
+    a + b
 }
 
-fn fizzbuzz(n: u32) -> u32 {
-    todo!("реализуй меня")
+macro_rules! add {
+    ($a: expr) => {
+        add($a, 2)
+    };
+    () => {
+        add(1, 2)
+    };
 }
 
-fn main() {
-    let n = 13;
-    println!("{n}! = {}", factorial(4));
-}
+assert_eq!(add!(), 3);
+assert_eq!(add!(4), 6);
 ```
-
-## blank
 
 ```rust
 
@@ -111,9 +110,7 @@ fn main() {
 
 ```
 
-```rust
-
-```
+---
 
 ← [Назад][back]
 
