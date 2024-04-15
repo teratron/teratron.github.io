@@ -8,12 +8,31 @@
 pub trait From<T>: Sized {
     fn from(value: T) -> Self;
 }
-```
 
-```rust
 impl<T, U> From<T> for U
 where
    T: Into<U>,
+{
+    fn from(value: T) -> Self {
+        value
+    }
+}
+```
+
+```rust
+struct Wrapper<T>(Vec<T>);
+
+impl<T> From<Wrapper<T>> for Vec<T> {
+    fn from(w: Wrapper<T>) -> Vec<T> {
+        w.0
+    }
+}
+
+impl<T> Into<Vec<T>> for Wrapper<T> {
+    fn into(self) -> Vec<T> {
+        self.0
+    }
+}
 ```
 
 ```rust
@@ -66,7 +85,7 @@ impl From<()> for FooArgs {
 impl From<f64> for FooArgs {
     fn from(a: f64) -> Self {
         Self {
-            a: a,
+            a,
             ..Self::default()
         }
     }
@@ -75,7 +94,7 @@ impl From<f64> for FooArgs {
 impl From<i32> for FooArgs {
     fn from(b: i32) -> Self {
         Self {
-            b: b,
+            b,
             ..Self::default()
         }
     }
@@ -83,7 +102,7 @@ impl From<i32> for FooArgs {
 
 impl From<(f64, i32)> for FooArgs {
     fn from((a, b): (f64, i32)) -> Self {
-        Self { a: a, b: b }
+        Self { a, b }
     }
 }
 

@@ -6,28 +6,29 @@
 pub trait Into<T>: Sized {
     fn into(self) -> T;
 }
-```
 
-```rust
 impl<T, U> Into<U> for T
 where
     U: From<T>,
-```
-
-```rust
-struct Wrapper<T>(Vec<T>);
-impl<T> From<Wrapper<T>> for Vec<T> {
-    fn from(w: Wrapper<T>) -> Vec<T> {
-        w.0
+{
+    fn into(self) -> T {
+        self
     }
 }
 ```
 
 ```rust
 struct Wrapper<T>(Vec<T>);
+
 impl<T> Into<Vec<T>> for Wrapper<T> {
     fn into(self) -> Vec<T> {
         self.0
+    }
+}
+
+impl<T> From<Wrapper<T>> for Vec<T> {
+    fn from(w: Wrapper<T>) -> Vec<T> {
+        w.0
     }
 }
 ```
