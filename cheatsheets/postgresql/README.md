@@ -355,7 +355,7 @@ CREATE TABLE Orders
 
 ```
 
----
+## Ссылки
 
 [METANIT.COM - Руководство по PostgreSQL](https://metanit.com/sql/postgresql/)
 
