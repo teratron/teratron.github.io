@@ -4,18 +4,39 @@
 
 ---
 
-## CREATE
+[Типы данных](types.md)
 
-### TABLE
+---
+
+## Создание базы данных
 
 ```posgresql
-CREATE TABLE users
+CREATE DATABASE usersdb;
+```
+
+## Удаление базы данных
+
+```posgresql
+DROP DATABASE usersdb;
+```
+
+## Создание таблиц
+
+```posgresql
+CREATE TABLE customers
 (
     Id SERIAL PRIMARY KEY,
-    Name CHARACTER VARYING(30),
+    FirstName CHARACTER VARYING(30),
+    LastName CHARACTER VARYING(30),
+    Email CHARACTER VARYING(30),
     Age INTEGER
 );
-INSERT INTO users (Name, Age) VALUES ('Tom', 33);
+```
+
+## Удаление таблиц
+
+```posgresql
+DROP TABLE customers;
 ```
 
 ## Ограничения столбцов и таблиц
@@ -333,6 +354,10 @@ CREATE TABLE Orders
 ```posgresql
 
 ```
+
+---
+
+[METANIT.COM - Руководство по PostgreSQL](https://metanit.com/sql/postgresql/)
 
 ---
 
