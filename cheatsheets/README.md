@@ -18,6 +18,9 @@
 
 ## [Python](python)
 
+- ### [NumPy](numpy)
+- ### [Pandas](pandas)
+
 ## [Mojo](mojo)
 
 ## [Git](git)
@@ -31,16 +34,17 @@
 ## [SQL](sql)
 
 - ### [MySQL](mysql)
-
 - ### [PostgreSQL](postgresql)
 
 ## [Makefile](makefile)
 
 ## [Nginx](nginx)
 
-## [Namespace](namespace.md)
+---
 
-## [S.O.L.I.D](solid.md)
+### [Namespace](namespace.md)
+
+### [S.O.L.I.D](solid.md)
 
 ## Tools:
 
