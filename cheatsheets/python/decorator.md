@@ -2,6 +2,8 @@
 
 ← [Назад][back]
 
+---
+
 **Декоратор** это как обертка на конфете - есть некоторый код, который может выполниться до и/или после работы функции.
 
 ```python
@@ -13,9 +15,11 @@ def my_decorator(func):
 
     return wrapper
 
+
 @my_decorator
 def some_function():
     print('работает функция, которую мы задекорировали')
+
 
 some_function()
 
@@ -32,10 +36,13 @@ def simple_decorator(func):
         print('Начало работы декоратора...')
         func()
         print('Декоратор отработал!')
+
     return inner
+
 
 def print_hi():
     print('Привет, я - функция, которую задекорировали!')
+
 
 print_hi = simple_decorator(print_hi)
 print_hi()
@@ -53,11 +60,14 @@ def decorate_func_with_params(func):
         print(f'Декорируем функцию с параметрами: {args}, {kwargs}')
         func(*args, **kwargs)
         print('Все прошло успешно!')
+
     return inner
+
 
 @decorate_func_with_params
 def adder(*nums):
     print(sum(nums))
+
 
 adder(1)
 adder(2, 7, 3)
@@ -85,12 +95,16 @@ def repeater(num_of_repeats=1):
                     print(func(*args, **kwargs))
             else:
                 print(func(*args, **kwargs))
+
         return inner_decorator
+
     return outer_decorator
+
 
 @repeater(3)
 def print_text(message):
     return f'Вам сообщение: {message}'
+
 
 print_text('Просыпайся!')
 
@@ -115,9 +129,11 @@ class Numerator:
         print(self.counts)
         return self.func(*args, **kwargs)
 
+
 @Numerator
 def info_func(*args, **kwargs):
     return args, kwargs
+
 
 print(info_func(2, 3, p=100))
 print(info_func(q=10))
@@ -135,14 +151,16 @@ print(info_func())
 class decorator(object):
     def __init__(self, f):
         print("inside decorator.__init__()")
-        f() # Prove that function definition has completed
+        f()  # Prove that function definition has completed
 
     def __call__(self):
         print("inside decorator.__call__()")
 
+
 @decorator
 def function():
     print("inside function()")
+
 
 print("Finished decorating function()")
 
@@ -154,13 +172,47 @@ function()
 # inside decorator.__call__()
 ```
 
-```python
+### Async
 
+```python
+import asyncio
+import sys
+import uvloop
+from functools import wraps
+
+
+def do_n_times(n=2):
+    # this returns a function that _actually_ gets passed the wrapped method.
+    def wrapper(func):
+        @wraps(func)
+        async def wrapper_do_n_times():
+            for _ in range(n - 1):
+                await func()
+            return await func()
+
+        return wrapper_do_n_times
+
+    return wrapper
+
+
+@do_n_times(n=4)
+async def print_me():
+    print("me")
+
+
+if sys.version_info >= (3, 11):
+    with asyncio.Runner(loop_factory=uvloop.new_event_loop) as runner:
+        runner.run(print_me())
+else:
+    uvloop.install()
+    asyncio.run(print_me())
 ```
 
 ```python
 
 ```
+
+---
 
 ← [Назад][back]
 
