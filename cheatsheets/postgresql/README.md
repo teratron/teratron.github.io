@@ -159,7 +159,7 @@ CREATE TABLE Customers
     Id SERIAL PRIMARY KEY,
     FirstName CHARACTER VARYING(20),
     LastName CHARACTER VARYING(20),
-    Age INTEGER DEFAULT 18 CHECK(Age >0 AND Age < 100),
+    Age INTEGER DEFAULT 18 CHECK(Age > 0 AND Age < 100),
     Email CHARACTER VARYING(30) UNIQUE CHECK(Email !=''),
     Phone CHARACTER VARYING(20) UNIQUE CHECK(Phone !='')
 );
@@ -189,7 +189,7 @@ CREATE TABLE Customers
 CREATE TABLE Customers
 (
     Id SERIAL CONSTRAINT customer_Id PRIMARY KEY,
-    Age INTEGER CONSTRAINT customers_age_check CHECK(Age >0 AND Age < 100),
+    Age INTEGER CONSTRAINT customers_age_check CHECK(Age > 0 AND Age < 100),
     FirstName CHARACTER VARYING(20) NOT NULL,
     LastName CHARACTER VARYING(20) NOT NULL,
     Email CHARACTER VARYING(30) CONSTRAINT customers_email_key UNIQUE,
@@ -207,7 +207,7 @@ CREATE TABLE Customers
     Email CHARACTER VARYING(30),
     Phone CHARACTER VARYING(20),
     CONSTRAINT customer_Id PRIMARY KEY(Id),
-    CONSTRAINT customers_age_check CHECK(Age >0 AND Age < 100),
+    CONSTRAINT customers_age_check CHECK(Age > 0 AND Age < 100),
     CONSTRAINT customers_email_key UNIQUE(Email),
     CONSTRAINT customers_phone_key UNIQUE(Phone)
 );
@@ -256,7 +256,8 @@ CREATE TABLE Orders
 
 ### ON DELETE и ON UPDATE
 
-С помощью выражений ON DELETE и ON UPDATE можно установить действия, которые выполняются соответственно при удалении и
+С помощью выражений `ON DELETE` и `ON UPDATE` можно установить действия, которые выполняются соответственно при удалении
+и
 изменении связанной строки из главной таблицы.
 
 | Опции         | Описание                                                                                                                                                                                                                                                          |
