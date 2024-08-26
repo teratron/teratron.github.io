@@ -55,7 +55,7 @@ create table cart(
 ```sh
 create table cart_product(
 	cart_id integer references cart(id),
-	product.id integer references product(id)
+	product_id integer references product(id)
 );
 ```
 
@@ -122,6 +122,11 @@ select * from product_photo pp;  # pp - alias
 ```sh
 select pp.*, p.name from product_photo pp left join product p on p.id=pp.product_id;
 ```
+
+| id | url            | product_id | name   |
+|---:|----------------|-----------:|--------|
+|  2 | xiaomi_photo   |          2 | Xiaomi |
+|  1 | iphone_image_2 |          1 | iPhone |
 
 	\d product_photo
 
@@ -200,7 +205,7 @@ select * from product_photo;
 | id | url            | product_id |
 |---:|----------------|-----------:|
 |  2 | xiaomi_photo   |          2 |
-|  1 | ipnone_image_2 |          1 |
+|  1 | iphone_image_2 |          1 |
 
 	\d cart
 
@@ -347,7 +352,7 @@ select * from product;
 |  1 | iPhone | Bad phone   | 1000000,00 |
 |  2 | Xiaomi | Good phone  |  500000,00 |
 
-## У John NULL, заменяем на 0
+## У John `NULL`, заменяем на `0`
 
 ```sh
 select c.name, coalesce(sum(p.price), money(0)) as orders_sum from customer c left join cart on cart.customer_id=c.id left join cart_product cp on cp.cart_id=cart.id left join product p on p.id=cp.product_id group by c.name;
@@ -359,6 +364,90 @@ select c.name, coalesce(sum(p.price), money(0)) as orders_sum from customer c le
 | John  |       0,00 |
 
 ## Отсортируем клиентов по значимости
+
+```sh
+select c.name, coalesce(sum(p.price), money(0)) as orders_sum from customer c left join cart on cart.customer_id=c.id left join cart_product cp on cp.cart_id=cart.id left join product p on p.id=cp.product_id group by c.name order by orders_sum;
+```
+
+| name  | orders_sum |
+|-------|-----------:|
+| John  |       0,00 |
+| Piter | 1500000,00 |
+
+```sh
+select c.name, coalesce(sum(p.price), money(0)) as orders_sum from customer c left join cart on cart.customer_id=c.id left join cart_product cp on cp.cart_id=cart.id left join product p on p.id=cp.product_id group by c.name order by orders_sum desc;
+```
+
+| name  | orders_sum |
+|-------|-----------:|
+| Piter | 1500000,00 |
+| John  |       0,00 |
+
+## Достать тех клиентов, которые что-то купили, т.е. `orders_sum > 0`
+
+```sh
+select c.name, coalesce(sum(p.price), money(0)) as orders_sum from customer c left join cart on cart.customer_id=c.id left join cart_product cp on cp.cart_id=cart.id left join product p on p.id=cp.product_id group by c.name having sum(p.price)>money(0);
+```
+
+| name  | orders_sum |
+|-------|-----------:|
+| Piter | 1500000,00 |
+
+## limit
+
+```sh
+select * from customer;
+```
+
+| id | name  | phone | email        |
+|---:|-------|-------|--------------|
+|  1 | Piter | 0123  | pit@mail.com |
+|  2 | John  | 3210  | jon@mail.com |
+
+```sh
+select * from customer order by name;
+```
+
+| id | name  | phone | email        |
+|---:|-------|-------|--------------|
+|  2 | John  | 3210  | jon@mail.com |
+|  1 | Piter | 0123  | pit@mail.com |
+
+Проблемы с кодировкой  `using ~<~`, если например кириллица.
+
+```sh
+select * from customer order by name using ~<~;
+```
+
+| id | name  | phone | email        |
+|---:|-------|-------|--------------|
+|  2 | John  | 3210  | jon@mail.com |
+|  1 | Piter | 0123  | pit@mail.com |
+
+```sh
+select * from customer order by name using ~<~ limit 1;
+```
+
+| id | name | phone | email        |
+|---:|------|-------|--------------|
+|  2 | John | 3210  | jon@mail.com |
+
+```sh
+select * from customer order by name using ~<~ limit 2;
+```
+
+| id | name  | phone | email        |
+|---:|-------|-------|--------------|
+|  2 | John  | 3210  | jon@mail.com |
+|  1 | Piter | 0123  | pit@mail.com |
+
+```sh
+select * from customer order by name using ~<~ limit 1 offset 1;
+```
+
+| id | name  | phone | email        |
+|---:|-------|-------|--------------|
+|  1 | Piter | 0123  | pit@mail.com |
 
 ---
 

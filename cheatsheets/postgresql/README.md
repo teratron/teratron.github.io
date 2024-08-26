@@ -5,7 +5,8 @@
 ---
 
 - [Типы данных](types.md)
-- [Команды psql](psql-commands.md)
+- [Операторы SQL](operators.md)
+- [Команды psql](commands.md)
 - [Пример базы данных на CLI](postgresql-shop.md)
 
 ---
