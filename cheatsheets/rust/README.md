@@ -110,6 +110,7 @@
 - **[From](from.md)**
 - **[Into](into.md)**
 - **[Default](default.md)**
+- **[Overload](overload.md)**
 
 ## Ключевые слова
 
@@ -246,7 +247,8 @@ let number = 254;
 println!("number = {}", number);
 ```
 
-Здесь мы получаем предупреждение о том, что не используем переменную `y`, но мы не получаем предупреждения о неиспользовании переменной `_x`.
+Здесь мы получаем предупреждение о том, что не используем переменную `y`, но мы не получаем предупреждения о
+неиспользовании переменной `_x`.
 
 ```rust
 let _x = 5;
@@ -285,15 +287,15 @@ fn takes_i8(y: i8) {
 
 - rust-src
 - cargo
-  * cargo new
-  * cargo new name_project --lib
-  * cargo init
-  * cargo build (--> _target/debug_)
-  * cargo build --release (--> _target/release_)
-  * cargo run
-  * cargo check
-  * cargo update
-  * cargo doc --open
+    * cargo new
+    * cargo new name_project --lib
+    * cargo init
+    * cargo build (--> _target/debug_)
+    * cargo build --release (--> _target/release_)
+    * cargo run
+    * cargo check
+    * cargo update
+    * cargo doc --open
 - clippy
 - rust-docs
 - rust-std
