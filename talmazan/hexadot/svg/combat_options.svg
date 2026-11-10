@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1620" height="1100" viewBox="0 0 1620 1100" font-family="Roboto, 'Segoe UI', Arial, sans-serif">
+<title>Hexadot combat options</title>
+<desc>Six ways to take an enemy cell without units: repainting sectors, tug of war on a bridge, hidden bid, blowing bridges, road majority and enclosure.</desc>
+<defs>
+<pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#1d2a6d" stroke-width="1.5"/></pattern>
+<pattern id="hatch-soft" patternUnits="userSpaceOnUse" width="11" height="11" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="11" stroke="#8d94bd" stroke-width="1.3"/></pattern>
+<pattern id="hatch-fine" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="7" stroke="#1d2a6d" stroke-width="2.6"/></pattern>
+<pattern id="hatch-rock" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#6d7482" stroke-width="1.6"/></pattern>
+<marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 L3,5 Z" fill="#1d2a6d"/></marker>
+</defs>
+<g inkscape:groupmode="layer" inkscape:label="Paper" id="layer-paper">
+<rect x="0" y="0" width="1620" height="1100" fill="#ffffff" stroke="none"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Grid" id="layer-grid">
+<line x1="540" y1="40" x2="540" y2="1030" stroke="#8d94bd" stroke-width="1" stroke-dasharray="4 8"/>
+<line x1="1080" y1="40" x2="1080" y2="1030" stroke="#8d94bd" stroke-width="1" stroke-dasharray="4 8"/>
+<line x1="30" y1="534" x2="1590" y2="534" stroke="#8d94bd" stroke-width="1" stroke-dasharray="4 8"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Repaint" id="layer-repaint">
+<text x="270" y="74" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">1. Перекраска</text>
+<polygon points="112,178 191.67,224 191.67,316 112,362 32.33,316 32.33,224" fill="#cfe4ff" stroke="#2b8fff" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="271.35,270 231.51,201 271.35,178 311.19,201" fill="#cfe4ff" stroke="#ffffff" stroke-width="2"/>
+<polygon points="271.35,270 311.19,201 351.02,224 351.02,270" fill="#fbdcc0" stroke="#ffffff" stroke-width="2"/>
+<polygon points="271.35,270 351.02,270 351.02,316 311.19,339" fill="#fbdcc0" stroke="#ffffff" stroke-width="2"/>
+<polygon points="271.35,270 311.19,339 271.35,362 231.51,339" fill="#cfe4ff" stroke="#ffffff" stroke-width="2"/>
+<polygon points="271.35,270 231.51,339 191.67,316 191.67,270" fill="#cfe4ff" stroke="#ffffff" stroke-width="2"/>
+<polygon points="271.35,270 191.67,270 191.67,224 231.51,201" fill="#cfe4ff" stroke="#ffffff" stroke-width="2"/>
+<polygon points="271.35,178 351.02,224 351.02,316 271.35,362 191.67,316 191.67,224" stroke="#df6e00" stroke-width="5" stroke-linejoin="round" fill="none"/>
+<polygon points="112,278 271.35,278 271.35,262 112,262" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="197.67,285 197.67,255 185.67,255 185.67,285" fill="#ffffff" stroke="#1d2a6d" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="112,244.33 134.23,257.17 134.23,282.83 112,295.67 89.77,282.83 89.77,257.17" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="112,256.66 123.55,263.33 123.55,276.67 112,283.34 100.45,276.67 100.45,263.33" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="271.35,244.33 293.58,257.17 293.58,282.83 271.35,295.67 249.12,282.83 249.12,257.17" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="271.35,256.66 282.9,263.33 282.9,276.67 271.35,283.34 259.8,276.67 259.8,263.33" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="371.35" y="198" font-size="25" text-anchor="start" font-weight="600" fill="#1d2a6d">4 из 6</text>
+<text x="270" y="452" font-size="23" text-anchor="middle" fill="#1d2a6d">Цвет затекает с моста в сегменты.</text>
+<text x="270" y="484" font-size="23" text-anchor="middle" fill="#1d2a6d">Все шесть перекрашены: база твоя.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Tug of war" id="layer-tug-of-war">
+<text x="810" y="74" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">2. Перетягивание</text>
+<polygon points="652,178 731.67,224 731.67,316 652,362 572.33,316 572.33,224" fill="#cfe4ff" stroke="#2b8fff" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="811.35,178 891.02,224 891.02,316 811.35,362 731.67,316 731.67,224" fill="#fbdcc0" stroke="#df6e00" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="652,278 745.11,278 745.11,262 652,262" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="745.11,278 811.35,278 811.35,262 745.11,262" fill="#df6e00" stroke="#1d2a6d" stroke-width="2"/>
+<line x1="699.41" y1="255" x2="699.41" y2="285" stroke="#ffffff" stroke-width="2"/>
+<line x1="715.54" y1="255" x2="715.54" y2="285" stroke="#ffffff" stroke-width="2"/>
+<line x1="731.67" y1="255" x2="731.67" y2="285" stroke="#ffffff" stroke-width="2"/>
+<line x1="747.81" y1="255" x2="747.81" y2="285" stroke="#ffffff" stroke-width="2"/>
+<line x1="763.94" y1="255" x2="763.94" y2="285" stroke="#ffffff" stroke-width="2"/>
+<polygon points="745.11,243 764.11,270 745.11,297 726.11,270" fill="#f5b800" stroke="#1d2a6d" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="652,244.33 674.23,257.17 674.23,282.83 652,295.67 629.77,282.83 629.77,257.17" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="652,256.66 663.55,263.33 663.55,276.67 652,283.34 640.45,276.67 640.45,263.33" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="811.35,244.33 833.58,257.17 833.58,282.83 811.35,295.67 789.12,282.83 789.12,257.17" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="811.35,256.66 822.9,263.33 822.9,276.67 811.35,283.34 799.8,276.67 799.8,263.33" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<line x1="717.11" y1="226" x2="769.11" y2="226" stroke-width="4" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<text x="810" y="452" font-size="23" text-anchor="middle" fill="#1d2a6d">Напор двигает фронт по мосту.</text>
+<text x="810" y="484" font-size="23" text-anchor="middle" fill="#1d2a6d">Дошёл до базы: база пала. Любая из двух.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Hidden bid" id="layer-hidden-bid">
+<text x="1350" y="74" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">3. Скрытая ставка</text>
+<polygon points="1192,206 1271.67,252 1271.67,344 1192,390 1112.33,344 1112.33,252" fill="#cfe4ff" stroke="#2b8fff" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1351.35,206 1431.02,252 1431.02,344 1351.35,390 1271.67,344 1271.67,252" fill="#fbdcc0" stroke="#df6e00" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1192,306 1351.35,306 1351.35,290 1192,290" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="1277.67,313 1277.67,283 1265.67,283 1265.67,313" fill="#ffffff" stroke="#1d2a6d" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1192,272.33 1214.23,285.17 1214.23,310.83 1192,323.67 1169.77,310.83 1169.77,285.17" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1192,284.66 1203.55,291.33 1203.55,304.67 1192,311.34 1180.45,304.67 1180.45,291.33" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1351.35,272.33 1373.58,285.17 1373.58,310.83 1351.35,323.67 1329.12,310.83 1329.12,285.17" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1351.35,284.66 1362.9,291.33 1362.9,304.67 1351.35,311.34 1339.8,304.67 1339.8,291.33" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="1130" y="116" width="124" height="62" rx="10" fill="#ffffff" stroke="#2b8fff" stroke-width="4"/>
+<text x="1192" y="160" font-size="34" text-anchor="middle" font-weight="700" fill="#1d2a6d">9</text>
+<rect x="1289.35" y="116" width="124" height="62" rx="10" fill="#ffffff" stroke="#df6e00" stroke-width="4"/>
+<text x="1351.35" y="160" font-size="34" text-anchor="middle" font-weight="700" fill="#1d2a6d">5 + 3</text>
+<text x="1271.67" y="160" font-size="38" text-anchor="middle" font-weight="700" fill="#1d2a6d">&gt;</text>
+<text x="1350" y="452" font-size="23" text-anchor="middle" fill="#1d2a6d">Оба тайно вкладывают энергию.</text>
+<text x="1350" y="484" font-size="23" text-anchor="middle" fill="#1d2a6d">Вскрытие разом: вложил больше, база твоя.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Bridges" id="layer-bridges">
+<text x="270" y="594" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">4. Подрыв мостов</text>
+<polygon points="92,668 150.89,702 150.89,770 92,804 33.11,770 33.11,702" fill="#fbdcc0" stroke="#df6e00" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="209.78,668 268.67,702 268.67,770 209.78,804 150.89,770 150.89,702" fill="#fbdcc0" stroke="#df6e00" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="327.56,668 386.45,702 386.45,770 327.56,804 268.67,770 268.67,702" fill="#c9ccd6" stroke="#aab0c4" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="268.67,770 327.56,804 327.56,872 268.67,906 209.78,872 209.78,804" fill="#cfe4ff" stroke="#2b8fff" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="92,742.5 209.78,742.5 209.78,729.5 92,729.5" fill="#df6e00" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="209.78,742.5 249.82,742.5 249.82,729.5 209.78,729.5" fill="#df6e00" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="287.51,742.5 327.56,742.5 327.56,729.5 287.51,729.5" fill="#9fa4b4" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="274.3,841.25 333.19,739.25 321.93,732.75 263.04,834.75" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="296.15,730.66 279.88,728.58 284.33,712.79 271.35,722.83 263.33,708.51 261.25,724.79 245.46,720.34 255.5,733.32 241.18,741.34 257.46,743.42 253.01,759.21 265.99,749.17 274.01,763.49 276.09,747.21 291.88,751.66 281.84,738.68" fill="#f5b800" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="92,717.03 108.43,726.51 108.43,745.49 92,754.97 75.57,745.49 75.57,726.51" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="92,726.14 100.54,731.07 100.54,740.93 92,745.86 83.46,740.93 83.46,731.07" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="209.78,717.03 226.21,726.51 226.21,745.49 209.78,754.97 193.35,745.49 193.35,726.51" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="209.78,726.14 218.32,731.07 218.32,740.93 209.78,745.86 201.24,740.93 201.24,731.07" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="327.56,717.03 343.99,726.51 343.99,745.49 327.56,754.97 311.13,745.49 311.13,726.51" fill="#8f94a6" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="327.56,726.14 336.1,731.07 336.1,740.93 327.56,745.86 319.02,740.93 319.02,731.07" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="268.67,819.03 285.1,828.51 285.1,847.49 268.67,856.97 252.24,847.49 252.24,828.51" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="268.67,828.14 277.21,833.07 277.21,842.93 268.67,847.86 260.13,842.93 260.13,833.07" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="92" y="838" font-size="22" text-anchor="middle" fill="#1d2a6d">столица</text>
+<text x="407.56" y="744" font-size="22" text-anchor="start" fill="#1d2a6d">гаснет</text>
+<text x="270" y="972" font-size="23" text-anchor="middle" fill="#1d2a6d">Энергия рвёт мост, материал чинит.</text>
+<text x="270" y="1004" font-size="23" text-anchor="middle" fill="#1d2a6d">База без связи со столицей падает.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Road majority" id="layer-road-majority">
+<text x="810" y="594" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">5. Перевес дорог</text>
+<polygon points="917.39,726 971.08,757 971.08,819 917.39,850 863.69,819 863.69,757" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="863.69,633 917.39,664 917.39,726 863.69,757 810,726 810,664" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="863.69,819 917.39,850 917.39,912 863.69,943 810,912 810,850" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="756.31,633 810,664 810,726 756.31,757 702.61,726 702.61,664" fill="#fbdcc0" stroke="#df6e00" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="702.61,726 756.31,757 756.31,819 702.61,850 648.92,819 648.92,757" fill="#fbdcc0" stroke="#df6e00" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="756.31,819 810,850 810,912 756.31,943 702.61,912 702.61,850" fill="none" stroke="#aab0c4" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="810,726 863.69,757 863.69,819 810,850 756.31,819 756.31,757" fill="#fbdcc0" stroke="#df6e00" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="917.39,782.5 810,782.5 810,793.5 917.39,793.5" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="858.93,692.25 805.24,785.25 814.76,790.75 868.46,697.75" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="868.46,878.25 814.76,785.25 805.24,790.75 858.93,883.75" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="751.54,697.75 805.24,790.75 814.76,785.25 761.07,692.25" fill="#df6e00" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="702.61,793.5 810,793.5 810,782.5 702.61,782.5" fill="#df6e00" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="917.39,770.7 932.37,779.35 932.37,796.65 917.39,805.3 902.41,796.65 902.41,779.35" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="917.39,779.01 925.17,783.5 925.17,792.5 917.39,796.99 909.6,792.5 909.6,783.5" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="863.69,677.7 878.67,686.35 878.67,703.65 863.69,712.3 848.71,703.65 848.71,686.35" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="863.69,686.01 871.48,690.5 871.48,699.5 863.69,703.99 855.91,699.5 855.91,690.5" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="863.69,863.7 878.67,872.35 878.67,889.65 863.69,898.3 848.71,889.65 848.71,872.35" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="863.69,872.01 871.48,876.5 871.48,885.5 863.69,889.99 855.91,885.5 855.91,876.5" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="756.31,677.7 771.29,686.35 771.29,703.65 756.31,712.3 741.33,703.65 741.33,686.35" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="756.31,686.01 764.09,690.5 764.09,699.5 756.31,703.99 748.52,699.5 748.52,690.5" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="702.61,770.7 717.59,779.35 717.59,796.65 702.61,805.3 687.63,796.65 687.63,779.35" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="702.61,779.01 710.4,783.5 710.4,792.5 702.61,796.99 694.83,792.5 694.83,783.5" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="810,770.7 824.98,779.35 824.98,796.65 810,805.3 795.02,796.65 795.02,779.35" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="810,779.01 817.79,783.5 817.79,792.5 810,796.99 802.21,792.5 802.21,783.5" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="810" y="972" font-size="23" text-anchor="middle" fill="#1d2a6d">В ячейке три чужие дороги и две свои.</text>
+<text x="810" y="1004" font-size="23" text-anchor="middle" fill="#1d2a6d">Чужих больше: осада возможна.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Enclosure" id="layer-enclosure">
+<text x="1350" y="594" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">6. Окружение</text>
+<polygon points="1123.44,748 1158.08,768 1158.08,808 1123.44,828 1088.79,808 1088.79,768" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1158.08,808 1192.72,828 1192.72,868 1158.08,888 1123.44,868 1123.44,828" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1158.08,688 1192.72,708 1192.72,748 1158.08,768 1123.44,748 1123.44,708" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1262,868 1296.64,888 1296.64,928 1262,948 1227.36,928 1227.36,888" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1192.72,628 1227.36,648 1227.36,688 1192.72,708 1158.08,688 1158.08,648" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1331.28,868 1365.92,888 1365.92,928 1331.28,948 1296.64,928 1296.64,888" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1262,628 1296.64,648 1296.64,688 1262,708 1227.36,688 1227.36,648" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1400.56,868 1435.21,888 1435.21,928 1400.56,948 1365.92,928 1365.92,888" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1331.28,628 1365.92,648 1365.92,688 1331.28,708 1296.64,688 1296.64,648" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1435.21,808 1469.85,828 1469.85,868 1435.21,888 1400.56,868 1400.56,828" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1400.56,628 1435.21,648 1435.21,688 1400.56,708 1365.92,688 1365.92,648" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1435.21,688 1469.85,708 1469.85,748 1435.21,768 1400.56,748 1400.56,708" fill="#eceef2" stroke="#aab0c4" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1469.85,748 1504.49,768 1504.49,808 1469.85,828 1435.21,808 1435.21,768" fill="#fbdcc0" stroke="#df6e00" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1192.72,748 1227.36,768 1227.36,808 1192.72,828 1158.08,808 1158.08,768" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1227.36,808 1262,828 1262,868 1227.36,888 1192.72,868 1192.72,828" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1227.36,688 1262,708 1262,748 1227.36,768 1192.72,748 1192.72,708" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1296.64,808 1331.28,828 1331.28,868 1296.64,888 1262,868 1262,828" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1296.64,688 1331.28,708 1331.28,748 1296.64,768 1262,748 1262,708" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1365.92,808 1400.56,828 1400.56,868 1365.92,888 1331.28,868 1331.28,828" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1365.92,688 1400.56,708 1400.56,748 1365.92,768 1331.28,748 1331.28,708" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1400.56,748 1435.21,768 1435.21,808 1400.56,828 1365.92,808 1365.92,768" fill="#cfe4ff" stroke="#2b8fff" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1262,748 1296.64,768 1296.64,808 1262,828 1227.36,808 1227.36,768" fill="#fbdcc0" stroke="#df6e00" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1262,776.84 1271.66,782.42 1271.66,793.58 1262,799.16 1252.34,793.58 1252.34,782.42" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1262,782.2 1267.02,785.1 1267.02,790.9 1262,793.8 1256.98,790.9 1256.98,785.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1331.28,748 1365.92,768 1365.92,808 1331.28,828 1296.64,808 1296.64,768" fill="#fbdcc0" stroke="#df6e00" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1331.28,776.84 1340.95,782.42 1340.95,793.58 1331.28,799.16 1321.62,793.58 1321.62,782.42" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1331.28,782.2 1336.3,785.1 1336.3,790.9 1331.28,793.8 1326.26,790.9 1326.26,785.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1192.72,776.84 1202.38,782.42 1202.38,793.58 1192.72,799.16 1183.05,793.58 1183.05,782.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1192.72,782.2 1197.74,785.1 1197.74,790.9 1192.72,793.8 1187.7,790.9 1187.7,785.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1227.36,836.84 1237.02,842.42 1237.02,853.58 1227.36,859.16 1217.69,853.58 1217.69,842.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1227.36,842.2 1232.38,845.1 1232.38,850.9 1227.36,853.8 1222.34,850.9 1222.34,845.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1227.36,716.84 1237.02,722.42 1237.02,733.58 1227.36,739.16 1217.69,733.58 1217.69,722.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1227.36,722.2 1232.38,725.1 1232.38,730.9 1227.36,733.8 1222.34,730.9 1222.34,725.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1296.64,836.84 1306.31,842.42 1306.31,853.58 1296.64,859.16 1286.98,853.58 1286.98,842.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1296.64,842.2 1301.66,845.1 1301.66,850.9 1296.64,853.8 1291.62,850.9 1291.62,845.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1296.64,716.84 1306.31,722.42 1306.31,733.58 1296.64,739.16 1286.98,733.58 1286.98,722.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1296.64,722.2 1301.66,725.1 1301.66,730.9 1296.64,733.8 1291.62,730.9 1291.62,725.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1365.92,836.84 1375.59,842.42 1375.59,853.58 1365.92,859.16 1356.26,853.58 1356.26,842.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1365.92,842.2 1370.95,845.1 1370.95,850.9 1365.92,853.8 1360.9,850.9 1360.9,845.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1365.92,716.84 1375.59,722.42 1375.59,733.58 1365.92,739.16 1356.26,733.58 1356.26,722.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1365.92,722.2 1370.95,725.1 1370.95,730.9 1365.92,733.8 1360.9,730.9 1360.9,725.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1400.56,776.84 1410.23,782.42 1410.23,793.58 1400.56,799.16 1390.9,793.58 1390.9,782.42" fill="#2b8fff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1400.56,782.2 1405.59,785.1 1405.59,790.9 1400.56,793.8 1395.54,790.9 1395.54,785.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1469.85,776.84 1479.51,782.42 1479.51,793.58 1469.85,799.16 1460.18,793.58 1460.18,782.42" fill="#df6e00" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1469.85,782.2 1474.87,785.1 1474.87,790.9 1469.85,793.8 1464.82,790.9 1464.82,785.1" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="1517.85" y="796" font-size="22" text-anchor="start" fill="#1d2a6d">столица</text>
+<text x="1350" y="972" font-size="23" text-anchor="middle" fill="#1d2a6d">Нет пути к столице мимо твоих клеток:</text>
+<text x="1350" y="1004" font-size="23" text-anchor="middle" fill="#1d2a6d">база меняет цвет и на плоскости, и на сфере.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Legend" id="layer-legend">
+<rect x="470" y="1044" width="28" height="28" fill="#cfe4ff" stroke="#2b8fff" stroke-width="3"/>
+<text x="508" y="1066" font-size="23" text-anchor="start" fill="#1d2a6d">нападающий</text>
+<rect x="690" y="1044" width="28" height="28" fill="#fbdcc0" stroke="#df6e00" stroke-width="3"/>
+<text x="728" y="1066" font-size="23" text-anchor="start" fill="#1d2a6d">защитник</text>
+<rect x="880" y="1044" width="28" height="28" fill="#c9ccd6" stroke="#aab0c4" stroke-width="3"/>
+<text x="918" y="1066" font-size="23" text-anchor="start" fill="#1d2a6d">отрезана от столицы</text>
+</g>
+</svg>

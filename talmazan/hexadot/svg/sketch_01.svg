@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1500" height="1800" viewBox="0 0 1500 1800" font-family="Roboto, 'Segoe UI', Arial, sans-serif">
+<title>Hexadot sketch page 1</title>
+<desc>Vector redraw of .drafts/sketch_01b.jpg. Layout follows the photo; spelling of the notes is normalised.</desc>
+<defs>
+<pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#1d2a6d" stroke-width="1.5"/></pattern>
+<pattern id="hatch-soft" patternUnits="userSpaceOnUse" width="11" height="11" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="11" stroke="#8d94bd" stroke-width="1.3"/></pattern>
+<pattern id="hatch-fine" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="7" stroke="#1d2a6d" stroke-width="2.6"/></pattern>
+<pattern id="hatch-cross" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#1d2a6d" stroke-width="1.4"/></pattern>
+<marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 L3,5 Z" fill="#1d2a6d"/></marker>
+</defs>
+<g inkscape:groupmode="layer" inkscape:label="Paper" id="layer-paper">
+<rect x="0" y="0" width="1500" height="1800" fill="#ffffff" stroke="none"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Base kinds" id="layer-base-kinds">
+<text x="292" y="104" font-size="30" text-anchor="middle" fill="#1d2a6d">строение</text>
+<rect x="190" y="118" width="170" height="74" stroke-width="4" fill="none" stroke="#1d2a6d"/>
+<text x="275" y="171" font-size="42" text-anchor="middle" font-weight="600" fill="#1d2a6d">БАЗА</text>
+<line x1="228" y1="196" x2="228" y2="238" stroke-width="2.5" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<text x="278" y="280" font-size="32" text-anchor="middle" fill="#1d2a6d">столица</text>
+<line x1="385" y1="152" x2="690" y2="152" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="437" y1="152" x2="437" y2="224" stroke-width="2.5" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<text x="520" y="262" font-size="32" text-anchor="middle" fill="#1d2a6d">освоенная</text>
+<line x1="690" y1="152" x2="690" y2="206" stroke-width="2.5" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<text x="722" y="244" font-size="32" text-anchor="middle" fill="#1d2a6d">захваченная</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Hex before" id="layer-hex-before">
+<circle cx="555" cy="552" r="228.9" stroke="#8d94bd" stroke-width="1.6" fill="none"/>
+<polygon points="555,334 743.79,443 743.79,661 555,770 366.21,661 366.21,443" fill="#ffffff" stroke-width="5" stroke-linejoin="round" stroke="#1d2a6d"/>
+<line x1="555" y1="334" x2="555" y2="770" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="743.79" y1="443" x2="366.21" y2="661" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="743.79" y1="661" x2="366.21" y2="443" stroke="#8d94bd" stroke-width="1.6"/>
+<g transform="translate(487.42 434.95) scale(0.6200)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="510.38" y1="406.07" x2="552.34" y2="399.42" stroke-width="2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(622.58 434.95) scale(0.6200)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="659.07" y1="440.4" x2="685.8" y2="473.41" stroke-width="2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(690.16 552) scale(0.3000)">
+<circle cx="0" cy="0" r="34" stroke="#1d2a6d" stroke-width="5" fill="none"/>
+</g>
+<line x1="703.69" y1="586.33" x2="688.47" y2="625.98" stroke-width="2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(622.58 669.05) scale(0.6200)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="599.62" y1="697.93" x2="557.66" y2="704.58" stroke-width="2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(487.42 669.05) scale(0.6200)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="450.93" y1="663.6" x2="424.2" y2="630.59" stroke-width="2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(419.84 552) scale(0.6200)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="406.31" y1="517.67" x2="421.53" y2="478.02" stroke-width="2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<polygon points="555,495.32 604.09,523.66 604.09,580.34 555,608.68 505.91,580.34 505.91,523.66" fill="url(#hatch)" stroke-width="7" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="555,522.57 580.49,537.28 580.49,566.72 555,581.43 529.51,566.72 529.51,537.28" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="555" cy="552" r="5" fill="#1d2a6d" stroke="none"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Hex after" id="layer-hex-after">
+<circle cx="552" cy="1100" r="236.25" stroke="#8d94bd" stroke-width="1.6" fill="none"/>
+<polygon points="552,875 746.86,987.5 746.86,1212.5 552,1325 357.14,1212.5 357.14,987.5" fill="#ffffff" stroke-width="5" stroke-linejoin="round" stroke="#1d2a6d"/>
+<line x1="552" y1="875" x2="552" y2="1325" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="746.86" y1="987.5" x2="357.14" y2="1212.5" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="746.86" y1="1212.5" x2="357.14" y2="987.5" stroke="#8d94bd" stroke-width="1.6"/>
+<polygon points="513.65,1132.42 439.85,1260.25 469.3,1277.25 543.1,1149.42" fill="url(#hatch)" stroke-width="2" stroke="#1d2a6d"/>
+<line x1="552" y1="1156.25" x2="552" y2="1231.85" stroke-width="11" stroke="#1d2a6d"/>
+<line x1="503.29" y1="1128.12" x2="437.81" y2="1165.92" stroke-width="11" stroke="#1d2a6d"/>
+<line x1="503.29" y1="1071.88" x2="437.81" y2="1034.08" stroke-width="11" stroke="#1d2a6d"/>
+<polygon points="552,1043.75 600.71,1071.88 600.71,1128.12 552,1156.25 503.29,1128.12 503.29,1071.88" fill="url(#hatch-soft)" stroke-width="9" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="552,1043.75 600.71,1071.88 600.71,1128.12 552,1156.25 503.29,1128.12 503.29,1071.88" fill="none" stroke-width="9" stroke-linejoin="round" stroke="#1d2a6d"/>
+<g>
+<circle cx="552" cy="968.15" r="29" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+<g transform="translate(552 968.15) scale(0.3915)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="666.19" cy="1034.08" r="29" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+<g transform="translate(666.19 1034.08) scale(0.3915)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="666.19" cy="1165.92" r="29" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+</g>
+<g>
+<circle cx="552" cy="1231.85" r="29" fill="#ffffff" stroke-width="7" stroke="#1d2a6d"/>
+<g transform="translate(552 1231.85) scale(0.3915)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="437.81" cy="1165.92" r="29" fill="#ffffff" stroke-width="7" stroke="#1d2a6d"/>
+<g transform="translate(437.81 1165.92) scale(0.3915)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="437.81" cy="1034.08" r="29" fill="#ffffff" stroke-width="7" stroke="#1d2a6d"/>
+<g transform="translate(437.81 1034.08) scale(0.3915)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Extraction menu" id="layer-extraction-menu">
+<text x="190" y="398" font-size="30" text-anchor="start" fill="#1d2a6d">строение</text>
+<text x="190" y="436" font-size="30" text-anchor="start" fill="#1d2a6d">по добыче</text>
+<rect x="178" y="488" width="190" height="78" fill="#ffffff" stroke-width="4" stroke="#1d2a6d"/>
+<text x="273" y="538" font-size="30" text-anchor="middle" fill="#1d2a6d">кристалл</text>
+<g transform="translate(120 524) scale(0.7600)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<rect x="178" y="592" width="184" height="76" fill="#ffffff" stroke-width="4" stroke="#1d2a6d"/>
+<text x="270" y="640" font-size="30" text-anchor="middle" fill="#1d2a6d">материал</text>
+<g transform="translate(115 640) scale(0.7200)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<rect x="182" y="708" width="176" height="80" fill="#ffffff" stroke-width="4" stroke="#1d2a6d"/>
+<text x="270" y="758" font-size="30" text-anchor="middle" fill="#1d2a6d">дорога</text>
+<g transform="translate(116 760) scale(0.7000)">
+<polygon points="-17.61,52.45 42.39,-35.55 17.61,-52.45 -42.39,35.55" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<line x1="-5.61" y1="34.85" x2="-30.39" y2="17.95" stroke="#1d2a6d" stroke-width="3.5"/>
+<line x1="6.39" y1="17.25" x2="-18.39" y2="0.35" stroke="#1d2a6d" stroke-width="3.5"/>
+<line x1="18.39" y1="-0.35" x2="-6.39" y2="-17.25" stroke="#1d2a6d" stroke-width="3.5"/>
+<line x1="30.39" y1="-17.95" x2="5.61" y2="-34.85" stroke="#1d2a6d" stroke-width="3.5"/>
+</g>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="HUD" id="layer-hud">
+<rect x="170" y="1460" width="433" height="290" stroke-width="4" fill="none" stroke="#1d2a6d"/>
+<g transform="translate(468 1490) scale(0.3400)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="7" stroke-linejoin="round"/>
+</g>
+<g transform="translate(508 1490) scale(0.3400)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="7" stroke-linejoin="round"/>
+</g>
+<text x="539" y="1502" font-size="34" text-anchor="middle" font-weight="600" fill="#1d2a6d">$</text>
+<rect x="458" y="1648" width="114" height="82" fill="url(#hatch-cross)" stroke-width="5" stroke="#1d2a6d"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Resources" id="layer-resources">
+<text x="830" y="86" font-size="46" text-anchor="start" fill="#1d2a6d">Ресурсы:</text>
+<line x1="826" y1="104" x2="1064" y2="104" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<g transform="translate(872 160) scale(0.7600)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<text x="985" y="158" font-size="36" text-anchor="start" fill="#1d2a6d">ЭНЕРГИЯ</text>
+<text x="985" y="198" font-size="30" text-anchor="start" fill="#1d2a6d">(возможно кристалл)</text>
+<g transform="translate(874 262) scale(0.7000)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<text x="985" y="250" font-size="36" text-anchor="start" fill="#1d2a6d">МАТЕРИАЛ</text>
+<text x="985" y="290" font-size="30" text-anchor="start" fill="#1d2a6d">(стройматериал)</text>
+<g transform="translate(885 352) scale(0.5400)">
+<circle cx="0" cy="0" r="34" stroke="#1d2a6d" stroke-width="6" fill="none"/>
+</g>
+<text x="985" y="362" font-size="36" text-anchor="start" fill="#1d2a6d">НИЧЕГО (пусто)</text>
+<g transform="translate(872 442) scale(0.7600)">
+<circle cx="0" cy="0" r="44" fill="#ffffff" stroke="#1d2a6d" stroke-width="6"/>
+<polyline points="-20,-24 20,-24 -20,24 20,24" stroke="#1d2a6d" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<line x1="0" y1="-54" x2="0" y2="54" stroke="#1d2a6d" stroke-width="6"/>
+</g>
+<text x="948" y="454" font-size="40" text-anchor="start" fill="#1d2a6d">?</text>
+<text x="985" y="454" font-size="34" text-anchor="start" fill="#1d2a6d">возможно ДЕНЬГИ</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Colouring" id="layer-colouring">
+<text x="872" y="594" font-size="46" text-anchor="start" fill="#1d2a6d">Окрашивание:</text>
+<line x1="866" y1="616" x2="1214" y2="616" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<text x="836" y="694" font-size="34" text-anchor="start" fill="#1d2a6d">–</text>
+<text x="880" y="694" font-size="36" text-anchor="start" fill="#1d2a6d">Общее (игрока)</text>
+<text x="886" y="738" font-size="30" text-anchor="start" fill="#1d2a6d">цвет базы…</text>
+<text x="886" y="776" font-size="30" text-anchor="start" fill="#1d2a6d">цвет дорог…</text>
+<text x="836" y="846" font-size="34" text-anchor="start" fill="#1d2a6d">–</text>
+<text x="880" y="846" font-size="36" text-anchor="start" fill="#1d2a6d">Цвет зоны</text>
+<text x="886" y="892" font-size="30" text-anchor="start" fill="#1d2a6d">по добыче энергии</text>
+<g transform="translate(1200 880) scale(0.7000)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="6" stroke-linejoin="round"/>
+</g>
+<text x="836" y="990" font-size="34" text-anchor="start" fill="#1d2a6d">–</text>
+<text x="880" y="990" font-size="36" text-anchor="start" fill="#1d2a6d">Цвет зоны</text>
+<text x="886" y="1036" font-size="30" text-anchor="start" fill="#1d2a6d">по добыче матер.</text>
+<g transform="translate(1180 1024) scale(0.6200)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="6" stroke-linejoin="round"/>
+</g>
+<text x="836" y="1140" font-size="34" text-anchor="start" fill="#1d2a6d">–</text>
+<text x="880" y="1140" font-size="36" text-anchor="start" fill="#1d2a6d">Без цвета</text>
+<text x="886" y="1188" font-size="30" text-anchor="start" fill="#1d2a6d">или серый, или</text>
+<text x="886" y="1232" font-size="30" text-anchor="start" fill="#1d2a6d">нейтральные зоны</text>
+<text x="886" y="1280" font-size="30" text-anchor="start" fill="#1d2a6d">без ресурсов</text>
+<g transform="translate(1110 1270) scale(0.4600)">
+<circle cx="0" cy="0" r="34" stroke="#1d2a6d" stroke-width="7" fill="none"/>
+</g>
+</g>
+</svg>

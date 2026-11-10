@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1580" height="590" viewBox="0 0 1580 590" font-family="Roboto, 'Segoe UI', Arial, sans-serif">
+<title>Hexadot cell evolution</title>
+<desc>How the cell layout moved from resources in sector centres to alternating slots and road lanes.</desc>
+<defs>
+<pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#1d2a6d" stroke-width="1.5"/></pattern>
+<pattern id="hatch-soft" patternUnits="userSpaceOnUse" width="11" height="11" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="11" stroke="#8d94bd" stroke-width="1.3"/></pattern>
+<pattern id="hatch-fine" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="7" stroke="#1d2a6d" stroke-width="2.6"/></pattern>
+<pattern id="hatch-rock" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#6d7482" stroke-width="1.6"/></pattern>
+<marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 L3,5 Z" fill="#1d2a6d"/></marker>
+</defs>
+<g inkscape:groupmode="layer" inkscape:label="Paper" id="layer-paper">
+<rect x="0" y="0" width="1580" height="590" fill="#ffffff" stroke="none"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Step one" id="layer-step-one">
+<text x="270" y="70" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">1. Ресурсы в секторах</text>
+<polygon points="270,130 417.22,215 417.22,385 270,470 122.78,385 122.78,215" fill="#ffffff" stroke-width="5" stroke-linejoin="round" stroke="#1d2a6d"/>
+<line x1="270" y1="130" x2="270" y2="470" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="417.22" y1="215" x2="122.78" y2="385" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="417.22" y1="385" x2="122.78" y2="215" stroke="#8d94bd" stroke-width="1.6"/>
+<g transform="translate(217.3 208.72) scale(0.5000)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="232.18" y1="183.59" x2="267.86" y2="177.62" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(322.7 208.72) scale(0.5000)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="351.9" y1="209.04" x2="374.92" y2="236.96" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(375.4 300) scale(0.2600)">
+<circle cx="0" cy="0" r="34" stroke="#1d2a6d" stroke-width="5" fill="none"/>
+</g>
+<line x1="389.73" y1="325.45" x2="377.05" y2="359.34" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(322.7 391.28) scale(0.5000)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="307.82" y1="416.41" x2="272.14" y2="422.38" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(217.3 391.28) scale(0.5000)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="188.1" y1="390.96" x2="165.08" y2="363.04" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<g transform="translate(164.6 300) scale(0.5000)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<line x1="150.27" y1="274.55" x2="162.95" y2="240.66" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<polygon points="270,252.57 311.08,276.29 311.08,323.71 270,347.43 228.92,323.71 228.92,276.29" fill="url(#hatch)" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="270,275.35 291.35,287.68 291.35,312.32 270,324.65 248.65,312.32 248.65,287.68" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="270" y="528" font-size="24" text-anchor="middle" fill="#1d2a6d">sketch_01, верхний шестигранник.</text>
+<text x="270" y="560" font-size="24" text-anchor="middle" fill="#1d2a6d">Стрелки сдвигают ресурсы на диагонали.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Step two" id="layer-step-two">
+<text x="790" y="70" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">2. Ресурсы на диагоналях</text>
+<polygon points="790,130 937.22,215 937.22,385 790,470 642.78,385 642.78,215" fill="#ffffff" stroke-width="5" stroke-linejoin="round" stroke="#1d2a6d"/>
+<line x1="790" y1="130" x2="790" y2="470" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="937.22" y1="215" x2="642.78" y2="385" stroke="#8d94bd" stroke-width="1.6"/>
+<line x1="937.22" y1="385" x2="642.78" y2="215" stroke="#8d94bd" stroke-width="1.6"/>
+<polygon points="760.04,325.89 705.13,421 727.65,434 782.56,338.89" fill="#cfe4ff" stroke="#1d2a6d" stroke-width="2"/>
+<line x1="790" y1="347.43" x2="790" y2="399.62" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="748.92" y1="323.71" x2="703.73" y2="349.81" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="748.92" y1="276.29" x2="703.73" y2="250.19" stroke-width="7" stroke="#1d2a6d"/>
+<polygon points="790,252.57 831.08,276.29 831.08,323.71 790,347.43 748.92,323.71 748.92,276.29" fill="url(#hatch)" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="790,275.35 811.35,287.68 811.35,312.32 790,324.65 768.65,312.32 768.65,287.68" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<g>
+<circle cx="790" cy="200.38" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+<g transform="translate(790 200.38) scale(0.2984)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="876.27" cy="250.19" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+<g transform="translate(876.27 250.19) scale(0.2984)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="876.27" cy="349.81" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="790" cy="399.62" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="4.59"/>
+<g transform="translate(790 399.62) scale(0.2984)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="703.73" cy="349.81" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="4.59"/>
+<g transform="translate(703.73 349.81) scale(0.2984)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="703.73" cy="250.19" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="4.59"/>
+<g transform="translate(703.73 250.19) scale(0.2984)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<text x="790" y="528" font-size="24" text-anchor="middle" fill="#1d2a6d">sketch_01, нижний. Порядок тот же,</text>
+<text x="790" y="560" font-size="24" text-anchor="middle" fill="#1d2a6d">центр сектора свободен: там дорога.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Step three" id="layer-step-three">
+<text x="1310" y="70" font-size="32" text-anchor="middle" font-weight="600" fill="#1d2a6d">3. Шесть слотов и шесть полос</text>
+<polygon points="1310,130 1457.22,215 1457.22,385 1310,470 1162.78,385 1162.78,215" fill="#ffffff" stroke-width="5" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1336.46,268.17 1389.67,176 1377.55,169 1324.34,261.17" fill="#cfe4ff" stroke="#1d2a6d" stroke-width="1.8"/>
+<polygon points="1350.8,307 1457.22,307 1457.22,293 1350.8,293" fill="#cfe4ff" stroke="#1d2a6d" stroke-width="1.8"/>
+<polygon points="1324.34,338.83 1377.55,431 1389.67,424 1336.46,331.83" fill="#cfe4ff" stroke="#1d2a6d" stroke-width="1.8"/>
+<polygon points="1283.54,331.83 1230.33,424 1242.45,431 1295.66,338.83" fill="#cfe4ff" stroke="#1d2a6d" stroke-width="1.8"/>
+<polygon points="1269.2,293 1162.78,293 1162.78,307 1269.2,307" fill="#cfe4ff" stroke="#1d2a6d" stroke-width="1.8"/>
+<line x1="1351.08" y1="276.29" x2="1396.27" y2="250.19" stroke-width="4" stroke="#1d2a6d"/>
+<line x1="1351.08" y1="323.71" x2="1396.27" y2="349.81" stroke-width="4" stroke="#1d2a6d"/>
+<line x1="1310" y1="347.43" x2="1310" y2="399.62" stroke-width="4" stroke="#1d2a6d"/>
+<line x1="1268.92" y1="323.71" x2="1223.73" y2="349.81" stroke-width="4" stroke="#1d2a6d"/>
+<ellipse cx="1284.5" cy="197.73" rx="35.7" ry="27.2" fill="#9aa0ad" stroke="#1d2a6d" stroke-width="2"/>
+<ellipse cx="1253.91" cy="216.85" rx="32.3" ry="25.5" fill="#c6cad3" stroke="none"/>
+<ellipse cx="1253.91" cy="216.85" rx="32.3" ry="25.5" fill="url(#hatch-rock)" stroke="#1d2a6d" stroke-width="2"/>
+<ellipse cx="1216.29" cy="241.44" rx="35.7" ry="27.2" fill="#9aa0ad" stroke="#1d2a6d" stroke-width="2"/>
+<polygon points="1310,252.57 1351.08,276.29 1351.08,323.71 1310,347.43 1268.92,323.71 1268.92,276.29" fill="#ffffff" stroke="#1d2a6d" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1310,275.35 1331.35,287.68 1331.35,312.32 1310,324.65 1288.65,312.32 1288.65,287.68" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="1310" cy="252.57" r="3.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1351.08" cy="276.29" r="3.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1351.08" cy="323.71" r="3.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1310" cy="347.43" r="3.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1268.92" cy="323.71" r="3.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1268.92" cy="276.29" r="3.4" fill="#1d2a6d" stroke="none"/>
+<g>
+<circle cx="1396.27" cy="250.19" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+<g transform="translate(1396.27 250.19) scale(0.2984)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="1396.27" cy="349.81" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+<g transform="translate(1396.27 349.81) scale(0.2984)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="1310" cy="399.62" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+<g transform="translate(1310 399.62) scale(0.2984)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="1223.73" cy="349.81" r="22.95" fill="#ffffff" stroke="#1d2a6d" stroke-width="1.5"/>
+<g transform="translate(1223.73 349.81) scale(0.2984)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#f5b800" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<text x="1310" y="528" font-size="24" text-anchor="middle" fill="#1d2a6d">sketch_02. Слоты и полосы чередуются,</text>
+<text x="1310" y="560" font-size="24" text-anchor="middle" fill="#1d2a6d">препятствие закрывает их подряд.</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Arrows" id="layer-arrows">
+<line x1="474" y1="300" x2="570" y2="300" stroke-width="6" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<line x1="994" y1="300" x2="1090" y2="300" stroke-width="6" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+</g>
+</svg>

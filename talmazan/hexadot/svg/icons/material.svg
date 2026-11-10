@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="-60 -60 120 120">
+<title>Hexadot icon: material</title>
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#bfe9d6" stroke="#1d2a6d" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#7fcfac" stroke="#1d2a6d" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="#3f9f7d" stroke="#1d2a6d" stroke-width="4" stroke-linejoin="round"/>
+</svg>

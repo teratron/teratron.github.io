@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="-60 -60 120 120">
+<title>Hexadot icon: money</title>
+<circle cx="0" cy="0" r="44" fill="#e0a92e" stroke="#1d2a6d" stroke-width="4"/>
+<polyline points="-20,-24 20,-24 -20,24 20,24" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<line x1="0" y1="-54" x2="0" y2="54" stroke="#1d2a6d" stroke-width="4"/>
+</svg>

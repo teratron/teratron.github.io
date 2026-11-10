@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1916" height="1932" viewBox="0 0 1916 1932" font-family="Roboto, 'Segoe UI', Arial, sans-serif">
+<title>Hexadot sketch page 2</title>
+<desc>Vector redraw of .drafts/sketch_02.jpg. Layout follows the photo; slanted notes are set horizontally and spelling is normalised.</desc>
+<defs>
+<pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#1d2a6d" stroke-width="1.5"/></pattern>
+<pattern id="hatch-soft" patternUnits="userSpaceOnUse" width="11" height="11" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="11" stroke="#8d94bd" stroke-width="1.3"/></pattern>
+<pattern id="hatch-fine" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="7" stroke="#1d2a6d" stroke-width="2.6"/></pattern>
+<pattern id="hatch-cross" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#1d2a6d" stroke-width="1.4"/></pattern>
+<marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 L3,5 Z" fill="#1d2a6d"/></marker>
+</defs>
+<g inkscape:groupmode="layer" inkscape:label="Paper" id="layer-paper">
+<rect x="0" y="0" width="1916" height="1932" fill="#ffffff" stroke="none"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Title" id="layer-title">
+<text x="842" y="112" font-size="84" text-anchor="middle" font-weight="600" fill="#1d2a6d">Hexadot</text>
+<line x1="658" y1="128" x2="1024" y2="128" stroke-width="4" stroke-linecap="round" stroke="#1d2a6d"/>
+<text x="900" y="168" font-size="32" text-anchor="middle" fill="#1d2a6d">рабочее название</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Resources" id="layer-resources">
+<text x="62" y="292" font-size="50" text-anchor="start" fill="#1d2a6d">Ресурсы:</text>
+<line x1="54" y1="312" x2="372" y2="312" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<g transform="translate(76 404) scale(1.0400)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<text x="186" y="398" font-size="36" text-anchor="start" fill="#1d2a6d">ЭНЕРГИЯ</text>
+<text x="186" y="442" font-size="32" text-anchor="start" fill="#1d2a6d">(возможно кристалл)</text>
+<g transform="translate(76 538) scale(0.9200)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<text x="186" y="532" font-size="36" text-anchor="start" fill="#1d2a6d">МАТЕРИАЛ</text>
+<text x="186" y="576" font-size="32" text-anchor="start" fill="#1d2a6d">(стройматериал)</text>
+<g transform="translate(82 680) scale(0.8400)">
+<circle cx="0" cy="0" r="44" fill="#ffffff" stroke="#1d2a6d" stroke-width="6"/>
+<polyline points="-20,-24 20,-24 -20,24 20,24" stroke="#1d2a6d" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<line x1="0" y1="-54" x2="0" y2="54" stroke="#1d2a6d" stroke-width="6"/>
+</g>
+<text x="186" y="694" font-size="36" text-anchor="start" fill="#1d2a6d">ДЕНЬГИ</text>
+<g transform="translate(100 830) scale(0.5600)">
+<circle cx="0" cy="0" r="34" stroke="#1d2a6d" stroke-width="7" fill="none"/>
+</g>
+<text x="196" y="826" font-size="36" text-anchor="start" fill="#1d2a6d">НИЧЕГО</text>
+<text x="196" y="870" font-size="32" text-anchor="start" fill="#1d2a6d">(пусто)</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Cell with obstacle" id="layer-cell-with-obstacle">
+<polygon points="988,333 1171.6,439 1171.6,651 988,757 804.4,651 804.4,439" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<line x1="1008.44" y1="495.6" x2="1073.73" y2="382.5" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="1020.56" y1="502.6" x2="1085.86" y2="389.5" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="1090.19" y1="392" x2="1069.4" y2="380" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="1041" y1="538" x2="1171.59" y2="538" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="1041" y1="552" x2="1171.59" y2="552" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="1171.59" y1="557" x2="1171.59" y2="533" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="1020.56" y1="587.4" x2="1085.86" y2="700.5" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="1008.44" y1="594.4" x2="1073.73" y2="707.5" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="1069.4" y1="710" x2="1090.19" y2="698" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="967.56" y1="594.4" x2="902.27" y2="707.5" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="955.44" y1="587.4" x2="890.14" y2="700.5" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="885.81" y1="698" x2="906.6" y2="710" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="935" y1="552" x2="804.41" y2="552" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="935" y1="538" x2="804.41" y2="538" stroke-width="2.5" stroke="#1d2a6d"/>
+<line x1="804.41" y1="533" x2="804.41" y2="557" stroke-width="7" stroke="#1d2a6d"/>
+<line x1="1037.57" y1="516.38" x2="1095.59" y2="482.88" stroke-width="5" stroke="#1d2a6d"/>
+<line x1="1037.57" y1="573.62" x2="1095.59" y2="607.12" stroke-width="5" stroke="#1d2a6d"/>
+<line x1="988" y1="602.24" x2="988" y2="669.23" stroke-width="5" stroke="#1d2a6d"/>
+<line x1="938.43" y1="573.62" x2="880.41" y2="607.12" stroke-width="5" stroke="#1d2a6d"/>
+<polygon points="988,485.85 1039.22,515.43 1039.22,574.57 988,604.15 936.78,574.57 936.78,515.43" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="988" cy="545" r="19.08" fill="#ffffff" stroke-width="3" stroke="#1d2a6d"/>
+<circle cx="988" cy="485.85" r="5.5" fill="#1d2a6d" stroke="none"/>
+<circle cx="1039.22" cy="515.43" r="5.5" fill="#1d2a6d" stroke="none"/>
+<circle cx="1039.22" cy="574.57" r="5.5" fill="#1d2a6d" stroke="none"/>
+<circle cx="988" cy="604.15" r="5.5" fill="#1d2a6d" stroke="none"/>
+<circle cx="936.78" cy="574.57" r="5.5" fill="#1d2a6d" stroke="none"/>
+<circle cx="936.78" cy="515.43" r="5.5" fill="#1d2a6d" stroke="none"/>
+<g>
+<circle cx="1095.59" cy="482.88" r="28" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+<g transform="translate(1095.59 482.88) scale(0.3780)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="1095.59" cy="607.12" r="28" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+<g transform="translate(1095.59 607.12) scale(0.3780)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="988" cy="669.23" r="28" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+<g transform="translate(988 669.23) scale(0.3780)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<g>
+<circle cx="880.41" cy="607.12" r="28" fill="#ffffff" stroke-width="2" stroke="#1d2a6d"/>
+<g transform="translate(880.41 607.12) scale(0.3780)">
+<polygon points="16,-50 -30,8 -3,8 -16,50 30,-11 3,-11" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+</g>
+<ellipse cx="965.91" cy="419.73" rx="54" ry="44" fill="url(#hatch)" stroke-width="3" stroke="#1d2a6d"/>
+<ellipse cx="925.09" cy="444.32" rx="44" ry="34" fill="url(#hatch-cross)" stroke-width="3" stroke="#1d2a6d"/>
+<ellipse cx="863.15" cy="472.92" rx="50" ry="40" fill="url(#hatch)" stroke-width="3" stroke="#1d2a6d"/>
+<text x="650" y="262" font-size="32" text-anchor="start" fill="#1d2a6d">Горы/озёра</text>
+<text x="650" y="302" font-size="32" text-anchor="start" fill="#1d2a6d">или другие препятствия</text>
+<line x1="800" y1="312" x2="868" y2="384" stroke-width="2" stroke="#1d2a6d"/>
+<text x="1078" y="236" font-size="34" text-anchor="start" font-weight="600" fill="#1d2a6d">Дорога не строится</text>
+<line x1="1074" y1="248" x2="1402" y2="248" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<text x="1078" y="288" font-size="34" text-anchor="start" fill="#1d2a6d">и отсутствует ресурс!</text>
+<line x1="1176" y1="438" x2="1392" y2="298" stroke-width="2" stroke="#1d2a6d"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Cell kinds" id="layer-cell-kinds">
+<text x="1552" y="508" font-size="34" text-anchor="start" fill="#1d2a6d">полное</text>
+<text x="1552" y="640" font-size="34" text-anchor="start" fill="#1d2a6d">частично</text>
+<text x="1552" y="790" font-size="34" text-anchor="start" fill="#1d2a6d">пустая</text>
+<text x="1195" y="716" font-size="36" text-anchor="middle" fill="#1d2a6d">void</text>
+<polygon points="1193,737 1239.77,764 1239.77,818 1193,845 1146.23,818 1146.23,764" fill="#ffffff" stroke-width="8" stroke-linejoin="round" stroke="#1d2a6d"/>
+<text x="1262" y="786" font-size="26" text-anchor="start" fill="#1d2a6d">вообще</text>
+<text x="1262" y="820" font-size="26" text-anchor="start" fill="#1d2a6d">и базу</text>
+<text x="1262" y="854" font-size="26" text-anchor="start" fill="#1d2a6d">не построить</text>
+<polygon points="1454,440 1500.77,467 1500.77,521 1454,548 1407.23,521 1407.23,467" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="1454" cy="494" r="10.8" fill="#1d2a6d" stroke="none"/>
+<circle cx="1454" cy="494" r="4.86" fill="#ffffff" stroke="none"/>
+<circle cx="1454" cy="460.52" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1482.99" cy="477.26" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1482.99" cy="510.74" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1454" cy="527.48" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1425.01" cy="510.74" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1425.01" cy="477.26" r="5.4" fill="#1d2a6d" stroke="none"/>
+<polygon points="1454,570 1500.77,597 1500.77,651 1454,678 1407.23,651 1407.23,597" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="1454" cy="624" r="10.8" fill="#1d2a6d" stroke="none"/>
+<circle cx="1454" cy="624" r="4.86" fill="#ffffff" stroke="none"/>
+<circle cx="1454" cy="590.52" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1425.01" cy="607.26" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1425.01" cy="640.74" r="5.4" fill="#1d2a6d" stroke="none"/>
+<circle cx="1454" cy="657.48" r="5.4" fill="#1d2a6d" stroke="none"/>
+<polygon points="1461,724 1507.77,751 1507.77,805 1461,832 1414.23,805 1414.23,751" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="1461" cy="778" r="10.8" fill="#1d2a6d" stroke="none"/>
+<circle cx="1461" cy="778" r="4.86" fill="#ffffff" stroke="none"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Cell parts" id="layer-cell-parts">
+<polygon points="358,1124 415.16,1157 415.16,1223 358,1256 300.84,1223 300.84,1157" fill="#ffffff" stroke-width="5" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="342.5,1201.84 322.5,1236.48 335.5,1243.98 355.5,1209.34" fill="url(#hatch)" stroke-width="2" stroke="#1d2a6d"/>
+<line x1="343.5" y1="1183.24" x2="319.94" y2="1172.25" stroke-width="4" stroke="#1d2a6d"/>
+<circle cx="318.12" cy="1171.4" r="8" fill="#1d2a6d" stroke="none"/>
+<polygon points="358,1169 376.19,1179.5 376.19,1200.5 358,1211 339.81,1200.5 339.81,1179.5" fill="url(#hatch)" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<text x="232" y="1068" font-size="36" text-anchor="middle" fill="#1d2a6d">Hex</text>
+<line x1="258" y1="1080" x2="318" y2="1138" stroke-width="2" stroke="#1d2a6d"/>
+<text x="516" y="1104" font-size="34" text-anchor="middle" fill="#1d2a6d">база</text>
+<line x1="476" y1="1108" x2="376" y2="1178" stroke-width="2" stroke="#1d2a6d"/>
+<text x="204" y="1226" font-size="32" text-anchor="middle" fill="#1d2a6d">ресурс</text>
+<line x1="262" y1="1212" x2="312" y2="1176" stroke-width="2" stroke="#1d2a6d"/>
+<text x="404" y="1336" font-size="32" text-anchor="middle" fill="#1d2a6d">дорога</text>
+<line x1="392" y1="1302" x2="340" y2="1240" stroke-width="2" stroke="#1d2a6d"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Base" id="layer-base">
+<text x="960" y="930" font-size="40" text-anchor="middle" font-weight="600" fill="#1d2a6d">БАЗА</text>
+<line x1="892" y1="944" x2="1030" y2="944" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<polygon points="871.93,1063.2 962,1094.4 962,1148.48 871.93,1117.28" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="962,1094.4 1052.07,1063.2 1052.07,1117.28 962,1148.48" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="962,969.6 1052.07,1000.8 1052.07,1063.2 962,1094.4 871.93,1063.2 871.93,1000.8" fill="#ffffff" stroke-width="4" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="902.56,1084.62 933.18,1095.23 933.18,1135.79 902.56,1125.18" fill="url(#hatch)" stroke-width="3" stroke="#1d2a6d"/>
+<polygon points="1021.44,1084.62 990.82,1095.23 990.82,1135.79 1021.44,1125.18" fill="url(#hatch)" stroke-width="3" stroke="#1d2a6d"/>
+<circle cx="962" cy="1117.11" r="9.88" fill="#1d2a6d" stroke="none"/>
+<path d="M 926.64 1011.2 v 22.88 a 35.36 14.56 0 0 0 70.72 0 v -22.88" fill="#ffffff" stroke-width="3" stroke="#1d2a6d"/>
+<ellipse cx="962" cy="1011.2" rx="35.36" ry="14.56" fill="#ffffff" stroke-width="3" stroke="#1d2a6d"/>
+<text x="880" y="1208" font-size="32" text-anchor="middle" fill="#1d2a6d">ворота</text>
+<text x="884" y="1248" font-size="32" text-anchor="middle" fill="#1d2a6d">к дороге</text>
+<line x1="888" y1="1176" x2="918" y2="1130" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+<text x="1040" y="1200" font-size="32" text-anchor="start" fill="#1d2a6d">слот</text>
+<text x="1040" y="1240" font-size="32" text-anchor="start" fill="#1d2a6d">для подключ.</text>
+<text x="1040" y="1280" font-size="32" text-anchor="start" fill="#1d2a6d">ресурсов</text>
+<line x1="1050" y1="1170" x2="976" y2="1112" stroke-width="2.2" marker-end="url(#arrow)" stroke="#1d2a6d"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Section lines" id="layer-section-lines">
+<line x1="40" y1="1484" x2="1335" y2="1484" stroke-width="3" stroke="#1d2a6d"/>
+<line x1="1335" y1="925" x2="1335" y2="1842" stroke-width="3" stroke="#1d2a6d"/>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Material" id="layer-material">
+<g transform="translate(112 1614) scale(0.8400)">
+<polygon points="0,-48 42,-24 0,0 -42,-24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="-42,-24 0,0 0,48 -42,24" fill="#ffffff" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="42,-24 42,24 0,48 0,0" fill="url(#hatch-fine)" stroke="#1d2a6d" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<text x="226" y="1612" font-size="44" text-anchor="start" fill="#1d2a6d" font-style="italic">материал!</text>
+<line x1="208" y1="1636" x2="576" y2="1636" stroke-width="8" stroke-linecap="round" stroke="#1d2a6d"/>
+<text x="236" y="1706" font-size="36" text-anchor="start" fill="#1d2a6d">Постройка:</text>
+<text x="262" y="1752" font-size="32" text-anchor="start" fill="#1d2a6d">– дорог</text>
+<text x="262" y="1796" font-size="32" text-anchor="start" fill="#1d2a6d">– добывающих зданий/устройств</text>
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Base upgrades" id="layer-base-upgrades">
+<text x="1345" y="958" font-size="44" text-anchor="start" fill="#1d2a6d">Улучшения базы!</text>
+<line x1="1335" y1="976" x2="1880" y2="976" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<text x="1372" y="1046" font-size="44" text-anchor="start" fill="#1d2a6d">– радар</text>
+<rect x="1368" y="1094" width="106" height="48" rx="24" stroke-width="3" fill="none" stroke="#1d2a6d"/>
+<text x="1421" y="1130" font-size="30" text-anchor="middle" fill="#1d2a6d">1 ст.</text>
+<rect x="1602" y="1092" width="106" height="48" rx="24" stroke-width="3" fill="none" stroke="#1d2a6d"/>
+<text x="1655" y="1128" font-size="30" text-anchor="middle" fill="#1d2a6d">2 ст.</text>
+<text x="1842" y="1132" font-size="34" text-anchor="middle" fill="#1d2a6d">…</text>
+<polygon points="1432.84,1211 1461.42,1227.5 1461.42,1260.5 1432.84,1277 1404.26,1260.5 1404.26,1227.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1461.42,1260.5 1490,1277 1490,1310 1461.42,1326.5 1432.84,1310 1432.84,1277" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1461.42,1161.5 1490,1178 1490,1211 1461.42,1227.5 1432.84,1211 1432.84,1178" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1490,1211 1518.58,1227.5 1518.58,1260.5 1490,1277 1461.42,1260.5 1461.42,1227.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1518.58,1260.5 1547.16,1277 1547.16,1310 1518.58,1326.5 1490,1310 1490,1277" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1518.58,1161.5 1547.16,1178 1547.16,1211 1518.58,1227.5 1490,1211 1490,1178" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1547.16,1211 1575.74,1227.5 1575.74,1260.5 1547.16,1277 1518.58,1260.5 1518.58,1227.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="1490" cy="1244" r="7" fill="#1d2a6d" stroke="none"/>
+<polygon points="1629.54,1253 1654.66,1267.5 1654.66,1296.5 1629.54,1311 1604.43,1296.5 1604.43,1267.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1654.66,1296.5 1679.77,1311 1679.77,1340 1654.66,1354.5 1629.54,1340 1629.54,1311" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1679.77,1340 1704.89,1354.5 1704.89,1383.5 1679.77,1398 1654.66,1383.5 1654.66,1354.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1654.66,1209.5 1679.77,1224 1679.77,1253 1654.66,1267.5 1629.54,1253 1629.54,1224" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1679.77,1253 1704.89,1267.5 1704.89,1296.5 1679.77,1311 1654.66,1296.5 1654.66,1267.5" fill="url(#hatch-soft)" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1704.89,1296.5 1730,1311 1730,1340 1704.89,1354.5 1679.77,1340 1679.77,1311" fill="url(#hatch-soft)" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1730,1340 1755.11,1354.5 1755.11,1383.5 1730,1398 1704.89,1383.5 1704.89,1354.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1679.77,1166 1704.89,1180.5 1704.89,1209.5 1679.77,1224 1654.66,1209.5 1654.66,1180.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1704.89,1209.5 1730,1224 1730,1253 1704.89,1267.5 1679.77,1253 1679.77,1224" fill="url(#hatch-soft)" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1730,1253 1755.11,1267.5 1755.11,1296.5 1730,1311 1704.89,1296.5 1704.89,1267.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1755.11,1296.5 1780.23,1311 1780.23,1340 1755.11,1354.5 1730,1340 1730,1311" fill="url(#hatch-soft)" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1780.23,1340 1805.34,1354.5 1805.34,1383.5 1780.23,1398 1755.11,1383.5 1755.11,1354.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1730,1166 1755.11,1180.5 1755.11,1209.5 1730,1224 1704.89,1209.5 1704.89,1180.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1755.11,1209.5 1780.23,1224 1780.23,1253 1755.11,1267.5 1730,1253 1730,1224" fill="url(#hatch-soft)" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1780.23,1253 1805.34,1267.5 1805.34,1296.5 1780.23,1311 1755.11,1296.5 1755.11,1267.5" fill="url(#hatch-soft)" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1805.34,1296.5 1830.46,1311 1830.46,1340 1805.34,1354.5 1780.23,1340 1780.23,1311" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1780.23,1166 1805.34,1180.5 1805.34,1209.5 1780.23,1224 1755.11,1209.5 1755.11,1180.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1805.34,1209.5 1830.46,1224 1830.46,1253 1805.34,1267.5 1780.23,1253 1780.23,1224" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<polygon points="1830.46,1253 1855.57,1267.5 1855.57,1296.5 1830.46,1311 1805.34,1296.5 1805.34,1267.5" fill="#ffffff" stroke-width="3" stroke-linejoin="round" stroke="#1d2a6d"/>
+<circle cx="1730" cy="1282" r="7" fill="#1d2a6d" stroke="none"/>
+<text x="1390" y="1448" font-size="34" text-anchor="start" fill="#1d2a6d">или</text>
+<text x="1388" y="1506" font-size="36" text-anchor="start" fill="#1d2a6d">другой вариант</text>
+<text x="1388" y="1554" font-size="36" text-anchor="start" fill="#1d2a6d">радара</text>
+<text x="1388" y="1606" font-size="38" text-anchor="start" font-weight="600" fill="#1d2a6d">туман войны!</text>
+<line x1="1382" y1="1618" x2="1650" y2="1618" stroke-width="3" stroke-linecap="round" stroke="#1d2a6d"/>
+<text x="1388" y="1664" font-size="34" text-anchor="start" fill="#1d2a6d">степень прозрачности</text>
+</g>
+</svg>
